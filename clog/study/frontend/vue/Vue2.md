@@ -1,5 +1,8 @@
 ---
-
+category:
+  - Vue
+tag:
+  - Vue2
 ---
 
 # Vue2
