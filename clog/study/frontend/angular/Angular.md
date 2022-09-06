@@ -1,3 +1,9 @@
+---
+category:
+  - Angular
+tag:
+  - AngularCli
+---
 # Angular
 
 ## 1.搭建开发环境(需要node版本10以上)

@@ -1,3 +1,9 @@
+---
+category:
+  - React
+tag:
+  - ReactExtends
+---
 # React拓展
 ## 1. setState
 
