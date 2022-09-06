@@ -28,7 +28,7 @@ export default hopeTheme({
 
   displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "PageView", "Word"],
 
   blog: {
     description: "一个前端开发者",

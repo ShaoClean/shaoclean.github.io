@@ -1,3 +1,15 @@
+---
+icon: edit
+date: 2022-01-06
+article: true
+category:
+  - CategoryA
+  - CategoryB
+tag:
+  - tag A
+  - tag B
+star: 10
+---
 # wuwuwu
 xixixi!
 ## aaaa

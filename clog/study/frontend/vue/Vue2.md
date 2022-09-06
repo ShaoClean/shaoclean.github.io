@@ -1,5 +1,9 @@
 ---
+icon: vue
+date: 2022-02-09
+article: true
 category:
+  - 前端
   - Vue
 tag:
   - Vue2
