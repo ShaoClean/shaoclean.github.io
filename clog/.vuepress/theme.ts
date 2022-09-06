@@ -14,10 +14,13 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "https://github.com/ShaoClean",
+  repo: "https://github.com/ShaoClean/shaoclean.github.io",
 
-  docsDir: "demo/src",
+  docsDir: "clog",
 
+  docsBranch: "main",
+
+  docsRepo: "https://github.com/ShaoClean/shaoclean.github.io",
   // navbar
   navbar: navbar,
 
