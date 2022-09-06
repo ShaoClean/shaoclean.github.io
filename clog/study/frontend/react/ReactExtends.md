@@ -1,7 +1,7 @@
 ---
 icon: react
 date: 2022-06-24
-article: true
+star: 8
 category:
   - React
 tag:
