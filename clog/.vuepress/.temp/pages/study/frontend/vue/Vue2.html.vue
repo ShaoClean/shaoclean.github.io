@@ -148,7 +148,7 @@ this.$refs.xxx.$on('clean',this.show)
 <h2 id="vue封装的过渡与动画" tabindex="-1"><a class="header-anchor" href="#vue封装的过渡与动画" aria-hidden="true">#</a> Vue封装的过渡与动画</h2>
 <p>1.作用:在插入、更新或移除DOM元素时,在合适的时候给元素添加样式类名</p>
 <p>2.图示:</p>
-<p><img src="C:\Users\n'j\AppData\Roaming\Typora\typora-user-images\image-20220123151308468.png" alt="image-20220123151308468" loading="lazy"></p>
+<!-- ![image-20220123151308468](C:\Users\n'j\AppData\Roaming\Typora\typora-user-images\image-20220123151308468.png) -->
 <p>3.写法:</p>
 <p>​			1.准备好样式:</p>
 <p>​					·元素进入的样式:</p>

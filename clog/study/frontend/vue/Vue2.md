@@ -243,7 +243,7 @@ new Vue({
 
 2.图示:
 
-![image-20220123151308468](C:\Users\n'j\AppData\Roaming\Typora\typora-user-images\image-20220123151308468.png)
+<!-- ![image-20220123151308468](C:\Users\n'j\AppData\Roaming\Typora\typora-user-images\image-20220123151308468.png) -->
 
 3.写法:
 
