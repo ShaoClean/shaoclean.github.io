@@ -6,7 +6,7 @@ title: 主页
 heroImage: /logo.svg
 heroText: clog
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: "I whish you to be gentle"
 bgImage: "/bg.svg"
 projects:
   - icon: project

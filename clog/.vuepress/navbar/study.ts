@@ -4,18 +4,20 @@ export default{
   prefix: "/study/",
   children: [
     {
-      prefix: "article/",
+      text:"前端",
+      prefix: "frontend/",
       children: [
-        { text: "Vue", icon: "vue", link: "article6" },
-        { text: "React", icon: "react", link: "article6" },
-        { text: "Angular", icon: "angular", link: "article6" },
+        { text: "Vue", icon: "vue", link: "vue/" },
+        { text: "React", icon: "react", link: "react/" },
+        { text: "Angular", icon: "angular", link: "angular/" },
       ],
     },
     {
+      text:"后端",
       children: [
         {
           text: "Java",
-          icon: "loop",
+          icon: "java",
           link: "article6",
         },
         {
@@ -26,6 +28,7 @@ export default{
       ],
     },
     {
+      text:"其他",
       children: [
         {
           text: "Java",

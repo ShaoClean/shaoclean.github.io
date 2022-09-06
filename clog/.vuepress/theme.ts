@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "ShaoClean/shaoclean.github.io/tree/gh-pages",
+  repo: "https://github.com/ShaoClean",
 
   docsDir: "demo/src",
 
@@ -36,9 +36,9 @@ export default hopeTheme({
     medias: {
       Email: "1518136109@qq.com",
       GitHub: "https://github.com/ShaoClean",
-      Gitee: "https://example.com",
+      Gitee: "https://gitee.com/shaoclean",
       QQ: "1518136109",
-      Wechat: "Shaoclean",
+      Wechat: "ShaoClean",
       Weibo: "邵Clean",
     },
   },
