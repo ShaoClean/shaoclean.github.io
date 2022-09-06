@@ -8,6 +8,7 @@ import clientConfig6 from '/Users/clean/Desktop/clog/node_modules/vuepress-plugi
 import clientConfig7 from '/Users/clean/Desktop/clog/clog/.vuepress/.temp/md-enhance/config.js'
 import clientConfig8 from '/Users/clean/Desktop/clog/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
 import clientConfig9 from '/Users/clean/Desktop/clog/clog/.vuepress/.temp/theme-hope/config.js'
+import clientConfig10 from '/Users/clean/Desktop/clog/node_modules/@vuepress/plugin-search/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -20,4 +21,5 @@ export const clientConfigs = [
   clientConfig7,
   clientConfig8,
   clientConfig9,
+  clientConfig10,
 ]

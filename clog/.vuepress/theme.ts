@@ -9,7 +9,8 @@ export default hopeTheme({
     name: "ShaoClean",
     url: "https://weibo.com/u/5550001595",
   },
-  // pure: true,
+  //简洁模式
+  pure: true,
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
@@ -27,7 +28,7 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: "默认页脚",
+  footer: "浙ICP备2022003815号-1",
 
   displayFooter: true,
 
@@ -54,7 +55,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      autoExcerpt: true,
+      autoExcerpt: false,
     },
 
     // 如果你不需要评论，可以直接删除 comment 配置，

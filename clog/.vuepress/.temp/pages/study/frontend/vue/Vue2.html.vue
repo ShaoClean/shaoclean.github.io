@@ -1,40 +1,58 @@
 <template><div><h1 id="vue2" tabindex="-1"><a class="header-anchor" href="#vue2" aria-hidden="true">#</a> Vue2</h1>
 <h2 id="vue-config-js配置文件" tabindex="-1"><a class="header-anchor" href="#vue-config-js配置文件" aria-hidden="true">#</a> vue.config.js配置文件</h2>
-<blockquote>
-<p>使用vue inspect &gt; output.js可以查看到Vue脚手架的默认配置
-使用vue.config.js可以对脚手架进行个性化定制，详情见:<a href="https://cli" target="_blank" rel="noopener noreferrer">https://cli<ExternalLinkIcon/></a>:vue.js.org/zh</p>
-</blockquote>
+<p>使用vue inspect &gt; output.js可以查看到Vue脚手架的默认配置</p>
+<p>使用vue.config.js可以对脚手架进行个性化定制</p>
+<p>详情见:<a href="https://cli.vue.js.org/zh" target="_blank" rel="noopener noreferrer">https://cli.vue.js.org/zh<ExternalLinkIcon/></a></p>
 <h2 id="ref属性" tabindex="-1"><a class="header-anchor" href="#ref属性" aria-hidden="true">#</a> ref属性</h2>
-<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code> 1.被用来给元素或子组件注册引用信息（id的替代者）
-  2.应用在html标签上获取的是真实DOM元素，应用在组件标签上是组件实例对象（vc）
-  3.使用方法：
-      打标识：&lt;h1 ref="XXX">...&lt;/h1>  或 &lt;School ref="XXX">&lt;/School>
-      获取：this.$refs.xxx
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="配置项props" tabindex="-1"><a class="header-anchor" href="#配置项props" aria-hidden="true">#</a> 配置项props</h2>
-<pre><code>  功能：让组件接受外部传过来的数据
-   （1）传递数据：
-        &lt;Demo name=&quot;XXX&quot;&gt;
-    (2)接收数据
-        第一种方式（只接收）：
-            props:['name']
-        第二种方式(限制类型)：
-            props:{
-              name:Number
-            }
-        第三种方式（限制类型、限制必要性、制定默认值）：
-            props:{
-              name:{
-                type:String,//类型
-                require:true,//必要性
-                default:'老王'//默认值
-              }
-            }
-  备注：props是制度的，Vue底层会监测你对props的修改，如果进行了修改，就会发出警告，
-       若业务需求需要修改，请复制一份到data中，换一个名字，然后写成this.XXX的形式。
-       本身data中不存在数据，即通过props传递过来的数据，最好不要修改，控制台会报错，
-       如果同时存在，会优先显示props中的数据 （props中的数据是优先被接受的，是优先被放在VC上的）
-       所以可以在data中写myAge:this.age，这样就能实现修改传递过来的数据不报错的情况
-</code></pre>
+<p>1.被用来给元素或子组件注册引用信息（id的替代者）</p>
+<p>2.应用在html标签上获取的是真实DOM元素，应用在组件标签上是组件实例对象（vc）</p>
+<p>3.使用方法</p>
+<p>a.先打标识：<code v-pre>&lt;h1 ref=&quot;XXX&quot;&gt;...&lt;/h1&gt;</code>  或 <code v-pre>&lt;School ref=&quot;XXX&quot;&gt;&lt;/School&gt;</code></p>
+<p>b.随后通过<code v-pre>this.$refs.xxx</code>获取dom元素</p>
+<h2 id="配置项props" tabindex="-1"><a class="header-anchor" href="#配置项props" aria-hidden="true">#</a> 配置项props</h2>
+<p>功能：让组件接受外部传过来的数据</p>
+<ul>
+<li>
+<p>1.传递数据：<code v-pre>&lt;Demo name=&quot;XXX&quot;&gt;</code></p>
+</li>
+<li>
+<p>2.接收数据</p>
+<ul>
+<li>第一种方式（只接收）：</li>
+</ul>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>export default{
+  props:['name']
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>第二种方式(限制类型)：</li>
+</ul>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>export default{
+  props:{
+    name:Number
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>第三种方式（限制类型、限制必要性、制定默认值）：</li>
+</ul>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>export default{
+  props:{
+    name:{
+      type:String,//类型
+      require:true,//必要性
+      default:'老王'//默认值
+    }
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container info">
+<p class="custom-container-title">备注</p>
+<p>1.props是只读的，Vue底层会监测你对props的修改，如果进行了修改，就会发出警告，
+若业务需求需要修改，请复制一份到data中，换一个名字，然后写成this.XXX的形式。</p>
+<p>2.本身data中不存在数据，即通过props传递过来的数据，最好不要修改，控制台会报错，</p>
+<p>3.如果同时存在，会优先显示props中的数据 （props中的数据是优先被接受的，是优先被放在VC上的）
+所以可以在data中写myAge:this.age，这样就能实现修改传递过来的数据不报错的情况</p>
+</div>
+</li>
+</ul>
 <h2 id="mixin-混入" tabindex="-1"><a class="header-anchor" href="#mixin-混入" aria-hidden="true">#</a> mixin(混入)</h2>
 <pre><code>功能：可以把多个组件共用的配置提取成一个混入对象
 使用方法：

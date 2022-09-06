@@ -1,7 +1,8 @@
 ---
 icon: vue
 date: 2022-02-09
-start: 11
+star: 11
+description: 这里是一些关于Vue2的笔记
 category:
   - 前端
   - Vue
@@ -12,45 +13,68 @@ tag:
 # Vue2
 
 ## vue.config.js配置文件
->使用vue inspect > output.js可以查看到Vue脚手架的默认配置
->使用vue.config.js可以对脚手架进行个性化定制，详情见:https://cli:vue.js.org/zh
+使用vue inspect > output.js可以查看到Vue脚手架的默认配置
+
+使用vue.config.js可以对脚手架进行个性化定制
+
+详情见:https://cli.vue.js.org/zh
 
 ## ref属性
-```
- 1.被用来给元素或子组件注册引用信息（id的替代者）
+  1.被用来给元素或子组件注册引用信息（id的替代者）
+
   2.应用在html标签上获取的是真实DOM元素，应用在组件标签上是组件实例对象（vc）
-  3.使用方法：
-      打标识：<h1 ref="XXX">...</h1>  或 <School ref="XXX"></School>
-      获取：this.$refs.xxx
-```
+
+  3.使用方法
+      
+   a.先打标识：`<h1 ref="XXX">...</h1>`  或 `<School ref="XXX"></School>`
+    
+   b.随后通过`this.$refs.xxx`获取dom元素
+
 
 
 
 ## 配置项props
-      功能：让组件接受外部传过来的数据
-       （1）传递数据：
-            <Demo name="XXX">
-        (2)接收数据
-            第一种方式（只接收）：
-                props:['name']
-            第二种方式(限制类型)：
-                props:{
-                  name:Number
-                }
-            第三种方式（限制类型、限制必要性、制定默认值）：
-                props:{
-                  name:{
-                    type:String,//类型
-                    require:true,//必要性
-                    default:'老王'//默认值
-                  }
-                }
-      备注：props是制度的，Vue底层会监测你对props的修改，如果进行了修改，就会发出警告，
-           若业务需求需要修改，请复制一份到data中，换一个名字，然后写成this.XXX的形式。
-           本身data中不存在数据，即通过props传递过来的数据，最好不要修改，控制台会报错，
-           如果同时存在，会优先显示props中的数据 （props中的数据是优先被接受的，是优先被放在VC上的）
-           所以可以在data中写myAge:this.age，这样就能实现修改传递过来的数据不报错的情况
+功能：让组件接受外部传过来的数据
 
+ - 1.传递数据：`<Demo name="XXX">`
+
+ - 2.接收数据
+
+   - 第一种方式（只接收）：
+    ```vue
+    export default{
+      props:['name']
+    }
+    ```
+   - 第二种方式(限制类型)：
+    ```vue
+    export default{
+      props:{
+        name:Number
+      }
+    }
+    ```
+   - 第三种方式（限制类型、限制必要性、制定默认值）：
+    ```vue
+    export default{
+      props:{
+        name:{
+          type:String,//类型
+          require:true,//必要性
+          default:'老王'//默认值
+        }
+      }
+    }
+    ```
+    ::: info 备注
+    1.props是只读的，Vue底层会监测你对props的修改，如果进行了修改，就会发出警告，
+      若业务需求需要修改，请复制一份到data中，换一个名字，然后写成this.XXX的形式。
+
+    2.本身data中不存在数据，即通过props传递过来的数据，最好不要修改，控制台会报错，
+    
+    3.如果同时存在，会优先显示props中的数据 （props中的数据是优先被接受的，是优先被放在VC上的）
+      所以可以在data中写myAge:this.age，这样就能实现修改传递过来的数据不报错的情况
+    :::
 
 
 ## mixin(混入)       

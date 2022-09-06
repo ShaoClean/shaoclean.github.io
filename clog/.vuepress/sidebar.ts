@@ -28,6 +28,11 @@ export default sidebar({
     '',
     "ES6",
   ],
-
+  //随笔
+  "/essay/": [
+    '',
+    "feeling",
+    "feeling2",
+  ],
 
 });
