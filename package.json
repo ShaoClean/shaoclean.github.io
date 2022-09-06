@@ -1,0 +1,17 @@
+{
+  "name": "clog",
+  "version": "0.1.0",
+  "description": "clean's blog",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build clog",
+    "docs:clean-dev": "vuepress dev clog --clean-cache",
+    "docs:dev": "vuepress dev clog"
+  },
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.51",
+    "vue": "^3.2.27",
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-theme-hope": "2.0.0-beta.97"
+  }
+}
