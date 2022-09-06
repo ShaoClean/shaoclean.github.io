@@ -1,4 +1,4 @@
-export const categoryMap = {"category":{"/":{"path":"/category/","map":{"CategoryA":{"path":"/category/categorya/","keys":["v-3dd501be","v-413eb2fc","v-44a8643a","v-5f1e4757","v-72a111be"]},"CategoryB":{"path":"/category/categoryb/","keys":["v-3dd501be","v-413eb2fc","v-44a8643a","v-5f1e4757","v-72a111be"]}}}},"tag":{"/":{"path":"/tag/","map":{"tag A":{"path":"/tag/tag-a/","keys":["v-3dd501be","v-413eb2fc","v-44a8643a","v-5f1e4757","v-72a111be"]},"tag B":{"path":"/tag/tag-b/","keys":["v-3dd501be","v-413eb2fc","v-44a8643a","v-5f1e4757","v-72a111be"]}}}}}
+export const categoryMap = {"category":{"/":{"path":"/category/","map":{"CategoryA":{"path":"/category/categorya/","keys":["v-0a824a52"]},"CategoryB":{"path":"/category/categoryb/","keys":["v-0a824a52"]}}}},"tag":{"/":{"path":"/tag/","map":{"tag A":{"path":"/tag/tag-a/","keys":["v-0a824a52"]},"tag B":{"path":"/tag/tag-b/","keys":["v-0a824a52"]}}}}}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
