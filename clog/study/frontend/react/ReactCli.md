@@ -32,37 +32,42 @@
 
 
 ## 三、路由的基本使用
-			1.明确好界面中的导航区、展示区
-			2.导航区的a标签改为Link标签
-						<Link to="/xxxxx">Demo</Link>
-			3.展示区写Route标签进行路径的匹配
-						<Route path='/xxxx' component={Demo}/>
-			4.<App>的最外侧包裹了一个<BrowserRouter>或<HashRouter>
+1.明确好界面中的导航区、展示区
+2.导航区的a标签改为Link标签
+	`<Link to="/xxxxx">Demo</Link>`
+3.展示区写Route标签进行路径的匹配
+	`<Route path='/xxxx' component={Demo}/>`
+4.`<App>`的最外侧包裹了一个`<BrowserRouter>或<HashRouter>`
 
 ## 四、路由组件与一般组件
-			1.写法不同：
-						一般组件：<Demo/>
-						路由组件：<Route path="/demo" component={Demo}/>
-			2.存放位置不同：
+1.写法不同：
+						一般组件：`<Demo/>`
+						路由组件：`<Route path="/demo" component={Demo}/>`
+2.存放位置不同：
 						一般组件：components
 						路由组件：pages
-			3.接收到的props不同：
+3.接收到的props不同：
 						一般组件：写组件标签时传递了什么，就能收到什么
 						路由组件：接收到三个固定的属性
-											history:
-														go: ƒ go(n)
-														goBack: ƒ goBack()
-														goForward: ƒ goForward()
-														push: ƒ push(path, state)
-														replace: ƒ replace(path, state)
-											location:
-														pathname: "/about"
-														search: ""
-														state: undefined
-											match:
-														params: {}
-														path: "/about"
-														url: "/about"
+
+```	js
+history:
+    go: ƒ go(n)
+    goBack: ƒ goBack()
+    goForward: ƒ goForward()
+    push: ƒ push(path, state)
+replace: ƒ replace(path, state)
+    location:
+    pathname: "/about"
+    search: ""
+    state: undefined
+match:
+    params: {}
+    path: "/about"
+    url: "/about"
+```
+
+
 
 ## 五、NavLink与封装NavLink
 				1.NavLink可以实现路由链接的高亮，通过activeClassName指定样式名
@@ -95,18 +100,18 @@
 				2.路由的匹配是按照注册路由的顺序进行的
 
 ## 十一、向路由组件传递参数
-	1.params参数
-	    路由链接(携带参数)：<Link to='/demo/test/tom/18'}>详情</Link>
-	    注册路由(声明接收)：<Route path="/demo/test/:name/:age" component={Test}/>
+1.params参数
+	    路由链接(携带参数)：`<Link to='/demo/test/tom/18'}>详情</Link>`
+	    注册路由(声明接收)：`<Route path="/demo/test/:name/:age" component={Test}/>`
 	    接收参数：this.props.match.params
 	2.search参数
-	    路由链接(携带参数)：<Link to='/demo/test?name=tom&age=18'}>详情</Link>
-	    注册路由(无需声明，正常注册即可)：<Route path="/demo/test" component={Test}/>
+	    路由链接(携带参数)：`<Link to='/demo/test?name=tom&age=18'}>详情</Link>`
+	    注册路由(无需声明，正常注册即可)：`<Route path="/demo/test" component={Test}/>`
 	    接收参数：this.props.location.search
 	    备注：获取到的search是urlencoded编码字符串，需要借助qs(import qs from 'qs')解析
 	3.state参数
-	    路由链接(携带参数)：<Link to={{pathname:'/demo/test',state:{name:'tom',age:18}}}>详情</Link>
-	    注册路由(无需声明，正常注册即可)：<Route path="/demo/test" component={Test}/>
+	    路由链接(携带参数)：`<Link to={{pathname:'/demo/test',state:{name:'tom',age:18}}}>详情</Link>`
+	    注册路由(无需声明，正常注册即可)：`<Route path="/demo/test" component={Test}/>`
 	    接收参数：this.props.location.state
 	    备注：刷新也可以保留住参数
 
