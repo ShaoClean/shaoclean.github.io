@@ -15,16 +15,16 @@ export const pagesData = {
   "v-95b0645c": () => import(/* webpackChunkName: "v-95b0645c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/project1.html.js").then(({ data }) => data),
   // path: /project/project2.html
   "v-9246b31e": () => import(/* webpackChunkName: "v-9246b31e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/project2.html.js").then(({ data }) => data),
-  // path: /study/frontend/angular/Angular.html
-  "v-0cecb7e2": () => import(/* webpackChunkName: "v-0cecb7e2" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/angular/Angular.html.js").then(({ data }) => data),
-  // path: /study/frontend/angular/
-  "v-242d4c0b": () => import(/* webpackChunkName: "v-242d4c0b" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/angular/index.html.js").then(({ data }) => data),
   // path: /study/frontend/react/
   "v-7361fb8e": () => import(/* webpackChunkName: "v-7361fb8e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/react/index.html.js").then(({ data }) => data),
   // path: /study/frontend/react/ReactCli.html
   "v-4808ad6a": () => import(/* webpackChunkName: "v-4808ad6a" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/react/ReactCli.html.js").then(({ data }) => data),
   // path: /study/frontend/react/ReactExtends.html
   "v-1b9f0d11": () => import(/* webpackChunkName: "v-1b9f0d11" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/react/ReactExtends.html.js").then(({ data }) => data),
+  // path: /study/frontend/js/ES6.html
+  "v-d7e37f4e": () => import(/* webpackChunkName: "v-d7e37f4e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/js/ES6.html.js").then(({ data }) => data),
+  // path: /study/frontend/js/
+  "v-30cd7070": () => import(/* webpackChunkName: "v-30cd7070" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/js/index.html.js").then(({ data }) => data),
   // path: /study/frontend/vue/
   "v-0b9533e7": () => import(/* webpackChunkName: "v-0b9533e7" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/vue/index.html.js").then(({ data }) => data),
   // path: /study/frontend/vue/Vue2.html
@@ -33,6 +33,10 @@ export const pagesData = {
   "v-85545536": () => import(/* webpackChunkName: "v-85545536" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/vue/Vue3.html.js").then(({ data }) => data),
   // path: /study/frontend/vue/article6.html
   "v-0a824a52": () => import(/* webpackChunkName: "v-0a824a52" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/vue/article6.html.js").then(({ data }) => data),
+  // path: /study/frontend/angular/Angular.html
+  "v-0cecb7e2": () => import(/* webpackChunkName: "v-0cecb7e2" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/angular/Angular.html.js").then(({ data }) => data),
+  // path: /study/frontend/angular/
+  "v-242d4c0b": () => import(/* webpackChunkName: "v-242d4c0b" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/angular/index.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /category/
@@ -57,10 +61,6 @@ export const pagesData = {
   "v-3e5b7ba3": () => import(/* webpackChunkName: "v-3e5b7ba3" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/categoryb/index.html.js").then(({ data }) => data),
   // path: /tag/tag-b/
   "v-06bbb224": () => import(/* webpackChunkName: "v-06bbb224" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/tag-b/index.html.js").then(({ data }) => data),
-  // path: /category/angular/
-  "v-2f218ea5": () => import(/* webpackChunkName: "v-2f218ea5" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/angular/index.html.js").then(({ data }) => data),
-  // path: /tag/angularcli/
-  "v-05c2d0e3": () => import(/* webpackChunkName: "v-05c2d0e3" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/angularcli/index.html.js").then(({ data }) => data),
   // path: /category/react/
   "v-884bc6b0": () => import(/* webpackChunkName: "v-884bc6b0" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/react/index.html.js").then(({ data }) => data),
   // path: /tag/reactcli/
@@ -69,10 +69,18 @@ export const pagesData = {
   "v-e9c7e408": () => import(/* webpackChunkName: "v-e9c7e408" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/前端/index.html.js").then(({ data }) => data),
   // path: /tag/reactextends/
   "v-22f105a7": () => import(/* webpackChunkName: "v-22f105a7" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactextends/index.html.js").then(({ data }) => data),
+  // path: /category/js/
+  "v-3d184cee": () => import(/* webpackChunkName: "v-3d184cee" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/js/index.html.js").then(({ data }) => data),
+  // path: /tag/es6/
+  "v-b3126996": () => import(/* webpackChunkName: "v-b3126996" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/es6/index.html.js").then(({ data }) => data),
   // path: /category/vue/
   "v-65f6d381": () => import(/* webpackChunkName: "v-65f6d381" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/vue/index.html.js").then(({ data }) => data),
   // path: /tag/vue2/
   "v-2953c4b5": () => import(/* webpackChunkName: "v-2953c4b5" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/vue2/index.html.js").then(({ data }) => data),
+  // path: /category/angular/
+  "v-2f218ea5": () => import(/* webpackChunkName: "v-2f218ea5" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/angular/index.html.js").then(({ data }) => data),
   // path: /tag/vue3/
   "v-2953c4d4": () => import(/* webpackChunkName: "v-2953c4d4" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/vue3/index.html.js").then(({ data }) => data),
+  // path: /tag/angularcli/
+  "v-05c2d0e3": () => import(/* webpackChunkName: "v-05c2d0e3" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/angularcli/index.html.js").then(({ data }) => data),
 }

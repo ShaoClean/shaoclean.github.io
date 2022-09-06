@@ -23,6 +23,11 @@ export default sidebar({
     '',
     "Angular",
   ],
+  //js
+  "/study/frontend/js": [
+    '',
+    "ES6",
+  ],
 
 
 });

@@ -10,6 +10,8 @@ export default{
         { text: "Vue", icon: "vue", link: "vue/" },
         { text: "React", icon: "react", link: "react/" },
         { text: "Angular", icon: "angular", link: "angular/" },
+        { text: "JS", icon: "javascript", link: "js/" },
+        { text: "TS", icon: "typescript", link: "ts/" },
       ],
     },
     {
