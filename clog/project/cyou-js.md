@@ -8,7 +8,7 @@ category:
 tag:
   - cyou-js
 ---
-# cyou-js使用文档
+# cyou-js
 
 ## 使用
 ### 1.引入文件

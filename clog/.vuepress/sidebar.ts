@@ -4,7 +4,7 @@ export default sidebar({
   "/project/":[
     '',
     "cyou-js",
-    "feeling2"
+    "CYou"
   ],
   //vue
   "/study/frontend/vue": [

@@ -1,4 +1,4 @@
-<template><div><h1 id="cyou-js使用文档" tabindex="-1"><a class="header-anchor" href="#cyou-js使用文档" aria-hidden="true">#</a> cyou-js使用文档</h1>
+<template><div><h1 id="cyou-js" tabindex="-1"><a class="header-anchor" href="#cyou-js" aria-hidden="true">#</a> cyou-js</h1>
 <h2 id="使用" tabindex="-1"><a class="header-anchor" href="#使用" aria-hidden="true">#</a> 使用</h2>
 <h3 id="_1-引入文件" tabindex="-1"><a class="header-anchor" href="#_1-引入文件" aria-hidden="true">#</a> 1.引入文件</h3>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> createCyou <span class="token keyword">from</span> <span class="token string">'cyou-js.js'</span><span class="token punctuation">;</span>
