@@ -6,5 +6,6 @@ export const year2022Sidebar: HopeThemeSidebarGroupItem = {
   prefix: "2022/",
   children: [
     "1",
+    "2"
   ]
 }
