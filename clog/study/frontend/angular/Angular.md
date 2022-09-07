@@ -3,6 +3,7 @@ category:
   - Angular
 tag:
   - AngularCli
+star: 5
 ---
 # Angular
 
