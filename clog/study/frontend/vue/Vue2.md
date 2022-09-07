@@ -1,7 +1,7 @@
 ---
 icon: vue
 date: 2022-02-09
-star: 11
+star: 20
 description: 这里是一些关于Vue2的笔记
 category:
   - 前端
