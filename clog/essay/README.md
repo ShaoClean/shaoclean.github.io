@@ -1,7 +1,7 @@
 ---
 article: false
-icon: vue
+icon: strong
 ---
-# Clean的随笔
-hello 这里是clean的随笔
+# 猛男的随笔
+hello 这里是猛男的随笔
 
