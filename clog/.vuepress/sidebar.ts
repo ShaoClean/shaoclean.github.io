@@ -2,7 +2,7 @@ import { sidebar } from "vuepress-theme-hope";
 import { backendSidebar } from "./sidebar/backend";
 import { essaySidebar } from "./sidebar/essay";
 import { frontendSidebar } from "./sidebar/frontend";
-
+import { teachSidebar } from "./sidebar/teach";
 export default sidebar({
   "/project/":[
     '',
@@ -14,5 +14,6 @@ export default sidebar({
   //学习笔记-后端
   "/study/backend":backendSidebar,
   //随笔
-  "/essay/": essaySidebar
+  "/essay/": essaySidebar,
+  "/teach/": teachSidebar
 });

@@ -158,9 +158,31 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Clean的随笔",
+    "title": "猛男的随笔",
     "headers": [],
     "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "加速访问GitHub方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "解决github下载速度过慢",
+        "slug": "解决github下载速度过慢",
+        "link": "#解决github下载速度过慢",
+        "children": []
+      }
+    ],
+    "path": "/teach/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决github下载速度过慢",
+    "headers": [],
+    "path": "/teach/2.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1388,6 +1410,20 @@ export const searchIndex = [
     "title": "使用文档 分类",
     "headers": [],
     "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西 标签",
+    "headers": [],
+    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Github 分类",
+    "headers": [],
+    "path": "/category/github/",
     "pathLocale": "/",
     "extraFields": []
   },

@@ -11,6 +11,10 @@ export const pagesData = {
   "v-7bf12e24": () => import(/* webpackChunkName: "v-7bf12e24" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/cyou-js.html.js").then(({ data }) => data),
   // path: /essay/
   "v-7c80db8b": () => import(/* webpackChunkName: "v-7c80db8b" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/index.html.js").then(({ data }) => data),
+  // path: /teach/1.html
+  "v-f64950ca": () => import(/* webpackChunkName: "v-f64950ca" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/teach/1.html.js").then(({ data }) => data),
+  // path: /teach/2.html
+  "v-f2df9f8c": () => import(/* webpackChunkName: "v-f2df9f8c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/teach/2.html.js").then(({ data }) => data),
   // path: /essay/2022/1.html
   "v-07d1390e": () => import(/* webpackChunkName: "v-07d1390e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/1.html.js").then(({ data }) => data),
   // path: /study/backend/java/JavaSE.html
@@ -63,6 +67,10 @@ export const pagesData = {
   "v-7ddbebe3": () => import(/* webpackChunkName: "v-7ddbebe3" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/cyou-js/index.html.js").then(({ data }) => data),
   // path: /category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/
   "v-55de9cda": () => import(/* webpackChunkName: "v-55de9cda" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/使用文档/index.html.js").then(({ data }) => data),
+  // path: /tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/
+  "v-cd2229d0": () => import(/* webpackChunkName: "v-cd2229d0" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/有用的东西/index.html.js").then(({ data }) => data),
+  // path: /category/github/
+  "v-fd3344d8": () => import(/* webpackChunkName: "v-fd3344d8" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/github/index.html.js").then(({ data }) => data),
   // path: /tag/%E5%BC%80%E5%BF%83!/
   "v-9216ebc8": () => import(/* webpackChunkName: "v-9216ebc8" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/开心!/index.html.js").then(({ data }) => data),
   // path: /category/%E9%9A%8F%E7%AC%94/

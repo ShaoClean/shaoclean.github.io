@@ -13,6 +13,10 @@ export const pagesComponents = {
   "v-7bf12e24": defineAsyncComponent(() => import(/* webpackChunkName: "v-7bf12e24" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/cyou-js.html.vue")),
   // path: /essay/
   "v-7c80db8b": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c80db8b" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/index.html.vue")),
+  // path: /teach/1.html
+  "v-f64950ca": defineAsyncComponent(() => import(/* webpackChunkName: "v-f64950ca" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/teach/1.html.vue")),
+  // path: /teach/2.html
+  "v-f2df9f8c": defineAsyncComponent(() => import(/* webpackChunkName: "v-f2df9f8c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/teach/2.html.vue")),
   // path: /essay/2022/1.html
   "v-07d1390e": defineAsyncComponent(() => import(/* webpackChunkName: "v-07d1390e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/1.html.vue")),
   // path: /study/backend/java/JavaSE.html
@@ -65,6 +69,10 @@ export const pagesComponents = {
   "v-7ddbebe3": defineAsyncComponent(() => import(/* webpackChunkName: "v-7ddbebe3" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/cyou-js/index.html.vue")),
   // path: /category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/
   "v-55de9cda": defineAsyncComponent(() => import(/* webpackChunkName: "v-55de9cda" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/使用文档/index.html.vue")),
+  // path: /tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/
+  "v-cd2229d0": defineAsyncComponent(() => import(/* webpackChunkName: "v-cd2229d0" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/有用的东西/index.html.vue")),
+  // path: /category/github/
+  "v-fd3344d8": defineAsyncComponent(() => import(/* webpackChunkName: "v-fd3344d8" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/category/github/index.html.vue")),
   // path: /tag/%E5%BC%80%E5%BF%83!/
   "v-9216ebc8": defineAsyncComponent(() => import(/* webpackChunkName: "v-9216ebc8" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/开心!/index.html.vue")),
   // path: /category/%E9%9A%8F%E7%AC%94/
