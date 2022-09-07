@@ -169,9 +169,37 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "解决github下载速度过慢",
-        "slug": "解决github下载速度过慢",
-        "link": "#解决github下载速度过慢",
+        "title": "MacOS",
+        "slug": "macos",
+        "link": "#macos",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64桌面",
+        "slug": "windows-x64桌面",
+        "link": "#windows-x64桌面",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64服务",
+        "slug": "windows-x64服务",
+        "link": "#windows-x64服务",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64终端",
+        "slug": "linux-x64终端",
+        "link": "#linux-x64终端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64服务",
+        "slug": "linux-x64服务",
+        "link": "#linux-x64服务",
         "children": []
       }
     ],
@@ -183,6 +211,42 @@ export const searchIndex = [
     "title": "解决github下载速度过慢",
     "headers": [],
     "path": "/teach/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.注册",
+        "slug": "_1-注册",
+        "link": "#_1-注册",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.导入项目",
+        "slug": "_2-导入项目",
+        "link": "#_2-导入项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.完成DNS解析",
+        "slug": "_3-完成dns解析",
+        "link": "#_3-完成dns解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.添加自定义域名",
+        "slug": "_4-添加自定义域名",
+        "link": "#_4-添加自定义域名",
+        "children": []
+      }
+    ],
+    "path": "/teach/3.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -737,162 +801,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ES6",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.static类",
-        "slug": "_1-static类",
-        "link": "#_1-static类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.for...of  和 for...in",
-        "slug": "_2-for-of-和-for-in",
-        "link": "#_2-for-of-和-for-in",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.[变量名]",
-        "slug": "_3-变量名",
-        "link": "#_3-变量名",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.Symbol",
-        "slug": "_4-symbol",
-        "link": "#_4-symbol",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5.iterator迭代器",
-        "slug": "_5-iterator迭代器",
-        "link": "#_5-iterator迭代器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6.XMLHttpRequest和Ajax",
-        "slug": "_6-xmlhttprequest和ajax",
-        "link": "#_6-xmlhttprequest和ajax",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7.Promise",
-        "slug": "_7-promise",
-        "link": "#_7-promise",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8.生成器函数",
-        "slug": "_8-生成器函数",
-        "link": "#_8-生成器函数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "9.Set集合",
-        "slug": "_9-set集合",
-        "link": "#_9-set集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "10.Map集合",
-        "slug": "_10-map集合",
-        "link": "#_10-map集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "11.Class类",
-        "slug": "_11-class类",
-        "link": "#_11-class类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "12.数值拓展",
-        "slug": "_12-数值拓展",
-        "link": "#_12-数值拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "13.对象拓展",
-        "slug": "_13-对象拓展",
-        "link": "#_13-对象拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "14.模块化",
-        "slug": "_14-模块化",
-        "link": "#_14-模块化",
-        "children": [
-          {
-            "level": 3,
-            "title": "简单使用：",
-            "slug": "简单使用",
-            "link": "#简单使用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6暴露数据语法汇总：",
-            "slug": "es6暴露数据语法汇总",
-            "link": "#es6暴露数据语法汇总",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "模块化.html（引入和使用模块）",
-            "slug": "模块化-html-引入和使用模块",
-            "link": "#模块化-html-引入和使用模块",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6导入模块语法汇总",
-            "slug": "es6导入模块语法汇总",
-            "link": "#es6导入模块语法汇总",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "15.Babel对ES6模块化代码转换",
-        "slug": "_15-babel对es6模块化代码转换",
-        "link": "#_15-babel对es6模块化代码转换",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "备注",
-        "slug": "备注",
-        "link": "#备注",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/ES6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JS笔记",
-    "headers": [],
-    "path": "/study/frontend/js/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "React笔记",
     "headers": [],
     "path": "/study/frontend/react/",
@@ -1323,6 +1231,162 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "ES6",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.static类",
+        "slug": "_1-static类",
+        "link": "#_1-static类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.for...of  和 for...in",
+        "slug": "_2-for-of-和-for-in",
+        "link": "#_2-for-of-和-for-in",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.[变量名]",
+        "slug": "_3-变量名",
+        "link": "#_3-变量名",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.Symbol",
+        "slug": "_4-symbol",
+        "link": "#_4-symbol",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.iterator迭代器",
+        "slug": "_5-iterator迭代器",
+        "link": "#_5-iterator迭代器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.XMLHttpRequest和Ajax",
+        "slug": "_6-xmlhttprequest和ajax",
+        "link": "#_6-xmlhttprequest和ajax",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7.Promise",
+        "slug": "_7-promise",
+        "link": "#_7-promise",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.生成器函数",
+        "slug": "_8-生成器函数",
+        "link": "#_8-生成器函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9.Set集合",
+        "slug": "_9-set集合",
+        "link": "#_9-set集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "10.Map集合",
+        "slug": "_10-map集合",
+        "link": "#_10-map集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "11.Class类",
+        "slug": "_11-class类",
+        "link": "#_11-class类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "12.数值拓展",
+        "slug": "_12-数值拓展",
+        "link": "#_12-数值拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "13.对象拓展",
+        "slug": "_13-对象拓展",
+        "link": "#_13-对象拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "14.模块化",
+        "slug": "_14-模块化",
+        "link": "#_14-模块化",
+        "children": [
+          {
+            "level": 3,
+            "title": "简单使用：",
+            "slug": "简单使用",
+            "link": "#简单使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ES6暴露数据语法汇总：",
+            "slug": "es6暴露数据语法汇总",
+            "link": "#es6暴露数据语法汇总",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "模块化.html（引入和使用模块）",
+            "slug": "模块化-html-引入和使用模块",
+            "link": "#模块化-html-引入和使用模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ES6导入模块语法汇总",
+            "slug": "es6导入模块语法汇总",
+            "link": "#es6导入模块语法汇总",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "15.Babel对ES6模块化代码转换",
+        "slug": "_15-babel对es6模块化代码转换",
+        "link": "#_15-babel对es6模块化代码转换",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "备注",
+        "slug": "备注",
+        "link": "#备注",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/ES6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JS笔记",
+    "headers": [],
+    "path": "/study/frontend/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -1484,20 +1548,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ES6 标签",
-    "headers": [],
-    "path": "/tag/es6/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JS 分类",
-    "headers": [],
-    "path": "/category/js/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "ReactCli 标签",
     "headers": [],
     "path": "/tag/reactcli/",
@@ -1533,9 +1583,23 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "JS 分类",
+    "headers": [],
+    "path": "/category/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Vue3 标签",
     "headers": [],
     "path": "/tag/vue3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ES6 标签",
+    "headers": [],
+    "path": "/tag/es6/",
     "pathLocale": "/",
     "extraFields": []
   }
