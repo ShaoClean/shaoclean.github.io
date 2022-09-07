@@ -35,7 +35,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "PageView", "Word"],
 
   blog: {
-    description: "一个前端开发者",
+    description: "一个前端开发者，努力成为全栈，浙江最后一杯深情冰美式",
     intro: "/intro.html",
     medias: {
       Email: "1518136109@qq.com",
