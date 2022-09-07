@@ -105,4 +105,6 @@ export const pagesData = {
   "v-2953c4d4": () => import(/* webpackChunkName: "v-2953c4d4" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/vue3/index.html.js").then(({ data }) => data),
   // path: /tag/es6/
   "v-b3126996": () => import(/* webpackChunkName: "v-b3126996" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/es6/index.html.js").then(({ data }) => data),
+  // path: /essay/2022/2.html
+  "v-098611ad": () => import(/* webpackChunkName: "v-098611ad" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/2.html.js").then(({ data }) => data),
 }

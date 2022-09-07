@@ -52,4 +52,5 @@ export const pagesRoutes = [
   ["v-3d184cee","/category/js/",{"title":"JS 分类","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/category/js/index.html"]],
   ["v-2953c4d4","/tag/vue3/",{"title":"Vue3 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vue3/index.html"]],
   ["v-b3126996","/tag/es6/",{"title":"ES6 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/es6/index.html"]],
+  ["v-098611ad","/essay/2022/2.html",{"title":"好无力","icon":"edit","type":"article","readingTime":{"minutes":2.82,"words":846},"excerpt":"","date":"2022-09-07T00:00:00.000Z","localizedDate":"2022年9月7日","category":["随笔"],"tag":["好累"],"star":10},["/essay/2022/2","/essay/2022/2.md"]],
 ]
