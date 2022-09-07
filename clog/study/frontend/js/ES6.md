@@ -12,7 +12,9 @@ tag:
 
 ## 1.static类
 
-static用于类（class）中声明静态方法。不能在类的实例中调用类中的静态方法，而应该通过类本身调用。
+static用于类（class）中声明静态方法。
+
+不能在类的实例中调用类中的静态方法，而应该通过类本身调用。
 
 这些通常是实用程序方法，例如创建或克隆对象的功能。
 
@@ -32,7 +34,6 @@ StaticMethodCall.staticMethod();
  
 StaticMethodCall.anotherStaticMethod();
 // 'Static method has been called from another static method'
-
 ```
 
 类中的非静态方法不可以直接使用this关键字访问或调用静态方法，而需要用类名来调用。
@@ -51,7 +52,6 @@ class StaticMethodCall {
         return 'static method has been called.';
     }
 }
-
 ```
 
 ## 2.for...of  和 for...in
@@ -79,6 +79,7 @@ let a = 'clean'
 let b ={
 	[a]:'shaochenzhe',
 }
+
 console.log(b);//clean: "shaochenzhe"
 ```
 
@@ -94,8 +95,8 @@ let identity = {
   boss:'boss',
   mother:'mother'
 }
-function createRole (type){
 
+function createRole (type){
   if(type === identity.boss){
   	console.log('i am boss');
   }else if(type === identity.student){
@@ -106,6 +107,7 @@ function createRole (type){
   	return 'defeat'
   }
 }
+
 createRole(identity.student)//i am student
 createRole('student')//i am student
 ```
@@ -114,7 +116,7 @@ createRole('student')//i am student
 
 所以是不太安全的。
 
-因此可以使用Symbol最为唯一标识符
+因此可以使用Symbol作为唯一标识符
 
 ```js
 let identity = {
@@ -122,8 +124,8 @@ let identity = {
   boss:Symbol(),
   mother:Symbol()
 }
-function createRole (type){
 
+function createRole (type){
   if(type === identity.boss){
   	console.log('i am boss');
   }else if(type === identity.student){
@@ -134,56 +136,55 @@ function createRole (type){
   	return 'defeat'
   }
 }
-createRole(identity.student)
-createRole('student')
+
+createRole(identity.student)//i am student
+createRole('student')//defeat
 ```
 
 Symbol 数据类型的另一特点是隐藏性，for···in，object.keys() 不能访问
 
 ```js
- let id = Symbol("id");
- let obj = {
-  [id]:'symbol'
- };
- for(let option in obj){
-     console.log(obj[option]); //空
- }
-
+let id = Symbol("id");
+let obj = {
+    [id]:'symbol'
+};
+for(let option in obj){
+    console.log(obj[option]); //空
+}
 ```
 
-但是也有能够访问的方法：**Object.getOwnPropertySymbols**
-Object.getOwnPropertySymbols 方法会返回一个数组，成员是当前对象的所有用作属性名的 Symbol 值。
+但是也有能够访问的方法：**Object.getOwnPropertySymbols()**
+
+`Object.getOwnPropertySymbols()`方法会返回一个数组，成员是当前对象的所有用作属性名的 Symbol 值。
 
 ```js
- let id = Symbol("id");
- let obj = {
-  [id]:'symbol'
- };
-let array = Object.getOwnPropertySymbols(obj);
- console.log(array); //[Symbol(id)]
- console.log(obj[array[0]]);  //'symbol'
+let id = Symbol("id");
+let obj = {
+    [id]:'symbol'
+};
 
+let array = Object.getOwnPropertySymbols(obj);
+console.log(array); //[Symbol(id)]
+console.log(obj[array[0]]);  //'symbol'
 ```
 
 虽然这样保证了Symbol的唯一性，但我们不排除希望能够多次使用同一个symbol值的情况。
 为此，官方提供了全局注册并登记的方法：Symbol.for()
 
 ```js
- let name1 = Symbol.for('name'); //检测到未创建后新建
- let name2 = Symbol.for('name'); //检测到已创建后返回
- console.log(name1 === name2); // true
-
+let name1 = Symbol.for('name'); //检测到未创建后新建
+let name2 = Symbol.for('name'); //检测到已创建后返回
+console.log(name1 === name2); // true
 ```
 
 通过这种方法就可以通过参数值获取到全局的symbol对象了，反之，能不能通过symbol对象获取到参数值呢？
 是可以的 ，通过Symbol.keyFor()
 
 ```js
- let name1 = Symbol.for('name');
- let name2 = Symbol.for('name');
- console.log(Symbol.keyFor(name1));  // 'name'
- console.log(Symbol.keyFor(name2)); // 'name'
-
+let name1 = Symbol.for('name');
+let name2 = Symbol.for('name');
+console.log(Symbol.keyFor(name1));  // 'name'
+console.log(Symbol.keyFor(name2)); // 'name'
 ```
 
 注意：在创建symbol类型数据 时的参数只是作为标识（注释）使用，所以 Symbol() 也是可以的。
@@ -194,33 +195,34 @@ let array = Object.getOwnPropertySymbols(obj);
 
 ```js
 let group = {
-            name:'tingting',
-            people:['clean','shao','chen','zhe'],
-            [Symbol.iterator](){
-                //索引变量
-                let index = 0
-                //保存this指向
-                let _this = this
-                return {
-                    next : function(){
-                        if(index < _this.people.length){
-                            const result ={
-                                value:_this.people[index],
-                                done:false
-                            }
-                            index++
-                            return result
-                        }else{
-                            return{
-                                value:undefined,
-                                done:true
-                            }
-                        }
+    name:'tingting',
+    people:['clean','shao','chen','zhe'],
+    [Symbol.iterator](){
+        //索引变量
+        let index = 0
+        //保存this指向
+        let _this = this
+        return {
+            next : function(){
+                if(index < _this.people.length){
+                    const result ={
+                        value:_this.people[index],
+                        done:false
+                    }
+                    index++
+                    return result
+                }else{
+                    return{
+                        value:undefined,
+                        done:true
                     }
                 }
-                
             }
+        }
+        
     }
+    }
+
     for(let item of group){
         console.log(item);
     }
@@ -235,12 +237,12 @@ AJAX = Asynchronous JavaScript and XML，翻译为：异步的 JavaScript 和 XM
 
 新版本的XMLHttpRequest对象，针对老版本的缺点，做出了大幅改进。
 
-> \* 可以**设置HTTP请求的时限**。
-> \* 可以**使用FormData对象管理表单数据**。
-> \* 可以**上传文件**。
-> \* 可以**请求不同域名下的数据（跨域请求）**，CORS。
-> \* 可以**获取服务器端的二进制数据**。
-> \* 可以**获得数据传输的进度信息**。
+> - 可以**设置HTTP请求的时限**。
+> - 可以**使用FormData对象管理表单数据**。
+> - 可以**上传文件**。
+> - 可以**请求不同域名下的数据（跨域请求）**，CORS。
+> - 可以**获取服务器端的二进制数据**。
+> - 可以**获得数据传输的进度信息**。
 
 ##### ①HTTP请求的时限
 
@@ -274,7 +276,9 @@ FormData对象也可以**用来获取网页表单的值**：
 ```js
 var form = document.getElementById('myform');
 var formData = new FormData(form);
+
 formData.append('secret', '123456'); // 添加一个表单项
+
 xhr.open('POST', form.action);
 xhr.send(formData);
 ```
@@ -321,15 +325,15 @@ Promise有三种状态：初始化、成功、失败
 
 ```js
 a = new Promise(
-            (resolve,reject) => {
-                let data = [
-                    {id:1,username:'clean'},
-                    {id:2,username:'clean2'},
-                ]
-                // resolve(data)
-                reject('出错了')
-            }
-        )
+    (resolve,reject) => {
+      let data = [
+        {id:1,username:'clean'},
+        {id:2,username:'clean2'},
+      ]
+      // resolve(data)
+      reject('出错了')
+    }
+)
         
 a.then(
     res =>{
@@ -347,26 +351,29 @@ a.then(
 ```js
 // 1、引入 fs 模块
 const fs = require("fs");
+
 // 2、调用方法，读取文件
-// fs.readFile("resources/text.txt",(err,data)=>{
-// // 如果失败则抛出错误
-// if(err) throw err;
-// // 如果没有出错，则输出内容
-// console.log(data.toString());
-// });
+fs.readFile("resources/text.txt",(err,data)=>{
+  // 如果失败则抛出错误
+  if(err) throw err;
+  // 如果没有出错，则输出内容
+  console.log(data.toString());
+});
+
 // 3、使用Promise封装
 const p = new Promise(function(resolve,data){
-fs.readFile("resources/text.txt",(err,data)=>{
-// 判断如果失败
-if(err) reject(err);
-// 如果成功
-resolve(data);
+  fs.readFile("resources/text.txt",(err,data)=>{
+  // 判断如果失败
+  if(err) reject(err);
+      // 如果成功
+      resolve(data);
+  });
 });
-});
+
 p.then(function(value){
-console.log(value.toString());
+    console.log(value.toString());
 },function(reason){
-console.log(reason); // 读取失败
+    console.log(reason); // 读取失败
 })
 ```
 
@@ -398,12 +405,11 @@ const p = new Promise(function(resolve,reason){
     }
 });
 
-    p.then(function(value){
-        console.log(value.toString());
-    },function(reason){
-    console.log(reason); // 读取失败
+p.then(function(value){
+  	console.log(value.toString());
+},function(reason){
+  	console.log(reason); // 读取失败
 })
-
 ```
 
 ##### ④Promise.prototype.then
@@ -454,10 +460,10 @@ d.then(
 ```js
 // Promise对象catch方法
 const p = new Promise((resolve,reject)=>{
-setTimeout(()=>{
-// 设置p对象的状态为失败，并设置失败的值
-reject("失败啦~！");
-},1000);
+    setTimeout(()=>{
+        // 设置p对象的状态为失败，并设置失败的值
+        reject("失败啦~！");
+    },1000);
 })
 // p.then(value=>{
 // console.log(value);
@@ -465,7 +471,7 @@ reject("失败啦~！");
 // console.warn(reason);
 // });
 p.catch(reason=>{
-console.warn(reason);
+    console.warn(reason);
 });
 ```
 
@@ -476,32 +482,36 @@ console.warn(reason);
 ```js
 // 模拟获取: 用户数据 订单数据 商品数据
 function getUsers(){
-setTimeout(()=>{
-let data = "用户数据";
-// 第二次调用next，传入参数，作为第一个的返回值
-iterator.next(data); // 这里将data传入
-},1000);
+    setTimeout(()=>{
+        let data = "用户数据";
+        // 第二次调用next，传入参数，作为第一个的返回值
+        iterator.next(data); // 这里将data传入
+    },1000);
 }
+
 function getOrders(){
-setTimeout(()=>{
-let data = "订单数据";
-iterator.next(data); // 这里将data传入
-},1000);
+    setTimeout(()=>{
+        let data = "订单数据";
+        iterator.next(data); // 这里将data传入
+    },1000);
 }
+
 function getGoods(){
-setTimeout(()=>{
-let data = "商品数据";
-iterator.next(data); // 这里将data传入
-},1000);
+    setTimeout(()=>{
+        let data = "商品数据";
+        iterator.next(data); // 这里将data传入
+    },1000);
 }
+
 function * gen(){
-let users = yield getUsers();
-console.log(users);
-let orders = yield getOrders();
-console.log(orders);
-let goods = yield getGoods();
-console.log(goods); // 这种操作有点秀啊！
+    let users = yield getUsers();
+    console.log(users);
+    let orders = yield getOrders();
+    console.log(orders);
+    let goods = yield getGoods();
+    console.log(goods); // 这种操作有点秀啊！
 }
+
 let iterator = gen();
 iterator.next();
 ```
@@ -513,7 +523,7 @@ iterator.next();
 1. size 返回集合的元素个数；
 2. add 增加一个新元素，返回当前集合； 
 3. delete 删除元素，返回 boolean 值； 
-4.  has 检测集合中是否包含某个元素，返回 boolean 值； 
+4. has 检测集合中是否包含某个元素，返回 boolean 值； 
 5. clear 清空集合，返回 undefined；
 
 ```js
@@ -521,14 +531,18 @@ let data = ['data1','data2','data3','data4']
 let s = new Set(data)
 
 console.log(s.size);
+
 s.add('data5')
 s.add('data5')
 s.delete('data5')
+
 console.log(s.has('data5'));
 console.log(s);
+
 for(let i of s){
   console.log(i);
 }
+
 s.clear()
 console.log(s);
 ```
@@ -540,17 +554,17 @@ let arr = [1,2,4,5,3,2,4]
 let arr2 = [5,6,7,8,6]
 
 // 去重
-// console.log([...new Set(arr)]);
+console.log([...new Set(arr)]);
 
 // 交集
-// let result = [...new Set(arr)].filter((item) => {
-//   return  new Set(arr2).has(item)
-// })
-// console.log(result);
+let result = [...new Set(arr)].filter((item) => {
+   return  new Set(arr2).has(item)
+})
+console.log(result);
 
 // 并集
-// let result = [...new Set(arr),...new Set(arr2)]  
-// console.log(result);     
+let result = [...new Set(arr),...new Set(arr2)]  
+console.log(result);     
 
 // 差集(差集就是交集的逆运算)
 let result = [...new Set(arr)].filter((item) => {
@@ -577,46 +591,51 @@ Map 的属性和方法：
 let m = new Map();
 // 创建一个非空 map
 let m2 = new Map([
-['name','尚硅谷'],
-['slogon','不断提高行业标准']
+    ['name','邵晨哲'],
+    ['slogon','不断提高行业标准']
 ]);
+
 // 1. size 返回 Map 的元素个数；
 console.log(m2.size);
+
 // 2. set 增加一个新元素，返回当前 Map；
 m.set("皇帝","大哥");
 m.set("丞相","二哥");
 console.log(m);
+
 // 3. get 返回键名对象的键值；
 console.log(m.get("皇帝"));
+
 // 4. has 检测 Map 中是否包含某个元素，返回 boolean 值；
 console.log(m.has("皇帝"));
+
 // 5. clear 清空集合，返回 undefined；
 m.clear();
 console.log(m);
-
 ```
 
 ## 11.Class类
 
 概述： ES6 提供了更接近传统语言的写法，引入了 Class（类）这个概念，作为对象的模板。通过 class 关键 字，可以定义类。基本上，ES6 的 class 可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做 到，新的 class 写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已；
 
-##### ①1. class 声明类
+##### ①class 声明类
 
 ```js
 class Phone{
-// 构造方法，名字是固定的
+	// 构造方法，名字是固定的
     constructor(brand,price) {
         this.brand = brand;
         this.price = price;
     }
-// 打电话，方法必须使用该方式写
+	// 打电话，方法必须使用该方式写
     call(){
         console.log("我可以打电话！");
     }
 }
-    let HuaWei = new Phone("华为",5999);
-    HuaWei.call();
-    console.log(HuaWei);
+
+let HuaWei = new Phone("华为",5999);
+HuaWei.call();
+console.log(HuaWei);
 ```
 
 ##### ②静态成员static
@@ -624,35 +643,36 @@ class Phone{
 ```js
 // class静态成员
 // ES5写法
-// function Phone(){}
-// Phone.name = "手机";
+function Phone(){}
+Phone.name = "手机";
+Phone.change = function(){
+    console.log("我可以改变世界！");
+}
 
-// Phone.change = function(){
-// console.log("我可以改变世界！");
-// }
-// let nokia = new Phone();
-// console.log(nokia.name); // undefined
-// // nokia.change();
-// // 报错：Uncaught TypeError: nokia.change is not a function
-// Phone.prototype.color = "黑色";
-// console.log(nokia.color); // 黑色
-// console.log(Phone.name);
-// Phone.change();
+let nokia = new Phone();
+console.log(nokia.name); // undefined
+nokia.change();
+// 报错：Uncaught TypeError: nokia.change is not a function
+
+Phone.prototype.color = "黑色";
+console.log(nokia.color); // 黑色
+console.log(Phone.name);
+Phone.change();
 // 注意：实例对象和函数对象的属性是不相通的
 
 // ES6写法
 class Phone{
-// 静态属性
-static name = "手机";
-static change(){
-console.log("我可以改变世界！");
+    // 静态属性
+    static name = "手机";
+    static change(){
+        console.log("我可以改变世界！");
+    }
 }
-}
+
 let nokia = new Phone();
 console.log(nokia.name);
 console.log(Phone.name);
 Phone.change();
-
 ```
 
 ##### ③类的继承
@@ -663,34 +683,34 @@ ES5实现：
 // ES5构造函数继承
 // 手机
 function Phone(brand,price){
-this.brand = brand;
-this.price = price;
+    this.brand = brand;
+    this.price = price;
 }
 Phone.prototype.call = function(){
-console.log("我可以打电话！");
+    console.log("我可以打电话！");
 }
 // 智能手机
 function SmartPhone(brand,price,color,size){
-Phone.call(this,brand,price);
-this.color = color;
-this.size = size;
+    Phone.call(this,brand,price);
+    this.color = color;
+    this.size = size;
 }
 // 设置子级构造函数的原型
 SmartPhone.prototype = new Phone;
 SmartPhone.prototype.constructor = SmartPhone;
 // 声明子类的方法
 SmartPhone.prototype.photo = function(){
-console.log("我可以拍照！");
+    console.log("我可以拍照！");
 }
 SmartPhone.prototype.game = function(){
-console.log("我可以玩游戏！");
+    console.log("我可以玩游戏！");
 }
+
 const chuizi = new SmartPhone("锤子",2499,"黑色","5.5inch");
 console.log(chuizi);
 chuizi.call();
 chuizi.photo();
 chuizi.game();
-
 ```
 
 ES6实现：
@@ -698,33 +718,33 @@ ES6实现：
 ```js
 class Phone{
 constructor(brand,price) {
-this.brand = brand;
-this.price = price;
+    this.brand = brand;
+    this.price = price;
 }
 call(){
-console.log("我可以打电话！");
+    console.log("我可以打电话！");
 }
 }
 class SmartPhone extends Phone{
-// 构造函数
-constructor(brand,price,color,size) {
-super(brand,price); // 调用父类构造函数
-this.color = color;
-this.size = size;
+    // 构造函数
+    constructor(brand,price,color,size) {
+        super(brand,price); // 调用父类构造函数
+        this.color = color;
+        this.size = size;
+    }
+    photo(){
+        console.log("我可以拍照！");
+    }
+    game(){
+        console.log("我可以玩游戏！");
+    }
 }
-photo(){
-console.log("我可以拍照！");
-}
-game(){
-console.log("我可以玩游戏！");
-}
-}
+
 const chuizi = new SmartPhone("小米",1999,"黑色","5.15inch");
 console.log(chuizi);
 chuizi.call();
 chuizi.photo();
 chuizi.game();
-
 ```
 
 ##### ④getter和setter
@@ -741,6 +761,7 @@ class Phone{
         console.log("价格属性被修改了！");
     }
 }
+
 // 实例化对象
 let s = new Phone();
 console.log(s.price); // 返回值
@@ -751,7 +772,9 @@ s.price = 2999;
 
 ##### ①Number.EPSILON
 
-Number.EPSILON 是 JavaScript 表示的最小精度； EPSILON 属性的值接近于 2.2204460492503130808472633361816E-16；
+Number.EPSILON 是 JavaScript 表示的最小精度。
+
+EPSILON 属性的值接近于 2.2204460492503130808472633361816E-16；
 
 ##### ②二进制和八进制：
 
@@ -777,9 +800,9 @@ Number.isInteger() 用来判断一个数值是否为整数；
 // 数值扩展
 // 0. Number.EPSILON 是 JavaScript 表示的最小精度
 // EPSILON 属性的值接近于 2.2204460492503130808472633361816E-16
-// function equal(a, b){
-// return Math.abs(a-b) < Number.EPSILON;
-// }
+function equal(a, b){
+	return Math.abs(a-b) < Number.EPSILON;
+}
 
 console.log("0、Number.EPSILON 是 JavaScript 表示的最小精度");
 
@@ -853,8 +876,8 @@ const config1 = {
     name : "root",
     pass : "root",
     test : "test" // 唯一存在
-    }
-    const config2 = {
+}
+const config2 = {
     host : "http://zibo.com",
     port : 300300600,
     name : "root4444",
@@ -865,7 +888,7 @@ const config1 = {
 console.log(Object.assign(config1,config2));
 // 3. __proto__、setPrototypeOf、 getPrototypeOf 可以直接设置对象的原型；
 const school = {
-    name : "尚硅谷"
+    name : "我是学校"
 }
 const cities = {
     xiaoqu : ['北京','上海','深圳']
@@ -892,9 +915,9 @@ ES6 模块化语法： 模块功能主要由两个命令构成：export 和 impo
 m.js（导出模块）
 
 ```js
-export let school = "尚硅谷";
+export let school = "我是学校";
 export function teach(){
-console.log("我们可以教你开发技术！");
+    console.log("我们可以教你开发技术！");
 }
 ```
 
@@ -926,9 +949,9 @@ console.log("我们可以教你开发技术！");
 
 ```js
 // 分别暴露（导出）
-export let school = "尚硅谷";
+export let school = "我是学校";
 export function teach(){
-console.log("我们可以教你开发技术！");
+    console.log("我们可以教你开发技术！");
 }
 ```
 
@@ -936,8 +959,8 @@ console.log("我们可以教你开发技术！");
 
 ```js
 // 统一暴露（导出）
-    let school = "尚硅谷";
-    function findJob(){
+let school = "我是学校";
+function findJob(){
     console.log("我们可以帮你找到好工作！");
 }
 export {school,findJob}
@@ -964,7 +987,7 @@ import oh from "./js/o.js";
 ```js
 // 默认暴露（导出）
 export default{
-    school : "尚硅谷",
+    school : "我是学校",
     change : function(){
         console.log("我们可以帮你改变人生！");
     }
