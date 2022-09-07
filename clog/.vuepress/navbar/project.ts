@@ -4,6 +4,6 @@ export default{
   prefix: "/project/", 
   children: [
     { text: "cyou-js", icon: "javascript", link: "cyou-js" },
-    { text: "Cyou", icon: "javascript", link: "project2" },
+    { text: "Cyou", icon: "javascript", link: "" },
   ] 
 }

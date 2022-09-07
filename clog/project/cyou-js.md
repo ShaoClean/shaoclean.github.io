@@ -1,5 +1,14 @@
+---
+icon: javascript
+date: 2022-08-13
+star: 9
+category:
+  - 前端
+  - 使用文档
+tag:
+  - cyou-js
+---
 # cyou-js使用文档
-
 
 ## 使用
 ### 1.引入文件
