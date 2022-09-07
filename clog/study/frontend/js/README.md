@@ -1,4 +1,5 @@
 ---
+icon: javascript
 article: false
 ---
 # JS笔记

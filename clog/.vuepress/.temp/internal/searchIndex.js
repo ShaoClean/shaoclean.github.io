@@ -71,7 +71,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "cyou-js使用文档",
+    "title": "cyou-js",
     "headers": [
       {
         "level": 2,
@@ -158,31 +158,23 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Clean的随笔！!",
+    "title": "Clean的随笔",
     "headers": [],
     "path": "/essay/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "wuwuwu",
-    "headers": [
-      {
-        "level": 2,
-        "title": "aaaa",
-        "slug": "aaaa",
-        "link": "#aaaa",
-        "children": []
-      }
-    ],
-    "path": "/essay/feeling.html",
+    "title": "个人博客开通咯",
+    "headers": [],
+    "path": "/essay/2022/7.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "feeling2",
     "headers": [],
-    "path": "/essay/feeling2.html",
+    "path": "/essay/2022/feeling2.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1019,29 +1011,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "文章 6",
-    "headers": [
-      {
-        "level": 2,
-        "title": "标题 2",
-        "slug": "标题-2",
-        "link": "#标题-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "标题 3",
-            "slug": "标题-3",
-            "link": "#标题-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/study/frontend/vue/article6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -1140,23 +1109,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "CategoryA 分类",
+    "title": "随笔 分类",
     "headers": [],
-    "path": "/category/categorya/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "tag B 标签",
-    "headers": [],
-    "path": "/tag/tag-b/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "CategoryB 分类",
-    "headers": [],
-    "path": "/category/categoryb/",
+    "path": "/category/%E9%9A%8F%E7%AC%94/",
     "pathLocale": "/",
     "extraFields": []
   },

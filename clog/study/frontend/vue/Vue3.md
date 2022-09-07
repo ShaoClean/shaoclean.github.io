@@ -1,4 +1,5 @@
 ---
+icon: vue
 category:
   - Vue
 tag:
