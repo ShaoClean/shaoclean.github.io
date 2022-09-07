@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://weibo.com/u/5550001595",
   },
   //简洁模式
-  pure: true,
+  // pure: true,
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
