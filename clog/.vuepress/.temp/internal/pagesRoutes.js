@@ -2,7 +2,7 @@ export const pagesRoutes = [
   ["v-8daa1a0e","/",{"title":"主页","icon":"home","type":"home","readingTime":{"minutes":0.55,"words":165},"excerpt":""},["/index.html","/README.md"]],
   ["v-2e3eac9e","/slides.html",{"title":"幻灯片页","icon":"slides","type":"slide","readingTime":{"minutes":4.51,"words":1352},"excerpt":""},["/slides","/slides.md"]],
   ["v-c9bbfba2","/project/",{"title":"my-project！!","type":"article","readingTime":{"minutes":0.03,"words":10},"excerpt":""},["/project/index.html","/project/README.md"]],
-  ["v-95b0645c","/project/project1.html",{"title":"cyou-js","type":"article","readingTime":{"minutes":0.01,"words":3},"excerpt":""},["/project/project1","/project/project1.md"]],
+  ["v-7bf12e24","/project/cyou-js.html",{"title":"cyou-js使用文档","type":"article","readingTime":{"minutes":4.03,"words":1209},"excerpt":""},["/project/cyou-js","/project/cyou-js.md"]],
   ["v-9246b31e","/project/project2.html",{"title":"CYou","type":"article","readingTime":{"minutes":0.02,"words":5},"excerpt":""},["/project/project2","/project/project2.md"]],
   ["v-7c80db8b","/essay/",{"title":"Clean的随笔！!","type":"article","readingTime":{"minutes":0.04,"words":12},"excerpt":""},["/essay/index.html","/essay/README.md"]],
   ["v-19d508e8","/essay/feeling.html",{"title":"wuwuwu","icon":"edit","type":"article","readingTime":{"minutes":0.47,"words":141},"excerpt":"","date":"2022-01-06T00:00:00.000Z","localizedDate":"2022年1月6日","category":["CategoryA","CategoryB"],"tag":["tag A","tag B"],"star":10},["/essay/feeling","/essay/feeling.md"]],

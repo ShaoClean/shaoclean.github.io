@@ -1,2 +1,0 @@
-# cyou-js
-project!!!!

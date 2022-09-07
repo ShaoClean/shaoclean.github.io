@@ -3,7 +3,7 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/project/":[
     '',
-    "feeling",
+    "cyou-js",
     "feeling2"
   ],
   //vue

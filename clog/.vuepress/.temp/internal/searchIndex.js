@@ -50,14 +50,58 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/project/project1.html",
+    "title": "快速上手",
+    "headers": [
+      {
+        "level": 2,
+        "title": "使用",
+        "slug": "使用",
+        "link": "#使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.引入文件",
+            "slug": "_1-引入文件",
+            "link": "#_1-引入文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.初始化ctool",
+            "slug": "_2-初始化ctool",
+            "link": "#_2-初始化ctool",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.自定义根元素",
+            "slug": "_3-自定义根元素",
+            "link": "#_3-自定义根元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4.添加根元素",
+            "slug": "_4-添加根元素",
+            "link": "#_4-添加根元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5.使用功能",
+            "slug": "_5-使用功能",
+            "link": "#_5-使用功能",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/project/cyou-js.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "CYou",
     "headers": [],
     "path": "/project/project2.html",
     "pathLocale": "/",

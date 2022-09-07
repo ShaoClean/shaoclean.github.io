@@ -5,8 +5,8 @@ export const pagesData = {
   "v-2e3eac9e": () => import(/* webpackChunkName: "v-2e3eac9e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/slides.html.js").then(({ data }) => data),
   // path: /project/
   "v-c9bbfba2": () => import(/* webpackChunkName: "v-c9bbfba2" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/index.html.js").then(({ data }) => data),
-  // path: /project/project1.html
-  "v-95b0645c": () => import(/* webpackChunkName: "v-95b0645c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/project1.html.js").then(({ data }) => data),
+  // path: /project/cyou-js.html
+  "v-7bf12e24": () => import(/* webpackChunkName: "v-7bf12e24" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/cyou-js.html.js").then(({ data }) => data),
   // path: /project/project2.html
   "v-9246b31e": () => import(/* webpackChunkName: "v-9246b31e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/project2.html.js").then(({ data }) => data),
   // path: /essay/

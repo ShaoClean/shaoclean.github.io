@@ -3,7 +3,7 @@ export default{
   icon: "build", 
   prefix: "/project/", 
   children: [
-    { text: "cyou-js", icon: "javascript", link: "project1" },
+    { text: "cyou-js", icon: "javascript", link: "cyou-js" },
     { text: "Cyou", icon: "javascript", link: "project2" },
   ] 
 }

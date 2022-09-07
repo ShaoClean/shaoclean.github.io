@@ -7,8 +7,8 @@ export const pagesComponents = {
   "v-2e3eac9e": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e3eac9e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/slides.html.vue")),
   // path: /project/
   "v-c9bbfba2": defineAsyncComponent(() => import(/* webpackChunkName: "v-c9bbfba2" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/index.html.vue")),
-  // path: /project/project1.html
-  "v-95b0645c": defineAsyncComponent(() => import(/* webpackChunkName: "v-95b0645c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/project1.html.vue")),
+  // path: /project/cyou-js.html
+  "v-7bf12e24": defineAsyncComponent(() => import(/* webpackChunkName: "v-7bf12e24" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/cyou-js.html.vue")),
   // path: /project/project2.html
   "v-9246b31e": defineAsyncComponent(() => import(/* webpackChunkName: "v-9246b31e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/project2.html.vue")),
   // path: /essay/
