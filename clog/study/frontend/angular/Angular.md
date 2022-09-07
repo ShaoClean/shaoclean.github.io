@@ -1,4 +1,5 @@
 ---
+icon: angular
 category:
   - 前端
   - Angular
