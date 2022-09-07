@@ -1,8 +1,10 @@
 ---
 category:
+  - 前端
   - Angular
 tag:
   - AngularCli
+  - 学习笔记
 star: 5
 ---
 # Angular

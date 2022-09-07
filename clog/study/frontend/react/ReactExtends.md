@@ -3,9 +3,11 @@ icon: react
 date: 2022-06-24
 star: 8
 category:
+  - 前端
   - React
 tag:
-  - ReactExtends
+  - ReactExtends 
+  - 学习笔记
 ---
 # React拓展
 ## 1. setState

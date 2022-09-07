@@ -7,6 +7,7 @@ category:
   - JS
 tag:
   - ES6
+  - 学习笔记
 ---
 # ES6
 

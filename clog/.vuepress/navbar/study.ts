@@ -16,16 +16,17 @@ export default{
     },
     {
       text:"后端",
+      prefix: "backend/",
       children: [
         {
           text: "Java",
           icon: "java",
-          link: "article6",
+          link: "java/",
         },
         {
           text: "Node",
           icon: "nodeJS",
-          link: "article6",
+          link: "nodejs/",
         },
       ],
     },

@@ -8,6 +8,7 @@ category:
   - Vue
 tag:
   - Vue2
+  - 学习笔记
 ---
 
 # Vue2

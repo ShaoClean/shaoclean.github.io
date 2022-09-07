@@ -1,9 +1,11 @@
 ---
 icon: vue
 category:
+  - 前端
   - Vue
 tag:
   - Vue3
+  - 学习笔记
 ---
 # Vue3
 

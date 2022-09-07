@@ -1,4 +1,5 @@
 import { sidebar } from "vuepress-theme-hope";
+import { backendSidebar } from "./sidebar/backend";
 import { essaySidebar } from "./sidebar/essay";
 import { frontendSidebar } from "./sidebar/frontend";
 
@@ -8,29 +9,10 @@ export default sidebar({
     "cyou-js",
     "CYou"
   ],
+  //学习笔记-前端
   "/study/frontend":frontendSidebar,
-  //vue
-  // "/study/frontend/vue": [
-  //   '',
-  //   "Vue2",
-  //   "Vue3"
-  // ],
-  // //react
-  // "/study/frontend/react": [
-  //   '',
-  //   "ReactCli",
-  //   "ReactExtends"
-  // ],
-  // //angular
-  // "/study/frontend/angular": [
-  //   '',
-  //   "Angular",
-  // ],
-  // //js
-  // "/study/frontend/js": [
-  //   '',
-  //   "ES6",
-  // ],
+  //学习笔记-后端
+  "/study/backend":backendSidebar,
   //随笔
   "/essay/": essaySidebar
 });
