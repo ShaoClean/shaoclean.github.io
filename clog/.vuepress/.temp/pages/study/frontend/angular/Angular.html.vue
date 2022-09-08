@@ -572,7 +572,7 @@ public child2
 <h2 id="_9-路由与导航" tabindex="-1"><a class="header-anchor" href="#_9-路由与导航" aria-hidden="true">#</a> 9.路由与导航</h2>
 <h3 id="_1-vue和angular路由跳转的机制对比" tabindex="-1"><a class="header-anchor" href="#_1-vue和angular路由跳转的机制对比" aria-hidden="true">#</a> 1.Vue和Angular路由跳转的机制对比</h3>
 <p>Vue：①hash法：只需要修改url中的hash部分</p>
-<p><a href="http://localhost/index.html#/xxx" target="_blank" rel="noopener noreferrer">http://localhost/index.html#/xxx<ExternalLinkIcon/></a></p>
+<p>http://localhost/index.html#/xxx</p>
 <p>②history法：需要修改window.history对象，从而支持浏览器自带的后退/前进按钮</p>
 <p>angular：history法：需要修改window.history对象，从而支持浏览器自带的后退/前进按钮</p>
 <h3 id="_2-路由跳转方法" tabindex="-1"><a class="header-anchor" href="#_2-路由跳转方法" aria-hidden="true">#</a> 2.路由跳转方法</h3>

@@ -1,24 +1,25 @@
 import {
+  MarkdownContent_default
+} from "./chunk-LEKR3SG6.js";
+import {
   DropTransition_default
 } from "./chunk-2GYKIBY5.js";
 import {
-  MarkdownContent_default
-} from "./chunk-GWU3NXQ3.js";
-import {
   AutoLink_default
-} from "./chunk-OHI6DXWF.js";
+} from "./chunk-ZE2QP3RZ.js";
 import {
   Icon_default
-} from "./chunk-R2YQUNCF.js";
+} from "./chunk-VNHKJLUB.js";
 import {
   isLinkExternal
 } from "./chunk-LS4IQIE6.js";
 import {
   client_exports
-} from "./chunk-JDJQ3254.js";
+} from "./chunk-ANKY43RT.js";
 import {
   RouterLink
-} from "./chunk-TCC3WPER.js";
+} from "./chunk-KHE7BIUW.js";
+import "./chunk-YACYAO4R.js";
 import {
   computed,
   defineComponent,
@@ -27,8 +28,7 @@ import {
 import {
   isArray
 } from "./chunk-XYQ66V4O.js";
-import "./chunk-YACYAO4R.js";
-import "./chunk-KKNQZGBY.js";
+import "./chunk-BPKF3OQJ.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/HomeFeatures.js
 var HomeFeatures_default = defineComponent({

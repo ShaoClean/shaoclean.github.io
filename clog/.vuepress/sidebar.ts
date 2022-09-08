@@ -16,5 +16,5 @@ export default sidebar({
   "/study/backend":backendSidebar,
   //随笔
   "/essay/": essaySidebar,
-  "/teach/": teachSidebar
+  "/teach/": "structure"
 });

@@ -1,42 +1,43 @@
 import {
-  useDarkMode
-} from "./chunk-FM5ESJ5O.js";
-import {
   resolveRepoType
 } from "./chunk-TQJYOK4F.js";
+import {
+  useDarkMode
+} from "./chunk-J2XF7BCI.js";
+import {
+  AutoLink_default
+} from "./chunk-ZE2QP3RZ.js";
+import {
+  Icon_default
+} from "./chunk-VNHKJLUB.js";
 import {
   useAutoLink,
   useMobile,
   usePure,
   useThemeData,
   useThemeLocaleData
-} from "./chunk-4NB2SNUZ.js";
+} from "./chunk-4642VYNX.js";
 import {
-  a,
-  c
-} from "./chunk-QK56XPVB.js";
-import {
-  AutoLink_default
-} from "./chunk-OHI6DXWF.js";
-import {
-  Icon_default
-} from "./chunk-R2YQUNCF.js";
+  useFullscreen,
+  useScrollLock
+} from "./chunk-TMJVQBRG.js";
 import {
   isLinkExternal,
   isLinkHttp
 } from "./chunk-LS4IQIE6.js";
 import {
+  a,
+  c
+} from "./chunk-CIMFKLRG.js";
+import {
   client_exports
-} from "./chunk-JDJQ3254.js";
+} from "./chunk-ANKY43RT.js";
 import {
   RouterLink,
   useRoute,
   useRouter
-} from "./chunk-TCC3WPER.js";
-import {
-  useFullscreen,
-  useScrollLock
-} from "./chunk-TMJVQBRG.js";
+} from "./chunk-KHE7BIUW.js";
+import "./chunk-YACYAO4R.js";
 import {
   Transition,
   computed,
@@ -52,8 +53,7 @@ import {
 import {
   isString
 } from "./chunk-XYQ66V4O.js";
-import "./chunk-YACYAO4R.js";
-import "./chunk-KKNQZGBY.js";
+import "./chunk-BPKF3OQJ.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/navbar/components/icons/i18nIcon.js
 var I18nIcon = () => h(a, { name: "i18n" }, () => [

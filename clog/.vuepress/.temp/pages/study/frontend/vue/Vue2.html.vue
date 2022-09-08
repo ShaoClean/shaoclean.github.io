@@ -2,7 +2,7 @@
 <h2 id="vue-config-js配置文件" tabindex="-1"><a class="header-anchor" href="#vue-config-js配置文件" aria-hidden="true">#</a> vue.config.js配置文件</h2>
 <p>使用vue inspect &gt; output.js可以查看到Vue脚手架的默认配置</p>
 <p>使用vue.config.js可以对脚手架进行个性化定制</p>
-<p>详情见:<a href="https://cli.vue.js.org/zh" target="_blank" rel="noopener noreferrer">https://cli.vue.js.org/zh<ExternalLinkIcon/></a></p>
+<p>详情见:https://cli.vue.js.org/zh</p>
 <h2 id="ref属性" tabindex="-1"><a class="header-anchor" href="#ref属性" aria-hidden="true">#</a> ref属性</h2>
 <p>1.被用来给元素或子组件注册引用信息（id的替代者）</p>
 <p>2.应用在html标签上获取的是真实DOM元素，应用在组件标签上是组件实例对象（vc）</p>
