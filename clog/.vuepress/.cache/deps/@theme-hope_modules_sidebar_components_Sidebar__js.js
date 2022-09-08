@@ -7,16 +7,17 @@ import {
   renderChildren,
   renderItem,
   useSidebarItems
-} from "./chunk-AUHOFHUV.js";
-import "./chunk-ZKMRT7JJ.js";
-import {
-  Icon_default
-} from "./chunk-MVAWWNCX.js";
+} from "./chunk-RLDUINGZ.js";
 import {
   useThemeLocaleData
 } from "./chunk-4NB2SNUZ.js";
 import "./chunk-QK56XPVB.js";
+import "./chunk-FKTLBDGU.js";
+import {
+  Icon_default
+} from "./chunk-NYBMCJRC.js";
 import "./chunk-JDJQ3254.js";
+import "./chunk-LS4IQIE6.js";
 import {
   RouterLink,
   useRoute
@@ -30,9 +31,8 @@ import {
   ref,
   watch
 } from "./chunk-IU5U32L3.js";
-import "./chunk-YACYAO4R.js";
-import "./chunk-LS4IQIE6.js";
 import "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-KKNQZGBY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/sidebar/components/SidebarChild.js

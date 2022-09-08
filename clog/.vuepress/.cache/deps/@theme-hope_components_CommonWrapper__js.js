@@ -1,8 +1,6 @@
 import {
   useSidebarItems
-} from "./chunk-AUHOFHUV.js";
-import "./chunk-ZKMRT7JJ.js";
-import "./chunk-MVAWWNCX.js";
+} from "./chunk-RLDUINGZ.js";
 import {
   useMobile,
   usePageAuthor,
@@ -12,9 +10,12 @@ import {
   c,
   u
 } from "./chunk-QK56XPVB.js";
+import "./chunk-FKTLBDGU.js";
+import "./chunk-NYBMCJRC.js";
 import {
   client_exports
 } from "./chunk-JDJQ3254.js";
+import "./chunk-LS4IQIE6.js";
 import {
   useRouter
 } from "./chunk-TCC3WPER.js";
@@ -33,9 +34,8 @@ import {
   resolveComponent,
   watch
 } from "./chunk-IU5U32L3.js";
-import "./chunk-YACYAO4R.js";
-import "./chunk-LS4IQIE6.js";
 import "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-KKNQZGBY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/PageFooter.js

@@ -10,8 +10,8 @@ import {
   defineComponent,
   h
 } from "./chunk-IU5U32L3.js";
-import "./chunk-YACYAO4R.js";
 import "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-KKNQZGBY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/transitions/FadeSlideY.js

@@ -5,12 +5,6 @@ import {
   resolveRepoType
 } from "./chunk-TQJYOK4F.js";
 import {
-  AutoLink_default
-} from "./chunk-ZKMRT7JJ.js";
-import {
-  Icon_default
-} from "./chunk-MVAWWNCX.js";
-import {
   useAutoLink,
   useMobile,
   usePure,
@@ -22,8 +16,18 @@ import {
   c
 } from "./chunk-QK56XPVB.js";
 import {
+  AutoLink_default
+} from "./chunk-FKTLBDGU.js";
+import {
+  Icon_default
+} from "./chunk-NYBMCJRC.js";
+import {
   client_exports
 } from "./chunk-JDJQ3254.js";
+import {
+  isLinkExternal,
+  isLinkHttp
+} from "./chunk-LS4IQIE6.js";
 import {
   RouterLink,
   useRoute,
@@ -45,14 +49,10 @@ import {
   toRef,
   watch
 } from "./chunk-IU5U32L3.js";
-import "./chunk-YACYAO4R.js";
-import {
-  isLinkExternal,
-  isLinkHttp
-} from "./chunk-LS4IQIE6.js";
 import {
   isString
 } from "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-KKNQZGBY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/navbar/components/icons/i18nIcon.js

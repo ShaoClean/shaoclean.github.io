@@ -3,13 +3,13 @@ import {
 } from "./chunk-WLH6AN6L.js";
 import {
   TOC_default
-} from "./chunk-6E25NPMA.js";
+} from "./chunk-44YUX2PX.js";
 import {
   PageInfo_default,
   useContributors,
   useEditLink,
   useUpdateTime
-} from "./chunk-6R2GL2DR.js";
+} from "./chunk-USXC2OJN.js";
 import {
   MarkdownContent_default
 } from "./chunk-GWU3NXQ3.js";
@@ -21,13 +21,7 @@ import {
 } from "./chunk-TQJYOK4F.js";
 import {
   useSidebarItems
-} from "./chunk-AUHOFHUV.js";
-import {
-  AutoLink_default
-} from "./chunk-ZKMRT7JJ.js";
-import {
-  Icon_default
-} from "./chunk-MVAWWNCX.js";
+} from "./chunk-RLDUINGZ.js";
 import {
   useAutoLink,
   useNavigate,
@@ -40,8 +34,17 @@ import {
   x
 } from "./chunk-QK56XPVB.js";
 import {
+  AutoLink_default
+} from "./chunk-FKTLBDGU.js";
+import {
+  Icon_default
+} from "./chunk-NYBMCJRC.js";
+import {
   client_exports
 } from "./chunk-JDJQ3254.js";
+import {
+  isPlainObject
+} from "./chunk-LS4IQIE6.js";
 import {
   RouterLink,
   useRoute,
@@ -60,13 +63,10 @@ import {
   unref,
   watch
 } from "./chunk-IU5U32L3.js";
-import "./chunk-YACYAO4R.js";
-import {
-  isPlainObject
-} from "./chunk-LS4IQIE6.js";
 import {
   isString
 } from "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-KKNQZGBY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/BreadCrumb.js

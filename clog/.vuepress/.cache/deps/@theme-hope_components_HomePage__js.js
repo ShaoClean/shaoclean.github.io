@@ -6,13 +6,16 @@ import {
 } from "./chunk-2GYKIBY5.js";
 import {
   AutoLink_default
-} from "./chunk-ZKMRT7JJ.js";
+} from "./chunk-FKTLBDGU.js";
 import {
   Icon_default
-} from "./chunk-MVAWWNCX.js";
+} from "./chunk-NYBMCJRC.js";
 import {
   client_exports
 } from "./chunk-JDJQ3254.js";
+import {
+  isLinkExternal
+} from "./chunk-LS4IQIE6.js";
 import {
   RouterLink
 } from "./chunk-TCC3WPER.js";
@@ -21,13 +24,10 @@ import {
   defineComponent,
   h
 } from "./chunk-IU5U32L3.js";
-import "./chunk-YACYAO4R.js";
-import {
-  isLinkExternal
-} from "./chunk-LS4IQIE6.js";
 import {
   isArray
 } from "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-KKNQZGBY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/HomeFeatures.js
