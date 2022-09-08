@@ -1,21 +1,21 @@
 import {
-  MarkdownContent_default
-} from "./chunk-GWU3NXQ3.js";
-import {
   DropTransition_default
 } from "./chunk-2GYKIBY5.js";
 import {
+  MarkdownContent_default
+} from "./chunk-GWU3NXQ3.js";
+import {
   AutoLink_default
-} from "./chunk-FKTLBDGU.js";
+} from "./chunk-OHI6DXWF.js";
 import {
   Icon_default
-} from "./chunk-NYBMCJRC.js";
-import {
-  client_exports
-} from "./chunk-JDJQ3254.js";
+} from "./chunk-R2YQUNCF.js";
 import {
   isLinkExternal
 } from "./chunk-LS4IQIE6.js";
+import {
+  client_exports
+} from "./chunk-JDJQ3254.js";
 import {
   RouterLink
 } from "./chunk-TCC3WPER.js";
