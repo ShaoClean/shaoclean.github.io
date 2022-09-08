@@ -66,10 +66,10 @@ export default hopeTheme({
        * Using Giscus
        */
       // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
+      // repo: "ShaoClean/clog-comment",
+      // repoId: "R_kgDOH9Sdqg",
       // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
+      // categoryId: "DIC_kwDOH9Sdqs4CRT9D",
 
       /**
        * Using Twikoo
@@ -81,7 +81,7 @@ export default hopeTheme({
        * Using Waline
        */
       provider: "Waline",
-      serverURL: "https://clog-h6a47f3q9-shaoclean.vercel.app",
+      serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
     },
 
     mdEnhance: {
