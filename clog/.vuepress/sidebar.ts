@@ -4,11 +4,12 @@ import { essaySidebar } from "./sidebar/essay";
 import { frontendSidebar } from "./sidebar/frontend";
 import { teachSidebar } from "./sidebar/teach";
 export default sidebar({
-  "/project/":[
-    '',
-    "cyou-js",
-    "CYou"
-  ],
+  // "/project/":[
+  //   '',
+  //   "cyou-js",
+  //   "CYou"
+  // ],
+  "/project/":"structure",
   //学习笔记-前端
   "/study/frontend":frontendSidebar,
   //学习笔记-后端

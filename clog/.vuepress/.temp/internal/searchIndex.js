@@ -14,6 +14,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "CYou",
     "headers": [
       {
@@ -158,13 +165,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "加速访问GitHub方法",
     "headers": [
       {
@@ -254,6 +254,13 @@ export const searchIndex = [
     "title": "个人博客开通咯",
     "headers": [],
     "path": "/essay/2022/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "好无力",
+    "headers": [],
+    "path": "/essay/2022/2.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1506,9 +1513,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JavaSE 标签",
+    "title": "好累 标签",
     "headers": [],
-    "path": "/tag/javase/",
+    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1520,9 +1527,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "AngularCli 标签",
+    "title": "JavaSE 标签",
     "headers": [],
-    "path": "/tag/angularcli/",
+    "path": "/tag/javase/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1534,9 +1541,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "学习笔记 标签",
+    "title": "AngularCli 标签",
     "headers": [],
-    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+    "path": "/tag/angularcli/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1548,9 +1555,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ReactCli 标签",
+    "title": "学习笔记 标签",
     "headers": [],
-    "path": "/tag/reactcli/",
+    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1562,9 +1569,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ReactExtends 标签",
+    "title": "ReactCli 标签",
     "headers": [],
-    "path": "/tag/reactextends/",
+    "path": "/tag/reactcli/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1576,9 +1583,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue2 标签",
+    "title": "ReactExtends 标签",
     "headers": [],
-    "path": "/tag/vue2/",
+    "path": "/tag/reactextends/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1586,6 +1593,13 @@ export const searchIndex = [
     "title": "JS 分类",
     "headers": [],
     "path": "/category/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Vue2 标签",
+    "headers": [],
+    "path": "/tag/vue2/",
     "pathLocale": "/",
     "extraFields": []
   },
