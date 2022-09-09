@@ -61,28 +61,28 @@ export default hopeTheme({
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      // provider: "Giscus",
-      // repo: "ShaoClean/clog-comment",
-      // repoId: "R_kgDOH9Sdqg",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOH9Sdqs4CRT9D",
+    // comment: {
+    //   /**
+    //    * Using Giscus
+    //    */
+    //   // provider: "Giscus",
+    //   // repo: "ShaoClean/clog-comment",
+    //   // repoId: "R_kgDOH9Sdqg",
+    //   // category: "Announcements",
+    //   // categoryId: "DIC_kwDOH9Sdqs4CRT9D",
 
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
+    //   /**
+    //    * Using Twikoo
+    //    */
+    //   // provider: "Twikoo",
+    //   // envId: "https://twikoo.ccknbc.vercel.app",
 
-      /**
-       * Using Waline
-       */
-      provider: "Waline",
-      serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
-    },
+    //   /**
+    //    * Using Waline
+    //    */
+    //   provider: "Waline",
+    //   serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
+    // },
 
     mdEnhance: {
       enableAll: false,

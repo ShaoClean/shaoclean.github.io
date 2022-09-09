@@ -158,13 +158,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "加速访问GitHub方法",
     "headers": [
       {
@@ -258,6 +251,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "个人博客开通咯",
     "headers": [],
     "path": "/essay/2022/1.html",
@@ -268,6 +268,27 @@ export const searchIndex = [
     "title": "好无力",
     "headers": [],
     "path": "/essay/2022/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "后端笔记",
+    "headers": [],
+    "path": "/study/backend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端笔记",
+    "headers": [],
+    "path": "/study/frontend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Node笔记",
+    "headers": [],
+    "path": "/study/backend/nodeJS/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -518,158 +539,299 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ES6",
+    "title": "JavaSE",
     "headers": [
       {
         "level": 2,
-        "title": "1.static类",
-        "slug": "_1-static类",
-        "link": "#_1-static类",
+        "title": "JDK",
+        "slug": "jdk",
+        "link": "#jdk",
         "children": []
       },
       {
         "level": 2,
-        "title": "2.for...of  和 for...in",
-        "slug": "_2-for-of-和-for-in",
-        "link": "#_2-for-of-和-for-in",
+        "title": "JVM",
+        "slug": "jvm",
+        "link": "#jvm",
         "children": []
       },
       {
         "level": 2,
-        "title": "3.[变量名]",
-        "slug": "_3-变量名",
-        "link": "#_3-变量名",
+        "title": "JRE",
+        "slug": "jre",
+        "link": "#jre",
         "children": []
       },
       {
         "level": 2,
-        "title": "4.Symbol",
-        "slug": "_4-symbol",
-        "link": "#_4-symbol",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5.iterator迭代器",
-        "slug": "_5-iterator迭代器",
-        "link": "#_5-iterator迭代器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6.XMLHttpRequest和Ajax",
-        "slug": "_6-xmlhttprequest和ajax",
-        "link": "#_6-xmlhttprequest和ajax",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7.Promise",
-        "slug": "_7-promise",
-        "link": "#_7-promise",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8.生成器函数",
-        "slug": "_8-生成器函数",
-        "link": "#_8-生成器函数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "9.Set集合",
-        "slug": "_9-set集合",
-        "link": "#_9-set集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "10.Map集合",
-        "slug": "_10-map集合",
-        "link": "#_10-map集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "11.Class类",
-        "slug": "_11-class类",
-        "link": "#_11-class类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "12.数值拓展",
-        "slug": "_12-数值拓展",
-        "link": "#_12-数值拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "13.对象拓展",
-        "slug": "_13-对象拓展",
-        "link": "#_13-对象拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "14.模块化",
-        "slug": "_14-模块化",
-        "link": "#_14-模块化",
+        "title": "1.基本数据类型",
+        "slug": "_1-基本数据类型",
+        "link": "#_1-基本数据类型",
         "children": [
           {
             "level": 3,
-            "title": "简单使用：",
-            "slug": "简单使用",
-            "link": "#简单使用",
+            "title": "基本数据类型转换：",
+            "slug": "基本数据类型转换",
+            "link": "#基本数据类型转换",
             "children": []
           },
           {
             "level": 3,
-            "title": "ES6暴露数据语法汇总：",
-            "slug": "es6暴露数据语法汇总",
-            "link": "#es6暴露数据语法汇总",
+            "title": "强制类型转换:",
+            "slug": "强制类型转换",
+            "link": "#强制类型转换",
             "children": []
           },
           {
             "level": 3,
-            "title": "模块化.html（引入和使用模块）",
-            "slug": "模块化-html-引入和使用模块",
-            "link": "#模块化-html-引入和使用模块",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6导入模块语法汇总",
-            "slug": "es6导入模块语法汇总",
-            "link": "#es6导入模块语法汇总",
+            "title": "基本数据类型和String类型的转换：",
+            "slug": "基本数据类型和string类型的转换",
+            "link": "#基本数据类型和string类型的转换",
             "children": []
           }
         ]
       },
       {
         "level": 2,
-        "title": "15.Babel对ES6模块化代码转换",
-        "slug": "_15-babel对es6模块化代码转换",
-        "link": "#_15-babel对es6模块化代码转换",
+        "title": "2.引用数据类型",
+        "slug": "_2-引用数据类型",
+        "link": "#_2-引用数据类型",
         "children": []
       },
       {
         "level": 2,
-        "title": "备注",
-        "slug": "备注",
-        "link": "#备注",
+        "title": "1.运算符介绍",
+        "slug": "_1-运算符介绍",
+        "link": "#_1-运算符介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.算数运算符",
+        "slug": "_2-算数运算符",
+        "link": "#_2-算数运算符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.关系运算符【比较运算符】",
+        "slug": "_3-关系运算符【比较运算符】",
+        "link": "#_3-关系运算符【比较运算符】",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.逻辑运算符",
+        "slug": "_4-逻辑运算符",
+        "link": "#_4-逻辑运算符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.赋值运算符",
+        "slug": "_5-赋值运算符",
+        "link": "#_5-赋值运算符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.三元运算符",
+        "slug": "_6-三元运算符",
+        "link": "#_6-三元运算符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7.位运算符",
+        "slug": "_7-位运算符",
+        "link": "#_7-位运算符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.运算符优先级",
+        "slug": "_8-运算符优先级",
+        "link": "#_8-运算符优先级",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "其它进制转十进制：",
+        "slug": "其它进制转十进制",
+        "link": "#其它进制转十进制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十进制转其它进制",
+        "slug": "十进制转其它进制",
+        "link": "#十进制转其它进制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "二进制转其它进制",
+        "slug": "二进制转其它进制",
+        "link": "#二进制转其它进制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "其它进制转二进制",
+        "slug": "其它进制转二进制",
+        "link": "#其它进制转二进制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "1.数组的使用",
+        "slug": "_1-数组的使用",
+        "link": "#_1-数组的使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.数组细节",
+        "slug": "_2-数组细节",
+        "link": "#_2-数组细节",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.数组赋值机制",
+        "slug": "_3-数组赋值机制",
+        "link": "#_3-数组赋值机制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.二维数组",
+        "slug": "_4-二维数组",
+        "link": "#_4-二维数组",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "属性",
+        "slug": "属性",
+        "link": "#属性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "类与对象内存的分配机制",
+        "slug": "类与对象内存的分配机制",
+        "link": "#类与对象内存的分配机制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "成员方法（方法）",
+        "slug": "成员方法-方法",
+        "link": "#成员方法-方法",
+        "children": [
+          {
+            "level": 3,
+            "title": "方法调用小结：",
+            "slug": "方法调用小结",
+            "link": "#方法调用小结",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "方法的好处：",
+            "slug": "方法的好处",
+            "link": "#方法的好处",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "注意事项：",
+            "slug": "注意事项",
+            "link": "#注意事项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "方法递归调用：",
+            "slug": "方法递归调用",
+            "link": "#方法递归调用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "方法重载",
+            "slug": "方法重载",
+            "link": "#方法重载",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "可变参数",
+            "slug": "可变参数",
+            "link": "#可变参数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "十一、作用域",
+        "slug": "十一、作用域",
+        "link": "#十一、作用域",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十二、构造方法/构造器",
+        "slug": "十二、构造方法-构造器",
+        "link": "#十二、构造方法-构造器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十三、this",
+        "slug": "十三、this",
+        "link": "#十三、this",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十四、包",
+        "slug": "十四、包",
+        "link": "#十四、包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十五、访问修饰符",
+        "slug": "十五、访问修饰符",
+        "link": "#十五、访问修饰符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十六、封装（encapsulation）",
+        "slug": "十六、封装-encapsulation",
+        "link": "#十六、封装-encapsulation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十七、继承",
+        "slug": "十七、继承",
+        "link": "#十七、继承",
         "children": []
       }
     ],
-    "path": "/study/frontend/js/ES6.html",
+    "path": "/study/backend/java/JavaSE.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "JS笔记",
+    "title": "Java笔记",
     "headers": [],
-    "path": "/study/frontend/js/",
+    "path": "/study/backend/java/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1104,299 +1266,222 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JavaSE",
-    "headers": [
-      {
-        "level": 2,
-        "title": "JDK",
-        "slug": "jdk",
-        "link": "#jdk",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "JVM",
-        "slug": "jvm",
-        "link": "#jvm",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "JRE",
-        "slug": "jre",
-        "link": "#jre",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "1.基本数据类型",
-        "slug": "_1-基本数据类型",
-        "link": "#_1-基本数据类型",
-        "children": [
-          {
-            "level": 3,
-            "title": "基本数据类型转换：",
-            "slug": "基本数据类型转换",
-            "link": "#基本数据类型转换",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "强制类型转换:",
-            "slug": "强制类型转换",
-            "link": "#强制类型转换",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "基本数据类型和String类型的转换：",
-            "slug": "基本数据类型和string类型的转换",
-            "link": "#基本数据类型和string类型的转换",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2.引用数据类型",
-        "slug": "_2-引用数据类型",
-        "link": "#_2-引用数据类型",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "1.运算符介绍",
-        "slug": "_1-运算符介绍",
-        "link": "#_1-运算符介绍",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.算数运算符",
-        "slug": "_2-算数运算符",
-        "link": "#_2-算数运算符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.关系运算符【比较运算符】",
-        "slug": "_3-关系运算符【比较运算符】",
-        "link": "#_3-关系运算符【比较运算符】",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.逻辑运算符",
-        "slug": "_4-逻辑运算符",
-        "link": "#_4-逻辑运算符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5.赋值运算符",
-        "slug": "_5-赋值运算符",
-        "link": "#_5-赋值运算符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6.三元运算符",
-        "slug": "_6-三元运算符",
-        "link": "#_6-三元运算符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7.位运算符",
-        "slug": "_7-位运算符",
-        "link": "#_7-位运算符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8.运算符优先级",
-        "slug": "_8-运算符优先级",
-        "link": "#_8-运算符优先级",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "其它进制转十进制：",
-        "slug": "其它进制转十进制",
-        "link": "#其它进制转十进制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十进制转其它进制",
-        "slug": "十进制转其它进制",
-        "link": "#十进制转其它进制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "二进制转其它进制",
-        "slug": "二进制转其它进制",
-        "link": "#二进制转其它进制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "其它进制转二进制",
-        "slug": "其它进制转二进制",
-        "link": "#其它进制转二进制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "1.数组的使用",
-        "slug": "_1-数组的使用",
-        "link": "#_1-数组的使用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.数组细节",
-        "slug": "_2-数组细节",
-        "link": "#_2-数组细节",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.数组赋值机制",
-        "slug": "_3-数组赋值机制",
-        "link": "#_3-数组赋值机制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.二维数组",
-        "slug": "_4-二维数组",
-        "link": "#_4-二维数组",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "属性",
-        "slug": "属性",
-        "link": "#属性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "类与对象内存的分配机制",
-        "slug": "类与对象内存的分配机制",
-        "link": "#类与对象内存的分配机制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "成员方法（方法）",
-        "slug": "成员方法-方法",
-        "link": "#成员方法-方法",
-        "children": [
-          {
-            "level": 3,
-            "title": "方法调用小结：",
-            "slug": "方法调用小结",
-            "link": "#方法调用小结",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "方法的好处：",
-            "slug": "方法的好处",
-            "link": "#方法的好处",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "注意事项：",
-            "slug": "注意事项",
-            "link": "#注意事项",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "方法递归调用：",
-            "slug": "方法递归调用",
-            "link": "#方法递归调用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "方法重载",
-            "slug": "方法重载",
-            "link": "#方法重载",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "可变参数",
-            "slug": "可变参数",
-            "link": "#可变参数",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "十一、作用域",
-        "slug": "十一、作用域",
-        "link": "#十一、作用域",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十二、构造方法/构造器",
-        "slug": "十二、构造方法-构造器",
-        "link": "#十二、构造方法-构造器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十三、this",
-        "slug": "十三、this",
-        "link": "#十三、this",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十四、包",
-        "slug": "十四、包",
-        "link": "#十四、包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十五、访问修饰符",
-        "slug": "十五、访问修饰符",
-        "link": "#十五、访问修饰符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十六、封装（encapsulation）",
-        "slug": "十六、封装-encapsulation",
-        "link": "#十六、封装-encapsulation",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "十七、继承",
-        "slug": "十七、继承",
-        "link": "#十七、继承",
-        "children": []
-      }
-    ],
-    "path": "/study/backend/java/JavaSE.html",
+    "title": "TS笔记",
+    "headers": [],
+    "path": "/study/frontend/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Java笔记",
+    "title": "ts Test",
     "headers": [],
-    "path": "/study/backend/java/",
+    "path": "/study/frontend/ts/tstest.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ES6",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.static类",
+        "slug": "_1-static类",
+        "link": "#_1-static类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.for...of  和 for...in",
+        "slug": "_2-for-of-和-for-in",
+        "link": "#_2-for-of-和-for-in",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.[变量名]",
+        "slug": "_3-变量名",
+        "link": "#_3-变量名",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.Symbol",
+        "slug": "_4-symbol",
+        "link": "#_4-symbol",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.iterator迭代器",
+        "slug": "_5-iterator迭代器",
+        "link": "#_5-iterator迭代器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.XMLHttpRequest和Ajax",
+        "slug": "_6-xmlhttprequest和ajax",
+        "link": "#_6-xmlhttprequest和ajax",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7.Promise",
+        "slug": "_7-promise",
+        "link": "#_7-promise",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.生成器函数",
+        "slug": "_8-生成器函数",
+        "link": "#_8-生成器函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9.Set集合",
+        "slug": "_9-set集合",
+        "link": "#_9-set集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "10.Map集合",
+        "slug": "_10-map集合",
+        "link": "#_10-map集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "11.Class类",
+        "slug": "_11-class类",
+        "link": "#_11-class类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "12.数值拓展",
+        "slug": "_12-数值拓展",
+        "link": "#_12-数值拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "13.对象拓展",
+        "slug": "_13-对象拓展",
+        "link": "#_13-对象拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "14.模块化",
+        "slug": "_14-模块化",
+        "link": "#_14-模块化",
+        "children": [
+          {
+            "level": 3,
+            "title": "简单使用：",
+            "slug": "简单使用",
+            "link": "#简单使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ES6暴露数据语法汇总：",
+            "slug": "es6暴露数据语法汇总",
+            "link": "#es6暴露数据语法汇总",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "模块化.html（引入和使用模块）",
+            "slug": "模块化-html-引入和使用模块",
+            "link": "#模块化-html-引入和使用模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ES6导入模块语法汇总",
+            "slug": "es6导入模块语法汇总",
+            "link": "#es6导入模块语法汇总",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "15.Babel对ES6模块化代码转换",
+        "slug": "_15-babel对es6模块化代码转换",
+        "link": "#_15-babel对es6模块化代码转换",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "备注",
+        "slug": "备注",
+        "link": "#备注",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/ES6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JS笔记",
+    "headers": [],
+    "path": "/study/frontend/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "闭包",
+    "headers": [
+      {
+        "level": 2,
+        "title": "为什么要使用闭包",
+        "slug": "为什么要使用闭包",
+        "link": "#为什么要使用闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭包的作用",
+        "slug": "闭包的作用",
+        "link": "#闭包的作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭包的缺点",
+        "slug": "闭包的缺点",
+        "link": "#闭包的缺点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "简单实现闭包",
+        "slug": "简单实现闭包",
+        "link": "#简单实现闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "形成闭包的条件",
+        "slug": "形成闭包的条件",
+        "link": "#形成闭包的条件",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/closure.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "惰性函数",
+    "headers": [],
+    "path": "/study/frontend/js/lazyFunction.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1541,9 +1626,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JS 分类",
+    "title": "后端 分类",
     "headers": [],
-    "path": "/category/js/",
+    "path": "/category/%E5%90%8E%E7%AB%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1555,23 +1640,23 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Java 分类",
+    "headers": [],
+    "path": "/category/java/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JavaSE 标签",
+    "headers": [],
+    "path": "/tag/javase/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "React 分类",
     "headers": [],
     "path": "/category/react/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "ES6 标签",
-    "headers": [],
-    "path": "/tag/es6/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Vue 分类",
-    "headers": [],
-    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1583,9 +1668,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "后端 分类",
+    "title": "Vue 分类",
     "headers": [],
-    "path": "/category/%E5%90%8E%E7%AB%AF/",
+    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1597,9 +1682,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Java 分类",
+    "title": "JS 分类",
     "headers": [],
-    "path": "/category/java/",
+    "path": "/category/js/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1618,9 +1703,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JavaSE 标签",
+    "title": "ES6 标签",
     "headers": [],
-    "path": "/tag/javase/",
+    "path": "/tag/es6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "闭包 标签",
+    "headers": [],
+    "path": "/tag/%E9%97%AD%E5%8C%85/",
     "pathLocale": "/",
     "extraFields": []
   }

@@ -8,5 +8,7 @@ export const jsSidebar:HopeThemeSidebarGroupItem = {
   children:[
     "",
     "ES6",
+    "closure",
+    "lazyFunction"
   ]
 }

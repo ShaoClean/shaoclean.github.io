@@ -1,37 +1,37 @@
 import {
+  useDarkMode
+} from "./chunk-AWK6ENJZ.js";
+import {
   resolveRepoType
 } from "./chunk-TQJYOK4F.js";
-import {
-  useDarkMode
-} from "./chunk-J2XF7BCI.js";
-import {
-  AutoLink_default
-} from "./chunk-ZE2QP3RZ.js";
-import {
-  Icon_default
-} from "./chunk-VNHKJLUB.js";
 import {
   useAutoLink,
   useMobile,
   usePure,
   useThemeData,
   useThemeLocaleData
-} from "./chunk-4642VYNX.js";
-import {
-  useFullscreen,
-  useScrollLock
-} from "./chunk-TMJVQBRG.js";
-import {
-  isLinkExternal,
-  isLinkHttp
-} from "./chunk-LS4IQIE6.js";
+} from "./chunk-ARDYV7EY.js";
 import {
   a,
   c
 } from "./chunk-CIMFKLRG.js";
 import {
+  useFullscreen,
+  useScrollLock
+} from "./chunk-TMJVQBRG.js";
+import {
+  AutoLink_default
+} from "./chunk-EUKLEZSB.js";
+import {
+  Icon_default
+} from "./chunk-I7TDQFIQ.js";
+import {
   client_exports
 } from "./chunk-ANKY43RT.js";
+import {
+  isLinkExternal,
+  isLinkHttp
+} from "./chunk-LS4IQIE6.js";
 import {
   RouterLink,
   useRoute,
