@@ -21,6 +21,243 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "CYou",
+    "headers": [
+      {
+        "level": 2,
+        "title": "核心功能",
+        "slug": "核心功能",
+        "link": "#核心功能",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "扩展功能",
+        "slug": "扩展功能",
+        "link": "#扩展功能",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "后续功能",
+        "slug": "后续功能",
+        "link": "#后续功能",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "流程",
+        "slug": "流程",
+        "link": "#流程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "1.Point组件",
+        "slug": "_1-point组件",
+        "link": "#_1-point组件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.CleanDiv",
+        "slug": "_2-cleandiv",
+        "link": "#_2-cleandiv",
+        "children": []
+      }
+    ],
+    "path": "/project/CYOU.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "项目文档",
+    "headers": [],
+    "path": "/project/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "cyou-js",
+    "headers": [
+      {
+        "level": 2,
+        "title": "使用",
+        "slug": "使用",
+        "link": "#使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.引入文件",
+            "slug": "_1-引入文件",
+            "link": "#_1-引入文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.初始化ctool",
+            "slug": "_2-初始化ctool",
+            "link": "#_2-初始化ctool",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.自定义根元素",
+            "slug": "_3-自定义根元素",
+            "link": "#_3-自定义根元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4.添加根元素",
+            "slug": "_4-添加根元素",
+            "link": "#_4-添加根元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5.使用功能",
+            "slug": "_5-使用功能",
+            "link": "#_5-使用功能",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "内置API",
+        "slug": "内置api",
+        "link": "#内置api",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.自由拖拽元素(ch)",
+            "slug": "_1-自由拖拽元素-ch",
+            "link": "#_1-自由拖拽元素-ch",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.创建元素(cr)",
+            "slug": "_2-创建元素-cr",
+            "link": "#_2-创建元素-cr",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.替换元素(re)",
+            "slug": "_3-替换元素-re",
+            "link": "#_3-替换元素-re",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4.交换元素(ex)",
+            "slug": "_4-交换元素-ex",
+            "link": "#_4-交换元素-ex",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/project/cyou-js.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "加速访问GitHub方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MacOS",
+        "slug": "macos",
+        "link": "#macos",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64桌面",
+        "slug": "windows-x64桌面",
+        "link": "#windows-x64桌面",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64服务",
+        "slug": "windows-x64服务",
+        "link": "#windows-x64服务",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64终端",
+        "slug": "linux-x64终端",
+        "link": "#linux-x64终端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64服务",
+        "slug": "linux-x64服务",
+        "link": "#linux-x64服务",
+        "children": []
+      }
+    ],
+    "path": "/teach/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决github下载速度过慢",
+    "headers": [],
+    "path": "/teach/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.注册",
+        "slug": "_1-注册",
+        "link": "#_1-注册",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.导入项目",
+        "slug": "_2-导入项目",
+        "link": "#_2-导入项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.完成DNS解析",
+        "slug": "_3-完成dns解析",
+        "link": "#_3-完成dns解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.添加自定义域名",
+        "slug": "_4-添加自定义域名",
+        "link": "#_4-添加自定义域名",
+        "children": []
+      }
+    ],
+    "path": "/teach/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西",
+    "headers": [],
+    "path": "/teach/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "后端笔记",
     "headers": [],
     "path": "/study/backend/",
@@ -31,6 +268,20 @@ export const searchIndex = [
     "title": "前端笔记",
     "headers": [],
     "path": "/study/frontend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "个人博客开通咯",
+    "headers": [],
+    "path": "/essay/2022/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "好无力",
+    "headers": [],
+    "path": "/essay/2022/2.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -585,239 +836,208 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "CYou",
+    "title": "ES6",
     "headers": [
       {
         "level": 2,
-        "title": "核心功能",
-        "slug": "核心功能",
-        "link": "#核心功能",
+        "title": "1.static类",
+        "slug": "_1-static类",
+        "link": "#_1-static类",
         "children": []
       },
       {
         "level": 2,
-        "title": "扩展功能",
-        "slug": "扩展功能",
-        "link": "#扩展功能",
+        "title": "2.for...of  和 for...in",
+        "slug": "_2-for-of-和-for-in",
+        "link": "#_2-for-of-和-for-in",
         "children": []
       },
       {
         "level": 2,
-        "title": "后续功能",
-        "slug": "后续功能",
-        "link": "#后续功能",
+        "title": "3.[变量名]",
+        "slug": "_3-变量名",
+        "link": "#_3-变量名",
         "children": []
       },
       {
         "level": 2,
-        "title": "流程",
-        "slug": "流程",
-        "link": "#流程",
+        "title": "4.Symbol",
+        "slug": "_4-symbol",
+        "link": "#_4-symbol",
         "children": []
       },
       {
         "level": 2,
-        "title": "1.Point组件",
-        "slug": "_1-point组件",
-        "link": "#_1-point组件",
+        "title": "5.iterator迭代器",
+        "slug": "_5-iterator迭代器",
+        "link": "#_5-iterator迭代器",
         "children": []
       },
       {
         "level": 2,
-        "title": "2.CleanDiv",
-        "slug": "_2-cleandiv",
-        "link": "#_2-cleandiv",
+        "title": "6.XMLHttpRequest和Ajax",
+        "slug": "_6-xmlhttprequest和ajax",
+        "link": "#_6-xmlhttprequest和ajax",
         "children": []
-      }
-    ],
-    "path": "/project/CYOU.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "项目文档",
-    "headers": [],
-    "path": "/project/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "cyou-js",
-    "headers": [
+      },
       {
         "level": 2,
-        "title": "使用",
-        "slug": "使用",
-        "link": "#使用",
+        "title": "7.Promise",
+        "slug": "_7-promise",
+        "link": "#_7-promise",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.生成器函数",
+        "slug": "_8-生成器函数",
+        "link": "#_8-生成器函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9.Set集合",
+        "slug": "_9-set集合",
+        "link": "#_9-set集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "10.Map集合",
+        "slug": "_10-map集合",
+        "link": "#_10-map集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "11.Class类",
+        "slug": "_11-class类",
+        "link": "#_11-class类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "12.数值拓展",
+        "slug": "_12-数值拓展",
+        "link": "#_12-数值拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "13.对象拓展",
+        "slug": "_13-对象拓展",
+        "link": "#_13-对象拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "14.模块化",
+        "slug": "_14-模块化",
+        "link": "#_14-模块化",
         "children": [
           {
             "level": 3,
-            "title": "1.引入文件",
-            "slug": "_1-引入文件",
-            "link": "#_1-引入文件",
+            "title": "简单使用：",
+            "slug": "简单使用",
+            "link": "#简单使用",
             "children": []
           },
           {
             "level": 3,
-            "title": "2.初始化ctool",
-            "slug": "_2-初始化ctool",
-            "link": "#_2-初始化ctool",
+            "title": "ES6暴露数据语法汇总：",
+            "slug": "es6暴露数据语法汇总",
+            "link": "#es6暴露数据语法汇总",
             "children": []
           },
           {
             "level": 3,
-            "title": "3.自定义根元素",
-            "slug": "_3-自定义根元素",
-            "link": "#_3-自定义根元素",
+            "title": "模块化.html（引入和使用模块）",
+            "slug": "模块化-html-引入和使用模块",
+            "link": "#模块化-html-引入和使用模块",
             "children": []
           },
           {
             "level": 3,
-            "title": "4.添加根元素",
-            "slug": "_4-添加根元素",
-            "link": "#_4-添加根元素",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "5.使用功能",
-            "slug": "_5-使用功能",
-            "link": "#_5-使用功能",
+            "title": "ES6导入模块语法汇总",
+            "slug": "es6导入模块语法汇总",
+            "link": "#es6导入模块语法汇总",
             "children": []
           }
         ]
       },
       {
         "level": 2,
-        "title": "内置API",
-        "slug": "内置api",
-        "link": "#内置api",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.自由拖拽元素(ch)",
-            "slug": "_1-自由拖拽元素-ch",
-            "link": "#_1-自由拖拽元素-ch",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.创建元素(cr)",
-            "slug": "_2-创建元素-cr",
-            "link": "#_2-创建元素-cr",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3.替换元素(re)",
-            "slug": "_3-替换元素-re",
-            "link": "#_3-替换元素-re",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "4.交换元素(ex)",
-            "slug": "_4-交换元素-ex",
-            "link": "#_4-交换元素-ex",
-            "children": []
-          }
-        ]
+        "title": "15.Babel对ES6模块化代码转换",
+        "slug": "_15-babel对es6模块化代码转换",
+        "link": "#_15-babel对es6模块化代码转换",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "备注",
+        "slug": "备注",
+        "link": "#备注",
+        "children": []
       }
     ],
-    "path": "/project/cyou-js.html",
+    "path": "/study/frontend/js/ES6.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "加速访问GitHub方法",
+    "title": "JS笔记",
+    "headers": [],
+    "path": "/study/frontend/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "闭包",
     "headers": [
       {
         "level": 2,
-        "title": "MacOS",
-        "slug": "macos",
-        "link": "#macos",
+        "title": "为什么要使用闭包",
+        "slug": "为什么要使用闭包",
+        "link": "#为什么要使用闭包",
         "children": []
       },
       {
         "level": 2,
-        "title": "windows-x64桌面",
-        "slug": "windows-x64桌面",
-        "link": "#windows-x64桌面",
+        "title": "闭包的作用",
+        "slug": "闭包的作用",
+        "link": "#闭包的作用",
         "children": []
       },
       {
         "level": 2,
-        "title": "windows-x64服务",
-        "slug": "windows-x64服务",
-        "link": "#windows-x64服务",
+        "title": "闭包的缺点",
+        "slug": "闭包的缺点",
+        "link": "#闭包的缺点",
         "children": []
       },
       {
         "level": 2,
-        "title": "linux-x64终端",
-        "slug": "linux-x64终端",
-        "link": "#linux-x64终端",
+        "title": "简单实现闭包",
+        "slug": "简单实现闭包",
+        "link": "#简单实现闭包",
         "children": []
       },
       {
         "level": 2,
-        "title": "linux-x64服务",
-        "slug": "linux-x64服务",
-        "link": "#linux-x64服务",
+        "title": "形成闭包的条件",
+        "slug": "形成闭包的条件",
+        "link": "#形成闭包的条件",
         "children": []
       }
     ],
-    "path": "/teach/1.html",
+    "path": "/study/frontend/js/closure.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "解决github下载速度过慢",
+    "title": "惰性函数",
     "headers": [],
-    "path": "/teach/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.注册",
-        "slug": "_1-注册",
-        "link": "#_1-注册",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.导入项目",
-        "slug": "_2-导入项目",
-        "link": "#_2-导入项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.完成DNS解析",
-        "slug": "_3-完成dns解析",
-        "link": "#_3-完成dns解析",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.添加自定义域名",
-        "slug": "_4-添加自定义域名",
-        "link": "#_4-添加自定义域名",
-        "children": []
-      }
-    ],
-    "path": "/teach/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西",
-    "headers": [],
-    "path": "/teach/",
+    "path": "/study/frontend/js/lazyFunction.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1110,226 +1330,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "个人博客开通咯",
-    "headers": [],
-    "path": "/essay/2022/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "好无力",
-    "headers": [],
-    "path": "/essay/2022/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "ES6",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.static类",
-        "slug": "_1-static类",
-        "link": "#_1-static类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.for...of  和 for...in",
-        "slug": "_2-for-of-和-for-in",
-        "link": "#_2-for-of-和-for-in",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.[变量名]",
-        "slug": "_3-变量名",
-        "link": "#_3-变量名",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.Symbol",
-        "slug": "_4-symbol",
-        "link": "#_4-symbol",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5.iterator迭代器",
-        "slug": "_5-iterator迭代器",
-        "link": "#_5-iterator迭代器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6.XMLHttpRequest和Ajax",
-        "slug": "_6-xmlhttprequest和ajax",
-        "link": "#_6-xmlhttprequest和ajax",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7.Promise",
-        "slug": "_7-promise",
-        "link": "#_7-promise",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8.生成器函数",
-        "slug": "_8-生成器函数",
-        "link": "#_8-生成器函数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "9.Set集合",
-        "slug": "_9-set集合",
-        "link": "#_9-set集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "10.Map集合",
-        "slug": "_10-map集合",
-        "link": "#_10-map集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "11.Class类",
-        "slug": "_11-class类",
-        "link": "#_11-class类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "12.数值拓展",
-        "slug": "_12-数值拓展",
-        "link": "#_12-数值拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "13.对象拓展",
-        "slug": "_13-对象拓展",
-        "link": "#_13-对象拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "14.模块化",
-        "slug": "_14-模块化",
-        "link": "#_14-模块化",
-        "children": [
-          {
-            "level": 3,
-            "title": "简单使用：",
-            "slug": "简单使用",
-            "link": "#简单使用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6暴露数据语法汇总：",
-            "slug": "es6暴露数据语法汇总",
-            "link": "#es6暴露数据语法汇总",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "模块化.html（引入和使用模块）",
-            "slug": "模块化-html-引入和使用模块",
-            "link": "#模块化-html-引入和使用模块",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6导入模块语法汇总",
-            "slug": "es6导入模块语法汇总",
-            "link": "#es6导入模块语法汇总",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "15.Babel对ES6模块化代码转换",
-        "slug": "_15-babel对es6模块化代码转换",
-        "link": "#_15-babel对es6模块化代码转换",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "备注",
-        "slug": "备注",
-        "link": "#备注",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/ES6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JS笔记",
-    "headers": [],
-    "path": "/study/frontend/js/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "闭包",
-    "headers": [
-      {
-        "level": 2,
-        "title": "为什么要使用闭包",
-        "slug": "为什么要使用闭包",
-        "link": "#为什么要使用闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭包的作用",
-        "slug": "闭包的作用",
-        "link": "#闭包的作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭包的缺点",
-        "slug": "闭包的缺点",
-        "link": "#闭包的缺点",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "简单实现闭包",
-        "slug": "简单实现闭包",
-        "link": "#简单实现闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "形成闭包的条件",
-        "slug": "形成闭包的条件",
-        "link": "#形成闭包的条件",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/closure.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "惰性函数",
-    "headers": [],
-    "path": "/study/frontend/js/lazyFunction.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "TS笔记",
     "headers": [],
     "path": "/study/frontend/ts/",
@@ -1337,7 +1337,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ts Test",
+    "title": "Record类型",
     "headers": [],
     "path": "/study/frontend/ts/tstest.html",
     "pathLocale": "/",
@@ -1571,51 +1571,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "后端 分类",
-    "headers": [],
-    "path": "/category/%E5%90%8E%E7%AB%AF/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JavaSE 标签",
-    "headers": [],
-    "path": "/tag/javase/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Java 分类",
-    "headers": [],
-    "path": "/category/java/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "AngularCli 标签",
-    "headers": [],
-    "path": "/tag/angularcli/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "前端 分类",
     "headers": [],
     "path": "/category/%E5%89%8D%E7%AB%AF/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "学习笔记 标签",
-    "headers": [],
-    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Angular 分类",
-    "headers": [],
-    "path": "/category/angular/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1662,23 +1620,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ReactCli 标签",
+    "title": "开心! 标签",
     "headers": [],
-    "path": "/tag/reactcli/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "React 分类",
-    "headers": [],
-    "path": "/category/react/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "ReactExtends 标签",
-    "headers": [],
-    "path": "/tag/reactextends/",
+    "path": "/tag/%E5%BC%80%E5%BF%83!/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1690,9 +1634,51 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "开心! 标签",
+    "title": "好累 标签",
     "headers": [],
-    "path": "/tag/%E5%BC%80%E5%BF%83!/",
+    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "后端 分类",
+    "headers": [],
+    "path": "/category/%E5%90%8E%E7%AB%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JavaSE 标签",
+    "headers": [],
+    "path": "/tag/javase/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Java 分类",
+    "headers": [],
+    "path": "/category/java/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "AngularCli 标签",
+    "headers": [],
+    "path": "/tag/angularcli/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Angular 分类",
+    "headers": [],
+    "path": "/category/angular/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "学习笔记 标签",
+    "headers": [],
+    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1704,23 +1690,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "好累 标签",
-    "headers": [],
-    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Vue 分类",
-    "headers": [],
-    "path": "/category/vue/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "ES6 标签",
     "headers": [],
     "path": "/tag/es6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "React 分类",
+    "headers": [],
+    "path": "/category/react/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1732,9 +1711,30 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Vue 分类",
+    "headers": [],
+    "path": "/category/vue/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "惰性函数 标签",
     "headers": [],
     "path": "/tag/%E6%83%B0%E6%80%A7%E5%87%BD%E6%95%B0/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ReactCli 标签",
+    "headers": [],
+    "path": "/tag/reactcli/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ReactExtends 标签",
+    "headers": [],
+    "path": "/tag/reactextends/",
     "pathLocale": "/",
     "extraFields": []
   },
