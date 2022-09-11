@@ -1,13 +1,9 @@
-import { HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import {  arraySidebar } from "vuepress-theme-hope";
 
-export const vueSidebar:HopeThemeSidebarGroupItem = {
-  text:"vue",
-  icon:"vue",
-  prefix:"vue/",
-  collapsable: true,
-  children:[
-    "",
-    "Vue2",
-    "Vue3"
-  ]
-}
+export const vueSidebar = arraySidebar([
+  "",
+  "Vue2",
+  "Vue3",
+  "vite-config"
+])
+

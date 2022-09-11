@@ -1,13 +1,7 @@
-import { HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import { arraySidebar } from "vuepress-theme-hope";
 
-export const reactSidebar:HopeThemeSidebarGroupItem = {
-  text:"react",
-  icon:"react",
-  prefix:"react/",
-  collapsable: true,
-  children:[
-    "",
-    "ReactCli",
-    "ReactExtends"
-  ]
-}
+export const reactSidebar = arraySidebar([
+  "",
+  "ReactCli",
+  "ReactExtends",
+])
