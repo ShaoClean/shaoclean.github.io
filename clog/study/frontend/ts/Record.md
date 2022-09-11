@@ -1,5 +1,5 @@
 ---
-icon: ts
+icon: typescript
 date: 2022-09-11
 star: 20
 description: 这是一篇关于Record类型的文章

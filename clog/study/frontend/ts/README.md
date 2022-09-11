@@ -1,5 +1,5 @@
 ---
-icon: react
+icon: typescript
 article: false
 ---
 # TS笔记
