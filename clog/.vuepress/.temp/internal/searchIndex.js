@@ -258,20 +258,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "后端笔记",
-    "headers": [],
-    "path": "/study/backend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "前端笔记",
-    "headers": [],
-    "path": "/study/frontend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "个人博客开通咯",
     "headers": [],
     "path": "/essay/2022/1.html",
@@ -282,6 +268,20 @@ export const searchIndex = [
     "title": "好无力",
     "headers": [],
     "path": "/essay/2022/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "后端笔记",
+    "headers": [],
+    "path": "/study/backend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端笔记",
+    "headers": [],
+    "path": "/study/frontend/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1339,7 +1339,7 @@ export const searchIndex = [
   {
     "title": "Record类型",
     "headers": [],
-    "path": "/study/frontend/ts/tstest.html",
+    "path": "/study/frontend/ts/Record.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1711,9 +1711,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue 分类",
+    "title": "Ts 分类",
     "headers": [],
-    "path": "/category/vue/",
+    "path": "/category/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1721,6 +1721,13 @@ export const searchIndex = [
     "title": "惰性函数 标签",
     "headers": [],
     "path": "/tag/%E6%83%B0%E6%80%A7%E5%87%BD%E6%95%B0/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Vue 分类",
+    "headers": [],
+    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1735,6 +1742,13 @@ export const searchIndex = [
     "title": "ReactExtends 标签",
     "headers": [],
     "path": "/tag/reactextends/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record 标签",
+    "headers": [],
+    "path": "/tag/record/",
     "pathLocale": "/",
     "extraFields": []
   },
