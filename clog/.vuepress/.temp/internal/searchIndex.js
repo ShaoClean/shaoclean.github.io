@@ -14,13 +14,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "CYou",
     "headers": [
       {
@@ -258,16 +251,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "个人博客开通咯",
+    "title": "猛男的随笔",
     "headers": [],
-    "path": "/essay/2022/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "好无力",
-    "headers": [],
-    "path": "/essay/2022/2.html",
+    "path": "/essay/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -282,6 +268,27 @@ export const searchIndex = [
     "title": "前端笔记",
     "headers": [],
     "path": "/study/frontend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "个人博客开通咯",
+    "headers": [],
+    "path": "/essay/2022/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "好无力",
+    "headers": [],
+    "path": "/essay/2022/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "巨开心！",
+    "headers": [],
+    "path": "/essay/2022/3.html",
     "pathLocale": "/",
     "extraFields": []
   },

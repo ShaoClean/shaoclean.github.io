@@ -35,7 +35,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "PageView", "Word"],
 
   blog: {
-    description: "一个前端开发者，努力成为全栈，浙江最后一杯深情冰美式",
+    description: "一个前端开发者，努力成为全栈开发💪<br>浙江最后一杯深情冰美式",
     intro: "/intro.html",
     medias: {
       Email: "1518136109@qq.com",
@@ -49,7 +49,8 @@ export default hopeTheme({
   //加密文档
   encrypt: {
     config: {
-      "/guide/encrypt.html": ["1234"],
+      "/essay/2022/2.html": ["sczscz"],
+      "/essay/2022/3.html": ["sczscz"],
     },
   },
 

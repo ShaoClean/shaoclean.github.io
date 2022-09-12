@@ -3,8 +3,6 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /slides.html
   "v-2e3eac9e": () => import(/* webpackChunkName: "v-2e3eac9e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/slides.html.js").then(({ data }) => data),
-  // path: /essay/
-  "v-7c80db8b": () => import(/* webpackChunkName: "v-7c80db8b" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/index.html.js").then(({ data }) => data),
   // path: /project/CYOU.html
   "v-097f202e": () => import(/* webpackChunkName: "v-097f202e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/project/CYOU.html.js").then(({ data }) => data),
   // path: /project/
@@ -19,14 +17,18 @@ export const pagesData = {
   "v-ef75ee4e": () => import(/* webpackChunkName: "v-ef75ee4e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/teach/3.html.js").then(({ data }) => data),
   // path: /teach/
   "v-d567cada": () => import(/* webpackChunkName: "v-d567cada" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/teach/index.html.js").then(({ data }) => data),
-  // path: /essay/2022/1.html
-  "v-07d1390e": () => import(/* webpackChunkName: "v-07d1390e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/1.html.js").then(({ data }) => data),
-  // path: /essay/2022/2.html
-  "v-098611ad": () => import(/* webpackChunkName: "v-098611ad" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/2.html.js").then(({ data }) => data),
+  // path: /essay/
+  "v-7c80db8b": () => import(/* webpackChunkName: "v-7c80db8b" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/index.html.js").then(({ data }) => data),
   // path: /study/backend/
   "v-c473464c": () => import(/* webpackChunkName: "v-c473464c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/backend/index.html.js").then(({ data }) => data),
   // path: /study/frontend/
   "v-5a788904": () => import(/* webpackChunkName: "v-5a788904" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/index.html.js").then(({ data }) => data),
+  // path: /essay/2022/1.html
+  "v-07d1390e": () => import(/* webpackChunkName: "v-07d1390e" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/1.html.js").then(({ data }) => data),
+  // path: /essay/2022/2.html
+  "v-098611ad": () => import(/* webpackChunkName: "v-098611ad" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/2.html.js").then(({ data }) => data),
+  // path: /essay/2022/3.html
+  "v-0b3aea4c": () => import(/* webpackChunkName: "v-0b3aea4c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/3.html.js").then(({ data }) => data),
   // path: /study/backend/java/JavaSE.html
   "v-5325d9b2": () => import(/* webpackChunkName: "v-5325d9b2" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/backend/java/JavaSE.html.js").then(({ data }) => data),
   // path: /study/backend/java/
@@ -137,6 +139,4 @@ export const pagesData = {
   "v-2953c4d4": () => import(/* webpackChunkName: "v-2953c4d4" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/vue3/index.html.js").then(({ data }) => data),
   // path: /tag/vite/
   "v-294e8ebd": () => import(/* webpackChunkName: "v-294e8ebd" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/vite/index.html.js").then(({ data }) => data),
-  // path: /essay/2022/3.html
-  "v-0b3aea4c": () => import(/* webpackChunkName: "v-0b3aea4c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/3.html.js").then(({ data }) => data),
 }
