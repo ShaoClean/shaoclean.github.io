@@ -7,13 +7,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "幻灯片页",
-    "headers": [],
-    "path": "/slides.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "CYou",
     "headers": [
       {
@@ -158,6 +151,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "加速访问GitHub方法",
     "headers": [
       {
@@ -251,27 +251,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "后端笔记",
-    "headers": [],
-    "path": "/study/backend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "前端笔记",
-    "headers": [],
-    "path": "/study/frontend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "个人博客开通咯",
     "headers": [],
     "path": "/essay/2022/1.html",
@@ -289,6 +268,20 @@ export const searchIndex = [
     "title": "巨开心！",
     "headers": [],
     "path": "/essay/2022/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "后端笔记",
+    "headers": [],
+    "path": "/study/backend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端笔记",
+    "headers": [],
+    "path": "/study/frontend/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1049,6 +1042,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "TS笔记",
+    "headers": [],
+    "path": "/study/frontend/ts/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record类型",
+    "headers": [],
+    "path": "/study/frontend/ts/Record.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "React笔记",
     "headers": [],
     "path": "/study/frontend/react/",
@@ -1333,20 +1340,6 @@ export const searchIndex = [
       }
     ],
     "path": "/study/frontend/react/ReactExtends.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "TS笔记",
-    "headers": [],
-    "path": "/study/frontend/ts/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record类型",
-    "headers": [],
-    "path": "/study/frontend/ts/Record.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1704,9 +1697,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "React 分类",
+    "title": "Ts 分类",
     "headers": [],
-    "path": "/category/react/",
+    "path": "/category/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1718,9 +1711,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Ts 分类",
+    "title": "React 分类",
     "headers": [],
-    "path": "/category/ts/",
+    "path": "/category/react/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1739,6 +1732,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Record 标签",
+    "headers": [],
+    "path": "/tag/record/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "ReactCli 标签",
     "headers": [],
     "path": "/tag/reactcli/",
@@ -1749,13 +1749,6 @@ export const searchIndex = [
     "title": "ReactExtends 标签",
     "headers": [],
     "path": "/tag/reactextends/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record 标签",
-    "headers": [],
-    "path": "/tag/record/",
     "pathLocale": "/",
     "extraFields": []
   },

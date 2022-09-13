@@ -1,9 +1,9 @@
 import { useStyleTag } from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/composables/index.js";
 import { h } from "vue";
 import { defineClientConfig } from "@vuepress/client";
-import Badge from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/components/Badge";
-import FontIcon from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/components/FontIcon";
-import BackToTop from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/components/BackToTop";
+import Badge from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import FontIcon from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import BackToTop from "/Users/clean/Desktop/clog/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
 
 export default defineClientConfig({
