@@ -7,6 +7,106 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "加速访问GitHub方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MacOS",
+        "slug": "macos",
+        "link": "#macos",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64桌面",
+        "slug": "windows-x64桌面",
+        "link": "#windows-x64桌面",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64服务",
+        "slug": "windows-x64服务",
+        "link": "#windows-x64服务",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64终端",
+        "slug": "linux-x64终端",
+        "link": "#linux-x64终端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64服务",
+        "slug": "linux-x64服务",
+        "link": "#linux-x64服务",
+        "children": []
+      }
+    ],
+    "path": "/teach/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决github下载速度过慢",
+    "headers": [],
+    "path": "/teach/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.注册",
+        "slug": "_1-注册",
+        "link": "#_1-注册",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.导入项目",
+        "slug": "_2-导入项目",
+        "link": "#_2-导入项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.完成DNS解析",
+        "slug": "_3-完成dns解析",
+        "link": "#_3-完成dns解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.添加自定义域名",
+        "slug": "_4-添加自定义域名",
+        "link": "#_4-添加自定义域名",
+        "children": []
+      }
+    ],
+    "path": "/teach/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西",
+    "headers": [],
+    "path": "/teach/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "CYou",
     "headers": [
       {
@@ -147,106 +247,6 @@ export const searchIndex = [
       }
     ],
     "path": "/project/cyou-js.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "加速访问GitHub方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MacOS",
-        "slug": "macos",
-        "link": "#macos",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "windows-x64桌面",
-        "slug": "windows-x64桌面",
-        "link": "#windows-x64桌面",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "windows-x64服务",
-        "slug": "windows-x64服务",
-        "link": "#windows-x64服务",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64终端",
-        "slug": "linux-x64终端",
-        "link": "#linux-x64终端",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64服务",
-        "slug": "linux-x64服务",
-        "link": "#linux-x64服务",
-        "children": []
-      }
-    ],
-    "path": "/teach/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决github下载速度过慢",
-    "headers": [],
-    "path": "/teach/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.注册",
-        "slug": "_1-注册",
-        "link": "#_1-注册",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.导入项目",
-        "slug": "_2-导入项目",
-        "link": "#_2-导入项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.完成DNS解析",
-        "slug": "_3-完成dns解析",
-        "link": "#_3-完成dns解析",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.添加自定义域名",
-        "slug": "_4-添加自定义域名",
-        "link": "#_4-添加自定义域名",
-        "children": []
-      }
-    ],
-    "path": "/teach/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西",
-    "headers": [],
-    "path": "/teach/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1042,20 +1042,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "TS笔记",
-    "headers": [],
-    "path": "/study/frontend/ts/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record类型",
-    "headers": [],
-    "path": "/study/frontend/ts/Record.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "React笔记",
     "headers": [],
     "path": "/study/frontend/react/",
@@ -1344,6 +1330,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "TS笔记",
+    "headers": [],
+    "path": "/study/frontend/ts/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record类型",
+    "headers": [],
+    "path": "/study/frontend/ts/Record.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "vue笔记",
     "headers": [],
     "path": "/study/frontend/vue/",
@@ -1486,6 +1486,35 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "插槽",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.默认插槽",
+        "slug": "_1-默认插槽",
+        "link": "#_1-默认插槽",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.具名插槽",
+        "slug": "_2-具名插槽",
+        "link": "#_2-具名插槽",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.动态插槽",
+        "slug": "_3-动态插槽",
+        "link": "#_3-动态插槽",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/vue/slot.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Vite环境变量配置",
     "headers": [
       {
@@ -1571,6 +1600,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Github 分类",
+    "headers": [],
+    "path": "/category/github/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西 标签",
+    "headers": [],
+    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "前端 分类",
     "headers": [],
     "path": "/category/%E5%89%8D%E7%AB%AF/",
@@ -1602,20 +1645,6 @@ export const searchIndex = [
     "title": "使用文档 分类",
     "headers": [],
     "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西 标签",
-    "headers": [],
-    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Github 分类",
-    "headers": [],
-    "path": "/category/github/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1697,9 +1726,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Ts 分类",
+    "title": "React 分类",
     "headers": [],
-    "path": "/category/ts/",
+    "path": "/category/react/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1711,9 +1740,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "React 分类",
+    "title": "Ts 分类",
     "headers": [],
-    "path": "/category/react/",
+    "path": "/category/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1732,13 +1761,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Record 标签",
-    "headers": [],
-    "path": "/tag/record/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "ReactCli 标签",
     "headers": [],
     "path": "/tag/reactcli/",
@@ -1753,6 +1775,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Record 标签",
+    "headers": [],
+    "path": "/tag/record/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Vue2 标签",
     "headers": [],
     "path": "/tag/vue2/",
@@ -1763,6 +1792,13 @@ export const searchIndex = [
     "title": "Vue3 标签",
     "headers": [],
     "path": "/tag/vue3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "slot 标签",
+    "headers": [],
+    "path": "/tag/slot/",
     "pathLocale": "/",
     "extraFields": []
   },
