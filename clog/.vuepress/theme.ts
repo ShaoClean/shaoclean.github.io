@@ -82,7 +82,8 @@ export default hopeTheme({
        * Using Waline
        */
       provider: "Waline",
-      serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
+      // serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
+      serverURL: "https://doc.shaoclean.top/",
     },
 
     mdEnhance: {
