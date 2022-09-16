@@ -128,6 +128,7 @@ const title = ref("我是默认值");
 给`slot`标签赋予`name`属性即可完成具名插槽的定义
 
 ```vue
+//User.vue
 <template>
   <div class="user">
     <h1>
@@ -167,3 +168,114 @@ const title = ref("我是默认值");
 
 ## 3.动态插槽
 
+[动态指令参数](https://cn.vuejs.org/guide/essentials/template-syntax.html#dynamic-arguments)在 `v-slot` 上也是有效的
+
+在组件中定义两个新的插槽，插槽名分别为`day1`、`day2`：
+
+```vue
+//User.vue
+<template>  
+	<div class="user">
+    <h1>
+      <slot>{{title}}</slot>
+    </h1>
+    <h1>
+      <slot name="username"></slot>
+    </h1>
+    <h1>
+      <slot name="day1"></slot>
+    </h1>
+    <h1>
+      <slot name="day2"></slot>
+    </h1>
+  </div>
+</template>
+```
+
+在`App.vue`中使用该组件：
+
+```vue
+<script setup lang="ts">
+  import { ref } from "vue";
+  import User from "./components/User.vue";
+  const day = ref("day1");
+</script>
+<template>
+  <User>
+    默认插槽
+    <!-- 具名插槽完整写法 -->
+    <template v-slot:username>
+      具名插槽
+    </template>
+    <!-- 具名插槽简写 -->
+    <!-- <template #username>
+      具名插槽
+    </template> -->
+      <!-- 动态插槽 -->
+    <template #[day]>
+      {{day}}
+    </template>
+    <button @click="day='day2'">change day</button>
+  </User>
+</template>
+```
+
+结果：
+
+![image-20220916234530030](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220916234530030.png)
+
+成功的显示在插槽名为`day1`的插槽中了
+
+点击`change day`按钮来改变day的值：
+
+![image-20220916234648206](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220916234648206.png)
+
+## 4.作用域插槽
+
+作用域插槽可以获取子组件域中的数据
+
+在组件中定义一个新的插槽：
+
+```vue
+//User.vue
+
+<template>
+	//...
+	<h1>
+      <slot :age="user.age"></slot>
+	</h1>
+	<h1>
+      <slot name="scopeSlot" :salary="user.salary"></slot>
+	</h1>
+</template>
+```
+
+使用该插槽获取`User.vue`中的数据
+
+需要注意的是，默认插槽和具名插槽获取子组件的数据有所区别：
+
+默认插槽：
+
+```vue
+//App.vue
+//...
+<template v-slot="scopeProps">
+      <button @click="day='day2'">change day</button>
+      {{scopeProps.age}}
+</template>
+//...
+```
+
+具名插槽：
+
+```vue
+//App.vue
+//...
+<template #scopeSlot="scopeProps">
+	{{scopeProps.salary}}
+</template>
+```
+
+![image-20220917000829311](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220917000829311.png)
+
+两种插槽都获取了来自子组件传递的参数
