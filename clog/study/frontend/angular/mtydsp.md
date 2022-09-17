@@ -1,5 +1,6 @@
 ---
 icon: angular
+date: 2022-09-17
 category:
   - 前端
   - Angular
