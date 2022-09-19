@@ -5,5 +5,6 @@ export const jsSidebar = arraySidebar([
   "ES6",
   "closure",
   "lazyFunction",
-  "hash-url"
+  "hash-url",
+  "event-loop",
 ])
