@@ -7,4 +7,5 @@ export const jsSidebar = arraySidebar([
   "lazyFunction",
   "hash-url",
   "event-loop",
+  "js-Operation-mechanism"
 ])
