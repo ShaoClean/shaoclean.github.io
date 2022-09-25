@@ -14,6 +14,10 @@ tag:
 
 `h()`函数用于创建虚拟DOM节点（VNode）
 
+使用场景：
+
+- 2022-9-25：用于渲染一个原生的html标签
+
 以下是它的类型：
 
 ```ts
@@ -119,3 +123,24 @@ const MyRender = h(renderTestVue,{
 结果如图：
 
 ![image-20220925213316656](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220925213316656.png)
+
+## 生成HTML元素
+
+```vue
+<script>
+  const RenderImg = h("img",{
+    style:{
+      width:"100px",
+      height:"100px",
+    },
+    src:"https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/header.png"
+	})
+</script>
+<template>
+	<RenderImg></RenderImg>
+</template>
+```
+
+结果如图：
+
+![image-20220925221057508](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220925221057508.png)
