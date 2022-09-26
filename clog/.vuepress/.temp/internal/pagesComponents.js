@@ -171,4 +171,6 @@ export const pagesComponents = {
   "v-29259463": defineAsyncComponent(() => import(/* webpackChunkName: "v-29259463" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/slot/index.html.vue")),
   // path: /tag/vite/
   "v-294e8ebd": defineAsyncComponent(() => import(/* webpackChunkName: "v-294e8ebd" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/vite/index.html.vue")),
+  // path: /study/frontend/js/table.html
+  "v-60346393": defineAsyncComponent(() => import(/* webpackChunkName: "v-60346393" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/js/table.html.vue")),
 }

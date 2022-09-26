@@ -84,4 +84,5 @@ export const pagesRoutes = [
   ["v-d5d498d6","/tag/h/",{"title":"h 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/h/index.html"]],
   ["v-29259463","/tag/slot/",{"title":"slot 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/slot/index.html"]],
   ["v-294e8ebd","/tag/vite/",{"title":"Vite 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vite/index.html"]],
+  ["v-60346393","/study/frontend/js/table.html",{"title":"Table相关","icon":"javascript","type":"article","readingTime":{"minutes":0.74,"words":222},"excerpt":"","date":"2022-09-26T00:00:00.000Z","localizedDate":"2022年9月26日","category":["前端","JS"],"tag":["table","学习笔记"],"star":10},["/study/frontend/js/table","/study/frontend/js/table.md"]],
 ]
