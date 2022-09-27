@@ -5,6 +5,8 @@ export const vueSidebar = arraySidebar([
   "Vue2",
   "Vue3",
   "vite-config",
-  "slot"
+  "slot",
+  "h",
+  "defineProps"
 ])
 
