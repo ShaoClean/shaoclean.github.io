@@ -181,4 +181,6 @@ export const pagesData = {
   "v-5eb94b00": () => import(/* webpackChunkName: "v-5eb94b00" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactcli/index.html.js").then(({ data }) => data),
   // path: /tag/reactextends/
   "v-22f105a7": () => import(/* webpackChunkName: "v-22f105a7" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactextends/index.html.js").then(({ data }) => data),
+  // path: /study/backend/nodeJS/init.html
+  "v-e77b9f42": () => import(/* webpackChunkName: "v-e77b9f42" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/backend/nodeJS/init.html.js").then(({ data }) => data),
 }

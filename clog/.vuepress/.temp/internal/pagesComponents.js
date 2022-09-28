@@ -183,4 +183,6 @@ export const pagesComponents = {
   "v-5eb94b00": defineAsyncComponent(() => import(/* webpackChunkName: "v-5eb94b00" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactcli/index.html.vue")),
   // path: /tag/reactextends/
   "v-22f105a7": defineAsyncComponent(() => import(/* webpackChunkName: "v-22f105a7" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactextends/index.html.vue")),
+  // path: /study/backend/nodeJS/init.html
+  "v-e77b9f42": defineAsyncComponent(() => import(/* webpackChunkName: "v-e77b9f42" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/backend/nodeJS/init.html.vue")),
 }
