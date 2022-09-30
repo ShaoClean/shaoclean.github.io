@@ -1,3 +1,15 @@
+---
+icon: nodejs
+date: 2022-09-30
+star: 10
+category:
+  - 后端
+  - Node
+tag:
+  - set-cookie
+  - 学习笔记
+---
+
 # set-cookie时出现的问题
 
 1.如果正常请求，没有出现跨域的情况下，是可以实现正常的set-cookie的
