@@ -26,7 +26,7 @@ export default{
         {
           text: "Node",
           icon: "nodeJS",
-          link: "nodejs/",
+          link: "nodeJS/",
         },
       ],
     },
