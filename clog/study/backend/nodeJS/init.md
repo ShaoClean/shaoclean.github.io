@@ -1,5 +1,5 @@
 ---
-icon: nodejs
+icon: nodeJS
 date: 2022-09-28
 star: 10
 category:
