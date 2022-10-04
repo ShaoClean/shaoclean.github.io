@@ -195,4 +195,6 @@ export const pagesComponents = {
   "v-5da4ece6": defineAsyncComponent(() => import(/* webpackChunkName: "v-5da4ece6" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/惰性函数/index.html.vue")),
   // path: /tag/table/
   "v-06be6422": defineAsyncComponent(() => import(/* webpackChunkName: "v-06be6422" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/table/index.html.vue")),
+  // path: /essay/2022/5.html
+  "v-0ea49b8a": defineAsyncComponent(() => import(/* webpackChunkName: "v-0ea49b8a" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/essay/2022/5.html.vue")),
 }
