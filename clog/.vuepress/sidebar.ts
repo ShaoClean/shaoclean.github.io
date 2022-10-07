@@ -1,5 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 import { backendSidebar } from "./sidebar/backend";
+import { demoSidebar } from "./sidebar/demo";
 import { essaySidebar } from "./sidebar/essay";
 import { angularSidebar } from "./sidebar/frontend/angular";
 import { jsSidebar } from "./sidebar/frontend/js";
@@ -20,4 +21,6 @@ export default sidebar({
   //随笔
   "/essay/": essaySidebar,
   "/teach/": "structure",
+  //demo
+  "/demo/": demoSidebar
 });
