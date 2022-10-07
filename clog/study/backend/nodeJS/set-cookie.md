@@ -122,6 +122,7 @@ axios.defaults.withCredentials = true;
   })
 
   function login(){
+    //这里如果想要真正使用，需要删去withCredentials或改为true
     axios.post("http://localhost:4000/login",logininfo,{withCredentials:false})
     .then((res) => {
       console.log(res.data);
