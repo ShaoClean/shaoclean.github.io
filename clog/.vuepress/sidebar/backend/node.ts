@@ -9,6 +9,7 @@ export const nodeSidebar:HopeThemeSidebarGroupItem = {
   children:[
     "",
     "init",
-    "set-cookie"
+    "set-cookie",
+    "upload"
   ]
 }
