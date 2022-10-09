@@ -1,5 +1,5 @@
 ---
-icon: edit
+icon: eye
 date: 2022-10-07
 article: true
 category:

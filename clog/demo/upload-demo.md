@@ -1,5 +1,5 @@
 ---
-icon: edit
+icon: eye
 date: 2022-10-08
 article: true
 category:
@@ -285,7 +285,7 @@ app.post('/login',(req,res)=>{
         })
     }
 })
-
+//单文件上传接口
 app.post('/upload',upload.single('avatar'),(req,res)=>{
     const {body,file} = req;
     console.log("file",body,'\n',file)
@@ -307,6 +307,7 @@ app.post('/upload',upload.single('avatar'),(req,res)=>{
     }
 
 })
+//多文件上传接口
 app.post('/uploads',upload.array('avatars',10),(req,res)=>{
     const {body,files} = req;
     console.log("file",body,'\n',files)
