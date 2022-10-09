@@ -2,7 +2,7 @@ export const pagesRoutes = [
   ["v-8daa1a0e","/",{"title":"主页","icon":"home","type":"home","readingTime":{"minutes":0.55,"words":165},"excerpt":""},["/index.html","/README.md"]],
   ["v-1473bf53","/demo/",{"title":"demo演示","icon":"eye","type":"page","readingTime":{"minutes":0.05,"words":14},"excerpt":""},["/demo/index.html","/demo/README.md"]],
   ["v-38aae928","/demo/session-demo.html",{"title":"session demo","icon":"edit","type":"article","readingTime":{"minutes":1.52,"words":457},"excerpt":"","date":"2022-10-07T00:00:00.000Z","localizedDate":"2022年10月7日","category":["demo"],"tag":["session"],"star":10},["/demo/session-demo","/demo/session-demo.md"]],
-  ["v-01055546","/demo/upload-demo.html",{"title":"（单/多）文件上传demo","icon":"edit","type":"article","readingTime":{"minutes":5,"words":1501},"excerpt":"","date":"2022-10-08T00:00:00.000Z","localizedDate":"2022年10月8日","category":["demo"],"tag":["upload"],"star":10},["/demo/upload-demo","/demo/upload-demo.md"]],
+  ["v-01055546","/demo/upload-demo.html",{"title":"（单/多）文件上传demo","icon":"edit","type":"article","readingTime":{"minutes":5.03,"words":1509},"excerpt":"","date":"2022-10-08T00:00:00.000Z","localizedDate":"2022年10月8日","category":["demo"],"tag":["upload"],"star":10},["/demo/upload-demo","/demo/upload-demo.md"]],
   ["v-097f202e","/project/CYOU.html",{"title":"CYou","icon":"javascript","type":"article","readingTime":{"minutes":1.71,"words":514},"excerpt":"","date":"2022-07-18T00:00:00.000Z","localizedDate":"2022年7月18日","category":["前端","项目文档"],"tag":["CYou"],"star":9},["/project/CYOU","/project/CYOU.md"]],
   ["v-c9bbfba2","/project/",{"title":"项目文档","type":"page","readingTime":{"minutes":0.19,"words":58},"excerpt":""},["/project/index.html","/project/README.md"]],
   ["v-7bf12e24","/project/cyou-js.html",{"title":"cyou-js","icon":"javascript","type":"article","readingTime":{"minutes":4.08,"words":1223},"excerpt":"","date":"2022-08-13T00:00:00.000Z","localizedDate":"2022年8月13日","category":["前端","使用文档"],"tag":["cyou-js"],"star":9},["/project/cyou-js","/project/cyou-js.md"]],
@@ -105,4 +105,5 @@ export const pagesRoutes = [
   ["v-06be6422","/tag/table/",{"title":"table 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/table/index.html"]],
   ["v-5eb94b00","/tag/reactcli/",{"title":"ReactCli 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/reactcli/index.html"]],
   ["v-22f105a7","/tag/reactextends/",{"title":"ReactExtends 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/reactextends/index.html"]],
+  ["v-3cc55630","/demo/login_handle.html",{"title":"session登陆逻辑统一处理函数","icon":"edit","type":"article","readingTime":{"minutes":0.24,"words":73},"excerpt":"","date":"2022-10-09T00:00:00.000Z","localizedDate":"2022年10月9日","category":["demo"],"tag":["login_handle"],"star":10},["/demo/login_handle","/demo/login_handle.md"]],
 ]

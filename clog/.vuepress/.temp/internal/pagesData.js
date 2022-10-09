@@ -211,4 +211,6 @@ export const pagesData = {
   "v-5eb94b00": () => import(/* webpackChunkName: "v-5eb94b00" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactcli/index.html.js").then(({ data }) => data),
   // path: /tag/reactextends/
   "v-22f105a7": () => import(/* webpackChunkName: "v-22f105a7" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/reactextends/index.html.js").then(({ data }) => data),
+  // path: /demo/login_handle.html
+  "v-3cc55630": () => import(/* webpackChunkName: "v-3cc55630" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/demo/login_handle.html.js").then(({ data }) => data),
 }
