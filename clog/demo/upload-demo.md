@@ -8,7 +8,7 @@ tag:
   - upload
 star: 10
 ---
-# （单/多）文件上传demo
+# (单/多)文件上传demo
 
 使用之前需要安装的依赖：
 
@@ -22,7 +22,7 @@ star: 10
 login_handle代码[见此处](./login_handle.md)
 
 # 上传单文件
-## 后端代码
+## 单文件后端代码
 
 ```js
 const express = require('express');
@@ -151,7 +151,7 @@ app.listen(4000,()=>{
 
 ```
 
-## 前端代码
+## 单文件前端代码
 
 ```vue
 <script setup lang="ts">
@@ -187,7 +187,7 @@ app.listen(4000,()=>{
 ```
 
 # 上传多个文件
-## 后端代码
+## 多文件后端代码
 ```js
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -339,7 +339,7 @@ app.listen(4000,()=>{
 
 ```
 
-## 前端代码
+## 多文件前端代码
 ```vue
 <script setup lang="ts">
   import axios from "axios";
