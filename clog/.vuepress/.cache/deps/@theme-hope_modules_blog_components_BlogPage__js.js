@@ -1,10 +1,12 @@
 import {
-  ArticleList_default
-} from "./chunk-X6ZVHCOY.js";
+  ArticleList_default,
+  InfoPanel_default
+} from "./chunk-J3W67SBS.js";
 import {
   CategoryList_default,
   TagList_default
-} from "./chunk-DTUV65QY.js";
+} from "./chunk-AZW4FHEL.js";
+import "./chunk-4JQE7V64.js";
 import {
   useArticles,
   useBlogOptions,
@@ -14,36 +16,36 @@ import {
   useStars,
   useTagMap,
   useTimelines
-} from "./chunk-NIGVZNOF.js";
-import "./chunk-PT5CMBPY.js";
-import {
-  TOC_default
-} from "./chunk-SFLQKDOP.js";
-import "./chunk-ZYXZYM64.js";
-import "./chunk-TQJYOK4F.js";
+} from "./chunk-HZQKBOCB.js";
+import "./chunk-HPW5WGNZ.js";
 import {
   DropTransition_default
-} from "./chunk-VC4AEKQI.js";
+} from "./chunk-IG3IAW45.js";
+import {
+  TOC_default
+} from "./chunk-NTA25QY7.js";
+import "./chunk-IBMK55BW.js";
+import "./chunk-TQJYOK4F.js";
 import {
   useThemeLocaleData
-} from "./chunk-ACYHXLDS.js";
-import "./chunk-I5UX3BFI.js";
+} from "./chunk-YB6TWJ2S.js";
+import "./chunk-YUNCEBFY.js";
 import "./chunk-LS4IQIE6.js";
-import "./chunk-YEEH5TFH.js";
+import "./chunk-TJSL4O7Y.js";
 import {
   client_exports
 } from "./chunk-ANKY43RT.js";
 import {
   RouterLink,
   useRoute
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-U27KJSRC.js";
 import "./chunk-YACYAO4R.js";
 import {
   computed,
   defineComponent,
   h,
   resolveComponent
-} from "./chunk-3JL2R52N.js";
+} from "./chunk-4YVVQK3V.js";
 import "./chunk-XYQ66V4O.js";
 import "./chunk-BPKF3OQJ.js";
 
@@ -136,13 +138,16 @@ var BlogPage_default = defineComponent({
       const { name = "", key = "" } = frontmatter.value.blog || {};
       return key === "encrypted" ? encryptedArticles.value.items : key === "star" ? stars.value.items : key === "slide" ? slides.value.items : key === "timeline" ? [] : key === "category" ? name ? categoryMap.value.map[name].items : [] : key === "tag" ? name ? tagMap.value.map[name].items : [] : articles.value.items;
     });
-    return () => h("main", { class: "blog-page" }, [
-      h(DropTransition_default, () => componentName.value ? h(resolveComponent(componentName.value)) : null),
-      h(DropTransition_default, { appear: true, delay: 0.24 }, () => {
-        var _a;
-        return ((_a = frontmatter.value.blog) == null ? void 0 : _a.key) === "timeline" ? h(TimelineItems_default) : h(ArticleList_default, { key: route.path, items: items.value });
-      })
-    ]);
+    return () => h("div", { class: "page blog" }, h("div", { class: "blog-page-wrapper" }, [
+      h("main", { class: "blog-main", id: "main-content" }, [
+        h(DropTransition_default, () => componentName.value ? h(resolveComponent(componentName.value)) : null),
+        h(DropTransition_default, { appear: true, delay: 0.24 }, () => {
+          var _a;
+          return ((_a = frontmatter.value.blog) == null ? void 0 : _a.key) === "timeline" ? h(TimelineItems_default) : h(ArticleList_default, { key: route.path, items: items.value });
+        })
+      ]),
+      h(DropTransition_default, { delay: 0.16 }, () => h(InfoPanel_default))
+    ]));
   }
 });
 

@@ -1,28 +1,28 @@
 import {
   useSidebarItems
-} from "./chunk-KFWEYKQR.js";
-import "./chunk-FU6NV3BZ.js";
-import "./chunk-DPHIWTWK.js";
+} from "./chunk-MGDD7IRO.js";
+import "./chunk-NDLTD52J.js";
+import "./chunk-UAJRX32S.js";
 import {
   useMobile,
   usePageAuthor,
   useThemeLocaleData
-} from "./chunk-ACYHXLDS.js";
+} from "./chunk-YB6TWJ2S.js";
 import {
   useEventListener,
   useThrottleFn
-} from "./chunk-I5UX3BFI.js";
+} from "./chunk-YUNCEBFY.js";
 import "./chunk-LS4IQIE6.js";
 import {
-  c,
-  u
-} from "./chunk-YEEH5TFH.js";
+  Xe,
+  et
+} from "./chunk-TJSL4O7Y.js";
 import {
   client_exports
 } from "./chunk-ANKY43RT.js";
 import {
   useRouter
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-U27KJSRC.js";
 import "./chunk-YACYAO4R.js";
 import {
   Transition,
@@ -34,7 +34,7 @@ import {
   ref,
   resolveComponent,
   watch
-} from "./chunk-3JL2R52N.js";
+} from "./chunk-4YVVQK3V.js";
 import "./chunk-XYQ66V4O.js";
 import "./chunk-BPKF3OQJ.js";
 
@@ -134,7 +134,7 @@ var CommonWrapper_default = defineComponent({
       } else
         hideNavbar.value = false;
       lastDistance = distance;
-    }, 300));
+    }, 300, true));
     watch(isMobile, (value) => {
       if (!value)
         toggleMobileSidebar(false);
@@ -162,7 +162,7 @@ var CommonWrapper_default = defineComponent({
       ],
       onTouchStart,
       onTouchEnd
-    }, h(c("GloablEncrypt") ? resolveComponent("GloablEncrypt") : u, () => {
+    }, h(et("GloablEncrypt") ? resolveComponent("GloablEncrypt") : Xe, () => {
       var _a;
       return [
         enableNavbar.value ? h(resolveComponent("Navbar"), { onToggleSidebar: () => toggleMobileSidebar() }, {

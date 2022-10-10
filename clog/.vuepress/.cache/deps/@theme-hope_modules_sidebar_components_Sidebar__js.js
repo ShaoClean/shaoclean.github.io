@@ -1,28 +1,25 @@
 import {
-  DropTransition_default
-} from "./chunk-VC4AEKQI.js";
-import {
   isActiveSidebarItem,
   isMatchedSidebarItem,
   renderChildren,
   renderItem,
   useSidebarItems
-} from "./chunk-KFWEYKQR.js";
-import "./chunk-FU6NV3BZ.js";
+} from "./chunk-MGDD7IRO.js";
+import "./chunk-NDLTD52J.js";
 import {
   Icon_default
-} from "./chunk-DPHIWTWK.js";
+} from "./chunk-UAJRX32S.js";
 import {
   useThemeLocaleData
-} from "./chunk-ACYHXLDS.js";
-import "./chunk-I5UX3BFI.js";
+} from "./chunk-YB6TWJ2S.js";
+import "./chunk-YUNCEBFY.js";
 import "./chunk-LS4IQIE6.js";
-import "./chunk-YEEH5TFH.js";
+import "./chunk-TJSL4O7Y.js";
 import "./chunk-ANKY43RT.js";
 import {
   RouterLink,
   useRoute
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-U27KJSRC.js";
 import "./chunk-YACYAO4R.js";
 import {
   computed,
@@ -31,7 +28,7 @@ import {
   onMounted,
   ref,
   watch
-} from "./chunk-3JL2R52N.js";
+} from "./chunk-4YVVQK3V.js";
 import "./chunk-XYQ66V4O.js";
 import "./chunk-BPKF3OQJ.js";
 
@@ -78,33 +75,31 @@ var SidebarGroup_default = defineComponent({
     const active = computed(() => isActiveSidebarItem(route, props.config));
     const exact = computed(() => isActiveSidebarItem(route, props.config, true));
     return () => {
-      const { collapsable, children = [], icon, link, text } = props.config;
-      return [
-        h("section", { class: "sidebar-group" }, [
-          h(collapsable ? "button" : "p", {
-            class: [
-              "sidebar-heading",
-              {
-                clickable: collapsable || link,
-                exact: exact.value,
-                active: active.value
-              }
-            ],
-            ...collapsable ? {
-              onClick: () => emit("toggle"),
-              onKeydown: (event) => {
-                if (event.key === "Enter")
-                  emit("toggle");
-              }
-            } : {}
-          }, [
-            h(Icon_default, { icon }),
-            link ? h(RouterLink, { to: link, class: "title" }, () => text) : h("span", { class: "title" }, text),
-            collapsable ? h("span", { class: ["arrow", props.open ? "down" : "right"] }) : null
-          ]),
-          h(DropTransition_default, () => props.open || !collapsable ? h(SidebarLinks_default, { config: children }) : null)
-        ])
-      ];
+      const { collapsable, children = [], icon, prefix, link, text } = props.config;
+      return h("section", { class: "sidebar-group" }, [
+        h(collapsable ? "button" : "p", {
+          class: [
+            "sidebar-heading",
+            {
+              clickable: collapsable || link,
+              exact: exact.value,
+              active: active.value
+            }
+          ],
+          ...collapsable ? {
+            onClick: () => emit("toggle"),
+            onKeydown: (event) => {
+              if (event.key === "Enter")
+                emit("toggle");
+            }
+          } : {}
+        }, [
+          h(Icon_default, { icon }),
+          link ? h(RouterLink, { to: link, class: "title" }, () => text) : h("span", { class: "title" }, text),
+          collapsable ? h("span", { class: ["arrow", props.open ? "down" : "right"] }) : null
+        ]),
+        props.open || !collapsable ? h(SidebarLinks_default, { key: prefix, config: children }) : null
+      ]);
     };
   }
 });
@@ -145,7 +140,7 @@ var Sidebar_default = defineComponent({
     const route = useRoute();
     const themeLocale = useThemeLocaleData();
     const sidebarItems = useSidebarItems();
-    const sidebar = ref(null);
+    const sidebar = ref();
     onMounted(() => {
       watch(() => route.hash, (hash) => {
         const activeSidebarItem = document.querySelector(`.sidebar a.sidebar-link[href="${route.path}${hash}"]`);

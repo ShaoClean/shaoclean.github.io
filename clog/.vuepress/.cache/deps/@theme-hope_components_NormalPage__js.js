@@ -1,50 +1,50 @@
 import {
   EditIcon
-} from "./chunk-X33BJFNV.js";
+} from "./chunk-KE3XFZUP.js";
 import {
   TOC_default
-} from "./chunk-SFLQKDOP.js";
+} from "./chunk-NTA25QY7.js";
 import {
   PageInfo_default,
   useContributors,
   useEditLink,
   useUpdateTime
-} from "./chunk-ZYXZYM64.js";
+} from "./chunk-IBMK55BW.js";
 import {
   MarkdownContent_default
-} from "./chunk-DUD2F6R4.js";
+} from "./chunk-3RPTOAF4.js";
 import {
   getAncestorLinks
 } from "./chunk-TQJYOK4F.js";
 import {
   useDarkMode
-} from "./chunk-E5YOFFXH.js";
+} from "./chunk-PNPXW2GG.js";
 import {
   useSidebarItems
-} from "./chunk-KFWEYKQR.js";
+} from "./chunk-MGDD7IRO.js";
 import {
   AutoLink_default
-} from "./chunk-FU6NV3BZ.js";
+} from "./chunk-NDLTD52J.js";
 import {
   Icon_default
-} from "./chunk-DPHIWTWK.js";
+} from "./chunk-UAJRX32S.js";
 import {
   useAutoLink,
   useNavigate,
   usePageInfo,
   useThemeLocaleData
-} from "./chunk-ACYHXLDS.js";
+} from "./chunk-YB6TWJ2S.js";
 import {
   useEventListener
-} from "./chunk-I5UX3BFI.js";
+} from "./chunk-YUNCEBFY.js";
 import {
   isPlainObject
 } from "./chunk-LS4IQIE6.js";
 import {
-  c,
-  u,
-  x
-} from "./chunk-YEEH5TFH.js";
+  Re,
+  Xe,
+  et
+} from "./chunk-TJSL4O7Y.js";
 import {
   client_exports
 } from "./chunk-ANKY43RT.js";
@@ -52,7 +52,7 @@ import {
   RouterLink,
   useRoute,
   useRouter
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-U27KJSRC.js";
 import "./chunk-YACYAO4R.js";
 import {
   computed,
@@ -63,7 +63,7 @@ import {
   resolveComponent,
   unref,
   watch
-} from "./chunk-3JL2R52N.js";
+} from "./chunk-4YVVQK3V.js";
 import {
   isString
 } from "./chunk-XYQ66V4O.js";
@@ -89,7 +89,7 @@ var BreadCrumb_default = defineComponent({
       const breadcrumbConfig = getAncestorLinks(route, routeLocale.value).map((link) => {
         const route2 = routes.find((route3) => route3.path === link);
         if (route2) {
-          const { meta, path } = x(router, route2.path);
+          const { meta, path } = Re(router, route2.path);
           if (meta.shortTitle || meta.title)
             return {
               title: meta.shortTitle || meta.title,
@@ -258,7 +258,7 @@ var PageMeta_default = defineComponent({
         editLink.value ? h("div", { class: "meta-item edit-link" }, h(AutoLink_default, { class: "label", config: editLink.value }, { before: () => h(EditIcon) })) : null,
         updateTime.value ? h("div", { class: "meta-item update-time" }, [
           h("span", { class: "label" }, `${metaLocales.lastUpdated}: `),
-          h("span", { class: "info" }, updateTime.value)
+          h(client_exports.ClientOnly, () => h("span", { class: "info" }, updateTime.value))
         ]) : null,
         contributors.value && contributors.value.length ? h("div", { class: "meta-item contributors" }, [
           h("span", { class: "label" }, `${metaLocales.contributors}: `),
@@ -281,7 +281,7 @@ var NormalPage_default = defineComponent({
     const { isDarkMode } = useDarkMode();
     const themeLocale = useThemeLocaleData();
     const tocEnable = computed(() => frontmatter.value.toc || frontmatter.value.toc !== false && themeLocale.value.toc !== false);
-    return () => h("main", { class: "page", id: "main-content" }, h(c("LocalEncrypt") ? resolveComponent("LocalEncrypt") : u, () => {
+    return () => h("main", { class: "page", id: "main-content" }, h(et("LocalEncrypt") ? resolveComponent("LocalEncrypt") : Xe, () => {
       var _a, _b, _c, _d, _e, _f;
       return [
         (_a = slots["top"]) == null ? void 0 : _a.call(slots),
@@ -295,7 +295,7 @@ var NormalPage_default = defineComponent({
         (_e = slots["contentAfter"]) == null ? void 0 : _e.call(slots),
         h(PageMeta_default),
         h(PageNav_default),
-        c("CommentService") ? h(resolveComponent("CommentService"), {
+        et("CommentService") ? h(resolveComponent("CommentService"), {
           darkmode: isDarkMode.value
         }) : null,
         (_f = slots["bottom"]) == null ? void 0 : _f.call(slots)

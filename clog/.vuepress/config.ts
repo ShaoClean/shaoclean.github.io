@@ -14,9 +14,18 @@ export default defineUserConfig({
     searchPlugin({
       locales: {
         "/zh/": {
-          placeholder: "搜索",
+          placeholder: "搜点什么东西吧...",
         },
       },
+      hotKeys:[
+        {
+          key:'k',
+          ctrl:true
+        }
+      ]
+       
+      
+        
 
     })
   ]

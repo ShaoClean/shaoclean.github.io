@@ -1,11 +1,7 @@
 import {
+  ArticleList_default,
   InfoPanel_default
-} from "./chunk-GM4HZI5L.js";
-import "./chunk-HJFUJLGG.js";
-import "./chunk-S3YDBMNQ.js";
-import {
-  ArticleList_default
-} from "./chunk-X6ZVHCOY.js";
+} from "./chunk-J3W67SBS.js";
 import {
   ArticleIcon,
   BookIcon,
@@ -13,33 +9,34 @@ import {
   LinkIcon,
   ProjectIcon,
   SlideDownIcon
-} from "./chunk-DTUV65QY.js";
+} from "./chunk-AZW4FHEL.js";
+import "./chunk-4JQE7V64.js";
 import {
   useArticles
-} from "./chunk-NIGVZNOF.js";
-import "./chunk-PT5CMBPY.js";
-import "./chunk-ZYXZYM64.js";
-import {
-  MarkdownContent_default
-} from "./chunk-DUD2F6R4.js";
-import "./chunk-TQJYOK4F.js";
+} from "./chunk-HZQKBOCB.js";
+import "./chunk-HPW5WGNZ.js";
 import {
   DropTransition_default
-} from "./chunk-VC4AEKQI.js";
+} from "./chunk-IG3IAW45.js";
+import "./chunk-IBMK55BW.js";
+import {
+  MarkdownContent_default
+} from "./chunk-3RPTOAF4.js";
+import "./chunk-TQJYOK4F.js";
 import {
   Icon_default
-} from "./chunk-DPHIWTWK.js";
+} from "./chunk-UAJRX32S.js";
 import {
   useNavigate,
   usePure
-} from "./chunk-ACYHXLDS.js";
-import "./chunk-I5UX3BFI.js";
+} from "./chunk-YB6TWJ2S.js";
+import "./chunk-YUNCEBFY.js";
 import "./chunk-LS4IQIE6.js";
-import "./chunk-YEEH5TFH.js";
+import "./chunk-TJSL4O7Y.js";
 import {
   client_exports
 } from "./chunk-ANKY43RT.js";
-import "./chunk-SWJALXVA.js";
+import "./chunk-U27KJSRC.js";
 import "./chunk-YACYAO4R.js";
 import {
   computed,
@@ -47,7 +44,7 @@ import {
   h,
   ref,
   resolveComponent
-} from "./chunk-3JL2R52N.js";
+} from "./chunk-4YVVQK3V.js";
 import "./chunk-XYQ66V4O.js";
 import "./chunk-BPKF3OQJ.js";
 
@@ -59,7 +56,7 @@ var BlogHero_default = defineComponent({
   setup(_props, { slots }) {
     const title = (0, client_exports.usePageHeadTitle)();
     const frontmatter = (0, client_exports.usePageFrontmatter)();
-    const hero = ref(null);
+    const hero = ref();
     const heroImage = computed(() => frontmatter.value.heroImage || null);
     const isFullScreen = computed(() => frontmatter.value.heroFullScreen || false);
     const heroImageStyle = computed(() => {

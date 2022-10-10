@@ -1,15 +1,15 @@
 import {
-  MarkdownContent_default
-} from "./chunk-DUD2F6R4.js";
-import {
   DropTransition_default
-} from "./chunk-VC4AEKQI.js";
+} from "./chunk-IG3IAW45.js";
+import {
+  MarkdownContent_default
+} from "./chunk-3RPTOAF4.js";
 import {
   AutoLink_default
-} from "./chunk-FU6NV3BZ.js";
+} from "./chunk-NDLTD52J.js";
 import {
   Icon_default
-} from "./chunk-DPHIWTWK.js";
+} from "./chunk-UAJRX32S.js";
 import {
   isLinkExternal
 } from "./chunk-LS4IQIE6.js";
@@ -18,13 +18,13 @@ import {
 } from "./chunk-ANKY43RT.js";
 import {
   RouterLink
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-U27KJSRC.js";
 import "./chunk-YACYAO4R.js";
 import {
   computed,
   defineComponent,
   h
-} from "./chunk-3JL2R52N.js";
+} from "./chunk-4YVVQK3V.js";
 import {
   isArray
 } from "./chunk-XYQ66V4O.js";
@@ -52,11 +52,13 @@ var HomeFeatures_default = defineComponent({
           class: "feature link",
           href: feature.link,
           role: "navigation",
+          "aria-label": feature.title,
           target: "_blank"
         }, children) : h(RouterLink, {
           class: "feature link",
           to: feature.link,
-          role: "navigation"
+          role: "navigation",
+          "aria-label": feature.title
         }, () => children) : h("div", { class: "feature" }, children);
       })) : null;
     };
@@ -99,13 +101,13 @@ var HomeHero_default = defineComponent({
             key: "light",
             class: { light: heroImageDark.value },
             src: heroImage.value,
-            alt: heroAlt
+            alt: heroAlt.value
           }) : null,
           heroImageDark.value ? h("img", {
             key: "dark",
             class: "dark",
             src: heroImageDark.value,
-            alt: heroAlt
+            alt: heroAlt.value
           }) : null
         ]),
         ((_b = slots["heroInfo"]) == null ? void 0 : _b.call(slots)) || h("div", { class: "hero-info" }, [
