@@ -9,5 +9,7 @@ export const year2022Sidebar: HopeThemeSidebarGroupItem = {
     "2",
     "3",
     "4",
+    "5",
+    "6"
   ]
 }
