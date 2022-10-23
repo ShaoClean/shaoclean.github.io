@@ -858,7 +858,7 @@ hahah我是B类的有参构造器
 
 方法或对象具有多种形态。是面向对象的第三大特征，多态是建立在封装和继承基础之上的。
 
-**对象的多态：**
+### **对象的多态：**
 
 - 一个对象的编译类型和运行类型可以不一致
 
@@ -880,7 +880,7 @@ animal运行类型变成了Cat，编译类型仍然是Animal
 
 多态的前提是：两个对象（类）存在继承关系
 
-**多态的向上转型**
+### **多态的向上转型**
 
 - 本质：父类的引用指向了子类的对象
 
@@ -907,7 +907,7 @@ Object obj = new Cat();
 
     但是在代码的运行过程中，还是需要看运行类型（即调用方法时，按照子类开始网父类查找的方法）
 
-**多态的向下转型**
+### **多态的向下转型**
 
 - 语法：`子类类型 引用名 = （子类类型）父类引用`
 
@@ -918,3 +918,175 @@ Cat cat = (Cat) animal;
 - 只能强转父类的引用，不能强转父类的对象
 - 要求父类的引用必须指向的是当前目标类型的对象
 - 可以调用子类类型中所有的成员
+
+**注意**
+
+- 属性没有重写之说，<span style="color:red;font-weight:800">属性的值看编译类型</span>
+
+```java
+public class polydetail2 {
+    public static void main(String[] args) {
+        Base base = new Sub();//向上转型
+        System.out.println(base.count);//10,访问属性看的是编译类型，访问方法看的才是运行类型
+    }
+}
+class Base{
+    int count = 10;
+}
+class  Sub extends Base{
+    int count = 20;
+}
+```
+
+- instanceof 比较操作符，用于判断对象的**运行类型**是否为XX类型或XX类型的子类型
+
+### 举例
+
+举例1：
+
+```java
+public class polyExercise {
+    public static void main(String[] args){
+        double d = 13.4;//ok
+        long l = (long)d;//ok
+        System.out.println(l);//13.4
+        
+        int in = 5;//ok
+        boolean b = (boolean)in;//wrong
+        Object obj = "Hello";//ok
+        String objStr = (String) obj;//ok
+        System.out.println(objStr);//Hello
+        
+        Object objPri = new Integer(5);//ok
+        String str = (String)objPri;//wrong
+        Integer str1 = (Integer)objPri;//ok
+    }
+}
+```
+
+举例2：
+
+```java
+public class polyExercise2 {
+    public static void main(String[] args) {
+        Sub s = new Sub();
+        System.out.println(s.count);//20
+        s.display();//20
+        Base b = s;
+        System.out.println(b == s);//True
+        System.out.println(b.count);//10
+        b.display();//20
+    }
+}
+
+class Base{
+    int count = 10;
+    public void display(){
+        System.out.println(this.count);
+    }
+}
+
+class Sub extends Base{
+    int count = 20;
+
+    public void display() {
+        System.out.println(this.count);
+    }
+}
+```
+
+### java的动态绑定机制
+
+基本介绍：
+
+- 当调用对象方法的时候，该方法会和该对象的内存地址（运行类型）绑定
+- 当调用对象属性时，没有动态绑定机制，那里声明，哪里使用
+
+```java
+public class DynamicBinding {
+    public static void main(String[] args) {
+        A a = new B();
+        System.out.println(a.sum());//40
+        System.out.println(a.sum1());//30
+    }
+}
+class A{
+    public int i = 10;
+
+    public int sum(){
+        return getI() + 10;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public int sum1(){
+        return i + 10;
+    }
+    
+}
+class B extends A{
+    public int i = 20;
+    
+    public int sum(){
+        return i + 20;
+    }
+
+    public int getI() {
+        return i;
+    }
+    
+    public int sum1(){
+        return i + 10;
+    }
+}
+```
+
+删除class B中的 两个sum方法之后：
+
+```java
+public class DynamicBinding {
+    public static void main(String[] args) {
+        A a = new B();
+        System.out.println(a.sum());//30
+        System.out.println(a.sum1());//20
+    }
+}
+class A{
+    public int i = 10;
+
+    public int sum(){
+        return getI() + 10;
+      //1.在运行类型 B中没有找到sum方法。于是找到了父类A中的sum方法
+      //2.因为动态绑定机制的原因，此时的getI()方法是class B中的方法，所以此时的getI()的值是20
+      //3.返回sum方法的结果为20 + 10 == 30
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public int sum1(){
+        return i + 10;
+      //1.在运行类型 B中没有找到sum方法。于是找到了父类A中的sum方法
+      //2.因为属性不存在动态绑定机制的原因，此时的i是class A中的i，所以此时的i的值是10
+      //3.返回sum1方法的结果为10 + 10 == 20
+    }
+    
+}
+class B extends A{
+    public int i = 20;
+    
+
+    public int getI() {
+        return i;
+    }
+    
+}
+```
+
+### 多态的应用
+
+#### 动态数组
+
