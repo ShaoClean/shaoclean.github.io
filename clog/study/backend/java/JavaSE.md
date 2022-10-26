@@ -1121,3 +1121,71 @@ public String toString(){
 子类往往重写toString方法，用于返回对象的属性信息
 
 当直接输出一个对象时，toString方法会被默认的调用
+
+
+
+### finalize方法
+
+- 当对象被回收时，系统自动调用该对象的`finalize`方法。子类可以重写该方法，做一些释放资源的操作
+- 什么时候被回收：当某个对象没有任何引用时，则jvm认为这个对象是一个垃圾对象，就会使用垃圾回收机制来销毁该对象，在销毁该对象前，会先调用`finalize`方法
+- 垃圾回收机制的调用，是由系统来决定，也可以通过`System.gc()`主动触发垃圾回收机制。（主动调用并不会阻塞程序的运行，只是在调用的时候执行垃圾回收器）
+
+案例：
+
+```java
+public class Finalize_ {
+    public static void main(String[] args) {
+        Car bmw = new Car("宝马");
+        //这时 car对象就是一个垃圾，垃圾回收机制就会回收（销毁对象），在销毁对象前，会调用该对象的finalize方法
+        //此时可以在这里面，写自己的业务逻辑代码（例如：释放资源，关闭数据库的连接）
+        //如果不重写finalize方法，那么就会调用Object类的 finalize，即默认处理
+        //如果重写了finalize方法，就可以实现自己的逻辑
+        //不是一个对象变成垃圾就直接回收的
+        bmw = null;
+        System.gc();
+        System.out.println("程序退出了。。。");
+    }
+}
+
+class Car{
+    private String name;
+
+    public Car(String name) {
+        this.name = name;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("汽车被销毁了");
+    }
+}
+```
+
+
+
+### 创建对象流程
+
+```java
+public class debug03 {
+    public static void main(String[] args) {
+        //创建对象的流程
+        //（1）加载Person类系你行
+        //（2）初始化：2.1默认初始化  2.2显式初始化  2.3构造器初始化
+        //（3）返回对象的地址
+        Person scz = new Person("scz",20);
+        System.out.println(scz);
+    }
+}
+
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+
