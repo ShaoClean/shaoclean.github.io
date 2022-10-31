@@ -92,3 +92,4 @@ function cry(type){
 
 cry("狗")
 ```
+
