@@ -90,6 +90,6 @@ function cry(type){
   }
 }
 
-cry("狗")
+cry("狗");
 ```
 
