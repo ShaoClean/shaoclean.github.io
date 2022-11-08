@@ -14,9 +14,23 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Flex 布局",
+    "headers": [],
+    "path": "/demo/flex-layout.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "session登陆校验处理函数",
     "headers": [],
     "path": "/demo/login_handle.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "复现接口重放攻击",
+    "headers": [],
+    "path": "/demo/replay-attact-demo.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -121,6 +135,21 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "clean-vite-cli使用说明",
+    "headers": [
+      {
+        "level": 2,
+        "title": "请求服务",
+        "slug": "请求服务",
+        "link": "#请求服务",
+        "children": []
+      }
+    ],
+    "path": "/project/clean-vite-cli.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "cyou-js",
     "headers": [
       {
@@ -204,13 +233,6 @@ export const searchIndex = [
       }
     ],
     "path": "/project/cyou-js.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -308,6 +330,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "后端笔记",
     "headers": [],
     "path": "/study/backend/",
@@ -382,6 +411,20 @@ export const searchIndex = [
     "title": "有点想考公了",
     "headers": [],
     "path": "/essay/2022/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "新项目",
+    "headers": [],
+    "path": "/essay/2022/6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "什么都不想做",
+    "headers": [],
+    "path": "/essay/2022/7.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -669,6 +712,99 @@ export const searchIndex = [
         "slug": "十七、继承",
         "link": "#十七、继承",
         "children": []
+      },
+      {
+        "level": 2,
+        "title": "十八、方法重写",
+        "slug": "十八、方法重写",
+        "link": "#十八、方法重写",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "十九、多态",
+        "slug": "十九、多态",
+        "link": "#十九、多态",
+        "children": [
+          {
+            "level": 3,
+            "title": "对象的多态：",
+            "slug": "对象的多态",
+            "link": "#对象的多态",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "多态的向上转型",
+            "slug": "多态的向上转型",
+            "link": "#多态的向上转型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "多态的向下转型",
+            "slug": "多态的向下转型",
+            "link": "#多态的向下转型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "举例",
+            "slug": "举例",
+            "link": "#举例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "java的动态绑定机制",
+            "slug": "java的动态绑定机制",
+            "link": "#java的动态绑定机制",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "二十、Object类",
+        "slug": "二十、object类",
+        "link": "#二十、object类",
+        "children": [
+          {
+            "level": 3,
+            "title": "equals方法",
+            "slug": "equals方法",
+            "link": "#equals方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "hashCode方法",
+            "slug": "hashcode方法",
+            "link": "#hashcode方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "toString方法",
+            "slug": "tostring方法",
+            "link": "#tostring方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "finalize方法",
+            "slug": "finalize方法",
+            "link": "#finalize方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "创建对象流程",
+            "slug": "创建对象流程",
+            "link": "#创建对象流程",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/study/backend/java/JavaSE.html",
@@ -693,6 +829,71 @@ export const searchIndex = [
     "title": "初始化一个最基础的后端接口",
     "headers": [],
     "path": "/study/backend/nodeJS/init.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "连接远程数据库",
+    "headers": [],
+    "path": "/study/backend/nodeJS/mysql-connect.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Nest笔记汇总",
+    "headers": [
+      {
+        "level": 2,
+        "title": "连接远程数据库",
+        "slug": "连接远程数据库",
+        "link": "#连接远程数据库",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Controller中的@Res()",
+        "slug": "controller中的-res",
+        "link": "#controller中的-res",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "生成svg验证码",
+        "slug": "生成svg验证码",
+        "link": "#生成svg验证码",
+        "children": []
+      }
+    ],
+    "path": "/study/backend/nodeJS/nestjs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "接口重放攻击",
+    "headers": [
+      {
+        "level": 2,
+        "title": "timestamps",
+        "slug": "timestamps",
+        "link": "#timestamps",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "nonce",
+        "slug": "nonce",
+        "link": "#nonce",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "timestamps+nonce",
+        "slug": "timestamps-nonce",
+        "link": "#timestamps-nonce",
+        "children": []
+      }
+    ],
+    "path": "/study/backend/nodeJS/replay-attack.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1116,6 +1317,43 @@ export const searchIndex = [
     "title": "JS笔记",
     "headers": [],
     "path": "/study/frontend/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分支优化",
+    "headers": [],
+    "path": "/study/frontend/js/branch.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "canvas",
+    "headers": [
+      {
+        "level": 2,
+        "title": "绘制形状",
+        "slug": "绘制形状",
+        "link": "#绘制形状",
+        "children": [
+          {
+            "level": 3,
+            "title": "三种方法绘制矩形",
+            "slug": "三种方法绘制矩形",
+            "link": "#三种方法绘制矩形",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "绘制路径",
+            "slug": "绘制路径",
+            "link": "#绘制路径",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/study/frontend/js/canvas.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1903,9 +2141,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "login_handle 标签",
+    "title": "flex-layout 标签",
     "headers": [],
-    "path": "/tag/login-handle/",
+    "path": "/tag/flex-layout/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1917,9 +2155,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "session 标签",
+    "title": "login_handle 标签",
     "headers": [],
-    "path": "/tag/session/",
+    "path": "/tag/login-handle/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1931,9 +2169,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "upload 标签",
+    "title": "replay-attact 标签",
     "headers": [],
-    "path": "/tag/upload/",
+    "path": "/tag/replay-attact/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1945,9 +2183,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "CYou 标签",
+    "title": "session 标签",
     "headers": [],
-    "path": "/tag/cyou/",
+    "path": "/tag/session/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1959,9 +2197,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "cyou-js 标签",
+    "title": "upload 标签",
     "headers": [],
-    "path": "/tag/cyou-js/",
+    "path": "/tag/upload/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1973,9 +2211,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "有用的东西 标签",
+    "title": "CYou 标签",
     "headers": [],
-    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
+    "path": "/tag/cyou/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1987,9 +2225,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "开心! 标签",
+    "title": "cyou-js 标签",
     "headers": [],
-    "path": "/tag/%E5%BC%80%E5%BF%83!/",
+    "path": "/tag/cyou-js/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2001,9 +2239,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "好累 标签",
+    "title": "有用的东西 标签",
     "headers": [],
-    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
+    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2015,9 +2253,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "犹豫 标签",
+    "title": "开心! 标签",
     "headers": [],
-    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
+    "path": "/tag/%E5%BC%80%E5%BF%83!/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2029,9 +2267,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JavaSE 标签",
+    "title": "好累 标签",
     "headers": [],
-    "path": "/tag/javase/",
+    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2043,9 +2281,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "初始化框架 标签",
+    "title": "犹豫 标签",
     "headers": [],
-    "path": "/tag/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%A1%86%E6%9E%B6/",
+    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2057,9 +2295,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "学习笔记 标签",
+    "title": "无力 标签",
     "headers": [],
-    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+    "path": "/tag/%E6%97%A0%E5%8A%9B/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2071,9 +2309,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "set-cookie 标签",
+    "title": "JavaSE 标签",
     "headers": [],
-    "path": "/tag/set-cookie/",
+    "path": "/tag/javase/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2081,6 +2319,48 @@ export const searchIndex = [
     "title": "Vue 分类",
     "headers": [],
     "path": "/category/vue/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "初始化框架 标签",
+    "headers": [],
+    "path": "/tag/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%A1%86%E6%9E%B6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "学习笔记 标签",
+    "headers": [],
+    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "mysql 标签",
+    "headers": [],
+    "path": "/tag/mysql/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "NestJS 标签",
+    "headers": [],
+    "path": "/tag/nestjs/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "接口重放攻击 标签",
+    "headers": [],
+    "path": "/tag/%E6%8E%A5%E5%8F%A3%E9%87%8D%E6%94%BE%E6%94%BB%E5%87%BB/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "set-cookie 标签",
+    "headers": [],
+    "path": "/tag/set-cookie/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2102,6 +2382,20 @@ export const searchIndex = [
     "title": "ES6 标签",
     "headers": [],
     "path": "/tag/es6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分支优化 标签",
+    "headers": [],
+    "path": "/tag/%E5%88%86%E6%94%AF%E4%BC%98%E5%8C%96/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "canvas 标签",
+    "headers": [],
+    "path": "/tag/canvas/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2239,16 +2533,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}
