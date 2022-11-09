@@ -24,9 +24,43 @@
 
 ### 基础组件
 
-文件路径：`/src/base`
+基础组件的文件路径：`/src/base`
 
 #### 1.基础页面（BasePage）
 
-包含具有导航功能的导航栏、标签栏页面框架。
+- **组件路径**：`/src/base/BasePage/BasePage.vue`
 
+- **介绍**：包含具有导航功能的导航栏（页头）、标签栏（页脚）页面框架。
+
+
+
+##### 导航栏
+
+
+
+##### 标签栏
+
+**介绍：**基础页面的页脚部分，通过对`Tabbar`组件的二次封装
+
+- `BaseFooter`的props类型：
+
+```ts
+export type BaseFooter = {
+  //导航栏标题
+  barName?: string;
+  //图标名称
+  iconName?: string,
+  img?: {
+    //图片激活状态下的地址
+    activeSrc: string,
+    //图片未激活状态下的地址
+    inactiveSrc: string
+  },
+}[];
+```
+
+注意：iconName和img只能显示一个，其中iconName的优先级比较高，iconName的值来源于vant组件库Icon的name值，[查看更多](http://vant3.uihtm.com/#/zh-CN/icon)
+
+- 自定义事件`tabBarClick`
+
+点击页脚的图标时会触发该自定义事件，该事件接收一个`name`参数，值为当前激活标签的`barName`值
