@@ -1,4 +1,4 @@
-# clean-vite-cli使用说明
+# clean-vite-cli 使用说明
 
 ## 请求服务
 
@@ -32,35 +32,34 @@
 
 - **介绍**：包含具有导航功能的导航栏（页头）、标签栏（页脚）页面框架。
 
-
-
 ##### 导航栏
-
-
 
 ##### 标签栏
 
 **介绍：**基础页面的页脚部分，通过对`Tabbar`组件的二次封装
 
-- `BaseFooter`的props类型：
+- `BaseFooter`的 props 类型：
 
 ```ts
 export type BaseFooter = {
   //导航栏标题
   barName?: string;
   //图标名称
-  iconName?: string,
+  iconName?: string;
   img?: {
     //图片激活状态下的地址
-    activeSrc: string,
+    activeSrc: string;
     //图片未激活状态下的地址
-    inactiveSrc: string
-  },
+    inactiveSrc: string;
+  };
+  router?: BasePageRouter;
 }[];
+
+export type BasePageRouter = {
+  path: string;
+  query?: string | {};
+  param?: {};
+};
 ```
 
-注意：iconName和img只能显示一个，其中iconName的优先级比较高，iconName的值来源于vant组件库Icon的name值，[查看更多](http://vant3.uihtm.com/#/zh-CN/icon)
-
-- 自定义事件`tabBarClick`
-
-点击页脚的图标时会触发该自定义事件，该事件接收一个`name`参数，值为当前激活标签的`barName`值
+注意：iconName 和 img 只能显示一个，其中 iconName 的优先级比较高，iconName 的值来源于 vant 组件库 Icon 的 name 值，[查看更多](http://vant3.uihtm.com/#/zh-CN/icon)
