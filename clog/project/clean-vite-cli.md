@@ -1,3 +1,14 @@
+---
+icon: javascript
+date: 2022-11-11
+star: 10
+category:
+  - 前端
+  - 使用文档
+tag:
+  - clean-vite-clis
+---
+# cyou-js
 # clean-vite-cli 使用说明
 
 ## 请求服务
