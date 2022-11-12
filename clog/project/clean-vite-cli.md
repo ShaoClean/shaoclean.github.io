@@ -6,8 +6,9 @@ category:
   - 前端
   - 使用文档
 tag:
-  - clean-vite-clis
+  - clean-vite-cli
 ---
+
 # cyou-js
 # clean-vite-cli 使用说明
 
@@ -52,25 +53,29 @@ tag:
 - `BaseFooter`的 props 类型：
 
 ```ts
-export type BaseFooter = {
+export type BaseFooterType = {
   //导航栏标题
-  barName?: string;
+  barName?: string,
   //图标名称
-  iconName?: string;
+  iconName?: string,
   img?: {
     //图片激活状态下的地址
-    activeSrc: string;
+    activeSrc: string,
     //图片未激活状态下的地址
-    inactiveSrc: string;
-  };
-  router?: BasePageRouter;
+    inactiveSrc: string
+  },
+  router?: BasePageRouterType
 }[];
 
-export type BasePageRouter = {
-  path: string;
-  query?: string | {};
-  param?: {};
-};
+export type BasePageRouterType = {
+  path: string,
+  query?: string | {},
+  param?: {}
+}
 ```
 
 注意：iconName 和 img 只能显示一个，其中 iconName 的优先级比较高，iconName 的值来源于 vant 组件库 Icon 的 name 值，[查看更多](http://vant3.uihtm.com/#/zh-CN/icon)
+
+
+
+沉浸式开发 Moegi Theme 速度：50x BGM：Tell Me Again What I'm Missing - oomiee 封面字体：Space Grotesk、Outfit ---- 2022.10.31、2022.11.03 直播录像 做一个 VS Code 主题 Moegi 代码仓库： https://github.com/moegi-design/vscode-theme ---- Diu: https://ddiu.io/ Github: https://github.com/ddiu8081
