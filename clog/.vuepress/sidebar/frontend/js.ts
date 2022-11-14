@@ -8,5 +8,11 @@ export const jsSidebar = arraySidebar([
   "hash-url",
   "event-loop",
   "js-Operation-mechanism",
-  "isArray"
+  "isArray",
+  "drag",
+  "branch",
+  "canvas",
+  "lazyFunction",
+  "magic",
+  "table"
 ])
