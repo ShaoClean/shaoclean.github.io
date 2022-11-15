@@ -6,9 +6,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "clog",
   description: "clean's blog",
-
   base: "/",
-
   theme,
   plugins:[
     searchPlugin({
@@ -24,9 +22,6 @@ export default defineUserConfig({
         }
       ]
        
-      
-        
-
     })
   ]
 });
