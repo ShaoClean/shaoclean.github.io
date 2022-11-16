@@ -76,6 +76,5 @@ export type BasePageRouterType = {
 
 注意：iconName 和 img 只能显示一个，其中 iconName 的优先级比较高，iconName 的值来源于 vant 组件库 Icon 的 name 值，[查看更多](http://vant3.uihtm.com/#/zh-CN/icon)
 
-
-
+获取「得意黑」字体：
 

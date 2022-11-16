@@ -85,7 +85,6 @@ export default hopeTheme({
       // serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
       serverURL: "https://doc.shaoclean.top/",
     },
-
     mdEnhance: {
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
