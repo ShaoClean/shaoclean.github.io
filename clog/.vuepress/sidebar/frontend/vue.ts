@@ -8,5 +8,6 @@ export const vueSidebar = arraySidebar([
   "slot",
   "h",
   "defineProps"
+  
 ])
 
