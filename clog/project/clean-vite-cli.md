@@ -16,8 +16,15 @@ tag:
 - 分布式动态路由+懒加载
 - 路由权限校验，自动设置标题
 - 请求、响应拦截（axios二次封装）
+- 复杂分支优化
 
 # clean-vite-cli 使用说明
+
+## token验证流程
+
+![1的副本](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/1%E7%9A%84%E5%89%AF%E6%9C%AC.png)
+
+
 
 ## 请求服务
 
