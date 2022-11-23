@@ -14,7 +14,7 @@ tag:
 
 父元素设置了flex布局，在移动端的情况下无法实现`overflow:scroll`出现滚动条
 
-网上找了挺多的解决方案，大多数是说移除`touchmove`的默认事件
+网上找了挺多的解决方案，大多数是说移除`touchmove`的默认事件。
 
 ```js
 document.querySelector('.element').addEventListener('touchmove', stopScroll, false);
