@@ -14,9 +14,22 @@ tag:
 
 声明一个泛型函数,使用的时候可以使用断言，也可以由ts自动推导T的类型
 ```ts
-function add<T>(x:T,y:T):T{
-  return x + y
+function test<T>(x:T):T{
+  return x
 }
-function add(1,2)//3
-function add('clean','hi')//cleanhi
+test(1)
+
+
+
+function getReqObj<T>(arr:any[]):T{
+  const obj = {};
+  for(let item of arr){
+    if(item.key){
+      // @ts-ignore
+      obj[item.key] = item.value
+    }
+  }
+  return obj as T
+}
+const params = getReqObj(data)
 ```
