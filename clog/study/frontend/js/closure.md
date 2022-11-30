@@ -1,7 +1,7 @@
 ---
 icon: javascript
 date: 2022-09-09
-star: 10
+star: 20
 category:
   - 前端
   - JS

@@ -1,7 +1,6 @@
 ---
 icon: typescript
 date: 2022-11-24
-star: 20
 category:
   - 前端
   - Ts

@@ -1,7 +1,6 @@
 ---
 icon: javascript
 date: 2022-11-14
-star: 10
 category:
   - 前端
   - CSS

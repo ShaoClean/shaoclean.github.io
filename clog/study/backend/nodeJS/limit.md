@@ -1,7 +1,6 @@
 ---
 icon: nodeJS
 date: 2022-11-25
-star: 10
 category:
   - 后端
   - Node
