@@ -24,4 +24,3 @@ export default sidebar({
   //demo
   "/demo/": demoSidebar
 });
-

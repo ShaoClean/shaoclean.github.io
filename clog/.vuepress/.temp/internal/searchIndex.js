@@ -78,6 +78,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "CYou",
     "headers": [
       {
@@ -135,8 +142,15 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "clean-vite-cli使用说明",
+    "title": "cyou-js",
     "headers": [
+      {
+        "level": 2,
+        "title": "token验证流程",
+        "slug": "token验证流程",
+        "link": "#token验证流程",
+        "children": []
+      },
       {
         "level": 2,
         "title": "请求服务",
@@ -252,13 +266,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "加速访问GitHub方法",
     "headers": [
       {
@@ -341,6 +348,13 @@ export const searchIndex = [
       }
     ],
     "path": "/teach/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分布式动态路",
+    "headers": [],
+    "path": "/teach/4.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1087,6 +1101,106 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Node笔记",
+    "headers": [],
+    "path": "/study/backend/nodeJS/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "初始化一个最基础的后端接口",
+    "headers": [],
+    "path": "/study/backend/nodeJS/init.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "limit和offset用法",
+    "headers": [],
+    "path": "/study/backend/nodeJS/limit.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "连接远程数据库",
+    "headers": [],
+    "path": "/study/backend/nodeJS/mysql-connect.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Nest笔记汇总",
+    "headers": [
+      {
+        "level": 2,
+        "title": "连接远程数据库",
+        "slug": "连接远程数据库",
+        "link": "#连接远程数据库",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Controller中的@Res()",
+        "slug": "controller中的-res",
+        "link": "#controller中的-res",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "生成svg验证码",
+        "slug": "生成svg验证码",
+        "link": "#生成svg验证码",
+        "children": []
+      }
+    ],
+    "path": "/study/backend/nodeJS/nestjs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "接口重放攻击",
+    "headers": [
+      {
+        "level": 2,
+        "title": "timestamps",
+        "slug": "timestamps",
+        "link": "#timestamps",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "nonce",
+        "slug": "nonce",
+        "link": "#nonce",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "timestamps+nonce",
+        "slug": "timestamps-nonce",
+        "link": "#timestamps-nonce",
+        "children": []
+      }
+    ],
+    "path": "/study/backend/nodeJS/replay-attack.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "set-cookie时出现的问题",
+    "headers": [],
+    "path": "/study/backend/nodeJS/set-cookie.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "文件上传",
+    "headers": [],
+    "path": "/study/backend/nodeJS/upload.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "React笔记",
     "headers": [],
     "path": "/study/frontend/react/",
@@ -1611,6 +1725,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "元素拖拽",
+    "headers": [],
+    "path": "/study/frontend/js/drag.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "事件循环机制",
     "headers": [
       {
@@ -1691,6 +1812,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "直接在页面上编辑样式",
+    "headers": [],
+    "path": "/study/frontend/js/magic.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "移动端overflow:scroll无效问题",
+    "headers": [],
+    "path": "/study/frontend/js/overflow-mobile.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Table相关",
     "headers": [
       {
@@ -1702,42 +1837,6 @@ export const searchIndex = [
       }
     ],
     "path": "/study/frontend/js/table.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "装饰器",
-    "headers": [
-      {
-        "level": 2,
-        "title": "启用装饰器",
-        "slug": "启用装饰器",
-        "link": "#启用装饰器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "快速上手",
-        "slug": "快速上手",
-        "link": "#快速上手",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/ts/Decorator.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "TS笔记",
-    "headers": [],
-    "path": "/study/frontend/ts/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record类型",
-    "headers": [],
-    "path": "/study/frontend/ts/Record.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2000,95 +2099,59 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Node笔记",
+    "title": "Vite debug 断点调试",
     "headers": [],
-    "path": "/study/backend/nodeJS/",
+    "path": "/study/frontend/vue/vite-debug.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "初始化一个最基础的后端接口",
-    "headers": [],
-    "path": "/study/backend/nodeJS/init.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "连接远程数据库",
-    "headers": [],
-    "path": "/study/backend/nodeJS/mysql-connect.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Nest笔记汇总",
+    "title": "装饰器",
     "headers": [
       {
         "level": 2,
-        "title": "连接远程数据库",
-        "slug": "连接远程数据库",
-        "link": "#连接远程数据库",
+        "title": "启用装饰器",
+        "slug": "启用装饰器",
+        "link": "#启用装饰器",
         "children": []
       },
       {
         "level": 2,
-        "title": "Controller中的@Res()",
-        "slug": "controller中的-res",
-        "link": "#controller中的-res",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "生成svg验证码",
-        "slug": "生成svg验证码",
-        "link": "#生成svg验证码",
+        "title": "快速上手",
+        "slug": "快速上手",
+        "link": "#快速上手",
         "children": []
       }
     ],
-    "path": "/study/backend/nodeJS/nestjs.html",
+    "path": "/study/frontend/ts/Decorator.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "接口重放攻击",
-    "headers": [
-      {
-        "level": 2,
-        "title": "timestamps",
-        "slug": "timestamps",
-        "link": "#timestamps",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "nonce",
-        "slug": "nonce",
-        "link": "#nonce",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "timestamps+nonce",
-        "slug": "timestamps-nonce",
-        "link": "#timestamps-nonce",
-        "children": []
-      }
-    ],
-    "path": "/study/backend/nodeJS/replay-attack.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "set-cookie时出现的问题",
+    "title": "元素隐式具有 \"any\" 类型，因为类型为 \"any\" 的表达式不能用于索引类型 xxx",
     "headers": [],
-    "path": "/study/backend/nodeJS/set-cookie.html",
+    "path": "/study/frontend/ts/Key.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "文件上传",
+    "title": "TS笔记",
     "headers": [],
-    "path": "/study/backend/nodeJS/upload.html",
+    "path": "/study/frontend/ts/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record类型",
+    "headers": [],
+    "path": "/study/frontend/ts/Record.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "泛型",
+    "headers": [],
+    "path": "/study/frontend/ts/fx.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2219,9 +2282,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "随笔 分类",
+    "title": "分布式动态路 分类",
     "headers": [],
-    "path": "/category/%E9%9A%8F%E7%AC%94/",
+    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2229,6 +2292,20 @@ export const searchIndex = [
     "title": "CYou 标签",
     "headers": [],
     "path": "/tag/cyou/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "随笔 分类",
+    "headers": [],
+    "path": "/category/%E9%9A%8F%E7%AC%94/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "clean-vite-cli 标签",
+    "headers": [],
+    "path": "/tag/clean-vite-cli/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2275,9 +2352,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "React 分类",
+    "title": "Node 分类",
     "headers": [],
-    "path": "/category/react/",
+    "path": "/category/node/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2289,9 +2366,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JS 分类",
+    "title": "React 分类",
     "headers": [],
-    "path": "/category/js/",
+    "path": "/category/react/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2303,9 +2380,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Ts 分类",
+    "title": "JS 分类",
     "headers": [],
-    "path": "/category/ts/",
+    "path": "/category/js/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2317,9 +2394,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue 分类",
+    "title": "CSS 分类",
     "headers": [],
-    "path": "/category/vue/",
+    "path": "/category/css/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2331,9 +2408,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Node 分类",
+    "title": "Vue 分类",
     "headers": [],
-    "path": "/category/node/",
+    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2341,6 +2418,13 @@ export const searchIndex = [
     "title": "AngularCli 标签",
     "headers": [],
     "path": "/tag/angularcli/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Ts 分类",
+    "headers": [],
+    "path": "/category/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2355,6 +2439,48 @@ export const searchIndex = [
     "title": "公司项目 标签",
     "headers": [],
     "path": "/tag/%E5%85%AC%E5%8F%B8%E9%A1%B9%E7%9B%AE/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "初始化框架 标签",
+    "headers": [],
+    "path": "/tag/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%A1%86%E6%9E%B6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分页 标签",
+    "headers": [],
+    "path": "/tag/%E5%88%86%E9%A1%B5/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "mysql 标签",
+    "headers": [],
+    "path": "/tag/mysql/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "NestJS 标签",
+    "headers": [],
+    "path": "/tag/nestjs/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "接口重放攻击 标签",
+    "headers": [],
+    "path": "/tag/%E6%8E%A5%E5%8F%A3%E9%87%8D%E6%94%BE%E6%94%BB%E5%87%BB/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "set-cookie 标签",
+    "headers": [],
+    "path": "/tag/set-cookie/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2401,6 +2527,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "drag 标签",
+    "headers": [],
+    "path": "/tag/drag/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "事件循环 标签",
     "headers": [],
     "path": "/tag/%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/",
@@ -2436,30 +2569,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "移动端 标签",
+    "headers": [],
+    "path": "/tag/%E7%A7%BB%E5%8A%A8%E7%AB%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "table 标签",
     "headers": [],
     "path": "/tag/table/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "装饰器 标签",
-    "headers": [],
-    "path": "/tag/%E8%A3%85%E9%A5%B0%E5%99%A8/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Decorator 标签",
-    "headers": [],
-    "path": "/tag/decorator/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record 标签",
-    "headers": [],
-    "path": "/tag/record/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2513,38 +2632,51 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "初始化框架 标签",
+    "title": "debug调试 标签",
     "headers": [],
-    "path": "/tag/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%A1%86%E6%9E%B6/",
+    "path": "/tag/debug%E8%B0%83%E8%AF%95/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "mysql 标签",
+    "title": "装饰器 标签",
     "headers": [],
-    "path": "/tag/mysql/",
+    "path": "/tag/%E8%A3%85%E9%A5%B0%E5%99%A8/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "NestJS 标签",
+    "title": "Decorator 标签",
     "headers": [],
-    "path": "/tag/nestjs/",
+    "path": "/tag/decorator/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "接口重放攻击 标签",
+    "title": "Record 标签",
     "headers": [],
-    "path": "/tag/%E6%8E%A5%E5%8F%A3%E9%87%8D%E6%94%BE%E6%94%BB%E5%87%BB/",
+    "path": "/tag/record/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "set-cookie 标签",
+    "title": "泛型 标签",
     "headers": [],
-    "path": "/tag/set-cookie/",
+    "path": "/tag/%E6%B3%9B%E5%9E%8B/",
     "pathLocale": "/",
     "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}

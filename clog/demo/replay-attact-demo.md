@@ -6,7 +6,6 @@ category:
   - demo
 tag:
   - replay-attact
-star: 10
 ---
 
 # 复现接口重放攻击

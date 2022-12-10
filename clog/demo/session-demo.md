@@ -6,7 +6,6 @@ category:
   - demo
 tag:
   - session
-star: 10
 ---
 # session demo
 

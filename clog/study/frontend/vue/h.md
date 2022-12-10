@@ -1,7 +1,6 @@
 ---
 icon: vue
 date: 2022-09-25
-star: 20
 category:
   - 前端
   - Vue

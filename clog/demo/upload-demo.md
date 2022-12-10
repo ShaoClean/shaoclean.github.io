@@ -6,7 +6,6 @@ category:
   - demo
 tag:
   - upload
-star: 10
 ---
 # (单/多)文件上传demo
 
