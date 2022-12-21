@@ -12,6 +12,7 @@ export default{
         { text: "Angular", icon: "angular", link: "angular/" },
         { text: "JS", icon: "javascript", link: "js/" },
         { text: "TS", icon: "typescript", link: "ts/" },
+        { text: "CSS", icon: "css", link: "css/" },
       ],
     },
     {

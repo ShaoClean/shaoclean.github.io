@@ -16,6 +16,7 @@ export const vueSidebar = arraySidebar([
   "vite-config",
   "slot",
   "h",
-  "defineProps"
+  "defineProps",
+  "vite-debug"
 ])
 
