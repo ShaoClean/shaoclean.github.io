@@ -14,5 +14,6 @@ export const jsSidebar = arraySidebar([
   "canvas",
   "lazyFunction",
   "magic",
-  "table"
+  "table",
+  "jsonp"
 ])
