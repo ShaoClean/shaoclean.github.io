@@ -7,73 +7,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "demo演示",
+    "title": "猛男的随笔",
     "headers": [],
-    "path": "/demo/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Flex 布局",
-    "headers": [],
-    "path": "/demo/flex-layout.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "session登陆校验处理函数",
-    "headers": [],
-    "path": "/demo/login_handle.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "复现接口重放攻击",
-    "headers": [],
-    "path": "/demo/replay-attact-demo.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "session demo",
-    "headers": [],
-    "path": "/demo/session-demo.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "(单/多)文件上传demo",
-    "headers": [
-      {
-        "level": 2,
-        "title": "单文件后端代码",
-        "slug": "单文件后端代码",
-        "link": "#单文件后端代码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "单文件前端代码",
-        "slug": "单文件前端代码",
-        "link": "#单文件前端代码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多文件后端代码",
-        "slug": "多文件后端代码",
-        "link": "#多文件后端代码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多文件前端代码",
-        "slug": "多文件前端代码",
-        "link": "#多文件前端代码",
-        "children": []
-      }
-    ],
-    "path": "/demo/upload-demo.html",
+    "path": "/essay/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -259,9 +195,73 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
+    "title": "demo演示",
     "headers": [],
-    "path": "/essay/",
+    "path": "/demo/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Flex 布局",
+    "headers": [],
+    "path": "/demo/flex-layout.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "session登陆校验处理函数",
+    "headers": [],
+    "path": "/demo/login_handle.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "复现接口重放攻击",
+    "headers": [],
+    "path": "/demo/replay-attact-demo.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "session demo",
+    "headers": [],
+    "path": "/demo/session-demo.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "(单/多)文件上传demo",
+    "headers": [
+      {
+        "level": 2,
+        "title": "单文件后端代码",
+        "slug": "单文件后端代码",
+        "link": "#单文件后端代码",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "单文件前端代码",
+        "slug": "单文件前端代码",
+        "link": "#单文件前端代码",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多文件后端代码",
+        "slug": "多文件后端代码",
+        "link": "#多文件后端代码",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多文件前端代码",
+        "slug": "多文件前端代码",
+        "link": "#多文件前端代码",
+        "children": []
+      }
+    ],
+    "path": "/demo/upload-demo.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1503,56 +1503,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "装饰器",
-    "headers": [
-      {
-        "level": 2,
-        "title": "启用装饰器",
-        "slug": "启用装饰器",
-        "link": "#启用装饰器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "快速上手",
-        "slug": "快速上手",
-        "link": "#快速上手",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/ts/Decorator.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "元素隐式具有 \"any\" 类型，因为类型为 \"any\" 的表达式不能用于索引类型 xxx",
-    "headers": [],
-    "path": "/study/frontend/ts/Key.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "TS笔记",
-    "headers": [],
-    "path": "/study/frontend/ts/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record类型",
-    "headers": [],
-    "path": "/study/frontend/ts/Record.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "泛型",
-    "headers": [],
-    "path": "/study/frontend/ts/fx.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "ES6",
     "headers": [
       {
@@ -2177,6 +2127,56 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "装饰器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "启用装饰器",
+        "slug": "启用装饰器",
+        "link": "#启用装饰器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "快速上手",
+        "slug": "快速上手",
+        "link": "#快速上手",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/ts/Decorator.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "元素隐式具有 \"any\" 类型，因为类型为 \"any\" 的表达式不能用于索引类型 xxx",
+    "headers": [],
+    "path": "/study/frontend/ts/Key.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "TS笔记",
+    "headers": [],
+    "path": "/study/frontend/ts/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record类型",
+    "headers": [],
+    "path": "/study/frontend/ts/Record.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "泛型",
+    "headers": [],
+    "path": "/study/frontend/ts/fx.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -2233,6 +2233,48 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "前端 分类",
+    "headers": [],
+    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "CYou 标签",
+    "headers": [],
+    "path": "/tag/cyou/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "项目文档 分类",
+    "headers": [],
+    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "clean-vite-cli 标签",
+    "headers": [],
+    "path": "/tag/clean-vite-cli/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "使用文档 分类",
+    "headers": [],
+    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "cyou-js 标签",
+    "headers": [],
+    "path": "/tag/cyou-js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "demo 分类",
     "headers": [],
     "path": "/category/demo/",
@@ -2247,9 +2289,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前端 分类",
+    "title": "Github 分类",
     "headers": [],
-    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "path": "/category/github/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2261,9 +2303,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "项目文档 分类",
+    "title": "分布式动态路 分类",
     "headers": [],
-    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
+    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2275,9 +2317,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "使用文档 分类",
+    "title": "随笔 分类",
     "headers": [],
-    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
+    "path": "/category/%E9%9A%8F%E7%AC%94/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2289,48 +2331,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Github 分类",
-    "headers": [],
-    "path": "/category/github/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "upload 标签",
-    "headers": [],
-    "path": "/tag/upload/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "分布式动态路 分类",
-    "headers": [],
-    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "CYou 标签",
-    "headers": [],
-    "path": "/tag/cyou/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "随笔 分类",
-    "headers": [],
-    "path": "/category/%E9%9A%8F%E7%AC%94/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "clean-vite-cli 标签",
-    "headers": [],
-    "path": "/tag/clean-vite-cli/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "后端 分类",
     "headers": [],
     "path": "/category/%E5%90%8E%E7%AB%AF/",
@@ -2338,9 +2338,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "cyou-js 标签",
+    "title": "upload 标签",
     "headers": [],
-    "path": "/tag/cyou-js/",
+    "path": "/tag/upload/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2415,9 +2415,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Ts 分类",
+    "title": "JS 分类",
     "headers": [],
-    "path": "/category/ts/",
+    "path": "/category/js/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2429,9 +2429,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JS 分类",
+    "title": "Vue 分类",
     "headers": [],
-    "path": "/category/js/",
+    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2443,9 +2443,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue 分类",
+    "title": "Ts 分类",
     "headers": [],
-    "path": "/category/vue/",
+    "path": "/category/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2523,34 +2523,6 @@ export const searchIndex = [
     "title": "ReactExtends 标签",
     "headers": [],
     "path": "/tag/reactextends/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "装饰器 标签",
-    "headers": [],
-    "path": "/tag/%E8%A3%85%E9%A5%B0%E5%99%A8/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Decorator 标签",
-    "headers": [],
-    "path": "/tag/decorator/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record 标签",
-    "headers": [],
-    "path": "/tag/record/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "泛型 标签",
-    "headers": [],
-    "path": "/tag/%E6%B3%9B%E5%9E%8B/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2698,6 +2670,34 @@ export const searchIndex = [
     "title": "debug调试 标签",
     "headers": [],
     "path": "/tag/debug%E8%B0%83%E8%AF%95/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "装饰器 标签",
+    "headers": [],
+    "path": "/tag/%E8%A3%85%E9%A5%B0%E5%99%A8/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Decorator 标签",
+    "headers": [],
+    "path": "/tag/decorator/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record 标签",
+    "headers": [],
+    "path": "/tag/record/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "泛型 标签",
+    "headers": [],
+    "path": "/tag/%E6%B3%9B%E5%9E%8B/",
     "pathLocale": "/",
     "extraFields": []
   }

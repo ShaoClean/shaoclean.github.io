@@ -15,5 +15,6 @@ export const jsSidebar = arraySidebar([
   "lazyFunction",
   "magic",
   "table",
-  "jsonp"
+  "jsonp",
+  "restful-api"
 ])
