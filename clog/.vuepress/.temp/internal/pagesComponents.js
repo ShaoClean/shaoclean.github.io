@@ -297,4 +297,6 @@ export const pagesComponents = {
   "v-3db5cc3c": defineAsyncComponent(() => import(/* webpackChunkName: "v-3db5cc3c" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/tag/泛型/index.html.vue")),
   // path: /study/frontend/js/restful-api.html
   "v-caac622a": defineAsyncComponent(() => import(/* webpackChunkName: "v-caac622a" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/js/restful-api.html.vue")),
+  // path: /study/frontend/css/hidden.html
+  "v-11aba825": defineAsyncComponent(() => import(/* webpackChunkName: "v-11aba825" */"/Users/clean/Desktop/clog/clog/.vuepress/.temp/pages/study/frontend/css/hidden.html.vue")),
 }

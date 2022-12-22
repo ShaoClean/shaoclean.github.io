@@ -147,4 +147,5 @@ export const pagesRoutes = [
   ["v-348f87f0","/tag/record/",{"title":"Record 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/record/index.html"]],
   ["v-3db5cc3c","/tag/%E6%B3%9B%E5%9E%8B/",{"title":"泛型 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/泛型/","/tag/%E6%B3%9B%E5%9E%8B/index.html"]],
   ["v-caac622a","/study/frontend/js/restful-api.html",{"title":"RESTFul API","icon":"javascript","type":"article","readingTime":{"minutes":0.82,"words":246},"excerpt":"","date":"2022-12-22T00:00:00.000Z","localizedDate":"2022年12月22日","category":["前端","JS"],"tag":["restful-api","学习笔记"]},["/study/frontend/js/restful-api","/study/frontend/js/restful-api.md"]],
+  ["v-11aba825","/study/frontend/css/hidden.html",{"title":"隐藏元素","icon":"javascript","type":"article","readingTime":{"minutes":0.07,"words":21},"excerpt":"","date":"2022-12-22T00:00:00.000Z","localizedDate":"2022年12月22日","category":["前端","CSS"],"tag":["hidden element","学习笔记"]},["/study/frontend/css/hidden","/study/frontend/css/hidden.md"]],
 ]
