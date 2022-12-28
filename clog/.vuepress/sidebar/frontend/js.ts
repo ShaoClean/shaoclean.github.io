@@ -16,5 +16,6 @@ export const jsSidebar = arraySidebar([
   "magic",
   "table",
   "jsonp",
-  "restful-api"
+  "restful-api",
+  "img-cors"
 ])
