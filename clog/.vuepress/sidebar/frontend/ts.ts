@@ -6,4 +6,5 @@ export const tsSidebar = arraySidebar([
   "Decorator",
   "fx",
   "Key",
+  "utilityTypes"
 ])
