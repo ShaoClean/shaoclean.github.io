@@ -1,4 +1,5 @@
 import { HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import { getFiles } from "../../getFiles";
 
 // 前置路径 /study/backend
 export const nodeSidebar:HopeThemeSidebarGroupItem = {
@@ -6,10 +7,5 @@ export const nodeSidebar:HopeThemeSidebarGroupItem = {
   icon:"nodeJS",
   prefix:"nodeJS/",
   collapsable: true,
-  children:[
-    "",
-    "init",
-    "set-cookie",
-    "upload"
-  ]
+  children:getFiles('/clog/study/backend/nodeJS')
 }

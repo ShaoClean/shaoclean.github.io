@@ -1,4 +1,5 @@
 import { HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import { getFiles } from "../../getFiles";
 
 // 前置路径 /study/backend
 export const javaSidebar:HopeThemeSidebarGroupItem = {
@@ -6,8 +7,5 @@ export const javaSidebar:HopeThemeSidebarGroupItem = {
   icon:"java",
   prefix:"java/",
   collapsable: true,
-  children:[
-    "",
-    "JavaSE",
-  ]
+  children:getFiles('/clog/study/backend/java')
 }

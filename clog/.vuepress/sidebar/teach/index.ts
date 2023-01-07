@@ -1,7 +1,4 @@
 import { arraySidebar } from "vuepress-theme-hope";
+import { getFiles } from "../../getFiles";
 
-export const teachSidebar = arraySidebar([
-  "1",
-  "2",
-  "3"
-])
+export const teachSidebar = arraySidebar(getFiles('/clog/teach'))
