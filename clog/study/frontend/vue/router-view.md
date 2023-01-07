@@ -93,8 +93,8 @@ router.ts:
 
 官网是这样描述的：
 
-> <router-view> 暴露了一个 v-slot API，主要使用 <transition> 和 <keep-alive> 组件来包裹你的路由组件。
-> - Component: VNodes, 传递给 <component>的is prop。
+> `<router-view>` 暴露了一个 v-slot API，主要使用 `<transition>` 和 `<keep-alive>` 组件来包裹你的路由组件。
+> - Component: VNodes, 传递给 `<component>`的is prop。
 > - route: 解析出的标准化路由地址。
 
 我是这样理解的：
