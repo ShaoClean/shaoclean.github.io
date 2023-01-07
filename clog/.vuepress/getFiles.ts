@@ -3,6 +3,7 @@ import fs from 'fs'
 export function getFiles(path: string) {
   const filesArr = fs.readdirSync(process.cwd() + path);
   const arr: string[] = []
+  if (!filesArr.length) return []
   for (let file of filesArr) {
     if (file.indexOf('.md') === -1) continue
     if (file.match(/README.md/i)) {
