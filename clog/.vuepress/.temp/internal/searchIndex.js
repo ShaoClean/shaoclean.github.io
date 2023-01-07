@@ -7,13 +7,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "CYou",
     "headers": [
       {
@@ -191,6 +184,13 @@ export const searchIndex = [
       }
     ],
     "path": "/project/cyou-js.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1215,6 +1215,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "隐藏元素",
+    "headers": [],
+    "path": "/study/frontend/css/hidden.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "React笔记",
     "headers": [],
     "path": "/study/frontend/react/",
@@ -1790,6 +1797,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Referer问题",
+    "headers": [],
+    "path": "/study/frontend/js/img-cors.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "判断是否为数组的方式",
     "headers": [],
     "path": "/study/frontend/js/isArray.html",
@@ -1847,6 +1861,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "RESTFul API",
+    "headers": [],
+    "path": "/study/frontend/js/restful-api.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Table相关",
     "headers": [
       {
@@ -1858,6 +1879,78 @@ export const searchIndex = [
       }
     ],
     "path": "/study/frontend/js/table.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "装饰器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "启用装饰器",
+        "slug": "启用装饰器",
+        "link": "#启用装饰器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "快速上手",
+        "slug": "快速上手",
+        "link": "#快速上手",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/ts/Decorator.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "元素隐式具有 \"any\" 类型，因为类型为 \"any\" 的表达式不能用于索引类型 xxx",
+    "headers": [],
+    "path": "/study/frontend/ts/Key.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "TS笔记",
+    "headers": [],
+    "path": "/study/frontend/ts/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record类型",
+    "headers": [],
+    "path": "/study/frontend/ts/Record.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "泛型",
+    "headers": [],
+    "path": "/study/frontend/ts/fx.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "实用类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Record类型",
+        "slug": "record类型",
+        "link": "#record类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Partial类型和Omit类型一起使用",
+        "slug": "partial类型和omit类型一起使用",
+        "link": "#partial类型和omit类型一起使用",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/ts/utilityTypes.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2055,6 +2148,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "router-view 配合 keep-alive",
+    "headers": [],
+    "path": "/study/frontend/vue/router-view.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "插槽",
     "headers": [
       {
@@ -2123,56 +2223,6 @@ export const searchIndex = [
     "title": "Vite debug 断点调试",
     "headers": [],
     "path": "/study/frontend/vue/vite-debug.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "装饰器",
-    "headers": [
-      {
-        "level": 2,
-        "title": "启用装饰器",
-        "slug": "启用装饰器",
-        "link": "#启用装饰器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "快速上手",
-        "slug": "快速上手",
-        "link": "#快速上手",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/ts/Decorator.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "元素隐式具有 \"any\" 类型，因为类型为 \"any\" 的表达式不能用于索引类型 xxx",
-    "headers": [],
-    "path": "/study/frontend/ts/Key.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "TS笔记",
-    "headers": [],
-    "path": "/study/frontend/ts/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record类型",
-    "headers": [],
-    "path": "/study/frontend/ts/Record.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "泛型",
-    "headers": [],
-    "path": "/study/frontend/ts/fx.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2429,9 +2479,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue 分类",
+    "title": "Ts 分类",
     "headers": [],
-    "path": "/category/vue/",
+    "path": "/category/ts/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2443,9 +2493,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Ts 分类",
+    "title": "Vue 分类",
     "headers": [],
-    "path": "/category/ts/",
+    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2513,6 +2563,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "hidden element 标签",
+    "headers": [],
+    "path": "/tag/hidden-element/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "ReactCli 标签",
     "headers": [],
     "path": "/tag/reactcli/",
@@ -2576,6 +2633,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Referer 标签",
+    "headers": [],
+    "path": "/tag/referer/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "isArray 标签",
     "headers": [],
     "path": "/tag/isarray/",
@@ -2611,9 +2675,51 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "restful-api 标签",
+    "headers": [],
+    "path": "/tag/restful-api/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "table 标签",
     "headers": [],
     "path": "/tag/table/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "装饰器 标签",
+    "headers": [],
+    "path": "/tag/%E8%A3%85%E9%A5%B0%E5%99%A8/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Decorator 标签",
+    "headers": [],
+    "path": "/tag/decorator/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Record 标签",
+    "headers": [],
+    "path": "/tag/record/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "泛型 标签",
+    "headers": [],
+    "path": "/tag/%E6%B3%9B%E5%9E%8B/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "utilityTypes 标签",
+    "headers": [],
+    "path": "/tag/utilitytypes/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2653,6 +2759,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "router-view 标签",
+    "headers": [],
+    "path": "/tag/router-view/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "slot 标签",
     "headers": [],
     "path": "/tag/slot/",
@@ -2670,34 +2783,6 @@ export const searchIndex = [
     "title": "debug调试 标签",
     "headers": [],
     "path": "/tag/debug%E8%B0%83%E8%AF%95/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "装饰器 标签",
-    "headers": [],
-    "path": "/tag/%E8%A3%85%E9%A5%B0%E5%99%A8/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Decorator 标签",
-    "headers": [],
-    "path": "/tag/decorator/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Record 标签",
-    "headers": [],
-    "path": "/tag/record/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "泛型 标签",
-    "headers": [],
-    "path": "/tag/%E6%B3%9B%E5%9E%8B/",
     "pathLocale": "/",
     "extraFields": []
   }

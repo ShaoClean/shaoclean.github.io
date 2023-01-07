@@ -1,22 +1,13 @@
-import {  arraySidebar } from "vuepress-theme-hope";
+import { arraySidebar } from "vuepress-theme-hope";
+import fs from 'fs'
+import { getFiles } from "../../getFiles";
 
-// const routerList: any = [];
+const filesArr = fs.readdirSync(process.cwd() + '/clog/study/frontend/vue');
 
-// function importAll(files: any) {
-//   for (let path in files) {
-//     const module = files[path].default;
-//     routerList.push(module);
-//   }
-// }
-// importAll(import.meta.glob("./*.routes.ts", { eager: true }))
-export const vueSidebar = arraySidebar([
-  "",
-  "Vue2",
-  "Vue3",
-  "vite-config",
-  "slot",
-  "h",
-  "defineProps",
-  "vite-debug"
-])
+console.log(filesArr);
+
+
+export const vueSidebar = arraySidebar(getFiles(filesArr))
+
+
 
