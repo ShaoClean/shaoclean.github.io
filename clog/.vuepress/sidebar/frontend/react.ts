@@ -1,7 +1,6 @@
 import { arraySidebar } from "vuepress-theme-hope";
+import fs from 'fs'
+import { getFiles } from "../../getFiles";
 
-export const reactSidebar = arraySidebar([
-  "",
-  "ReactCli",
-  "ReactExtends",
-])
+const filesArr = fs.readdirSync(process.cwd() + '/clog/study/frontend/react');
+export const reactSidebar = arraySidebar(getFiles(filesArr))

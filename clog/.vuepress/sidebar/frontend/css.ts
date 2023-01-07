@@ -1,7 +1,7 @@
 import { arraySidebar } from "vuepress-theme-hope";
+import fs from 'fs'
+import { getFiles } from "../../getFiles";
 
-export const cssSidebar = arraySidebar([
-  "",
-  "dashed",
-  "hidden"
-])
+const filesArr = fs.readdirSync(process.cwd() + '/clog/study/frontend/css');
+
+export const cssSidebar = arraySidebar(getFiles(filesArr))

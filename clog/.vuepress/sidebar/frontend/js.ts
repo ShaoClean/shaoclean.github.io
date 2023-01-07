@@ -1,21 +1,7 @@
 import { arraySidebar, HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import fs from 'fs'
+import { getFiles } from "../../getFiles";
 
-export const jsSidebar = arraySidebar([
-  "",
-  "ES6",
-  "closure",
-  "lazyFunction",
-  "hash-url",
-  "event-loop",
-  "js-Operation-mechanism",
-  "isArray",
-  "drag",
-  "branch",
-  "canvas",
-  "lazyFunction",
-  "magic",
-  "table",
-  "jsonp",
-  "restful-api",
-  "img-cors"
-])
+const filesArr = fs.readdirSync(process.cwd() + '/clog/study/frontend/js');
+
+export const jsSidebar = arraySidebar(getFiles(filesArr))

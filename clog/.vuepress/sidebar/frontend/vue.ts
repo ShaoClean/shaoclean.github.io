@@ -4,7 +4,6 @@ import { getFiles } from "../../getFiles";
 
 const filesArr = fs.readdirSync(process.cwd() + '/clog/study/frontend/vue');
 
-console.log(filesArr);
 
 
 export const vueSidebar = arraySidebar(getFiles(filesArr))
