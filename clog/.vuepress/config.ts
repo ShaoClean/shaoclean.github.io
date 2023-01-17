@@ -1,7 +1,7 @@
 import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 export default defineUserConfig({
   lang: "zh-CN",
   title: "clog",
@@ -22,6 +22,10 @@ export default defineUserConfig({
         }
       ]
        
-    })
+    }),
+    // 幻灯片支持
+    // mdEnhancePlugin({
+    //   presentation:true
+    // })
   ]
 });
