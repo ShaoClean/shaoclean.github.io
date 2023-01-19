@@ -33,4 +33,85 @@ tag:
 
 ## 2.代码实现
 
-由于`h()`函数第一个参数可以接收多种不同类型，主要来讲一下`Component`类型和`Function`类型的两种情况
+由于`h()`函数第一个参数可以接收多种不同类型，主要来讲一下`Component`类型(.vue组件)和`Function`类型(函数组件)的两种情况
+
+### Component类型
+这种方式比较好理解，首先按照正常的方式定义一个vue组件
+
+```vue
+<script lang="ts" setup>
+//SayHi.vue
+const props = defineProps<{
+    msg:string
+}>()
+function say(){
+    console.log(props.msg);
+} 
+</script>
+
+<template>
+<div>
+    <button @click="say">clike me say hi</button>
+</div>
+</template>
+```
+在`index.ts`中引入：
+```ts
+import { h,render} from "vue";
+import SayHiVue from './SayHi.vue';
+
+// 1.vue模板实现
+export default (msg:string)=>{
+    // createVNode 和 h 函数相同，只是h函数使用起来比较方便；可以创建vnode
+    // const vnode = createVNode(SayHi);
+    const vnode = h(SayHiVue,{msg});
+    render(vnode,document.body)
+} 
+```
+
+在需要用到的地方使用，
+比如说`App.vue`中
+```vue
+<script setup lang="ts">
+import SayHi from './say-hi/index'
+SayHi('im app button')
+</script>
+
+```
+
+### Function类型
+
+定义一个Function类型的函数
+
+```ts
+export default function SayHiTs(props,{emit,slot,attr}){
+    emit('SayHi','im say hi ts');
+    return h('div',props.msg)
+}
+```
+
+在`index.ts`中引入：
+```ts
+export default (msg?:any,fn?:Function)=>{
+    const vnode = h(SayHiTs,{
+        msg,
+        onSayHi(data:any){
+            fn!()
+            console.log('pass data:',data);
+        }
+    });
+    render(vnode,document.body)
+} 
+```
+
+在需要用到的地方使用，
+比如说`App.vue`中
+```vue
+<script setup lang="ts">
+import SayHiTs from './say-hi/index'
+SayHiTs('im app',()=>{
+  console.log('hi im app')
+})
+</script>
+
+```
