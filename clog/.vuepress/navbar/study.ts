@@ -33,11 +33,12 @@ export default{
     },
     {
       text:"其他",
+      prefix: "other",
       children: [
         {
-          text: "Java",
+          text: "计算机基础",
           icon: "java",
-          link: "article6",
+          link: '/'
         },
         {
           text: "Node",

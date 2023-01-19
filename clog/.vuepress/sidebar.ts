@@ -8,6 +8,7 @@ import { jsSidebar } from "./sidebar/frontend/js";
 import { reactSidebar } from "./sidebar/frontend/react";
 import { tsSidebar } from "./sidebar/frontend/ts";
 import { vueSidebar } from "./sidebar/frontend/vue";
+import {otherSidebar} from "./sidebar/other";
 export default sidebar({
   //项目
   "/project/":"structure",
@@ -20,9 +21,11 @@ export default sidebar({
   "/study/frontend/css/":cssSidebar,
   //学习笔记-后端
   "/study/backend":backendSidebar,
+  //其它,
+  "/study/other":otherSidebar,
   //随笔
   "/essay/": essaySidebar,
   "/teach/": "structure",
   //demo
-  "/demo/": demoSidebar
+  "/demo/": demoSidebar,
 });
