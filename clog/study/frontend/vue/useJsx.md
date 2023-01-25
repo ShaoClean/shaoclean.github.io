@@ -111,12 +111,31 @@ return ()=>(
 而是需要写成下面这种形式：
 
 ```jsx
-return ()=>{
+return () => {
   const msg = msgRef.value;
-  return(
+  return (
     <>
       <h1>hello</h1>
     </>
-  )
-}
+  );
+};
+```
+
+- 2023.1.25 新增
+  在 vue 的单文件组件中导入时需要注意：
+
+如果使用了`.jsx`的文件，那么下面这种方式是没有问题的
+
+```vue
+<script setup>
+import SayHi from "./components/SayHi.jsx";
+</script>
+```
+
+但如果在`script`标签上中指定了`lang`这种情况，则需要将`.jsx`改为`.tsx`，否则会提示类型错误：
+
+```vue
+<script setup lang="ts">
+import SayHi from "./components/SayHi.tsx";
+</script>
 ```
