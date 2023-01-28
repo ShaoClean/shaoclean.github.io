@@ -9,34 +9,33 @@ tag:
   - 学习笔记
 ---
 
-# h函数
+# h 函数
 
-`h()`函数用于创建虚拟DOM节点（VNode）
+`h()`函数用于创建虚拟 DOM 节点（VNode）
 
 使用场景：
 
-- 2022-9-25：用于渲染一个原生的html标签
+- 2022-9-25：用于配合`render`函数渲染一个原生的 html 标签
 
 以下是它的类型：
 
 ```ts
 // 完整参数签名
 function h(
-	//说明：可以是原生的元素标签，也可以是一个组件
+  //说明：可以是原生的元素标签，也可以是一个组件
   type: string | Component,
   props?: object | null,
   children?: Children | Slot | Slots
-): VNode
+): VNode;
 
 // 省略 props
-function h(type: string | Component, children?: Children | Slot): VNode
+function h(type: string | Component, children?: Children | Slot): VNode;
 
-type Children = string | number | boolean | VNode | null | Children[]
+type Children = string | number | boolean | VNode | null | Children[];
 
-type Slot = () => Children
+type Slot = () => Children;
 
-type Slots = { [name: string]: Slot }
-
+type Slots = { [name: string]: Slot };
 ```
 
 :::tip 参数说明
@@ -51,14 +50,18 @@ type Slots = { [name: string]: Slot }
 
 ```vue
 <script lang="ts" setup>
-import { h } from 'vue';
-const sayhello = "hello!"
-const MyRender = h("div",{
-  class:"my-render",
-  onClick:()=>{
-    alert(sayhello)
-  }
-},"Im My Render")
+import { h } from "vue";
+const sayhello = "hello!";
+const MyRender = h(
+  "div",
+  {
+    class: "my-render",
+    onClick: () => {
+      alert(sayhello);
+    },
+  },
+  "Im My Render"
+);
 </script>
 
 <template>
@@ -67,10 +70,10 @@ const MyRender = h("div",{
 </template>
 
 <style>
-.my-render{
-  display:block;
-  width:100px;
-  height:100px;
+.my-render {
+  display: block;
+  width: 100px;
+  height: 100px;
   background-color: aqua;
 }
 </style>
@@ -80,63 +83,59 @@ const MyRender = h("div",{
 
 ![image-20220925212553624](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220925212553624.png)
 
-点击上图中有颜色的div区域可以正常的跳出弹窗
+点击上图中有颜色的 div 区域可以正常的跳出弹窗
 
 :::warning 警告
-像上面这种示例情况，style标签上不能使用`scoped`，否则无法添加相对应的样式
+像上面这种示例情况，style 标签上不能使用`scoped`，否则无法添加相对应的样式
 :::
 
-也可以导入外部的组件当作h函数的第一个参数：
+也可以导入外部的组件当作 h 函数的第一个参数：
 
 新建一个外部测试组件：
+
 ```vue
 //render-test.vue
 <script lang="ts" setup>
-import { h } from 'vue';
-const RenderTest = h("div",{class:"render-test"},"Im Render Test!")
+import { h } from "vue";
+const RenderTest = h("div", { class: "render-test" }, "Im Render Test!");
 </script>
 <template>
-  <RenderTest/>
+  <RenderTest />
 </template>
-<style  scoped>
-.render-test{
-  width:100px;
+<style scoped>
+.render-test {
+  width: 100px;
   height: 100px;
   background-color: beige;
 }
 </style>
 ```
+
 导入到当前组件中：
 
 ```vue
-//...
-const MyRender = h(renderTestVue,{
-  class:"my-render",
-  onClick:()=>{
-    alert(sayhello)
-  }
-},"Im My Render")
-//...
+//... const MyRender = h(renderTestVue,{ class:"my-render", onClick:()=>{
+alert(sayhello) } },"Im My Render") //...
 ```
 
 结果如图：
 
 ![image-20220925213316656](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/image-20220925213316656.png)
 
-## 生成HTML元素
+## 生成 HTML 元素
 
 ```vue
 <script>
-  const RenderImg = h("img",{
-    style:{
-      width:"100px",
-      height:"100px",
-    },
-    src:"https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/header.png"
-	})
+const RenderImg = h("img", {
+  style: {
+    width: "100px",
+    height: "100px",
+  },
+  src: "https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/7374/header.png",
+});
 </script>
 <template>
-	<RenderImg></RenderImg>
+  <RenderImg></RenderImg>
 </template>
 ```
 
