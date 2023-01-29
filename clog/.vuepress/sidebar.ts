@@ -8,21 +8,21 @@ import { jsSidebar } from "./sidebar/frontend/js";
 import { reactSidebar } from "./sidebar/frontend/react";
 import { tsSidebar } from "./sidebar/frontend/ts";
 import { vueSidebar } from "./sidebar/frontend/vue";
-import {otherSidebar} from "./sidebar/other";
+import { basicSidebar } from "./sidebar/basic";
 export default sidebar({
   //项目
-  "/project/":"structure",
+  "/project/": "structure",
   //学习笔记-前端
-  "/study/frontend/vue":vueSidebar,
-  "/study/frontend/react/":reactSidebar,
-  "/study/frontend/angular/":angularSidebar,
-  "/study/frontend/js/":jsSidebar,
-  "/study/frontend/ts/":tsSidebar,
-  "/study/frontend/css/":cssSidebar,
+  "/study/frontend/vue": vueSidebar,
+  "/study/frontend/react/": reactSidebar,
+  "/study/frontend/angular/": angularSidebar,
+  "/study/frontend/js/": jsSidebar,
+  "/study/frontend/ts/": tsSidebar,
+  "/study/frontend/css/": cssSidebar,
   //学习笔记-后端
-  "/study/backend":backendSidebar,
-  //其它,
-  "/study/other":otherSidebar,
+  "/study/backend": backendSidebar,
+  //计算机基础,
+  "/study/other": basicSidebar,
   //随笔
   "/essay/": essaySidebar,
   "/teach/": "structure",
