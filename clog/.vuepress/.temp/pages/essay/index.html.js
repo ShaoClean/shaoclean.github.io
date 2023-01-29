@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-7c80db8b\",\"path\":\"/essay/\",\"title\":\"猛男的随笔\",\"lang\":\"zh-CN\",\"frontmatter\":{\"article\":false,\"icon\":\"strong\",\"summary\":\"猛男的随笔 hello 这里是猛男的随笔！\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://doc.shaoclean.top/essay/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"clog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"猛男的随笔\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"excerpt\":\"\",\"headers\":[],\"readingTime\":{\"minutes\":0.06,\"words\":18},\"filePathRelative\":\"essay/README.md\"}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-7c80db8b\",\"path\":\"/essay/\",\"title\":\"猛男的随笔\",\"lang\":\"zh-CN\",\"frontmatter\":{\"article\":false,\"icon\":\"strong\",\"summary\":\"猛男的随笔 hello 这里是猛男的随笔！\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://doc.shaoclean.top/essay/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"clog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"猛男的随笔\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2022-10-27T15:26:14.000Z\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2022-10-27T15:26:14.000Z\"}]]},\"excerpt\":\"\",\"headers\":[],\"git\":{\"createdTime\":1662448619000,\"updatedTime\":1666884374000,\"contributors\":[{\"name\":\"clean\",\"email\":\"1518136109@qq.com\",\"commits\":5}]},\"readingTime\":{\"minutes\":0.06,\"words\":18},\"filePathRelative\":\"essay/README.md\",\"localizedDate\":\"2022年9月6日\"}")

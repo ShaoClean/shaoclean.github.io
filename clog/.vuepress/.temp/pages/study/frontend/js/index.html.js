@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-30cd7070\",\"path\":\"/study/frontend/js/\",\"title\":\"JS笔记\",\"lang\":\"zh-CN\",\"frontmatter\":{\"icon\":\"javascript\",\"article\":false,\"summary\":\"JS笔记 hello 这里是JS的笔记\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://doc.shaoclean.top/study/frontend/js/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"clog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"JS笔记\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"excerpt\":\"\",\"headers\":[],\"readingTime\":{\"minutes\":0.05,\"words\":15},\"filePathRelative\":\"study/frontend/js/README.md\"}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-30cd7070\",\"path\":\"/study/frontend/js/\",\"title\":\"JS笔记\",\"lang\":\"zh-CN\",\"frontmatter\":{\"icon\":\"javascript\",\"article\":false,\"summary\":\"JS笔记 hello 这里是JS的笔记\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://doc.shaoclean.top/study/frontend/js/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"clog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"JS笔记\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2022-09-07T07:48:29.000Z\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2022-09-07T07:48:29.000Z\"}]]},\"excerpt\":\"\",\"headers\":[],\"git\":{\"createdTime\":1662457078000,\"updatedTime\":1662536909000,\"contributors\":[{\"name\":\"clean\",\"email\":\"1518136109@qq.com\",\"commits\":3}]},\"readingTime\":{\"minutes\":0.05,\"words\":15},\"filePathRelative\":\"study/frontend/js/README.md\",\"localizedDate\":\"2022年9月6日\"}")
