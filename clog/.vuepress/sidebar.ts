@@ -22,7 +22,7 @@ export default sidebar({
   //学习笔记-后端
   "/study/backend": backendSidebar,
   //计算机基础,
-  "/study/other": basicSidebar,
+  "/study/basic": basicSidebar,
   //随笔
   "/essay/": essaySidebar,
   "/teach/": "structure",
