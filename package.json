@@ -4,7 +4,7 @@
   "description": "clean's blog",
   "license": "MIT",
   "scripts": {
-    "docs:build": "vuepress build clog",
+    "build": "vuepress build clog",
     "docs:clean-dev": "vuepress dev clog --clean-cache",
     "start": "vuepress dev clog"
   },

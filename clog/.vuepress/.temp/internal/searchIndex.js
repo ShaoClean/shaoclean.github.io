@@ -7,109 +7,73 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "加速访问GitHub方法",
+    "title": "demo演示",
+    "headers": [],
+    "path": "/demo/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Flex 布局",
+    "headers": [],
+    "path": "/demo/flex-layout.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "session登陆校验处理函数",
+    "headers": [],
+    "path": "/demo/login_handle.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "复现接口重放攻击",
+    "headers": [],
+    "path": "/demo/replay-attact-demo.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "session demo",
+    "headers": [],
+    "path": "/demo/session-demo.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "(单/多)文件上传demo",
     "headers": [
       {
         "level": 2,
-        "title": "MacOS",
-        "slug": "macos",
-        "link": "#macos",
+        "title": "单文件后端代码",
+        "slug": "单文件后端代码",
+        "link": "#单文件后端代码",
         "children": []
       },
       {
         "level": 2,
-        "title": "windows-x64桌面",
-        "slug": "windows-x64桌面",
-        "link": "#windows-x64桌面",
+        "title": "单文件前端代码",
+        "slug": "单文件前端代码",
+        "link": "#单文件前端代码",
         "children": []
       },
       {
         "level": 2,
-        "title": "windows-x64服务",
-        "slug": "windows-x64服务",
-        "link": "#windows-x64服务",
+        "title": "多文件后端代码",
+        "slug": "多文件后端代码",
+        "link": "#多文件后端代码",
         "children": []
       },
       {
         "level": 2,
-        "title": "linux-x64终端",
-        "slug": "linux-x64终端",
-        "link": "#linux-x64终端",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64服务",
-        "slug": "linux-x64服务",
-        "link": "#linux-x64服务",
+        "title": "多文件前端代码",
+        "slug": "多文件前端代码",
+        "link": "#多文件前端代码",
         "children": []
       }
     ],
-    "path": "/teach/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决github下载速度过慢",
-    "headers": [],
-    "path": "/teach/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.注册",
-        "slug": "_1-注册",
-        "link": "#_1-注册",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.导入项目",
-        "slug": "_2-导入项目",
-        "link": "#_2-导入项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.完成DNS解析",
-        "slug": "_3-完成dns解析",
-        "link": "#_3-完成dns解析",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.添加自定义域名",
-        "slug": "_4-添加自定义域名",
-        "link": "#_4-添加自定义域名",
-        "children": []
-      }
-    ],
-    "path": "/teach/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "分布式动态路",
-    "headers": [],
-    "path": "/teach/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "生产环境刷新页面页面丢失",
-    "headers": [],
-    "path": "/teach/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西",
-    "headers": [],
-    "path": "/teach/",
+    "path": "/demo/upload-demo.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -302,146 +266,116 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "加速访问GitHub方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MacOS",
+        "slug": "macos",
+        "link": "#macos",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64桌面",
+        "slug": "windows-x64桌面",
+        "link": "#windows-x64桌面",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64服务",
+        "slug": "windows-x64服务",
+        "link": "#windows-x64服务",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64终端",
+        "slug": "linux-x64终端",
+        "link": "#linux-x64终端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64服务",
+        "slug": "linux-x64服务",
+        "link": "#linux-x64服务",
+        "children": []
+      }
+    ],
+    "path": "/teach/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决github下载速度过慢",
+    "headers": [],
+    "path": "/teach/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.注册",
+        "slug": "_1-注册",
+        "link": "#_1-注册",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.导入项目",
+        "slug": "_2-导入项目",
+        "link": "#_2-导入项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.完成DNS解析",
+        "slug": "_3-完成dns解析",
+        "link": "#_3-完成dns解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.添加自定义域名",
+        "slug": "_4-添加自定义域名",
+        "link": "#_4-添加自定义域名",
+        "children": []
+      }
+    ],
+    "path": "/teach/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分布式动态路",
+    "headers": [],
+    "path": "/teach/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "生产环境刷新页面页面丢失",
+    "headers": [],
+    "path": "/teach/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西",
+    "headers": [],
+    "path": "/teach/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "后端笔记",
     "headers": [],
     "path": "/study/backend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "demo演示",
-    "headers": [],
-    "path": "/demo/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Flex 布局",
-    "headers": [],
-    "path": "/demo/flex-layout.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "session登陆校验处理函数",
-    "headers": [],
-    "path": "/demo/login_handle.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "复现接口重放攻击",
-    "headers": [],
-    "path": "/demo/replay-attact-demo.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "session demo",
-    "headers": [],
-    "path": "/demo/session-demo.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "(单/多)文件上传demo",
-    "headers": [
-      {
-        "level": 2,
-        "title": "单文件后端代码",
-        "slug": "单文件后端代码",
-        "link": "#单文件后端代码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "单文件前端代码",
-        "slug": "单文件前端代码",
-        "link": "#单文件前端代码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多文件后端代码",
-        "slug": "多文件后端代码",
-        "link": "#多文件后端代码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多文件前端代码",
-        "slug": "多文件前端代码",
-        "link": "#多文件前端代码",
-        "children": []
-      }
-    ],
-    "path": "/demo/upload-demo.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "数据结构",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.绪论",
-        "slug": "_1-绪论",
-        "link": "#_1-绪论",
-        "children": [
-          {
-            "level": 3,
-            "title": "算法和算法分析",
-            "slug": "算法和算法分析",
-            "link": "#算法和算法分析",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2.线性表",
-        "slug": "_2-线性表",
-        "link": "#_2-线性表",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.线性表的定义和特点",
-            "slug": "_1-线性表的定义和特点",
-            "link": "#_1-线性表的定义和特点",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.线性表的类型定义",
-            "slug": "_2-线性表的类型定义",
-            "link": "#_2-线性表的类型定义",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3.线性表的顺序表示和实现",
-            "slug": "_3-线性表的顺序表示和实现",
-            "link": "#_3-线性表的顺序表示和实现",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/study/basic/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "计算机网络",
-    "headers": [],
-    "path": "/study/basic/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "计算机基础笔记",
-    "headers": [],
-    "path": "/study/basic/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -534,6 +468,108 @@ export const searchIndex = [
     "title": "2023开始了！",
     "headers": [],
     "path": "/essay/2023/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数据结构",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.绪论",
+        "slug": "_1-绪论",
+        "link": "#_1-绪论",
+        "children": [
+          {
+            "level": 3,
+            "title": "算法和算法分析",
+            "slug": "算法和算法分析",
+            "link": "#算法和算法分析",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.线性表",
+        "slug": "_2-线性表",
+        "link": "#_2-线性表",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.线性表的定义和特点",
+            "slug": "_1-线性表的定义和特点",
+            "link": "#_1-线性表的定义和特点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.线性表的类型定义",
+            "slug": "_2-线性表的类型定义",
+            "link": "#_2-线性表的类型定义",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.线性表的顺序表示和实现",
+            "slug": "_3-线性表的顺序表示和实现",
+            "link": "#_3-线性表的顺序表示和实现",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/study/basic/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "计算机网络",
+    "headers": [],
+    "path": "/study/basic/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "计算机基础笔记",
+    "headers": [],
+    "path": "/study/basic/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "HTTP 各版本（1.0/1.1/2.0/3.0）",
+    "headers": [
+      {
+        "level": 2,
+        "title": "HTTP1.0",
+        "slug": "http1-0",
+        "link": "#http1-0",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP1.1",
+        "slug": "http1-1",
+        "link": "#http1-1",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP2.0",
+        "slug": "http2-0",
+        "link": "#http2-0",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP3.0",
+        "slug": "http3-0",
+        "link": "#http3-0",
+        "children": []
+      }
+    ],
+    "path": "/study/basic/http-version.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1625,6 +1661,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "如何理解 JS 的异步",
+    "headers": [],
+    "path": "/study/frontend/js/js-async.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "JSONP解决跨域",
     "headers": [],
     "path": "/study/frontend/js/jsonp.html",
@@ -2414,6 +2457,62 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "demo 分类",
+    "headers": [],
+    "path": "/category/demo/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "flex-layout 标签",
+    "headers": [],
+    "path": "/tag/flex-layout/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端 分类",
+    "headers": [],
+    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "login_handle 标签",
+    "headers": [],
+    "path": "/tag/login-handle/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "项目文档 分类",
+    "headers": [],
+    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "replay-attact 标签",
+    "headers": [],
+    "path": "/tag/replay-attact/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "使用文档 分类",
+    "headers": [],
+    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "session 标签",
+    "headers": [],
+    "path": "/tag/session/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Github 分类",
     "headers": [],
     "path": "/category/github/",
@@ -2421,9 +2520,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "有用的东西 标签",
+    "title": "upload 标签",
     "headers": [],
-    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
+    "path": "/tag/upload/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2456,9 +2555,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前端 分类",
+    "title": "随笔 分类",
     "headers": [],
-    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "path": "/category/%E9%9A%8F%E7%AC%94/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2470,48 +2569,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "项目文档 分类",
-    "headers": [],
-    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "flex-layout 标签",
-    "headers": [],
-    "path": "/tag/flex-layout/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "使用文档 分类",
-    "headers": [],
-    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "login_handle 标签",
-    "headers": [],
-    "path": "/tag/login-handle/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "demo 分类",
-    "headers": [],
-    "path": "/category/demo/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "replay-attact 标签",
-    "headers": [],
-    "path": "/tag/replay-attact/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "数据结构 分类",
     "headers": [],
     "path": "/category/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/",
@@ -2519,9 +2576,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "session 标签",
+    "title": "有用的东西 标签",
     "headers": [],
-    "path": "/tag/session/",
+    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2533,23 +2590,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "upload 标签",
+    "title": "开心! 标签",
     "headers": [],
-    "path": "/tag/upload/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "随笔 分类",
-    "headers": [],
-    "path": "/category/%E9%9A%8F%E7%AC%94/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "学习笔记 标签",
-    "headers": [],
-    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+    "path": "/tag/%E5%BC%80%E5%BF%83!/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2561,9 +2604,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "开心! 标签",
+    "title": "好累 标签",
     "headers": [],
-    "path": "/tag/%E5%BC%80%E5%BF%83!/",
+    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2575,9 +2618,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "好累 标签",
+    "title": "犹豫 标签",
     "headers": [],
-    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
+    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2589,9 +2632,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "犹豫 标签",
+    "title": "无力 标签",
     "headers": [],
-    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
+    "path": "/tag/%E6%97%A0%E5%8A%9B/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2603,9 +2646,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "无力 标签",
+    "title": "学习笔记 标签",
     "headers": [],
-    "path": "/tag/%E6%97%A0%E5%8A%9B/",
+    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2792,6 +2835,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "js异步 标签",
+    "headers": [],
+    "path": "/tag/js%E5%BC%82%E6%AD%A5/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "jsonp 标签",
     "headers": [],
     "path": "/tag/jsonp/",
@@ -2960,3 +3010,16 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}

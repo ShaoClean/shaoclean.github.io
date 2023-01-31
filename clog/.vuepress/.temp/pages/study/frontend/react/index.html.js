@@ -1,1 +1,14 @@
-export const data = JSON.parse("{\"key\":\"v-7361fb8e\",\"path\":\"/study/frontend/react/\",\"title\":\"React笔记\",\"lang\":\"zh-CN\",\"frontmatter\":{\"icon\":\"react\",\"article\":false,\"summary\":\"React笔记 hello 这里是React的笔记\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://doc.shaoclean.top/study/frontend/react/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"clog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"React笔记\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2022-09-07T07:48:29.000Z\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2022-09-07T07:48:29.000Z\"}]]},\"excerpt\":\"\",\"headers\":[],\"git\":{\"createdTime\":1662451061000,\"updatedTime\":1662536909000,\"contributors\":[{\"name\":\"clean\",\"email\":\"1518136109@qq.com\",\"commits\":3}]},\"readingTime\":{\"minutes\":0.05,\"words\":15},\"filePathRelative\":\"study/frontend/react/README.md\",\"localizedDate\":\"2022年9月6日\"}")
+export const data = JSON.parse("{\"key\":\"v-7361fb8e\",\"path\":\"/study/frontend/react/\",\"title\":\"React笔记\",\"lang\":\"zh-CN\",\"frontmatter\":{\"icon\":\"react\",\"article\":false,\"summary\":\"React笔记 hello 这里是React的笔记\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://doc.shaoclean.top/study/frontend/react/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"clog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"React笔记\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"excerpt\":\"\",\"headers\":[],\"readingTime\":{\"minutes\":0.05,\"words\":15},\"filePathRelative\":\"study/frontend/react/README.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -33,7 +33,7 @@ export default{
     },
     {
       text:"其他",
-      prefix: "other",
+      prefix: "basic",
       children: [
         {
           text: "计算机基础",
