@@ -2,6 +2,7 @@
 icon: javascript
 date: 2022-03-18
 star: 10
+sticky: 9
 category:
   - 前端
   - JS

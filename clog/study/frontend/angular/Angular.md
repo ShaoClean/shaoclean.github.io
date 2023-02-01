@@ -1,5 +1,6 @@
 ---
 icon: angular
+sticky: 8
 category:
   - 前端
   - Angular
