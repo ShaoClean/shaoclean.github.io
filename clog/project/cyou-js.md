@@ -1,7 +1,6 @@
 ---
 icon: javascript
 date: 2022-08-13
-star: 9
 category:
   - 前端
   - 使用文档
