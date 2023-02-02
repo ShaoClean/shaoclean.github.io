@@ -7,13 +7,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猛男的随笔",
-    "headers": [],
-    "path": "/essay/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "demo演示",
     "headers": [],
     "path": "/demo/",
@@ -81,113 +74,6 @@ export const searchIndex = [
       }
     ],
     "path": "/demo/upload-demo.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "加速访问GitHub方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MacOS",
-        "slug": "macos",
-        "link": "#macos",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "windows-x64桌面",
-        "slug": "windows-x64桌面",
-        "link": "#windows-x64桌面",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "windows-x64服务",
-        "slug": "windows-x64服务",
-        "link": "#windows-x64服务",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64终端",
-        "slug": "linux-x64终端",
-        "link": "#linux-x64终端",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64服务",
-        "slug": "linux-x64服务",
-        "link": "#linux-x64服务",
-        "children": []
-      }
-    ],
-    "path": "/teach/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决github下载速度过慢",
-    "headers": [],
-    "path": "/teach/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.注册",
-        "slug": "_1-注册",
-        "link": "#_1-注册",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.导入项目",
-        "slug": "_2-导入项目",
-        "link": "#_2-导入项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.完成DNS解析",
-        "slug": "_3-完成dns解析",
-        "link": "#_3-完成dns解析",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.添加自定义域名",
-        "slug": "_4-添加自定义域名",
-        "link": "#_4-添加自定义域名",
-        "children": []
-      }
-    ],
-    "path": "/teach/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "分布式动态路",
-    "headers": [],
-    "path": "/teach/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "生产环境刷新页面页面丢失",
-    "headers": [],
-    "path": "/teach/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西",
-    "headers": [],
-    "path": "/teach/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -373,80 +259,116 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "终于完工！！！🎉",
+    "title": "猛男的随笔",
+    "headers": [],
+    "path": "/essay/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "加速访问GitHub方法",
     "headers": [
       {
         "level": 2,
-        "title": "2022-09-10新增",
-        "slug": "_2022-09-10新增",
-        "link": "#_2022-09-10新增",
+        "title": "MacOS",
+        "slug": "macos",
+        "link": "#macos",
         "children": []
       },
       {
         "level": 2,
-        "title": "2022-09-14新增",
-        "slug": "_2022-09-14新增",
-        "link": "#_2022-09-14新增",
+        "title": "windows-x64桌面",
+        "slug": "windows-x64桌面",
+        "link": "#windows-x64桌面",
         "children": []
       },
       {
         "level": 2,
-        "title": "2022-09-15新增",
-        "slug": "_2022-09-15新增",
-        "link": "#_2022-09-15新增",
+        "title": "windows-x64服务",
+        "slug": "windows-x64服务",
+        "link": "#windows-x64服务",
         "children": []
       },
       {
         "level": 2,
-        "title": "2022-09-16新增",
-        "slug": "_2022-09-16新增",
-        "link": "#_2022-09-16新增",
+        "title": "linux-x64终端",
+        "slug": "linux-x64终端",
+        "link": "#linux-x64终端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64服务",
+        "slug": "linux-x64服务",
+        "link": "#linux-x64服务",
         "children": []
       }
     ],
-    "path": "/essay/2022/1.html",
+    "path": "/teach/1.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "好无力",
+    "title": "解决github下载速度过慢",
     "headers": [],
-    "path": "/essay/2022/2.html",
+    "path": "/teach/2.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "巨开心！",
-    "headers": [],
-    "path": "/essay/2022/3.html",
+    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.注册",
+        "slug": "_1-注册",
+        "link": "#_1-注册",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.导入项目",
+        "slug": "_2-导入项目",
+        "link": "#_2-导入项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.完成DNS解析",
+        "slug": "_3-完成dns解析",
+        "link": "#_3-完成dns解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.添加自定义域名",
+        "slug": "_4-添加自定义域名",
+        "link": "#_4-添加自定义域名",
+        "children": []
+      }
+    ],
+    "path": "/teach/3.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "把握机会！！",
+    "title": "分布式动态路",
     "headers": [],
-    "path": "/essay/2022/4.html",
+    "path": "/teach/4.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "有点想考公了",
+    "title": "生产环境刷新页面页面丢失",
     "headers": [],
-    "path": "/essay/2022/5.html",
+    "path": "/teach/5.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "新项目",
+    "title": "有用的东西",
     "headers": [],
-    "path": "/essay/2022/6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "什么都不想做",
-    "headers": [],
-    "path": "/essay/2022/7.html",
+    "path": "/teach/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -563,6 +485,84 @@ export const searchIndex = [
       }
     ],
     "path": "/study/basic/http-version.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "终于完工！！！🎉",
+    "headers": [
+      {
+        "level": 2,
+        "title": "2022-09-10新增",
+        "slug": "_2022-09-10新增",
+        "link": "#_2022-09-10新增",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022-09-14新增",
+        "slug": "_2022-09-14新增",
+        "link": "#_2022-09-14新增",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022-09-15新增",
+        "slug": "_2022-09-15新增",
+        "link": "#_2022-09-15新增",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022-09-16新增",
+        "slug": "_2022-09-16新增",
+        "link": "#_2022-09-16新增",
+        "children": []
+      }
+    ],
+    "path": "/essay/2022/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "好无力",
+    "headers": [],
+    "path": "/essay/2022/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "巨开心！",
+    "headers": [],
+    "path": "/essay/2022/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "把握机会！！",
+    "headers": [],
+    "path": "/essay/2022/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有点想考公了",
+    "headers": [],
+    "path": "/essay/2022/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "新项目",
+    "headers": [],
+    "path": "/essay/2022/6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "什么都不想做",
+    "headers": [],
+    "path": "/essay/2022/7.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1313,6 +1313,21 @@ export const searchIndex = [
     "title": "图片显示空白问题",
     "headers": [],
     "path": "/study/frontend/angular/mtydsp.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "块级格式化上下文",
+    "headers": [
+      {
+        "level": 2,
+        "title": "触发条件",
+        "slug": "触发条件",
+        "link": "#触发条件",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/css/BFC.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2471,9 +2486,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Github 分类",
+    "title": "前端 分类",
     "headers": [],
-    "path": "/category/github/",
+    "path": "/category/%E5%89%8D%E7%AB%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2485,9 +2500,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "分布式动态路 分类",
+    "title": "项目文档 分类",
     "headers": [],
-    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
+    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2499,9 +2514,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "nginx 分类",
+    "title": "使用文档 分类",
     "headers": [],
-    "path": "/category/nginx/",
+    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2513,9 +2528,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前端 分类",
+    "title": "Github 分类",
     "headers": [],
-    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "path": "/category/github/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2527,23 +2542,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "项目文档 分类",
+    "title": "分布式动态路 分类",
     "headers": [],
-    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西 标签",
-    "headers": [],
-    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "使用文档 分类",
-    "headers": [],
-    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
+    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2555,9 +2556,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "随笔 分类",
+    "title": "nginx 分类",
     "headers": [],
-    "path": "/category/%E9%9A%8F%E7%AC%94/",
+    "path": "/category/nginx/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2569,9 +2570,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "数据结构 分类",
+    "title": "随笔 分类",
     "headers": [],
-    "path": "/category/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/",
+    "path": "/category/%E9%9A%8F%E7%AC%94/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2579,6 +2580,20 @@ export const searchIndex = [
     "title": "cyou-js 标签",
     "headers": [],
     "path": "/tag/cyou-js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数据结构 分类",
+    "headers": [],
+    "path": "/category/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西 标签",
+    "headers": [],
+    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2604,9 +2619,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "好累 标签",
+    "title": "学习笔记 标签",
     "headers": [],
-    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
+    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2618,9 +2633,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "犹豫 标签",
+    "title": "好累 标签",
     "headers": [],
-    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
+    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2632,9 +2647,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "无力 标签",
+    "title": "犹豫 标签",
     "headers": [],
-    "path": "/tag/%E6%97%A0%E5%8A%9B/",
+    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2646,9 +2661,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "学习笔记 标签",
+    "title": "无力 标签",
     "headers": [],
-    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+    "path": "/tag/%E6%97%A0%E5%8A%9B/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2747,6 +2762,13 @@ export const searchIndex = [
     "title": "公司项目 标签",
     "headers": [],
     "path": "/tag/%E5%85%AC%E5%8F%B8%E9%A1%B9%E7%9B%AE/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "BFC 标签",
+    "headers": [],
+    "path": "/tag/bfc/",
     "pathLocale": "/",
     "extraFields": []
   },
