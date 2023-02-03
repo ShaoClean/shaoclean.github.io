@@ -27,5 +27,5 @@ arr.__proto__.constructor === Array;//true
 arr instanceof Array;//true
 
 // 5.
-Object.prototype.toString.call(arr) === '[object Array]'l//true
+Object.prototype.toString.call(arr) === '[object Array]'//true
 ```
