@@ -1,7 +1,7 @@
 import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+
 export default defineUserConfig({
   lang: "zh-CN",
   title: "clog",
@@ -17,7 +17,7 @@ export default defineUserConfig({
     [
       "link",
       {
-        href: "https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap",
         rel: "stylesheet",
       },
     ],

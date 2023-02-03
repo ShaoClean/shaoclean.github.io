@@ -85,6 +85,113 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "加速访问GitHub方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MacOS",
+        "slug": "macos",
+        "link": "#macos",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64桌面",
+        "slug": "windows-x64桌面",
+        "link": "#windows-x64桌面",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "windows-x64服务",
+        "slug": "windows-x64服务",
+        "link": "#windows-x64服务",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64终端",
+        "slug": "linux-x64终端",
+        "link": "#linux-x64终端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "linux-x64服务",
+        "slug": "linux-x64服务",
+        "link": "#linux-x64服务",
+        "children": []
+      }
+    ],
+    "path": "/teach/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决github下载速度过慢",
+    "headers": [],
+    "path": "/teach/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.注册",
+        "slug": "_1-注册",
+        "link": "#_1-注册",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.导入项目",
+        "slug": "_2-导入项目",
+        "link": "#_2-导入项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.完成DNS解析",
+        "slug": "_3-完成dns解析",
+        "link": "#_3-完成dns解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.添加自定义域名",
+        "slug": "_4-添加自定义域名",
+        "link": "#_4-添加自定义域名",
+        "children": []
+      }
+    ],
+    "path": "/teach/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分布式动态路",
+    "headers": [],
+    "path": "/teach/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "生产环境刷新页面页面丢失",
+    "headers": [],
+    "path": "/teach/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西",
+    "headers": [],
+    "path": "/teach/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "CYou",
     "headers": [
       {
@@ -266,191 +373,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "加速访问GitHub方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MacOS",
-        "slug": "macos",
-        "link": "#macos",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "windows-x64桌面",
-        "slug": "windows-x64桌面",
-        "link": "#windows-x64桌面",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "windows-x64服务",
-        "slug": "windows-x64服务",
-        "link": "#windows-x64服务",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64终端",
-        "slug": "linux-x64终端",
-        "link": "#linux-x64终端",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "linux-x64服务",
-        "slug": "linux-x64服务",
-        "link": "#linux-x64服务",
-        "children": []
-      }
-    ],
-    "path": "/teach/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决github下载速度过慢",
-    "headers": [],
-    "path": "/teach/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解决GitHub.io(GitHub Pages)访问速度慢的方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.注册",
-        "slug": "_1-注册",
-        "link": "#_1-注册",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.导入项目",
-        "slug": "_2-导入项目",
-        "link": "#_2-导入项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.完成DNS解析",
-        "slug": "_3-完成dns解析",
-        "link": "#_3-完成dns解析",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.添加自定义域名",
-        "slug": "_4-添加自定义域名",
-        "link": "#_4-添加自定义域名",
-        "children": []
-      }
-    ],
-    "path": "/teach/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "分布式动态路",
-    "headers": [],
-    "path": "/teach/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "生产环境刷新页面页面丢失",
-    "headers": [],
-    "path": "/teach/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有用的东西",
-    "headers": [],
-    "path": "/teach/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "终于完工！！！🎉",
-    "headers": [
-      {
-        "level": 2,
-        "title": "2022-09-10新增",
-        "slug": "_2022-09-10新增",
-        "link": "#_2022-09-10新增",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2022-09-14新增",
-        "slug": "_2022-09-14新增",
-        "link": "#_2022-09-14新增",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2022-09-15新增",
-        "slug": "_2022-09-15新增",
-        "link": "#_2022-09-15新增",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2022-09-16新增",
-        "slug": "_2022-09-16新增",
-        "link": "#_2022-09-16新增",
-        "children": []
-      }
-    ],
-    "path": "/essay/2022/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "好无力",
-    "headers": [],
-    "path": "/essay/2022/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "巨开心！",
-    "headers": [],
-    "path": "/essay/2022/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "把握机会！！",
-    "headers": [],
-    "path": "/essay/2022/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "有点想考公了",
-    "headers": [],
-    "path": "/essay/2022/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "新项目",
-    "headers": [],
-    "path": "/essay/2022/6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "什么都不想做",
-    "headers": [],
-    "path": "/essay/2022/7.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "2023开始了！",
     "headers": [],
     "path": "/essay/2023/1.html",
@@ -570,6 +492,84 @@ export const searchIndex = [
     "title": "前端笔记",
     "headers": [],
     "path": "/study/frontend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "终于完工！！！🎉",
+    "headers": [
+      {
+        "level": 2,
+        "title": "2022-09-10新增",
+        "slug": "_2022-09-10新增",
+        "link": "#_2022-09-10新增",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022-09-14新增",
+        "slug": "_2022-09-14新增",
+        "link": "#_2022-09-14新增",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022-09-15新增",
+        "slug": "_2022-09-15新增",
+        "link": "#_2022-09-15新增",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022-09-16新增",
+        "slug": "_2022-09-16新增",
+        "link": "#_2022-09-16新增",
+        "children": []
+      }
+    ],
+    "path": "/essay/2022/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "好无力",
+    "headers": [],
+    "path": "/essay/2022/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "巨开心！",
+    "headers": [],
+    "path": "/essay/2022/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "把握机会！！",
+    "headers": [],
+    "path": "/essay/2022/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有点想考公了",
+    "headers": [],
+    "path": "/essay/2022/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "新项目",
+    "headers": [],
+    "path": "/essay/2022/6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "什么都不想做",
+    "headers": [],
+    "path": "/essay/2022/7.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1317,6 +1317,473 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "块级格式化上下文",
+    "headers": [
+      {
+        "level": 2,
+        "title": "触发条件",
+        "slug": "触发条件",
+        "link": "#触发条件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解决问题",
+        "slug": "解决问题",
+        "link": "#解决问题",
+        "children": [
+          {
+            "level": 3,
+            "title": "边距重叠问题",
+            "slug": "边距重叠问题",
+            "link": "#边距重叠问题",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "清除内部浮动",
+            "slug": "清除内部浮动",
+            "link": "#清除内部浮动",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "排除外部浮动",
+            "slug": "排除外部浮动",
+            "link": "#排除外部浮动",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/study/frontend/css/BFC.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "CSS笔记",
+    "headers": [],
+    "path": "/study/frontend/css/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "自定义虚线",
+    "headers": [],
+    "path": "/study/frontend/css/dashed.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "隐藏元素",
+    "headers": [],
+    "path": "/study/frontend/css/hidden.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ES6",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.static类",
+        "slug": "_1-static类",
+        "link": "#_1-static类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.for...of  和 for...in",
+        "slug": "_2-for-of-和-for-in",
+        "link": "#_2-for-of-和-for-in",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.[变量名]",
+        "slug": "_3-变量名",
+        "link": "#_3-变量名",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.Symbol",
+        "slug": "_4-symbol",
+        "link": "#_4-symbol",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.iterator迭代器",
+        "slug": "_5-iterator迭代器",
+        "link": "#_5-iterator迭代器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.XMLHttpRequest和Ajax",
+        "slug": "_6-xmlhttprequest和ajax",
+        "link": "#_6-xmlhttprequest和ajax",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7.Promise",
+        "slug": "_7-promise",
+        "link": "#_7-promise",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.生成器函数",
+        "slug": "_8-生成器函数",
+        "link": "#_8-生成器函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9.Set集合",
+        "slug": "_9-set集合",
+        "link": "#_9-set集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "10.Map集合",
+        "slug": "_10-map集合",
+        "link": "#_10-map集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "11.Class类",
+        "slug": "_11-class类",
+        "link": "#_11-class类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "12.数值拓展",
+        "slug": "_12-数值拓展",
+        "link": "#_12-数值拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "13.对象拓展",
+        "slug": "_13-对象拓展",
+        "link": "#_13-对象拓展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "14.模块化",
+        "slug": "_14-模块化",
+        "link": "#_14-模块化",
+        "children": [
+          {
+            "level": 3,
+            "title": "简单使用：",
+            "slug": "简单使用",
+            "link": "#简单使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ES6暴露数据语法汇总：",
+            "slug": "es6暴露数据语法汇总",
+            "link": "#es6暴露数据语法汇总",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "模块化.html（引入和使用模块）",
+            "slug": "模块化-html-引入和使用模块",
+            "link": "#模块化-html-引入和使用模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ES6导入模块语法汇总",
+            "slug": "es6导入模块语法汇总",
+            "link": "#es6导入模块语法汇总",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "15.Babel对ES6模块化代码转换",
+        "slug": "_15-babel对es6模块化代码转换",
+        "link": "#_15-babel对es6模块化代码转换",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "备注",
+        "slug": "备注",
+        "link": "#备注",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/ES6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JS笔记",
+    "headers": [],
+    "path": "/study/frontend/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数组操作方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "添加元素",
+        "slug": "添加元素",
+        "link": "#添加元素",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "删除元素",
+        "slug": "删除元素",
+        "link": "#删除元素",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/array.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分支优化",
+    "headers": [],
+    "path": "/study/frontend/js/branch.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "canvas",
+    "headers": [
+      {
+        "level": 2,
+        "title": "绘制形状",
+        "slug": "绘制形状",
+        "link": "#绘制形状",
+        "children": [
+          {
+            "level": 3,
+            "title": "三种方法绘制矩形",
+            "slug": "三种方法绘制矩形",
+            "link": "#三种方法绘制矩形",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "绘制路径",
+            "slug": "绘制路径",
+            "link": "#绘制路径",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/study/frontend/js/canvas.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "闭包",
+    "headers": [
+      {
+        "level": 2,
+        "title": "为什么要使用闭包",
+        "slug": "为什么要使用闭包",
+        "link": "#为什么要使用闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭包的作用",
+        "slug": "闭包的作用",
+        "link": "#闭包的作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭包的缺点",
+        "slug": "闭包的缺点",
+        "link": "#闭包的缺点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "简单实现闭包",
+        "slug": "简单实现闭包",
+        "link": "#简单实现闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "形成闭包的条件",
+        "slug": "形成闭包的条件",
+        "link": "#形成闭包的条件",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/closure.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "元素拖拽",
+    "headers": [],
+    "path": "/study/frontend/js/drag.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "事件循环机制",
+    "headers": [
+      {
+        "level": 2,
+        "title": "概述",
+        "slug": "概述",
+        "link": "#概述",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "异步任务",
+        "slug": "异步任务",
+        "link": "#异步任务",
+        "children": [
+          {
+            "level": 3,
+            "title": "宏任务",
+            "slug": "宏任务",
+            "link": "#宏任务",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "微任务",
+            "slug": "微任务",
+            "link": "#微任务",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/study/frontend/js/event-loop.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "HashUrl",
+    "headers": [],
+    "path": "/study/frontend/js/hash-url.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Referer问题",
+    "headers": [],
+    "path": "/study/frontend/js/img-cors.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "判断是否为数组的方式",
+    "headers": [],
+    "path": "/study/frontend/js/isArray.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JS运行机制",
+    "headers": [
+      {
+        "level": 2,
+        "title": "运行环境",
+        "slug": "运行环境",
+        "link": "#运行环境",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "执行过程",
+        "slug": "执行过程",
+        "link": "#执行过程",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/js-Operation-mechanism.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "如何理解 JS 的异步",
+    "headers": [],
+    "path": "/study/frontend/js/js-async.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JSONP解决跨域",
+    "headers": [],
+    "path": "/study/frontend/js/jsonp.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "惰性函数",
+    "headers": [],
+    "path": "/study/frontend/js/lazyFunction.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "直接在页面上编辑样式",
+    "headers": [],
+    "path": "/study/frontend/js/magic.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "移动端overflow:scroll无效问题",
+    "headers": [],
+    "path": "/study/frontend/js/overflow-mobile.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "RESTFul API",
+    "headers": [],
+    "path": "/study/frontend/js/restful-api.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Table相关",
+    "headers": [
+      {
+        "level": 2,
+        "title": "tr设置下边框",
+        "slug": "tr设置下边框",
+        "link": "#tr设置下边框",
+        "children": []
+      }
+    ],
+    "path": "/study/frontend/js/table.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "React笔记",
     "headers": [],
     "path": "/study/frontend/react/",
@@ -1601,451 +2068,6 @@ export const searchIndex = [
       }
     ],
     "path": "/study/frontend/react/ReactExtends.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "块级格式化上下文",
-    "headers": [
-      {
-        "level": 2,
-        "title": "触发条件",
-        "slug": "触发条件",
-        "link": "#触发条件",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "解决问题",
-        "slug": "解决问题",
-        "link": "#解决问题",
-        "children": [
-          {
-            "level": 3,
-            "title": "边距重叠问题",
-            "slug": "边距重叠问题",
-            "link": "#边距重叠问题",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "清除内部浮动",
-            "slug": "清除内部浮动",
-            "link": "#清除内部浮动",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "排除外部浮动",
-            "slug": "排除外部浮动",
-            "link": "#排除外部浮动",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/study/frontend/css/BFC.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "CSS笔记",
-    "headers": [],
-    "path": "/study/frontend/css/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "自定义虚线",
-    "headers": [],
-    "path": "/study/frontend/css/dashed.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "隐藏元素",
-    "headers": [],
-    "path": "/study/frontend/css/hidden.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "ES6",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.static类",
-        "slug": "_1-static类",
-        "link": "#_1-static类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.for...of  和 for...in",
-        "slug": "_2-for-of-和-for-in",
-        "link": "#_2-for-of-和-for-in",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.[变量名]",
-        "slug": "_3-变量名",
-        "link": "#_3-变量名",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.Symbol",
-        "slug": "_4-symbol",
-        "link": "#_4-symbol",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5.iterator迭代器",
-        "slug": "_5-iterator迭代器",
-        "link": "#_5-iterator迭代器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6.XMLHttpRequest和Ajax",
-        "slug": "_6-xmlhttprequest和ajax",
-        "link": "#_6-xmlhttprequest和ajax",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7.Promise",
-        "slug": "_7-promise",
-        "link": "#_7-promise",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8.生成器函数",
-        "slug": "_8-生成器函数",
-        "link": "#_8-生成器函数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "9.Set集合",
-        "slug": "_9-set集合",
-        "link": "#_9-set集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "10.Map集合",
-        "slug": "_10-map集合",
-        "link": "#_10-map集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "11.Class类",
-        "slug": "_11-class类",
-        "link": "#_11-class类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "12.数值拓展",
-        "slug": "_12-数值拓展",
-        "link": "#_12-数值拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "13.对象拓展",
-        "slug": "_13-对象拓展",
-        "link": "#_13-对象拓展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "14.模块化",
-        "slug": "_14-模块化",
-        "link": "#_14-模块化",
-        "children": [
-          {
-            "level": 3,
-            "title": "简单使用：",
-            "slug": "简单使用",
-            "link": "#简单使用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6暴露数据语法汇总：",
-            "slug": "es6暴露数据语法汇总",
-            "link": "#es6暴露数据语法汇总",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "模块化.html（引入和使用模块）",
-            "slug": "模块化-html-引入和使用模块",
-            "link": "#模块化-html-引入和使用模块",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ES6导入模块语法汇总",
-            "slug": "es6导入模块语法汇总",
-            "link": "#es6导入模块语法汇总",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "15.Babel对ES6模块化代码转换",
-        "slug": "_15-babel对es6模块化代码转换",
-        "link": "#_15-babel对es6模块化代码转换",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "备注",
-        "slug": "备注",
-        "link": "#备注",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/ES6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JS笔记",
-    "headers": [],
-    "path": "/study/frontend/js/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "分支优化",
-    "headers": [],
-    "path": "/study/frontend/js/branch.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "canvas",
-    "headers": [
-      {
-        "level": 2,
-        "title": "绘制形状",
-        "slug": "绘制形状",
-        "link": "#绘制形状",
-        "children": [
-          {
-            "level": 3,
-            "title": "三种方法绘制矩形",
-            "slug": "三种方法绘制矩形",
-            "link": "#三种方法绘制矩形",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "绘制路径",
-            "slug": "绘制路径",
-            "link": "#绘制路径",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/study/frontend/js/canvas.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "闭包",
-    "headers": [
-      {
-        "level": 2,
-        "title": "为什么要使用闭包",
-        "slug": "为什么要使用闭包",
-        "link": "#为什么要使用闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭包的作用",
-        "slug": "闭包的作用",
-        "link": "#闭包的作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭包的缺点",
-        "slug": "闭包的缺点",
-        "link": "#闭包的缺点",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "简单实现闭包",
-        "slug": "简单实现闭包",
-        "link": "#简单实现闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "形成闭包的条件",
-        "slug": "形成闭包的条件",
-        "link": "#形成闭包的条件",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/closure.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "元素拖拽",
-    "headers": [],
-    "path": "/study/frontend/js/drag.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "事件循环机制",
-    "headers": [
-      {
-        "level": 2,
-        "title": "概述",
-        "slug": "概述",
-        "link": "#概述",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "异步任务",
-        "slug": "异步任务",
-        "link": "#异步任务",
-        "children": [
-          {
-            "level": 3,
-            "title": "宏任务",
-            "slug": "宏任务",
-            "link": "#宏任务",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "微任务",
-            "slug": "微任务",
-            "link": "#微任务",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/study/frontend/js/event-loop.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "HashUrl",
-    "headers": [],
-    "path": "/study/frontend/js/hash-url.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Referer问题",
-    "headers": [],
-    "path": "/study/frontend/js/img-cors.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "判断是否为数组的方式",
-    "headers": [],
-    "path": "/study/frontend/js/isArray.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JS运行机制",
-    "headers": [
-      {
-        "level": 2,
-        "title": "运行环境",
-        "slug": "运行环境",
-        "link": "#运行环境",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "执行过程",
-        "slug": "执行过程",
-        "link": "#执行过程",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/js-Operation-mechanism.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "如何理解 JS 的异步",
-    "headers": [],
-    "path": "/study/frontend/js/js-async.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JSONP解决跨域",
-    "headers": [],
-    "path": "/study/frontend/js/jsonp.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "惰性函数",
-    "headers": [],
-    "path": "/study/frontend/js/lazyFunction.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "直接在页面上编辑样式",
-    "headers": [],
-    "path": "/study/frontend/js/magic.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "移动端overflow:scroll无效问题",
-    "headers": [],
-    "path": "/study/frontend/js/overflow-mobile.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "RESTFul API",
-    "headers": [],
-    "path": "/study/frontend/js/restful-api.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Table相关",
-    "headers": [
-      {
-        "level": 2,
-        "title": "tr设置下边框",
-        "slug": "tr设置下边框",
-        "link": "#tr设置下边框",
-        "children": []
-      }
-    ],
-    "path": "/study/frontend/js/table.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2515,9 +2537,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前端 分类",
+    "title": "Github 分类",
     "headers": [],
-    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "path": "/category/github/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2529,9 +2551,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "项目文档 分类",
+    "title": "分布式动态路 分类",
     "headers": [],
-    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
+    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2543,9 +2565,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "使用文档 分类",
+    "title": "nginx 分类",
     "headers": [],
-    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
+    "path": "/category/nginx/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2557,9 +2579,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Github 分类",
+    "title": "前端 分类",
     "headers": [],
-    "path": "/category/github/",
+    "path": "/category/%E5%89%8D%E7%AB%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2571,9 +2593,23 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "分布式动态路 分类",
+    "title": "项目文档 分类",
     "headers": [],
-    "path": "/category/%E5%88%86%E5%B8%83%E5%BC%8F%E5%8A%A8%E6%80%81%E8%B7%AF/",
+    "path": "/category/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的东西 标签",
+    "headers": [],
+    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "使用文档 分类",
+    "headers": [],
+    "path": "/category/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2585,9 +2621,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "nginx 分类",
+    "title": "随笔 分类",
     "headers": [],
-    "path": "/category/nginx/",
+    "path": "/category/%E9%9A%8F%E7%AC%94/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2599,20 +2635,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "随笔 分类",
-    "headers": [],
-    "path": "/category/%E9%9A%8F%E7%AC%94/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "cyou-js 标签",
-    "headers": [],
-    "path": "/tag/cyou-js/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "数据结构 分类",
     "headers": [],
     "path": "/category/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/",
@@ -2620,9 +2642,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "有用的东西 标签",
+    "title": "cyou-js 标签",
     "headers": [],
-    "path": "/tag/%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/",
+    "path": "/tag/cyou-js/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2648,9 +2670,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "好累 标签",
+    "title": "学习笔记 标签",
     "headers": [],
-    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
+    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2662,9 +2684,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "犹豫 标签",
+    "title": "好累 标签",
     "headers": [],
-    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
+    "path": "/tag/%E5%A5%BD%E7%B4%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2676,9 +2698,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "无力 标签",
+    "title": "犹豫 标签",
     "headers": [],
-    "path": "/tag/%E6%97%A0%E5%8A%9B/",
+    "path": "/tag/%E7%8A%B9%E8%B1%AB/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2690,23 +2712,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "学习笔记 标签",
+    "title": "无力 标签",
     "headers": [],
-    "path": "/tag/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "React 分类",
-    "headers": [],
-    "path": "/category/react/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "JavaSE 标签",
-    "headers": [],
-    "path": "/tag/javase/",
+    "path": "/tag/%E6%97%A0%E5%8A%9B/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2718,9 +2726,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "初始化框架 标签",
+    "title": "JavaSE 标签",
     "headers": [],
-    "path": "/tag/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%A1%86%E6%9E%B6/",
+    "path": "/tag/javase/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2728,6 +2736,20 @@ export const searchIndex = [
     "title": "JS 分类",
     "headers": [],
     "path": "/category/js/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "初始化框架 标签",
+    "headers": [],
+    "path": "/tag/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%A1%86%E6%9E%B6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "React 分类",
+    "headers": [],
+    "path": "/category/react/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2795,20 +2817,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "ReactCli 标签",
-    "headers": [],
-    "path": "/tag/reactcli/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "ReactExtends 标签",
-    "headers": [],
-    "path": "/tag/reactextends/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "BFC 标签",
     "headers": [],
     "path": "/tag/bfc/",
@@ -2833,6 +2841,13 @@ export const searchIndex = [
     "title": "ES6 标签",
     "headers": [],
     "path": "/tag/es6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数组方法 标签",
+    "headers": [],
+    "path": "/tag/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2938,6 +2953,20 @@ export const searchIndex = [
     "title": "table 标签",
     "headers": [],
     "path": "/tag/table/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ReactCli 标签",
+    "headers": [],
+    "path": "/tag/reactcli/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ReactExtends 标签",
+    "headers": [],
+    "path": "/tag/reactextends/",
     "pathLocale": "/",
     "extraFields": []
   },
