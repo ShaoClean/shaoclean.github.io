@@ -59,10 +59,12 @@ const obj = {
     c1: 3,
     c2: 4,
   },
+  arr: [1, 2, 3, 4],
 };
 observe(obj);
 obj.a = 3;
 obj.cObj.c1;
+obj.arr.push(444);
 ```
 
 重写数组方法：
@@ -100,7 +102,8 @@ function reactive(obj) {
       // reflect保证this指向
       const res = Reflect.get(target, key, receiver);
       console.log(`获取${key}:${res}`);
-      return res;
+        //  处理嵌套情况，身略isObject具体实现，该函数用于判断是否为一个对象
+      return isObject(res) ? reactive(res) : res
     },
     set(target, key, value, receiver) {
       const res = Reflect.set(target, key, value, receiver);
@@ -120,3 +123,51 @@ const obj = [1, 2, 3];
 const proxtObj = reactive(obj);
 obj.push(4); // ok
 ```
+
+## 关于`Reflect`
+
+这是一个静态方法，它可以在获取对象属性的时候指定 this 指向
+
+```js
+function reactive(obj) {
+  return new Proxy(obj, {
+    get(target, key, receiver) {
+      console.log(key);
+      return Reflect.get(target, key);
+    },
+  });
+}
+
+const People = reactive({
+  _name: "people",
+  get name() {
+    return this._name;
+  },
+});
+
+const Man = {
+  _name: "man",
+};
+
+Man.__proto__ = People;
+
+// Reflect中没有指定receive时，按照预期正常显示
+// Reflect.get(target, key)
+let m1 = Man._name;
+m1; //man
+let m2 = Man.name;
+m2; //people
+
+// Reflect中指定receive时，不符合预期
+// Reflect.get(target, key，receive)
+let m1 = Man._name;
+m1; //man
+let m2 = Man.name;
+m2; //man
+```
+
+我们发现，在`Reflect`中指定了`receive`后,`m2`的值超乎了预期，为什么会变成了`man`呢？
+
+是因为传入了`receive`参数，它能够指定当前反射对象的 this 指向，将 this 指向当前的`target`。
+
+因此在`Man`上读取`name`的时候，当前的`target`就是`Man`，this 的指向就是`Man`，所以读到的值就是`man`
