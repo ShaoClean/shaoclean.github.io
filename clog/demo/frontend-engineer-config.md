@@ -20,7 +20,6 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CssMiniPlugin = require("css-minimizer-webpack-plugin");
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
 module.exports = {
   // target: 'web',
   mode: "development",
@@ -29,7 +28,8 @@ module.exports = {
   //对象形式
   entry: {
     index: "./src/home/index.js",
-    "login-app-main": "./src/login/src/main.js",
+    "login.entry": "./src/login/login.entry.js",
+    "register.entry": "./src/register/register.entry.jsx",
   },
   //项目输出配置
   output: {
@@ -47,6 +47,10 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: "vue-loader",
+      },
+      {
+        test: /\.jsx$/,
+        loader: "babel-loader",
       },
       {
         //匹配所有.css结尾的文件
@@ -94,12 +98,16 @@ module.exports = {
       scriptLoading: "defer",
     }),
     new HtmlWebpackPlugin({
-      //src文件夹下模版的名称
       filename: "login.html",
-      //src文件夹下模版的地址
-      template: "./src/login/src/login.html",
-      //和entry中的键名相对应
-      chunks: ["login-app-main"],
+      template: "./src/login/login.html",
+      chunks: ["login.entry"],
+      inject: "body",
+      scriptLoading: "module",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "register.html",
+      template: "./src/register/register.html",
+      chunks: ["register.entry"],
       inject: "body",
       scriptLoading: "module",
     }),
@@ -161,6 +169,21 @@ module.exports = {
           test: /lodash-es/,
           chunks: "all",
         },
+        vue: {
+          name: "vue-chunks",
+          test: /vue/,
+          chunks: "all",
+        },
+        react: {
+          name: "react-chunks",
+          test: /react/,
+          chunks: "all",
+        },
+        "react-dom": {
+          name: "react-dom-chunks",
+          test: /react-dom/,
+          chunks: "all",
+        },
       },
       // 最后通过HtmlWebpackPlugin将分离出来的代码通过标签的形式注入到页面中
     },
@@ -184,7 +207,12 @@ package.json 文件：
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@vue/compiler-sfc": "^3.2.47",
+    "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
@@ -202,8 +230,29 @@ package.json 文件：
     "flexslider": "^2.7.2",
     "jquery": "^3.6.3",
     "lodash-es": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   }
 }
+```
+
+```json
+//.babelrc
+{
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+}
+
 ```
