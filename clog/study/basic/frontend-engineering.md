@@ -9,7 +9,7 @@ tag:
 ---
 
 # 前端工程化
-
+最终`webpack.config.js`和`package.json`配置[在这里]('/clog/demo/')
 ## 一、项目初始化
 
 1.初始化npm项目
@@ -113,6 +113,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 ```bash
 npm i -D css-loader style-loader
 ```
+
+-  css-loader帮助我们解析css成为js对象
+-  sytle-loader可以从css-loader解析的对象中提取css样式挂载到页面当中
 
 2.在src文件夹下的index.js通过模块化的方式导入css文件
 
@@ -237,6 +240,29 @@ npm i html-withimg-loader
 }
 ```
 
+或者使用一个官方的Plugin来解决(复制文件到指定路径下)：
+
+```bash
+npm i copy-webpack-plugin -D
+```
+
+```js
+//webpack.config.js
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+{
+  plugins:[
+    new CopyWebpackPlugin({
+      patterns:[
+        {
+          from:path.resolve(__dirname,'./src/img'),
+          to:path.resolve(__dirname,'./dist/img')
+        }
+      ]
+    })
+  ]
+}
+```
+
 
 
 
@@ -274,7 +300,6 @@ plugins: [
         new webpack.ProvidePlugin({
             $:'jquery',
             jQuery:'jquery',
-
         })
     ],      
 ```
@@ -289,11 +314,209 @@ npm i -D webpack-dev-server
 
 webpack-dev-server主要原理：通过webpack将项目进行构建，将打包后的内容放在内存里面，所以可以很容易监视到是否发生变化，实现更快速度的动态更新
 
+**注意！！**
+
+只能监视js/css的变化！！！HTML不可以监视到！！
+
+> 在源代码中 CSS/JS 产生修改时，会立刻在浏览器中进行更新，这几乎相当于在浏览器 devtools 直接更改样式。
+
 在package.json中配置：
 
 ```json
   "scripts": {
     "dev": "webpack-dev-server",
   }
+```
+
+### 从bundle剥离css
+
+安装插件，剥离css文件：
+
+```bash
+npm i -D mini-css-extract-plugin
+```
+
+使用：
+
+```js
+//webpack.config.js
+{
+  module:{
+    rules:[
+      {
+                //匹配所有.css结尾的文件
+                test: /\.css$/,
+                //将匹配到的所有相关文件使用以下两个loader进行预处理，loader处理的顺序为从右到左
+                // use: ['style-loader','css-loader'],
+                //要使用css剥离功能，就不需要用到style-loader了，而是转用为剥离用的loader
+                use: [MiniCssExtractPlugin.loader,'css-loader'],
+      }
+    ]
+  }
+  plugins:[
+     //剥离后使用Plugin生成css文件
+        new MiniCssExtractPlugin({
+            filename:'css/[name].css',
+            chunkFilename:'css/[name].chunk.css'
+        })
+  ]
+}
+```
+
+由于我们使用了WebpackHtmlPlugin,所以生成的css文件会自动以`<link>`标签的形式出现在html文件中
+
+### 压缩文件
+
+- 去除注释
+- 去除缩进
+- treeshaking
+
+#### js压缩
+
+```bash
+npm i uglifyjs-webpack-plugin
+```
+
+```js
+//webpack.config.js
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+{
+  module:{//...},
+  entry:{//...},
+  //在loader对文件预处理之后的一个优化阶段，对资源文件进行一个优化（压缩、剥离等操作）
+  optimization: {
+        //在development模式下对代码进行压缩
+        minimize: true,
+        minimizer: [
+            new UglifyJsPlugin({sourceMap:true})
+        ]
+    }
+}
+```
+
+#### css压缩
+
+```bash
+npm i css-minimizer-webpack-plugin -D
+```
+
+```js
+//webpack.config.js
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+{
+  module:{//...},
+  entry:{//...},
+  optimization: {
+        //在development模式下对代码进行压缩
+        minimize: true,
+        minimizer: [
+            new CssMiniPlugin()
+        ]
+    }
+}
+```
+
+### Tree Shaking
+
+将一些未使用的代码删除掉。
+
+以lodash为例：
+
+安装lodash:
+
+```bash
+npm i lodash
+```
+
+#### 文件TreeShaking
+
+导入并使用lodash中的一个方法：
+
+```js
+import _ from 'lodash'
+console.log(_.get({a:1},a))//1
+```
+
+重新打包后，原来的index.js文件大小为396KB，打包后的index.js文件大小为950KB。
+
+> 通过结构的方式来导入文件，可以触发TreeShaking
+
+修改完后发现大小还是一样，并没有触发TreeShaking。
+
+**触发TreeShaking的条件**
+
+> 1.通过结构的方式来导入文件，可以触发TreeShaking
+>
+> 2.调用的npm包必须使用ESM
+
+以上TreeShaking是不同文件的TreeShaking，也就是说lodash中有好多方法，每一个方法都写在不同的文件中。没有使用到的方法，也就相当于没有使用到的文件，就不会被打包进来。
+
+安装符合ESM规范的lodash包：
+
+```bash
+npm i -S lodash-es
+```
+
+重新打包后发现大小从之前的950KB变成了474KB
+
+#### 同一文件不同数据的TreeShaking
+
+**那么面对同一个文件中的方法，会如何处理？**
+
+```js
+//webpack.config.js
+{
+  mode:"production"
+}
+```
+
+### 代码分割（重点）
+
+```js
+// 将HtmlWebpackPlugin代码分割的多个文件更细分的分割
+        splitChunks:{
+            // 1.通过chunks：all来启用代码的拆分
+            chunks:'all',
+            // 2.通过minSize来调节分离出来的包的大小（注意被分离的包需要在node_modules中）
+            minSize:30 * 1024,
+            // 3.修改分割后导出的包的名字
+            name:'chunk',
+            // 4.缓存组。通过这个配置，将node_modules中特定的库给抽离出来
+            cacheGroups:{
+                // 对象的名字可以随便起，为了方便理解建议用对应库的名称
+                jquery:{
+                    // 分割出来后文件的名称
+                    name:'jquery-chunks',
+                    // 匹配node_modules中库的名称
+                    test:/jquery/,
+                    chunks:'all'
+                },
+                'lodash-es':{
+                    name:'lodash-es-chunks',
+                    test:/lodash-es/,
+                    chunks:'all'
+                }
+            }
+            // 最后通过HtmlWebpackPlugin将分离出来的代码通过标签的形式注入到页面中
+        }
+```
+
+上面代码简单的实现了js文件的代码分割，将整个index.js分割成了index.js和chunk.js
+
+### 清除dist多余文件
+
+每次打包的时候，如果出现不同的文件名，之前的文件不会覆盖，而是依旧存在，需要手动去删除，可以用插件来自动删除。
+
+```bash
+npm i clean-webpack-plugin
+```
+
+```js
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+{
+  plugins:[
+    new CleanWebpackPlugin()
+  ]
+}
 ```
 
