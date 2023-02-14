@@ -48,8 +48,13 @@ export default hopeTheme({
   //加密文档
   encrypt: {
     config: {
+      "/essay/2022/1.html": ["sczscz"],
       "/essay/2022/2.html": ["sczscz"],
       "/essay/2022/3.html": ["sczscz"],
+      "/essay/2022/4.html": ["sczscz"],
+      "/essay/2022/5.html": ["sczscz"],
+      "/essay/2022/6.html": ["sczscz"],
+      "/essay/2022/7.html": ["sczscz"],
     },
   },
 

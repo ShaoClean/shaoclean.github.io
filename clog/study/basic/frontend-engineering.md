@@ -9,10 +9,12 @@ tag:
 ---
 
 # 前端工程化
+
 最终`webpack.config.js`和`package.json`配置[在这里]('/clog/demo/')
+
 ## 一、项目初始化
 
-1.初始化npm项目
+1.初始化 npm 项目
 
 ```bash
 npm init -y
@@ -24,13 +26,13 @@ npm init -y
 
    新建`public`文件夹，`public`文件夹下新建`index.html`文件
 
-3. 安装webpack相关依赖
+3. 安装 webpack 相关依赖
 
 ```bash
 npm i -D webpack webpack-cli
 ```
 
-4. 修改webpack.config.js文件中的配置：
+4. 修改 webpack.config.js 文件中的配置：
 
 ```JS
 const path = require('path');
@@ -56,9 +58,7 @@ module.exports = {
 }
 ```
 
-
-
-4. 修改package.json中的scripts中的脚本,初始化打包功能
+4. 修改 package.json 中的 scripts 中的脚本,初始化打包功能
 
 ```JSON
   "scripts": {
@@ -66,65 +66,62 @@ module.exports = {
   },
 ```
 
-5. 在public目录下的index.html文件中引入bundle.js
+5. 在 public 目录下的 index.html 文件中引入 bundle.js
 
 ## 二、项目改造
 
-### Script标签自动引入
+### Script 标签自动引入
 
-1. 删除项目中的所有script标签以及link标签的引用
+1. 删除项目中的所有 script 标签以及 link 标签的引用
 
-2. 安装插件,用于自动引入script标签到html文件中
+2. 安装插件,用于自动引入 script 标签到 html 文件中
 
-解决问题：文件名使用hash或者其它变动较大的值时，每次打包都需要重新在html文件中引入，非常麻烦。
+解决问题：文件名使用 hash 或者其它变动较大的值时，每次打包都需要重新在 html 文件中引入，非常麻烦。
 
 ```bash
 npm i html-webpack-plugin --save-dev
 ```
 
-3. 在webpack.config.js中引入新安装的Plugin
+3. 在 webpack.config.js 中引入新安装的 Plugin
 
 ```js
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 ```
 
-4. 将html-webpack-plugin添加到新的plugins配置项中
+4. 将 html-webpack-plugin 添加到新的 plugins 配置项中
 
    ```js
    plugins: [
-           new HtmlWebpackPlugin({
-               //src文件夹下模版的名称
-               filename: "index.html",
-               //src文件夹下模版的地址
-               template: "./src/index.html"
-           })
-       ]
+     new HtmlWebpackPlugin({
+       //src文件夹下模版的名称
+       filename: "index.html",
+       //src文件夹下模版的地址
+       template: "./src/index.html",
+     }),
+   ];
    ```
 
-5. 执行打包命令测试一下，发现生成两个文件，并且在index.html文件中自动注入了script标签
+5. 执行打包命令测试一下，发现生成两个文件，并且在 index.html 文件中自动注入了 script 标签
 
-   
+### CSS 自动注入
 
-   
-### CSS自动注入
-
-1.安装css相关的loader
+1.安装 css 相关的 loader
 
 ```bash
 npm i -D css-loader style-loader
 ```
 
--  css-loader帮助我们解析css成为js对象
--  sytle-loader可以从css-loader解析的对象中提取css样式挂载到页面当中
+- css-loader 帮助我们解析 css 成为 js 对象
+- sytle-loader 可以从 css-loader 解析的对象中提取 css 样式挂载到页面当中
 
-2.在src文件夹下的index.js通过模块化的方式导入css文件
+2.在 src 文件夹下的 index.js 通过模块化的方式导入 css 文件
 
 ```js
-import './css/public.css'
-import './css/index.css'
+import "./css/public.css";
+import "./css/index.css";
 ```
 
-3.新增module配置项
+3.新增 module 配置项
 
 ```json
 module: {
@@ -139,7 +136,7 @@ module: {
     }
 ```
 
-4. 执行打包命令进行打包测试，发现报错了，原因是因为没有对图片进行处理。webpack5之前使用`file-loader`或者是`url-loader`来解决这一问题。webpack5中使用`ModuleAssets`这一新特性来解决
+4. 执行打包命令进行打包测试，发现报错了，原因是因为没有对图片进行处理。webpack5 之前使用`file-loader`或者是`url-loader`来解决这一问题。webpack5 中使用`ModuleAssets`这一新特性来解决
 
 5. 相关配置如下：
 
@@ -169,21 +166,19 @@ module: {
        }
    ```
 
-   
+### JS 自动注入
 
-### JS自动注入
-
-1. 在src文件夹下的index.js文件中引入js
+1. 在 src 文件夹下的 index.js 文件中引入 js
 
 ```js
 //没有按照模块化，所以没有导出，直接引入就可以
-import './js/jquery-1.12.4.min'
-import './js/public'
-import './js/nav'
-import './js/jquery.flexslider-min'
+import "./js/jquery-1.12.4.min";
+import "./js/public";
+import "./js/nav";
+import "./js/jquery.flexslider-min";
 ```
 
-2. 执行打包命令，发现bundle文件非常的大，达到180多kb。还存在`$`不存在的问题需要解决，通过webpack内置插件`ProvidePlugin`来解决
+2. 执行打包命令，发现 bundle 文件非常的大，达到 180 多 kb。还存在`$`不存在的问题需要解决，通过 webpack 内置插件`ProvidePlugin`来解决
 
 3. 了解`ProvidePlugin`，官网的解释：
 
@@ -191,56 +186,56 @@ import './js/jquery.flexslider-min'
 
 自动的去导入模块，而不是手动的去导入。
 
-4. 安装jquery、flexslider
+4. 安装 jquery、flexslider
 
 ```bash
 npm i jquery flexslider
 ```
 
-5. 在webpack.config.js中引入新安装的Plugin
+5. 在 webpack.config.js 中引入新安装的 Plugin
 
 ```js
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = {
   //...
   plugins: [
-    	//...
-        new webpack.ProvidePlugin({
-          	//完成变量于库之间的映射（自动导入）
-            $:'jquery',
-            jQuery:'jquery',
-        })
-    ],
-}
+    //...
+    new webpack.ProvidePlugin({
+      //完成变量于库之间的映射（自动导入）
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
+};
 ```
 
-6. 删除掉src/index.js中关于jQuery的引用，因为在配置中已经自动导入了，可以在任何地方使用。
+6. 删除掉 src/index.js 中关于 jQuery 的引用，因为在配置中已经自动导入了，可以在任何地方使用。
 
 ### 图片自动注入
 
-html中直接使用img标签src加载图片的话，因为没有被依赖，图片将不会被打包。这个loader解决这个问题，图片会被打包，而且路径也处理妥当。
+html 中直接使用 img 标签 src 加载图片的话，因为没有被依赖，图片将不会被打包。这个 loader 解决这个问题，图片会被打包，而且路径也处理妥当。
 
-所以使用第三方loader来做这件事
+所以使用第三方 loader 来做这件事
 
 ```bash
 npm i html-withimg-loader
 ```
 
-在webpack.config.js中添加新的loader配置项：
+在 webpack.config.js 中添加新的 loader 配置项：
 
 ```js
 {
-  rules:[
+  rules: [
     {
-      test:/\.html$/,
-      loader:'html-withimg-loader'
-    }
-  ]
+      test: /\.html$/,
+      loader: "html-withimg-loader",
+    },
+  ];
 }
 ```
 
-或者使用一个官方的Plugin来解决(复制文件到指定路径下)：
+或者使用一个官方的 Plugin 来解决(复制文件到指定路径下)：
 
 ```bash
 npm i copy-webpack-plugin -D
@@ -248,32 +243,28 @@ npm i copy-webpack-plugin -D
 
 ```js
 //webpack.config.js
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 {
-  plugins:[
+  plugins: [
     new CopyWebpackPlugin({
-      patterns:[
+      patterns: [
         {
-          from:path.resolve(__dirname,'./src/img'),
-          to:path.resolve(__dirname,'./dist/img')
-        }
-      ]
-    })
-  ]
+          from: path.resolve(__dirname, "./src/img"),
+          to: path.resolve(__dirname, "./dist/img"),
+        },
+      ],
+    }),
+  ];
 }
 ```
 
-
-
-
-
 ## 三、项目优化
 
-一般打包完成之后只有一个bundle.js文件，包含了项目中用到的所有js、css，档切换到一个页面的时候，新的页面也同样会加载bundle.js文件。这样就出现了一个问题，有很多无关的代码是本页面用不到的，会造成资源上的浪费，所以要进行优化。
+一般打包完成之后只有一个 bundle.js 文件，包含了项目中用到的所有 js、css，档切换到一个页面的时候，新的页面也同样会加载 bundle.js 文件。这样就出现了一个问题，有很多无关的代码是本页面用不到的，会造成资源上的浪费，所以要进行优化。
 
-### js分离
+### js 分离
 
-配置多个入口文件，使每一个页面单独使用一个js文件，而不是所有页面公用一个bundle.js文件，可以理解为代码分割，达到优化的目的。
+配置多个入口文件，使每一个页面单独使用一个 js 文件，而不是所有页面公用一个 bundle.js 文件，可以理解为代码分割，达到优化的目的。
 
 ```js
 entry: {
@@ -301,7 +292,7 @@ plugins: [
             $:'jquery',
             jQuery:'jquery',
         })
-    ],      
+    ],
 ```
 
 ### 开发服务器配置
@@ -312,15 +303,15 @@ plugins: [
 npm i -D webpack-dev-server
 ```
 
-webpack-dev-server主要原理：通过webpack将项目进行构建，将打包后的内容放在内存里面，所以可以很容易监视到是否发生变化，实现更快速度的动态更新
+webpack-dev-server 主要原理：通过 webpack 将项目进行构建，将打包后的内容放在内存里面，所以可以很容易监视到是否发生变化，实现更快速度的动态更新
 
 **注意！！**
 
-只能监视js/css的变化！！！HTML不可以监视到！！
+只能监视 js/css 的变化！！！HTML 不可以监视到！！
 
 > 在源代码中 CSS/JS 产生修改时，会立刻在浏览器中进行更新，这几乎相当于在浏览器 devtools 直接更改样式。
 
-在package.json中配置：
+在 package.json 中配置：
 
 ```json
   "scripts": {
@@ -328,9 +319,9 @@ webpack-dev-server主要原理：通过webpack将项目进行构建，将打包�
   }
 ```
 
-### 从bundle剥离css
+### 从 bundle 剥离 css
 
-安装插件，剥离css文件：
+安装插件，剥离 css 文件：
 
 ```bash
 npm i -D mini-css-extract-plugin
@@ -341,29 +332,29 @@ npm i -D mini-css-extract-plugin
 ```js
 //webpack.config.js
 {
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
-                //匹配所有.css结尾的文件
-                test: /\.css$/,
-                //将匹配到的所有相关文件使用以下两个loader进行预处理，loader处理的顺序为从右到左
-                // use: ['style-loader','css-loader'],
-                //要使用css剥离功能，就不需要用到style-loader了，而是转用为剥离用的loader
-                use: [MiniCssExtractPlugin.loader,'css-loader'],
-      }
-    ]
+        //匹配所有.css结尾的文件
+        test: /\.css$/,
+        //将匹配到的所有相关文件使用以下两个loader进行预处理，loader处理的顺序为从右到左
+        // use: ['style-loader','css-loader'],
+        //要使用css剥离功能，就不需要用到style-loader了，而是转用为剥离用的loader
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+    ];
   }
-  plugins:[
-     //剥离后使用Plugin生成css文件
-        new MiniCssExtractPlugin({
-            filename:'css/[name].css',
-            chunkFilename:'css/[name].chunk.css'
-        })
-  ]
+  plugins: [
+    //剥离后使用Plugin生成css文件
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css",
+      chunkFilename: "css/[name].chunk.css",
+    }),
+  ];
 }
 ```
 
-由于我们使用了WebpackHtmlPlugin,所以生成的css文件会自动以`<link>`标签的形式出现在html文件中
+由于我们使用了 WebpackHtmlPlugin,所以生成的 css 文件会自动以`<link>`标签的形式出现在 html 文件中
 
 ### 压缩文件
 
@@ -371,7 +362,7 @@ npm i -D mini-css-extract-plugin
 - 去除缩进
 - treeshaking
 
-#### js压缩
+#### js 压缩
 
 ```bash
 npm i uglifyjs-webpack-plugin
@@ -394,7 +385,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 }
 ```
 
-#### css压缩
+#### css 压缩
 
 ```bash
 npm i css-minimizer-webpack-plugin -D
@@ -420,53 +411,53 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 将一些未使用的代码删除掉。
 
-以lodash为例：
+以 lodash 为例：
 
-安装lodash:
+安装 lodash:
 
 ```bash
 npm i lodash
 ```
 
-#### 文件TreeShaking
+#### 文件 TreeShaking
 
-导入并使用lodash中的一个方法：
+导入并使用 lodash 中的一个方法：
 
 ```js
-import _ from 'lodash'
-console.log(_.get({a:1},a))//1
+import _ from "lodash";
+console.log(_.get({ a: 1 }, a)); //1
 ```
 
-重新打包后，原来的index.js文件大小为396KB，打包后的index.js文件大小为950KB。
+重新打包后，原来的 index.js 文件大小为 396KB，打包后的 index.js 文件大小为 950KB。
 
-> 通过结构的方式来导入文件，可以触发TreeShaking
+> 通过结构的方式来导入文件，可以触发 TreeShaking
 
-修改完后发现大小还是一样，并没有触发TreeShaking。
+修改完后发现大小还是一样，并没有触发 TreeShaking。
 
-**触发TreeShaking的条件**
+**触发 TreeShaking 的条件**
 
-> 1.通过结构的方式来导入文件，可以触发TreeShaking
+> 1.通过结构的方式来导入文件，可以触发 TreeShaking
 >
-> 2.调用的npm包必须使用ESM
+> 2.调用的 npm 包必须使用 ESM
 
-以上TreeShaking是不同文件的TreeShaking，也就是说lodash中有好多方法，每一个方法都写在不同的文件中。没有使用到的方法，也就相当于没有使用到的文件，就不会被打包进来。
+以上 TreeShaking 是不同文件的 TreeShaking，也就是说 lodash 中有好多方法，每一个方法都写在不同的文件中。没有使用到的方法，也就相当于没有使用到的文件，就不会被打包进来。
 
-安装符合ESM规范的lodash包：
+安装符合 ESM 规范的 lodash 包：
 
 ```bash
 npm i -S lodash-es
 ```
 
-重新打包后发现大小从之前的950KB变成了474KB
+重新打包后发现大小从之前的 950KB 变成了 474KB
 
-#### 同一文件不同数据的TreeShaking
+#### 同一文件不同数据的 TreeShaking
 
 **那么面对同一个文件中的方法，会如何处理？**
 
 ```js
 //webpack.config.js
 {
-  mode:"production"
+  mode: "production";
 }
 ```
 
@@ -501,9 +492,9 @@ npm i -S lodash-es
         }
 ```
 
-上面代码简单的实现了js文件的代码分割，将整个index.js分割成了index.js和chunk.js
+上面代码简单的实现了 js 文件的代码分割，将整个 index.js 分割成了 index.js 和 chunk.js
 
-### 清除dist多余文件
+### 清除 dist 多余文件
 
 每次打包的时候，如果出现不同的文件名，之前的文件不会覆盖，而是依旧存在，需要手动去删除，可以用插件来自动删除。
 
@@ -512,11 +503,8 @@ npm i clean-webpack-plugin
 ```
 
 ```js
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 {
-  plugins:[
-    new CleanWebpackPlugin()
-  ]
+  plugins: [new CleanWebpackPlugin()];
 }
 ```
-
