@@ -79,13 +79,15 @@ for (var key of Object.keys(myObject)) {
 
 ## 迭代器
 
-**什么是迭代，什么是迭代器？**
+### 什么是迭代，什么是迭代器？
 
 “迭代”的意思是按照顺序反复多次执行一段程序，通常会有明确的终止条件。迭代会在一个有序集合上进行，集合中的所有项可以按照既定的顺序被遍历到，特别是开始和结束项有明确的定义。
 
 了解了迭代的意思，那么就很容易理解迭代器的含义了。在我看来，迭代器就是一种实现迭代的方法，由它来帮我们实现迭代的过程。
 
-实现`Iterable`接口（可迭代协议）要求同时具备两种能力：
+#### 可迭代协议
+
+**可迭代协议**允许 JavaScript 对象定义或定制它们的迭代行为，实现可迭代协议(`Iterable`接口)要求同时具备两种能力：
 
 - 支持迭代的自我识别能力
 - 创建实现`Iterator`接口的对象的能力
@@ -98,7 +100,24 @@ for (var key of Object.keys(myObject)) {
 
 - 这个属性必须使用`[Symbol.iterator]`作为键
 
-**如何判断是否存在默认迭代属性？**
+**如何理解上面两点？**
+
+当使用for of循环时，会调用`[Symbol.iterator]`属性（也就是上面说的`默认迭代器`)来获取`迭代器`(也就是上面所提到的新迭代器)；然后使用`迭代器`上的方法（通常是`next()`）来获取迭代的值。
+
+#### 迭代器协议
+
+> **迭代器协议**定义了产生一系列值（无论是有限个还是无限个）的标准方式，当值为有限个时，所有的值都被迭代完毕后，则会返回一个默认返回值。
+
+意思就是，一个东西需要满足什么条件才能算做是迭代器。那需要满足什么条件呢？
+
+- 迭代器是一个对象，这个对象中有三个方法，分别是：`next()`、`return()`、`throw()`；next方法必选，其他两个方法可选。
+- 这三个方法必须有返回值，返回值是一个`IteratorResult`类型的对象。这个对象包含两个值：
+  - value：调用迭代器方法后返回的值
+  - done：如果迭代器能够生成序列中的下一个值，则返回 `false` 布尔值。
+
+
+
+### 判断默认迭代属性?
 
 在JS中，检查是否存在`默认迭代器`属性，可以判断是否存在`迭代器工厂函数`：
 
@@ -137,7 +156,7 @@ console.log(arr[Symbol.iterator]());//ƒ values() { [native code] }
 - Promise.all()、Promise.race()接收由期约组成的可迭代对象
 - yield*操作符，在生成器中使用
 
-实现迭代（显示实现和原生实现）：
+### 实现迭代（显示实现和原生实现）
 
 ```js
 //显示实现
@@ -168,7 +187,7 @@ for (let f of foo) {
     console.log('break value',f);//foo18
     break;
   }
-  console.log(f);
+  console.log(f);//foo1 ... foo17
 }
 
 //原生实现
@@ -176,9 +195,47 @@ let a = new Array();
 console.log(a[Symbol.iterator]())//Array Iterator
 ```
 
-
-
 如果使用break、continue、return、throw等关键字时，来关闭迭代器执行。如果存在还没有被消费的值时，会触发迭代器工厂函数中的`return()`方法。
 
+### 小结
+
+js允许我们自定义对象的迭代方式，但定义它的迭代方式需要遵循它的规则（可迭代协议）；
+
+这个规则（可迭代协议）规定，对象如果自定义迭代行为需要包含一个[Symbol.iterator]属性，并且调用这个属性之后需要返回一个迭代器。这个迭代器是一个对象，实现迭代器也需要遵循它的规则（迭代器协议）；
+
+这个规则（迭代器协议）规定需要包含一个next方法，调用next方法后需要返回一个对象，来表示下一次迭代后的状态。对象中包含两个可选的值（done和value），value表示下一次迭代后的值，done表示迭代是否结束。在调用return和throw方法时，他们会告诉迭代器迭代迭代结束了。
+
 ## 生成器
+
+JavaScript中的生成器函数（Generator Function）是一种特殊的函数，它可以在需要的时候生成多个值，而不是像普通函数一样只返回一个值。生成器函数可以通过使用`yield`关键字来暂停函数的执行，并在需要时恢复执行状态。当生成器函数执行时，它会返回一个生成器对象，该对象可以用于逐个获取生成的值。
+
+> 调用一个**生成器函数**并不会马上执行它里面的语句，而是返回一个这个生成器的 **迭代器** **（ [iterator](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols#iterator) ）对象**。当这个迭代器的 `next()` 方法被首次（后续）调用时，其内的语句会执行到第一个（后续）出现[`yield`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/yield)的位置为止，[`yield`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/yield) 后紧跟迭代器要返回的值。或者如果用的是 [`yield*`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/yield*)（多了个星号），则表示将执行权移交给另一个生成器函数（当前生成器暂停执行）。
+>
+> `next()`方法返回一个对象，这个对象包含两个属性：value 和 done，value 属性表示本次 `yield` 表达式的返回值，done 属性为布尔类型，表示生成器后续是否还有 `yield` 语句，即生成器函数是否已经执行完毕并返回。
+
+```js
+function* foo(){
+  yield 'end1'
+  yield 'end2'
+  yield 'end3'
+}
+
+const generator = foo()
+console.log(generator);//foo 的生成器
+
+let g1 = generator.next()
+console.log(g1);//{done:false,value:end1}
+
+let g2 = generator.next()
+console.log(g2);//{value: 'end2', done: false}
+
+let gg = generator.return('early ending');
+console.log(gg);//{value: 'early ending', done: true}
+
+let g3 = generator.next()
+console.log(g3);//{value: undefined, done: true}
+
+let g4 = generator.next()
+console.log(g4);//{value: undefined, done: true}
+```
 
