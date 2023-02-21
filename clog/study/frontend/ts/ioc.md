@@ -49,7 +49,16 @@ import * as fs from "fs";
 import * as path from "path";
 import { FileData } from "../interface/FileData";
 import { InitClass } from "../interface/InitClass";
-
+import { createRealPath } from "../utils/realPath";
+/**
+ * 读取文件和创建文件
+ * @example
+ * new File({
+ * 	[生成的文件名]：[文件路径]
+ * 	business:"../create-api/business-info.txt"
+ * })
+ * 可通过注入其它实现init方法的实例对象，完成数据的修改
+ */
 export class File implements InitClass {
 	static instances: Map<any, any> = new Map();
 	files: FileData = [];
@@ -62,7 +71,7 @@ export class File implements InitClass {
 				instance.init(this);
 			}
 		}
-		this.createFile(this.files);
+		this.run(this.files);
 	}
 	// 初始化
 	init(container: any) {
@@ -77,58 +86,71 @@ export class File implements InitClass {
 	// 添加文件
 	private add(options: Record<string, string>) {
 		for (let fileName in options) {
-			this.files.push({
-				fileName,
-				filePath: options[fileName],
-				fileData: "",
-			});
+			const withRealPath = createRealPath([
+				{
+					fileName: fileName,
+					filePath: options[fileName],
+					fileData: "",
+				},
+			]);
+			this.files.push(...withRealPath);
 		}
 	}
 	// 获取文件数据
 	async read() {
 		for (let file of this.files) {
-			const data = fs.readFileSync(path.join(__dirname, file.filePath));
+			const data = fs.readFileSync(
+				path.resolve(process.cwd(), file.filePath)
+			);
 			const text = data.toString();
 			file.fileData = text;
 		}
 	}
-	//将files数组对象中的数据转换成文件
-	createFile(files: FileData) {
-		for (let file of files) {
-			let resultPath = `./${file.fileName}`;
-			let dir = path.resolve(process.cwd(), resultPath);
-			// @ts-ignore
-			if (!file.parent) {
-				// 对已经创建的文件做标记
-				// @ts-ignore
-				file.parent = `${file.fileName}`;
-				// 创建文件夹
-				fs.mkdirSync(dir);
-			} else {
-				// 创建文件夹
-				// @ts-ignore
-				resultPath = `./${file.parent}/${file.fileName}`;
-				dir = path.resolve(process.cwd(), resultPath);
-				fs.mkdirSync(dir);
-			}
 
-			if (file.children?.length) {
-				// 如果存在children，对children中的每一个路由都做上父文件夹的路径标识
-				for (let child of file.children) {
-					// @ts-ignore
-					child.parent = `${file.fileName}`;
-				}
-				this.createFile(file.children);
-			} else {
-				// 创建文件
-				fs.writeFile(
-					path.resolve(process.cwd(), `${dir}/${file.fileName}.js`),
-					file.fileData!,
-					err => {
-						console.log(err);
-					}
+	//将files数组对象中的数据转换成文件
+	run(files: FileData) {
+		for (let file of files) {
+			if (file.realPath) {
+				// 获取目录路径和文件名
+				const dirPath = path.dirname(
+					path.resolve(process.cwd(), file.realPath)
 				);
+				console.log("create folder :", dirPath);
+				const fileName = path.basename(file.realPath);
+
+				// 使用递归创建目录
+				function createDirectory(dirPath: string) {
+					if (!fs.existsSync(dirPath)) {
+						createDirectory(path.dirname(dirPath));
+						fs.mkdirSync(dirPath);
+					}
+				}
+
+				// 创建多层目录
+				createDirectory(dirPath);
+
+				// 创建文件
+				fs.writeFileSync(file.realPath, file.fileData);
+				console.log("create file :", fileName);
+			} else if (file.children?.length) {
+				this.run(file.children);
 			}
+		}
+	}
+	// 删除文件夹下的所有文件
+	deleteFile(filePath: string) {
+		let files = [];
+		if (fs.existsSync(filePath)) {
+			files = fs.readdirSync(filePath);
+			files.forEach((file, index) => {
+				let curPath = filePath + "/" + file;
+				if (fs.statSync(curPath).isDirectory()) {
+					this.deleteFile(curPath); //递归删除文件夹
+				} else {
+					fs.unlinkSync(curPath); //删除文件
+				}
+			});
+			fs.rmdirSync(filePath);
 		}
 	}
 }
@@ -182,56 +204,72 @@ export class ServiceApi implements InitClass {
 		return fileData;
 	}
 }
+
 ```
 
 Route 类：
 
 ```ts
 import { InitClass } from "../interface/InitClass";
-import * as path from "path";
 import { template_route } from "../template/route";
 import { FileData } from "../interface/FileData";
-import { clearScreenDown } from "readline";
+import { createRealPath } from "../utils/realPath";
+
+/**
+ * 创建对象路径
+ * @example
+ * home: "@/pages/home" =>
+ * -home
+ * --home.js
+ *
+ * 想要包含多个文件，则使用对象形式
+ * @example
+ * {
+ * 	bar: {
+ *		bar1: "@/pages/bar/bar1",
+ *		bar2: "@/pages/bar/bar2",
+ *	}
+ *}
+ * =>
+ * result
+ * -bar
+ * --bar1.js
+ * --bar2.js
+ *  */
 export class Route implements InitClass {
 	files = {};
 	constructor(files: Record<string, any>) {
 		this.files = files;
 	}
 	init(context: any) {
-		context.files.push(...this.createRoute(this.files));
+		const route = this.createRoute(this.files);
+		const real = createRealPath(route);
+		context.files.push(...real);
 	}
 
 	createRoute(files: Record<string, any>) {
 		const res: FileData = [];
 		for (let fileName in files) {
 			// 结果数据
-			let route_data;
-
-			// \r?: 匹配可选的回车符 \r
-			// \n: 匹配换行符
-			// m: 表示多行匹配，即在匹配文本中搜索换行符并匹配。
-			// const data = template.split(/\r?\n/gm);
+			let route_data = "";
 
 			// 数据替换,不用读取文件
-			route_data = template_route
+			route_data = template_route()
 				.replace(/\{\{name\}\}/g, fileName)
 				.replace(/\{\{path\}\}/g, files[fileName]);
 
+			// 当前文件的属性
 			let file_data = {
 				fileName: fileName,
 				fileData: route_data || "",
 				filePath: files[fileName],
 				children: [],
 			};
-			if (typeof files[fileName] !== "string") {
-				let copy_file_data = JSON.parse(JSON.stringify(file_data));
-				copy_file_data.fileData = "";
-				copy_file_data.filePath = "";
-				copy_file_data.fileName = fileName;
+
+			if (typeof files[fileName] === "object") {
+				let newChild = this.createRoute(files[fileName]);
 				// @ts-ignore
-				file_data["children"].push(
-					...this.createRoute(files[fileName])
-				);
+				file_data["children"].push(...newChild);
 				res.push(file_data);
 			} else {
 				res.push(file_data);
@@ -239,7 +277,10 @@ export class Route implements InitClass {
 		}
 		return res;
 	}
+
+
 }
+
 ```
 
 定义一个容器：
@@ -294,3 +335,49 @@ let lc1 = new Container();
 -   通过注入实例、在高层次模块中实现 init 方法来实现模块之间的关联
 
 大大的降低了耦合度。
+
+## 小结
+
+**2.21更新：**
+
+看似挺容易的代码，但是写起来花了挺多时间的，整整花了两天....QaQ
+
+也是深深的怀疑自己的能力，其中用到了一个递归的方法来创建文件夹。之前也是想到了用递归的，主要的思路就是这个，但是具体的实现过程中出现了差错。
+
+```ts
+export function createRealPath(files: FileData, basePath = "./result") {
+	if (!files) return [];
+	let res = [];
+	// 判断files中是否有数据
+	while (files.length) {
+		// 有则取出最后一个
+		let file = files.pop();
+		if (!file) break;
+		// 拼接路径
+		let filePath = basePath + "/" + file.fileName;
+		// 如果当前目录存在子目录，递归调用
+		if (file.children?.length) {
+			file.children = createRealPath(file.children, filePath);
+		} else {
+			// 没有子目录则生成文件
+			file.realPath = filePath + "/" + file.fileName + ".js";
+		}
+		// 存放结果
+		res.push(file);
+	}
+	return res;
+}
+```
+
+具体的代码如上，主要是一个文件路径的递归创建。
+
+后面了解到了一些新的`fs`相关api,支持node10版本以上：
+
+- fs.dirname 返回当前文件所在的目录路径（上级目录？）
+- fs.basename 给一个路径，返回最内层的文件名
+- fs.parse 给定一个路径，将这个路径解析成一个对象
+- fs.format 给一个对象，将这个对象解析成一个路径
+
+似乎用`parse/format`来解决路径问题会方便一点。
+
+还是要提醒自己，每次打代码之前先想一个思路吧，不要迷迷糊糊的就去硬写，浪费好多的时间。
