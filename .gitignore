@@ -2,3 +2,5 @@ node_modules
 /clog/.vuepress/.temp
 /clog/.vuepress/.cache
 /clog/.vuepress/dist
+.vscode
+demo.js
