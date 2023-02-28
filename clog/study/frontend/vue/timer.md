@@ -1,7 +1,18 @@
+---
+icon: vue
+date: 2023-02-28
+category:
+    - 前端
+    - Vue
+tag:
+    - 学习笔记
+---
+
+# 缓存计时器
 
 ```vue
 <template>
-    <button @click="change" :disabled="isDisabled">{{ btnMsg }}</button>
+	<button @click="change" :disabled="isDisabled">{{ btnMsg }}</button>
 </template>
 <script>
 // t0 = 计时器时间
@@ -51,5 +62,4 @@ watch(t3, val => {
 	}
 });
 </script>
-
 ```
