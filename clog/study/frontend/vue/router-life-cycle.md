@@ -1,6 +1,15 @@
+---
+icon: vue
+date: 2023-03-03
+category:
+  - 前端
+  - Vue
+tag:
+  - vue-router
+  - 学习笔记
+---
+
 # 路由生命周期
-
-
 
 1.导航确认激活
 
@@ -20,19 +29,15 @@
 
 9.afterEach
 
-
-
 ## 1.beforeRouteLeave
 
 > 在导航离开渲染该组件的对应路由时调用
-
-
 
 ## 2.beforeEach
 
 > 当一个导航触发时，全局前置守卫按照创建顺序调用。
 >
-> 守卫是异步解析执行，此时导航在所有守卫resolve完之前一直处于等待中
+> 守卫是异步解析执行，此时导航在所有守卫 resolve 完之前一直处于等待中
 
 `全局前置守卫按照创建顺序调用`
 
@@ -45,49 +50,47 @@ const routes = [
   {
     path: "/",
     name: "sayhi",
-    component: () =>
-      import("../pages/say-hi.vue"),
+    component: () => import("../pages/say-hi.vue"),
   },
   {
     path: "/pagetest",
     name: "pagetest",
-    component: () =>
-      import( "../pages/page-test.vue"),
+    component: () => import("../pages/page-test.vue"),
   },
 ];
-const router = createRouter({routes})
-router.beforeEach(()=>{
-  console.log('index');
-})
+const router = createRouter({ routes });
+router.beforeEach(() => {
+  console.log("index");
+});
 ```
 
-在page-test.vue文件中定义全职前置守卫：
+在 page-test.vue 文件中定义全职前置守卫：
 
 ```js
-const router = useRouter()
-router.beforeEach(()=>{
-  console.log('page-test');
-})
+const router = useRouter();
+router.beforeEach(() => {
+  console.log("page-test");
+});
 ```
 
-在say-hi.vue文件中定义全局前置守卫：
+在 say-hi.vue 文件中定义全局前置守卫：
 
 ```js
-const router = useRouter()
-router.beforeEach(()=>{
-  console.log('say-hi');
-})
+const router = useRouter();
+router.beforeEach(() => {
+  console.log("say-hi");
+});
 ```
 
 1. 刚开始进来的时候，页面默认进入到`/`路径中，并在控制台输出`index`，会再创建一个全局前置守卫。
 
 2. 当导航跳转到`/page-test`路径时，按创建顺序触发全局前置守卫。
 
-​	输出：
+​ 输出：
 
 ```js
-index
-say-hi
+index;
+say - hi;
 ```
 
 3. 当导航跳转到`/`路径时，又会再创建一个全局前置守卫。然后按创建顺序触发全局前置守卫。
@@ -95,9 +98,9 @@ say-hi
 输出:
 
 ```js
-index
-say-hi
-page-test
+index;
+say - hi;
+page - test;
 ```
 
 ## 3.beforeRouteUpdate
@@ -112,22 +115,12 @@ page-test
 
 ## 5.解析异步组件
 
-
-
 ## 6.beforeRouteEnter
-
-
 
 ## 7.beforeResolve
 
-
-
 ## 8.导航被确认
-
-
 
 ## 9.afterEach
 
-
-
-## 10.触发DOM更新
+## 10.触发 DOM 更新
