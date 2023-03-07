@@ -15,12 +15,6 @@ tag:
 
 点击[这里](https://cn.vitejs.dev/guide/env-and-mode.html#env-variables)查看官方文档
 
-下面是一些已经默认存在的环境变量，可以直接拿来使用：
-
-```
-> Vite 在一个特殊的 **import.meta.env** 对象上暴露环境变量。这里有一些在所有情况下都可以使用的内建变量：
-
-```
 
 ## 自定义环境变量
 

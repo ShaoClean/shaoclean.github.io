@@ -1,6 +1,6 @@
+.cache
+.temp
+dist
 node_modules
-/clog/.vuepress/.cache
-/clog/.vuepress/.temp
-/clog/.vuepress/dist
 .vscode
 demo.js
