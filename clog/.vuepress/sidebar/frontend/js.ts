@@ -1,4 +1,4 @@
-import { arraySidebar, HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import { arraySidebar } from "vuepress-theme-hope";
 import { getFiles } from "../../getFiles";
 
 

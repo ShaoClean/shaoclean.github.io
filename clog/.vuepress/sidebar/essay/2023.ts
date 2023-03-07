@@ -1,6 +1,6 @@
-import { HopeThemeSidebarGroupItem } from "vuepress-theme-hope";
+import { SidebarItem } from "vuepress-theme-hope";
 import { getFiles } from "../../getFiles";
-export const year2023Sidebar: HopeThemeSidebarGroupItem = {
+export const year2023Sidebar: SidebarItem = {
   text: "2023",
   collapsible: true,
   prefix: "2023/",
