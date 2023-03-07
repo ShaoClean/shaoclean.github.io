@@ -1,4 +1,4 @@
-import { viteBundler } from '@vuepress/bundler-vite'
+import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
@@ -6,7 +6,7 @@ export default defineUserConfig({
 	bundler: viteBundler({
 		viteOptions: {},
 		vuePluginOptions: {},
-	  }),
+	}),
 	lang: "zh-CN",
 	title: "clog",
 	description: "clean's blog",
@@ -32,31 +32,13 @@ export default defineUserConfig({
 	],
 	plugins: [
 		docsearchPlugin({
-			
 			appId: "NR7AZKYE74",
 
 			apiKey: "597ac4cae55a9398570abc4462e65823",
 
 			indexName: "hiclean",
 		}),
-
-		// searchPlugin({
-		//   locales: {
-		//     "/zh/": {
-		//       placeholder: "搜点什么东西吧...",
-		//     },
-		//   },
-		//   hotKeys:[
-		//     {
-		//       key:'k',
-		//       ctrl:true
-		//     }
-		//   ]
-
-		// })
-		// 幻灯片支持
-		// mdEnhancePlugin({
-		//   presentation:true
-		// })
+		
+		
 	],
 });
