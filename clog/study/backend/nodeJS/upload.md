@@ -1,6 +1,6 @@
 ---
 icon: nodeJS
-date: 2022-10-8
+date: 2022-10-08
 category:
   - 后端
   - Node

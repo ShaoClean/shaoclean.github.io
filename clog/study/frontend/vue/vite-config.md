@@ -17,13 +17,10 @@ tag:
 
 下面是一些已经默认存在的环境变量，可以直接拿来使用：
 
-> Vite 在一个特殊的 **`import.meta.env`** 对象上暴露环境变量。这里有一些在所有情况下都可以使用的内建变量：
->
-> - **`import.meta.env.MODE`**: {string} 应用运行的[模式](https://cn.vitejs.dev/guide/env-and-mode.html#modes)。
-> - **`import.meta.env.BASE_URL`**: {string} 部署应用时的基本 URL。他由[`base` 配置项](https://cn.vitejs.dev/config/shared-options.html#base)决定。
-> - **`import.meta.env.PROD`**: {boolean} 应用是否运行在生产环境。
-> - **`import.meta.env.DEV`**: {boolean} 应用是否运行在开发环境 (永远与 `import.meta.env.PROD`相反)。
-> - **`import.meta.env.SSR`**: {boolean} 应用是否运行在 [server](https://cn.vitejs.dev/guide/ssr.html#conditional-logic) 上。
+```
+> Vite 在一个特殊的 **import.meta.env** 对象上暴露环境变量。这里有一些在所有情况下都可以使用的内建变量：
+
+```
 
 ## 自定义环境变量
 

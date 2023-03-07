@@ -6,6 +6,6 @@ export const javaSidebar:HopeThemeSidebarGroupItem = {
   text:"java",
   icon:"java",
   prefix:"java/",
-  collapsable: true,
+  collapsible: true,
   children:getFiles('/clog/study/backend/java')
 }

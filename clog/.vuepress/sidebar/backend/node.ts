@@ -6,6 +6,6 @@ export const nodeSidebar:HopeThemeSidebarGroupItem = {
   text:"node",
   icon:"nodeJS",
   prefix:"nodeJS/",
-  collapsable: true,
+  collapsible: true,
   children:getFiles('/clog/study/backend/nodeJS')
 }
