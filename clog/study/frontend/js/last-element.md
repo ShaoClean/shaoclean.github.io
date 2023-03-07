@@ -11,7 +11,7 @@ tag:
 # 查找数组最后一个元素的方法
 
 暂时想到 9 种：
-
+<!-- more -->
 ```js
 const arr = ["hi", "im", "clean"];
 let lastEl;

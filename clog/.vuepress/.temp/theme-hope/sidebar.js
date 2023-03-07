@@ -1,1 +1,0 @@
-export const sidebarData = {"/project/":["README.md","CYOU.md","clean-vite-cli.md","cyou-js.md"],"/teach/":["README.md","4.md","1.md","3.md","2.md","5.md"]}
