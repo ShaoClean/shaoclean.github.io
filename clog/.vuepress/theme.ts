@@ -55,6 +55,9 @@ export default hopeTheme({
       "/essay/2022/5.html": ["sczscz"],
       "/essay/2022/6.html": ["sczscz"],
       "/essay/2022/7.html": ["sczscz"],
+      "/project/clean-vite-cli.html": ["sczscz"],
+      "/project/cyou-js.html": ["sczscz"],
+      "/project/CYOU.html": ["sczscz"],
     },
   },
 
