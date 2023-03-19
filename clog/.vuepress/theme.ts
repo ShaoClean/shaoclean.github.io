@@ -2,110 +2,120 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar/index.js";
 import sidebar from "./sidebar.js";
 export default hopeTheme({
-  hostname: "https://doc.shaoclean.top",
+	hostname: "https://doc.shaoclean.top",
 
-  author: {
-    name: "ShaoClean",
-    url: "https://weibo.com/u/5550001595",
-  },
-  //简洁模式
-  // pure: true,
-  iconAssets: "iconfont",
+	author: {
+		name: "ShaoClean",
+		url: "https://weibo.com/u/5550001595",
+	},
+	//简洁模式
+	// pure: true,
+	iconAssets: "iconfont",
 
-  logo: "/logo.svg",
+	logo: "/logo.svg",
 
-  repo: "https://github.com/ShaoClean/shaoclean.github.io",
+	repo: "https://github.com/ShaoClean/shaoclean.github.io",
 
-  docsDir: "clog",
+	docsDir: "clog",
 
-  docsBranch: "main",
+	docsBranch: "main",
 
-  docsRepo: "https://github.com/ShaoClean/shaoclean.github.io",
-  // navbar
-  navbar: navbar,
+	docsRepo: "https://github.com/ShaoClean/shaoclean.github.io",
+	// navbar
+	navbar: navbar,
 
-  // sidebar
-  sidebar: sidebar,
+	// sidebar
+	sidebar: sidebar,
 
-  footer: "浙ICP备2022003815号-1",
+	footer: "浙ICP备2022003815号-1",
 
-  displayFooter: true,
+	displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "PageView", "Word"],
+	pageInfo: [
+		"Author",
+		"Original",
+		"Date",
+		"Category",
+		"Tag",
+		"PageView",
+		"Word",
+	],
 
-  blog: {
-    description: "一个前端开发者，努力成为全栈开发💪<br>浙江最后一杯深情冰美式",
-    intro: "/intro.html",
-    medias: {
-      Email: "1518136109@qq.com",
-      GitHub: "https://github.com/ShaoClean",
-      Gitee: "https://gitee.com/shaoclean",
-      QQ: "1518136109",
-      Wechat: "ShaoClean",
-      Weibo: "邵Clean",
-    },
-  },
-  //加密文档
-  encrypt: {
-    config: {
-      "/essay/2022/1.html": ["sczscz"],
-      "/essay/2022/2.html": ["sczscz"],
-      "/essay/2022/3.html": ["sczscz"],
-      "/essay/2022/4.html": ["sczscz"],
-      "/essay/2022/5.html": ["sczscz"],
-      "/essay/2022/6.html": ["sczscz"],
-      "/essay/2022/7.html": ["sczscz"],
-      "/essay/2023/2.html": ["sczscz"],
-      "/essay/2023/3.html": ["sczscz"],
-      "/essay/2023/4.html": ["sczscz"],
-      "/essay/2023/5.html": ["sczscz"],
-      "/essay/2023/6.html": ["sczscz"],
-      "/project/clean-vite-cli.html": ["sczscz"],
-      "/project/cyou-js.html": ["sczscz"],
-      "/project/CYOU.html": ["sczscz"],
-    },
-  },
+	blog: {
+		description:
+			"一个前端开发者，努力成为全栈开发💪<br>浙江最后一杯深情冰美式",
+		intro: "/intro.html",
+		medias: {
+			Email: "1518136109@qq.com",
+			GitHub: "https://github.com/ShaoClean",
+			Gitee: "https://gitee.com/shaoclean",
+			QQ: "1518136109",
+			Wechat: "ShaoClean",
+			Weibo: "邵Clean",
+		},
+	},
+	//加密文档
+	encrypt: {
+		config: {
+			"/essay/2022/1.html": ["sczscz"],
+			"/essay/2022/2.html": ["sczscz"],
+			"/essay/2022/3.html": ["sczscz"],
+			"/essay/2022/4.html": ["sczscz"],
+			"/essay/2022/5.html": ["sczscz"],
+			"/essay/2022/6.html": ["sczscz"],
+			"/essay/2022/7.html": ["sczscz"],
+			"/essay/2023/2.html": ["sczscz"],
+			"/essay/2023/3.html": ["sczscz"],
+			"/essay/2023/4.html": ["sczscz"],
+			"/essay/2023/5.html": ["sczscz"],
+			"/essay/2023/6.html": ["sczscz"],
+			"/essay/2023/7.html": ["sczscz"],
+			"/essay/2023/8.html": ["sczscz"],
+			"/project/clean-vite-cli.html": ["sczscz"],
+			"/project/cyou-js.html": ["sczscz"],
+			"/project/CYOU.html": ["sczscz"],
+		},
+	},
 
-  plugins: {
-    blog: {
-      // 摘要长度
-      excerptLength:50
-    },
-    // 代码主题
-    prismjs:{
-      light:"one-dark"
-    },
-    // 如果你不需要评论，可以直接删除 comment 配置，
-    // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
-    // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      // provider: "Giscus",
-      // repo: "ShaoClean/clog-comment",
-      // repoId: "R_kgDOH9Sdqg",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOH9Sdqs4CRT9D",
+	plugins: {
+		blog: {
+			// 摘要长度
+			excerptLength: 50,
+		},
+		// 代码主题
+		prismjs: {
+			light: "one-dark",
+		},
+		// 如果你不需要评论，可以直接删除 comment 配置，
+		// 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
+		// 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
+		comment: {
+			/**
+			 * Using Giscus
+			 */
+			// provider: "Giscus",
+			// repo: "ShaoClean/clog-comment",
+			// repoId: "R_kgDOH9Sdqg",
+			// category: "Announcements",
+			// categoryId: "DIC_kwDOH9Sdqs4CRT9D",
 
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
+			/**
+			 * Using Twikoo
+			 */
+			// provider: "Twikoo",
+			// envId: "https://twikoo.ccknbc.vercel.app",
 
-      /**
-       * Using Waline
-       */
-      provider: "Waline",
-      // serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
-      serverURL: "https://doc.shaoclean.top/",
-    },
-    mdEnhance: {
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
-    },
-  },
+			/**
+			 * Using Waline
+			 */
+			provider: "Waline",
+			// serverURL: "https://clog-97ba6egp4-shaoclean.vercel.app/",
+			serverURL: "https://doc.shaoclean.top/",
+		},
+		mdEnhance: {
+			presentation: {
+				plugins: ["highlight", "math", "search", "notes", "zoom"],
+			},
+		},
+	},
 });
-
