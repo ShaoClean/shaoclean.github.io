@@ -1,5 +1,5 @@
 ---
-icon: javascript
+icon: css
 date: 2022-12-22
 category:
   - 前端
