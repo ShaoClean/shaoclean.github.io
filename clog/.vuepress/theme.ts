@@ -71,6 +71,7 @@ export default hopeTheme({
 			"/essay/2023/6.html": ["sczscz"],
 			"/essay/2023/7.html": ["sczscz"],
 			"/essay/2023/8.html": ["sczscz"],
+			"/essay/2023/9.html": ["sczscz"],
 			"/project/clean-vite-cli.html": ["sczscz"],
 			"/project/cyou-js.html": ["sczscz"],
 			"/project/CYOU.html": ["sczscz"],
