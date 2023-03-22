@@ -54,7 +54,6 @@ export default hopeTheme({
 			Weibo: "邵Clean",
 		},
 	},
-	//加密文档
 	encrypt: {
 		config: {
 			"/essay/2022/1.html": ["sczscz"],
