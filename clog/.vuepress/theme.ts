@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { encryptEssayConfig } from "./encryptEssay.js";
 import navbar from "./navbar/index.js";
 import sidebar from "./sidebar.js";
 export default hopeTheme({
@@ -57,21 +58,7 @@ export default hopeTheme({
 	//加密文档
 	encrypt: {
 		config: {
-			"/essay/2022/1.html": ["sczscz"],
-			"/essay/2022/2.html": ["sczscz"],
-			"/essay/2022/3.html": ["sczscz"],
-			"/essay/2022/4.html": ["sczscz"],
-			"/essay/2022/5.html": ["sczscz"],
-			"/essay/2022/6.html": ["sczscz"],
-			"/essay/2022/7.html": ["sczscz"],
-			"/essay/2023/2.html": ["sczscz"],
-			"/essay/2023/3.html": ["sczscz"],
-			"/essay/2023/4.html": ["sczscz"],
-			"/essay/2023/5.html": ["sczscz"],
-			"/essay/2023/6.html": ["sczscz"],
-			"/essay/2023/7.html": ["sczscz"],
-			"/essay/2023/8.html": ["sczscz"],
-			"/essay/2023/9.html": ["sczscz"],
+			...encryptEssayConfig(),
 			"/project/clean-vite-cli.html": ["sczscz"],
 			"/project/cyou-js.html": ["sczscz"],
 			"/project/CYOU.html": ["sczscz"],
@@ -120,3 +107,4 @@ export default hopeTheme({
 		},
 	},
 });
+
