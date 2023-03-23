@@ -78,21 +78,6 @@ export default hopeTheme({
 		// 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
 		comment: {
 			/**
-			 * Using Giscus
-			 */
-			// provider: "Giscus",
-			// repo: "ShaoClean/clog-comment",
-			// repoId: "R_kgDOH9Sdqg",
-			// category: "Announcements",
-			// categoryId: "DIC_kwDOH9Sdqs4CRT9D",
-
-			/**
-			 * Using Twikoo
-			 */
-			// provider: "Twikoo",
-			// envId: "https://twikoo.ccknbc.vercel.app",
-
-			/**
 			 * Using Waline
 			 */
 			provider: "Waline",
