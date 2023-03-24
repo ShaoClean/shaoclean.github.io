@@ -3,10 +3,6 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 export default defineUserConfig({
-	bundler: viteBundler({
-		viteOptions: {},
-		vuePluginOptions: {},
-	}),
 	lang: "zh-CN",
 	title: "clog",
 	description: "clean's blog",
