@@ -34,7 +34,5 @@ export default defineUserConfig({
 
 			indexName: "hiclean",
 		}),
-		
-		
 	],
 });
