@@ -10,6 +10,12 @@ tag:
 
 # Canvas 动画
 
+保持图像清晰：
+
+原始尺寸 = 样式尺寸 * 缩放倍率
+
+缩放倍率：一个全局属性，`devicePixelRatio`
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +33,7 @@ tag:
 				position: relative;
 				left: 0;
 				top: 0;
-				width: 300px;
+				width: 100%;
 				background-color: black;
 			}
 		</style>
@@ -50,9 +56,9 @@ tag:
 				canvas.width = 300 * 2;
 				canvas.height = 300 * 2;
 			}
-			// init();
+			 init();
 			// init2();
-			init3();
+			//init3();
 
 			// 获取随机数
 			function getRandom(min, max) {
