@@ -64,6 +64,11 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 ```
 
 完整代码：
+有两种实现滚动的方式，计算需要滚动的距离：当前歌词所在行的高度 - 视口的一半
+
+-   `scrollTop`方法实现的滚动动画用的是自带的 smooth，不能自定义
+
+-   `translateLyrics`方法实现的滚动动画用的是 css 的 transition，可以自定义。更推荐这一种。
 
 ```html
 <!DOCTYPE html>
@@ -108,7 +113,7 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 				transform: scale(1.5);
 				color: #fff;
 			}
-			.container ul li {
+			ul li {
 				list-style-type: none;
 				height: 50px;
 				line-height: 50px;
@@ -120,57 +125,7 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 		<div class="container">
 			<audio controls src="wllqxls.mp3"></audio>
 			<div class="lyrics">
-				<ul>
-					<li>我落泪情绪零碎</li>
-					<li>作词 : 方文山</li>
-					<li>作曲 : 周杰伦</li>
-					<li>编曲 : 钟兴民</li>
-					<li>制作人 : 周杰伦</li>
-					<li>弦乐编写 : 钟兴民</li>
-					<li>录音师 : 杨瑞代Gary</li>
-					<li>录音室 : JVR Studio</li>
-					<li>混音 : 杨大纬录音工作室</li>
-					<li>地上 断了翅的蝶</li>
-					<li>雾散之后的 满月</li>
-					<li>原来爱 跟心碎</li>
-					<li>都可以很 细节</li>
-					<li>听夜风绕过 几条街</li>
-					<li>秋天瘦了满地 的落叶</li>
-					<li>于是又一整夜</li>
-					<li>感性的句子都枯萎 凋谢</li>
-					<li>我不想再写</li>
-					<li>随手撕下这一页</li>
-					<li>原来诗跟离别</li>
-					<li>可以没有结尾（没有结尾）</li>
-					<li>憔悴后悔等等这些</li>
-					<li>于是我把诗折叠</li>
-					<li>邮寄出感觉 夹一束白玫瑰</li>
-					<li>你将爱退回</li>
-					<li>我不落泪 忍住感觉</li>
-					<li>分手在起风 这个季节</li>
-					<li>哭久了会累 也只是别人的以为</li>
-					<li>冷的咖啡 我清醒着 一再续杯</li>
-					<li>我落泪 情绪零碎</li>
-					<li>你的世界 一幕幕纷飞</li>
-					<li>门外的蔷薇 带刺伤人的很直接</li>
-					<li>过去被翻阅 结局满天的 风雪</li>
-					<li>我不想再写</li>
-					<li>随手撕下这一页（这一页）</li>
-					<li>原来诗 跟离别</li>
-					<li>可以没有结尾（没有结尾）</li>
-					<li>憔悴后悔等等 这些</li>
-					<li>于是我 把诗折叠</li>
-					<li>邮寄出感觉 夹一束白玫瑰</li>
-					<li>你将爱退回</li>
-					<li>我不落泪 忍住感觉</li>
-					<li>分手在起风 这个季节</li>
-					<li>哭久了会累 也只是别人的以为</li>
-					<li>冷的咖啡 我清醒着 一再续杯</li>
-					<li>我落泪 情绪零碎</li>
-					<li>你的世界 一幕幕纷飞</li>
-					<li>门外的蔷薇 带刺伤人的很直接</li>
-					<li>过去被翻阅 结局满天的 风雪</li>
-				</ul>
+				<ul></ul>
 			</div>
 		</div>
 		<script src="lyrics.js"></script>
@@ -179,8 +134,9 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 				source: document.querySelector("audio"),
 				lyrics: document.querySelector(".lyrics"),
 				ul: document.querySelector("ul"),
-				lis: document.querySelectorAll("li"),
 			};
+			createElement();
+			doms.lis = document.querySelectorAll("li");
 			doms.source.volume = 0.1;
 			/*
 			 * 原始歌词转换成数组
@@ -204,6 +160,18 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 				return res;
 			}
 
+			function createElement() {
+				const frame = document.createDocumentFragment();
+				const lyricsArr = lyricsToArr();
+
+				lyricsArr.forEach(item => {
+					const li = document.createElement("li");
+					li.textContent = item.content;
+					frame.appendChild(li);
+				});
+
+				doms.ul.appendChild(frame);
+			}
 			/*
 			 * 字符串类型的时间转换成数字类型的时间
 			 * */
@@ -221,7 +189,7 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 			 * */
 			function findIndex() {
 				const currentTime = doms.source.currentTime;
-				const lyricsArr = lyricsToArr(lyrics);
+				const lyricsArr = lyricsToArr();
 
 				for (let i = 0; i < lyricsArr.length; i++) {
 					const time = lyricsArr[i].time;
@@ -242,19 +210,20 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 					}
 				}
 			}
-			// 歌词可以自由移动，由于是改变滚动条的位置，所以没有动画
+
 			function scrollTop() {
 				const index = findIndex();
-
-				let num = 4;
-
-				doms.lyrics.scrollTo(
-					0,
-					index - num >= 0 ? (index - num) * 50 : 0
-				);
-
+				// 容器高度
+				const lyricsHeight = doms.lyrics.clientHeight;
+				// 歌词高度
+				const height = doms.lis[0].clientHeight;
+				const currentHeight = height * index;
+				doms.lyrics.scrollTo({
+					top: currentHeight - lyricsHeight / 2,
+					behavior: "smooth",
+				});
 				doms.lis.forEach((item, i) => {
-					if (i === index + 1) {
+					if (i === index) {
 						item.classList.add("active");
 					} else {
 						item.classList.remove("active");
@@ -264,7 +233,6 @@ const lyrics = `[00:00.00]我落泪情绪零碎
 
 			function translateLyrics() {
 				const index = findIndex();
-				console.log(index);
 				// 容器高度
 				const lyricsHeight = doms.lyrics.clientHeight;
 				// 歌词高度
