@@ -12,9 +12,9 @@ tag:
 
 常见的hooks有
 
-1. useState
+## 1.useState
 
-2. useEffect
+## 2.useEffect
 
 该hook接受两个参数：
 
@@ -39,9 +39,19 @@ tag:
 
 而且`cleanup`函数中的`props`和`state`都是旧的。
 
+## 3.useRef
 
+引用一个不需要被渲染的值
 
-3. useRef
+**参数：**
+
+可以是任何类型的数据。但是初始化过后，这个参数就将会被忽视。也就是说，重新渲染组件的时候，就不会重复创建这个值。
+
+**返回值：**
+
+返回一个对象，对象中只有一个`current`属性。这个属性的值不会因为re-render而重复创建。
+
+如果将ref对象作为ref属性传递给JSX节点，current会返回一个dom元素（用法和vue3中的ref类似，传入的参数都会被忽略。只是在获取dom元素的时候有区别，v3用的是`.value`，react用的是`.current`）
 
 4. useContext
 5. useCallback
