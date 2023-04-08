@@ -110,7 +110,7 @@ asy3()
 
 ```js
 function asy2(){
-  new Promise((resolve)=>{
+  await new Promise((resolve)=>{
     let timer = setTimeout((_)=>{
         Promise.resolve().then((_)=>{
             console.log(3);
