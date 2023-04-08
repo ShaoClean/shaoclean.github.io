@@ -55,3 +55,98 @@ Promise 和 setTimeout 等还是同步的代码，称为任务源。而进入任
 宏任务与微任务的执行顺序：先执行微任务，再执行宏任务
 
 :::
+
+
+### 2023.4.8更新
+面试题，下面输出的结果
+```js
+
+async function asy1(){
+    console.log(1);
+    await asy2()
+    console.log(2);
+}
+
+async function asy2(){
+    await setTimeout((_)=>{
+        Promise.resolve().then((_)=>{
+            console.log(3);
+        })
+        console.log(4);
+    },0)
+}
+
+async function asy3(){
+    Promise.resolve().then((_)=>{
+        console.log(6);
+    })
+}
+
+asy1()
+console.log(7); 
+asy3()
+
+```
+
+分析：
+
+1. 执行函数`asy1`的同步代码
+
+2. 输出7
+
+3. 执行函数`asy3`的同步代码
+
+   
+
+
+
+细化上面的三点：
+
+执行函数`asy1`的同步代码，`输出结果1`。
+
+执行函数`asy2`的同步代码，0秒后将计时器中的函数加入到宏任务队列。等待函数`asy2`的执行完成后，将`输出结果2`加入到微任务队列。虽然函数`asy2`中的同步代码执行完了，但是由于`await`关键字的存在，实际上是没有执行完的，还有一个`隐形的微任务`存在，所以此时`asy2`并没有执行完成。
+
+相当于：
+
+```js
+function asy2(){
+  new Promise((resolve)=>{
+    let timer = setTimeout((_)=>{
+        Promise.resolve().then((_)=>{
+            console.log(3);
+        })
+        console.log(4);
+    },0)
+    resolve(timer);
+  }).then((value)=>{
+    //隐形的.then
+    //...
+  })
+}
+
+```
+
+输出结果7。
+
+将输出6加入到微任务队列。
+
+至此同步代码执行完成，执行微任务队列中的代码。
+
+执行隐形的微任务，此时函数`asy2`执行完成，将输出结果`2`加入到微任务队列。
+
+`输出结果6`
+
+`输出结果2`
+
+执行宏任务队列中的任务。将输出结果3加入到微任务队列
+
+执行同步代码，`输出结果4`
+
+执行宏任务队列中的任务，`输出结果3`
+
+所以最终的输出结果为：
+
+```
+1、7、6、2、4、3
+```
+
