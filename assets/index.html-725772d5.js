@@ -1,0 +1,1 @@
+import{$ as t,a0 as a,a1 as s,a2 as e,a3 as n}from"./framework-19a42cda.js";const o={},c=e("h1",{id:"ts笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#ts笔记","aria-hidden":"true"},"#"),n(" TS笔记")],-1),r=e("p",null,"hello 这里是TS的笔记",-1),_=[c,r];function d(i,l){return a(),s("div",null,_)}const f=t(o,[["render",d],["__file","index.html.vue"]]);export{f as default};

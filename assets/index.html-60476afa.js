@@ -1,0 +1,1 @@
+import{$ as a,a0 as t,a1 as c,a2 as e,a3 as n}from"./framework-19a42cda.js";const o={},r=e("h1",{id:"react笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#react笔记","aria-hidden":"true"},"#"),n(" React笔记")],-1),s=e("p",null,"hello 这里是React的笔记",-1),_=[r,s];function d(i,l){return t(),c("div",null,_)}const f=a(o,[["render",d],["__file","index.html.vue"]]);export{f as default};

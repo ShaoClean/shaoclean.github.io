@@ -1,1 +1,0 @@
-import{$ as a,a0 as t,a1 as c,a2 as e,a3 as r}from"./framework-888972eb.js";const s={},_=e("h1",{id:"_2023开始了",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_2023开始了","aria-hidden":"true"},"#"),r(" 2023开始了！")],-1),o=[_];function n(d,i){return t(),c("div",null,o)}const l=a(s,[["render",n],["__file","1.html.vue"]]);export{l as default};
