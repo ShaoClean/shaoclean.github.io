@@ -9,7 +9,7 @@ heroFullScreen: true
 tagline: "I whish you to be gentle"
 bgImage: "/bg.svg"
 
-footer: 浙ICP备2022003815号-1
+footer: <a href="https://beian.miit.gov.cn/">浙ICP备2022003815号-2</a>
 ---
 
 
