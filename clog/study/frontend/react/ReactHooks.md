@@ -14,6 +14,20 @@ tag:
 
 ## 1.useState
 
+```jsx
+function Count(){
+  const {count,setCount} = useState(0);
+  return (
+    <div>
+      {count}
+      <button onClick={()=>setCount(count+1)}>click</button>
+    </div>
+  )
+}
+```
+虽然count的改变会导致组件重新渲染（函数重新调用），按理说useState那一行代码会重新执行，count的值应该是一直都是0。但是React的底层做了处理，缓存了count的值，忽略掉了`useState(0)`中的0。不会因为再次渲染将之前的值覆盖掉
+
+
 ## 2.useEffect
 
 该hook接受两个参数：
