@@ -67,6 +67,59 @@ function Count(){
 
 如果将ref对象作为ref属性传递给JSX节点，current会返回一个dom元素（用法和vue3中的ref类似，传入的参数都会被忽略。只是在获取dom元素的时候有区别，v3用的是`.value`，react用的是`.current`）
 
-4. useContext
+## 4. useContext
+
+使用由`createContext`创建的上下文对象。
+
+`createContext`用法1:
+
+使用`useContext`获取`createContext`创建时的原始值
+
+```jsx
+const myContext = createContext('hello im context');
+
+function A(){
+  const uc = useContext(myContext);
+  return (
+  	<div>
+    	{uc}
+    </div>
+  )
+}
+```
+
+`createContext`用法2:
+
+`createContext`相当于创建了一个组件，在模板中使用其`myContext.Provider`组件。并传递给它唯一一个props属性，`value`。
+
+在它的字组件中，可以使用其`myContext.Consumer`组件。在该组件中可以使用函数，这个函数接收一个参数，就是value传递过来的值。而且这个值是响应式的。
+
+```jsx
+const myContext = createContext('hello im context');
+function B(){
+  const customValue = 'hihihi!'
+  return (
+  	<myContext.Provider value={customValue}>
+    	<C/>
+    </myContext.Provider>
+  )
+}
+
+
+function C(){
+  
+  return (
+  	<myContext.Consumer>
+    	{
+        content => content
+      }
+    </myContext.Consumer>
+  
+  )
+}
+```
+
+
+
 5. useCallback
 
