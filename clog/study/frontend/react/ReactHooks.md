@@ -121,5 +121,10 @@ function C(){
 
 
 
-5. useCallback
+## 5.useCallback
 
+
+
+
+
+## 6.useMemo
