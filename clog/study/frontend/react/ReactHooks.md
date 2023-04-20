@@ -53,6 +53,90 @@ function Count(){
 
 而且`cleanup`函数中的`props`和`state`都是旧的。
 
+**闭包陷阱**
+
+需要注意一下这种使用方式会存在的问题：
+
+```jsx
+function App() {
+  const [count,setCount] = useState(0)
+  useEffect(()=>{
+    function logCount(){
+      console.log('count:',count);
+    }
+
+    window.addEventListener('click',logCount)
+
+    return ()=>{
+      window.removeEventListener('click',logCount)
+    }
+  },[])
+
+	return (
+	  <div>
+      <h1>{count}</h1>
+      <button onClick={()=>setCount((v)=>++v)}>+</button>
+	  </div>
+	)
+}
+```
+
+解读一下这个组件中的`useEffect`：
+
+首次渲染的时候，在其中声明了一个`logCount`函数，用于打印当前`count`的值；在window上绑定了点击事件，用于触发`logCount`函数。且此过程只会在首次渲染的时候执行。
+
+存在的问题：
+
+当点击`button`按钮的时候，页面上的值是正常的在显示的。可是控制台中输出的值就不正常了，一直都是一开始的0
+
+分析：
+
+根据解读可以发现，`useEffect`函数中的过程只会在首次渲染的时候执行。也就是说，在count的值发生变化页面重新渲染的时候，`window.addEventListener`所绑定事件的引用，一直都是一开始的那个函数，而一开始的那个函数中的count所指向的就是0，所以一直没有变化。
+
+
+
+解决：
+
+只需要在count改变的时候，重新执行一下`useEffect`中的过程，这样就可以保证每次cout的值发生改变的时候，点击事件的引用都是最新的。
+
+```jsx
+useEffect(()=>{
+  function logCount(){
+    console.log('count:',count);
+  }
+
+  window.addEventListener('click',logCount)
+
+  return ()=>{
+    window.removeEventListener('click',logCount)
+  }
+},[count])//这里
+```
+
+
+
+让我想到了之前在学习词法作用域时碰到过的问题：
+
+```js
+const a = 1;
+
+function logA(){
+    console.log('a:',a);
+}
+
+function b(){
+    let a = 2;
+    logA()
+}
+
+b()
+//a:1
+```
+
+
+
+
+
 ## 3.useRef
 
 引用一个不需要被渲染的值
