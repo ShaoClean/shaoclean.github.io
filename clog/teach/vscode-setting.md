@@ -6,6 +6,61 @@ category:
 ---
 # VSCode配置
 
+自己配置的json文件：
+```json
+{
+  "editor.fontFamily": "'Maple Mono',consola,Menlo,'Roboto Mono','Fira Code',Menlo,'Operator Mono Lig','Droid Sans Mono','Cascadia Code','Comic Mono','Courier New',Monaco,'Input Mono',Hack,'DM Mono'",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
+  "editor.cursorWidth": 1,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation":"explicit",
+  "files.autoSave": "afterDelay",
+  "workbench.colorCustomizations": {
+    // 设置光标颜色
+    "editorCursor.foreground": "#aef611",
+  },
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  // "editor.fontLigatures": true, // 这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",//开启字体的特殊连写
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "Maple Mono SC NF",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "leetcode.workspaceFolder": "/Users/clean/.leetcode",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.showDescription": "In File Comment",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSameLine": true,
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": true,
+  "explorer.confirmDragAndDrop": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)"
+}
+
+```
+
 ```json
 {
 	"editor.fontFamily": "'Operator Mono Lig','Fira Code',Menlo, Monaco,'Roboto Mono', 'Courier New', monospace,'Droid Sans Mono','Cascadia Code','Comic Mono','Input Mono',Hack,'DM Mono'"

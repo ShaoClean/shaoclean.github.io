@@ -113,6 +113,26 @@ useEffect(()=>{
 },[count])//这里
 ```
 
+也可以用`useRef`来实现：
+
+由于`useRef`的值改变之后不会发生页面的重新渲染，所以当前添加的事件引用一直都是同一个状态，不存在函数引用了旧的值的问题
+
+```jsx
+  const count = useRef(0)
+
+  useEffect(()=>{
+    function logCount(){
+      console.log('count:',count.current);
+    }
+
+    window.addEventListener('click',logCount)
+
+    return ()=>{
+      window.removeEventListener('click',logCount)
+    }
+  },[])
+
+```
 
 
 让我想到了之前在学习词法作用域时碰到过的问题：
