@@ -1,0 +1,1 @@
+import{$ as a,a0 as t,a1 as s,a2 as e,a3 as c}from"./framework-19a42cda.js";const o={},n=e("h1",{id:"开学",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#开学","aria-hidden":"true"},"#"),c(" 开学！")],-1),r=e("p",null,"好！准备开始学数据结构了！",-1),_=[n,r];function d(i,l){return t(),s("div",null,_)}const f=a(o,[["render",d],["__file","15.html.vue"]]);export{f as default};
