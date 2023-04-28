@@ -150,3 +150,72 @@ function asy2(){
 1、7、6、2、4、3
 ```
 
+### 2023.4.28更新
+
+工作中遇到一个问题：
+
+```js
+const readline = require('readline')
+const fs = require('fs')
+let mydata;
+async function Outer() {
+	await handleData();
+
+  const res = await readData();
+	const new_res = res ? res : {};
+  new_res.preEvalNumber = 1
+
+	await updateData(new_res);
+  console.log('mydata',mydata);
+}
+
+async function handleData() {
+	const rl = readline.createInterface({
+		input: fs.createReadStream("file.txt"),
+	});
+
+	const obj = {};
+	rl.on("line", line => {
+		obj[line] = line;
+	});
+
+	rl.on("close", async () => {
+		await updateData(arr);
+	});
+}
+
+async function readData() {
+    return mydata
+}
+
+async function updateData(data) {
+    await Promise.resolve().then(()=>{
+        mydata = data
+    })
+}
+
+Outer()
+```
+
+输出结果非常的不尽人意。。。。
+
+预期：
+
+```
+{
+	a: 'a',
+	b: 'b',
+	c: 'c',
+	preEvalNumber: 1
+}
+```
+
+结果却是：
+
+```
+{
+	preEvalNumber: 1
+}
+```
+
+有点难受的，接着我就开始漫长的分析了。
