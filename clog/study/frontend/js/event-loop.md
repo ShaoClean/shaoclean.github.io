@@ -219,3 +219,40 @@ Outer()
 ```
 
 有点难受的，接着我就开始漫长的分析了。
+
+**4.29:**
+
+过了一天早上，我终于知道了！！！
+
+```js
+	rl.on("line", line => {
+		obj[line] = line;
+	});
+
+	rl.on("close", async () => {
+		await updateData(arr);
+	});
+```
+
+看这一段代码，尝试着了解它的用意，这样子就很好理解了。
+
+它其实就是一个读写文件的方法，而读写文件嘛，是需要时间的，所以为了防止阻塞，自然而然就设置成了异步的咯。
+
+其实昨天困扰我的地方就是这个`close`事件，今天突然就醒悟了！读写文件是需要时间的呀，所以说这个`close`事件触发的时机，其实就是文件读写完成的时机。
+
+难怪我昨天直接套了一层`setTimeout`时间写成0没有用呢，原来是这样的，我今天测试了一下，30几行的文件需要至少4ms的时间，所以setTimeout的时间设置就成了关键。然后去百度了一下，大概一秒钟，也就是1000ms，可以读写文件的大小为70M左右，所以我的解决方案：
+
+```js
+setTimeout(async()=>{
+        const res = await readData();
+        const new_res = res ? res : {};
+        new_res.preEvalNumber = 1;
+    
+        await updateData(new_res);
+    
+        const latest_res = await readData();
+        console.log('latest_res',latest_res);
+        console.log(mydata);
+    },6)
+```
+
