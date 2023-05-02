@@ -1,7 +1,9 @@
-import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import path from 'path'
+import clientConfigFile from "./client";
+
 export default defineUserConfig({
 	lang: "zh-CN",
 	title: "clog",
@@ -35,4 +37,7 @@ export default defineUserConfig({
 			indexName: "hiclean",
 		}),
 	],
+	alias: {
+		"@MyComponent": path.resolve(__dirname, "components/MyComponent.vue"),
+	},
 });

@@ -10,6 +10,7 @@ tag:
 # 链表
 
 <!-- more -->
+
 链表中的节点类：
 
 ```js
@@ -22,6 +23,7 @@ class Node {
 ```
 
 链表类：
+
 ```js
 class LinkedList {
 	constructor() {
@@ -134,22 +136,20 @@ class LinkedList {
 		return res;
 	}
 }
-
 ```
 
 测试代码：
 
 ```js
-
 const ll = new LinkedList();
-			ll.push("hello");
-			ll.push("hi");
-			ll.push("scz");
-			ll.push("clean");
-		
-			ll.removeAt(2)
-			console.log(ll.head);
-			console.log(ll.indexOf('hello'));
-			console.log(ll.getElementAt(4));
-			console.log(ll.toString());
+ll.push("hello");
+ll.push("hi");
+ll.push("scz");
+ll.push("clean");
+
+ll.removeAt(2);
+console.log(ll.head);
+console.log(ll.indexOf("hello"));
+console.log(ll.getElementAt(4));
+console.log(ll.toString());
 ```
