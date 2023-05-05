@@ -1,1 +1,0 @@
-import{_ as o,a0 as r,a1 as s,a6 as c,a3 as a,a2 as e,C as n}from"./framework-16947f8e.js";const d={},_=e("h1",{id:"测试",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#测试","aria-hidden":"true"},"#"),a(" 测试")],-1);function l(i,h){const t=n("MdHeader");return r(),s("div",null,[c(t),a(),_])}const m=o(d,[["render",l],["__file","test.html.vue"]]);export{m as default};
