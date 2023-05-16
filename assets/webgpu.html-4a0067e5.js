@@ -32,7 +32,7 @@ import{_ as n,a0 as s,a1 as a,a4 as t}from"./framework-16947f8e.js";const p={},e
 	<span class="token comment">// 把指定数据写入到缓冲区（把vertexArray写入到vertexBuffer） 0表示偏移量</span>
 	device<span class="token punctuation">.</span>queue<span class="token punctuation">.</span><span class="token function">writeBuffer</span><span class="token punctuation">(</span>vertexBuffer<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> vertexArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-	<span class="token comment">// 创建渲染管线</span>
+	<span class="token comment">// 创建渲染管线 </span>
 	<span class="token keyword">const</span> pipeLine <span class="token operator">=</span> device<span class="token punctuation">.</span><span class="token function">createRenderPipeline</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
 		<span class="token comment">// 顶点相关配置</span>
 		<span class="token literal-property property">vertex</span><span class="token operator">:</span> <span class="token punctuation">{</span>
