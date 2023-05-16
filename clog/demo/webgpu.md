@@ -47,7 +47,7 @@ async function init() {
 	// 把指定数据写入到缓冲区（把vertexArray写入到vertexBuffer） 0表示偏移量
 	device.queue.writeBuffer(vertexBuffer, 0, vertexArray);
 
-	// 创建渲染管线
+	// 创建渲染管线 
 	const pipeLine = device.createRenderPipeline({
 		// 顶点相关配置
 		vertex: {
