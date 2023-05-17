@@ -13,6 +13,8 @@ tag:
 记录一下 Web GPU 学习过程中的代码
 
 ```js
+const vertex = "";
+const fragment = "";
 async function init() {
 	//打通和硬件之间的关系
 
@@ -47,10 +49,13 @@ async function init() {
 	// 把指定数据写入到缓冲区（把vertexArray写入到vertexBuffer） 0表示偏移量
 	device.queue.writeBuffer(vertexBuffer, 0, vertexArray);
 
-	// 创建渲染管线 
+	// 创建渲染管线
 	const pipeLine = device.createRenderPipeline({
+		layout: "auto",
 		// 顶点相关配置
 		vertex: {
+			module: device.createShaderModule({ code: vertex }),
+			entryPoint: "main",
 			// 顶点所有的缓冲区模块设置
 			buffers: [
 				// 其中一个顶点缓冲区设置
@@ -74,6 +79,33 @@ async function init() {
 				},
 			],
 		},
+		primitive: {
+			// 绘制三角形、线条、点
+			topology: "triangle-list", //绘制三角形
+			topology: "line-strip", //多个点依次连成线
+			topology: "point-list", //每个定带你坐标对位置渲染成一个小点
+		},
+		fragment: {
+			// 片元着色器代码  会在片元着色器上执行的代码
+			module: device.createShaderModule({ code: fragment }),
+			entryPoint: "main",
+			targets: [
+				{
+					format, //和web GPU上下文配置的颜色格式保持一致
+				},
+			],
+		},
+	});
+	// 命令编码器
+	const commandEncoder = device.createCommandEncoder();
+	const renderPass = commandEncoder.beginRenderPass({
+		// 给渲染通道指定颜色缓冲区，配置指定的缓冲区
+		colorAttachments: [
+			{
+				// 指向用于Canvas画布的纹理视图对象（Canvas对应的颜色缓冲区）
+				// 该渲染通道renderPass输出的像素数据会存储到Canvas画布对应的颜色缓冲区
+			},
+		],
 	});
 }
 
