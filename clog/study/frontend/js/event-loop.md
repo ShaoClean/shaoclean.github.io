@@ -3,28 +3,28 @@ icon: javascript
 date: 2022-09-19
 star: 10
 category:
-  - 前端
-  - JS
+    - 前端
+    - JS
 tag:
-  - 事件循环
-  - 学习笔记
+    - 事件循环
+    - 学习笔记
 ---
 
 # 事件循环机制
 
 在了解事件循环机制之前，需要了解：
 
-- 同步任务
+-   同步任务
 
-  在主线程上排队的任务，前一个任务执行完毕，才能继续执行下一个任务
+    在主线程上排队的任务，前一个任务执行完毕，才能继续执行下一个任务
 
-- 异步任务
+-   异步任务
 
-  不会立马进入主线程，而是先进入任务队列的任务，只有任务队列通知主线程，某个异步任务可以执行了，任务才会进入主线程去执行。具体见[如何理解 JS 的异步](./js-async.html)
+    不会立马进入主线程，而是先进入任务队列的任务，只有任务队列通知主线程，某个异步任务可以执行了，任务才会进入主线程去执行。具体见[如何理解 JS 的异步](./js-async.html)
 
-- 回调函数
+-   回调函数
 
-- js 在浏览器中的执行机制
+-   js 在浏览器中的执行机制
 
 ## 概述
 
@@ -56,55 +56,50 @@ Promise 和 setTimeout 等还是同步的代码，称为任务源。而进入任
 
 :::
 
+### 2023.4.8 更新
 
-### 2023.4.8更新
 面试题，下面输出的结果
+
 ```js
-
-async function asy1(){
-    console.log(1);
-    await asy2()
-    console.log(2);
+async function asy1() {
+	console.log(1);
+	await asy2();
+	console.log(2);
 }
 
-async function asy2(){
-    await setTimeout((_)=>{
-        Promise.resolve().then((_)=>{
-            console.log(3);
-        })
-        console.log(4);
-    },0)
+async function asy2() {
+	await setTimeout(_ => {
+		Promise.resolve().then(_ => {
+			console.log(3);
+		});
+		console.log(4);
+	}, 0);
 }
 
-async function asy3(){
-    Promise.resolve().then((_)=>{
-        console.log(6);
-    })
+async function asy3() {
+	Promise.resolve().then(_ => {
+		console.log(6);
+	});
 }
 
-asy1()
-console.log(7); 
-asy3()
-
+asy1();
+console.log(7);
+asy3();
 ```
 
 分析：
 
 1. 执行函数`asy1`的同步代码
 
-2. 输出7
+2. 输出 7
 
 3. 执行函数`asy3`的同步代码
-
-   
-
-
 
 细化上面的三点：
 
 执行函数`asy1`的同步代码，`输出结果1`。
 
-执行函数`asy2`的同步代码，0秒后将计时器中的函数加入到宏任务队列。等待函数`asy2`的执行完成后，将`输出结果2`加入到微任务队列。虽然函数`asy2`中的同步代码执行完了，但是由于`await`关键字的存在，实际上是没有执行完的，还有一个`隐形的微任务`存在，所以此时`asy2`并没有执行完成。
+执行函数`asy2`的同步代码，0 秒后将计时器中的函数加入到宏任务队列。等待函数`asy2`的执行完成后，将`输出结果2`加入到微任务队列。虽然函数`asy2`中的同步代码执行完了，但是由于`await`关键字的存在，实际上是没有执行完的，还有一个`隐形的微任务`存在，所以此时`asy2`并没有执行完成。
 
 相当于：
 
@@ -126,9 +121,9 @@ function asy2(){
 
 ```
 
-输出结果7。
+输出结果 7。
 
-将输出6加入到微任务队列。
+将输出 6 加入到微任务队列。
 
 至此同步代码执行完成，执行微任务队列中的代码。
 
@@ -138,7 +133,7 @@ function asy2(){
 
 `输出结果2`
 
-执行宏任务队列中的任务。将输出结果3加入到微任务队列
+执行宏任务队列中的任务。将输出结果 3 加入到微任务队列
 
 执行同步代码，`输出结果4`
 
@@ -150,23 +145,23 @@ function asy2(){
 1、7、6、2、4、3
 ```
 
-### 2023.4.28更新
+### 2023.4.28 更新
 
 工作中遇到一个问题：
 
 ```js
-const readline = require('readline')
-const fs = require('fs')
+const readline = require("readline");
+const fs = require("fs");
 let mydata;
 async function Outer() {
 	await handleData();
 
-  const res = await readData();
+	const res = await readData();
 	const new_res = res ? res : {};
-  new_res.preEvalNumber = 1
+	new_res.preEvalNumber = 1;
 
 	await updateData(new_res);
-  console.log('mydata',mydata);
+	console.log("mydata", mydata);
 }
 
 async function handleData() {
@@ -185,16 +180,16 @@ async function handleData() {
 }
 
 async function readData() {
-    return mydata
+	return mydata;
 }
 
 async function updateData(data) {
-    await Promise.resolve().then(()=>{
-        mydata = data
-    })
+	await Promise.resolve().then(() => {
+		mydata = data;
+	});
 }
 
-Outer()
+Outer();
 ```
 
 输出结果非常的不尽人意。。。。
@@ -225,13 +220,13 @@ Outer()
 过了一天早上，我终于知道了！！！
 
 ```js
-	rl.on("line", line => {
-		obj[line] = line;
-	});
+rl.on("line", line => {
+	obj[line] = line;
+});
 
-	rl.on("close", async () => {
-		await updateData(arr);
-	});
+rl.on("close", async () => {
+	await updateData(arr);
+});
 ```
 
 看这一段代码，尝试着了解它的用意，这样子就很好理解了。
@@ -240,19 +235,56 @@ Outer()
 
 其实昨天困扰我的地方就是这个`close`事件，今天突然就醒悟了！读写文件是需要时间的呀，所以说这个`close`事件触发的时机，其实就是文件读写完成的时机。
 
-难怪我昨天直接套了一层`setTimeout`时间写成0没有用呢，原来是这样的，我今天测试了一下，30几行的文件需要至少4ms的时间，所以setTimeout的时间设置就成了关键。然后去百度了一下，大概一秒钟，也就是1000ms，可以读写文件的大小为70M左右，所以我的解决方案：
+难怪我昨天直接套了一层`setTimeout`时间写成 0 没有用呢，原来是这样的，我今天测试了一下，30 几行的文件需要至少 4ms 的时间，所以 setTimeout 的时间设置就成了关键。然后去百度了一下，大概一秒钟，也就是 1000ms，可以读写文件的大小为 70M 左右，所以我的解决方案：
 
 ```js
-setTimeout(async()=>{
-        const res = await readData();
-        const new_res = res ? res : {};
-        new_res.preEvalNumber = 1;
-    
-        await updateData(new_res);
-    
-        const latest_res = await readData();
-        console.log('latest_res',latest_res);
-        console.log(mydata);
-    },6)
+setTimeout(async () => {
+	const res = await readData();
+	const new_res = res ? res : {};
+	new_res.preEvalNumber = 1;
+
+	await updateData(new_res);
+
+	const latest_res = await readData();
+	console.log("latest_res", latest_res);
+	console.log(mydata);
+}, 6);
 ```
 
+**5.27 更新**
+
+今天在纠结Promise的时候，突然对上面的例子有了新的理解，所以就来更新一下。
+
+在看红宝书的时候看到一句关于对Promise的描述：`支持优雅的定义和组织异步逻辑`。
+
+虽然还在纠结Promise这玩意的意义，但是突然就联想到了上面的事例，有了新的解决方式。用setTimeout解决实在不够优雅，而且还不能确定这个时间。
+
+其实可以这样子来处理close事件：
+
+```js
+function handleData() {
+  return new Promise((resolve,reject)=>{
+    const rl = readline.createInterface({
+      input: fs.createReadStream("file.txt"),
+    });
+
+    const obj = {};
+    rl.on("line", line => {
+      obj[line] = line;
+    });
+
+    rl.on("close", async () => {
+      await updateData(obj);
+      resolve(obj);
+    });
+  })
+}
+```
+
+用Promise包裹这一段处理逻辑，核心是用到了Promise的resolve思想，等待close时间梳理完毕的时候，再将这个处理逻辑的状态改为完成，这样子就可以在外部使用await来等待这个处理逻辑的完成。
+
+优雅，属实优雅，真的太优雅了。
+
+但是关于Promise和异步编程，在我心里面还有有一小块疙瘩，总感觉使不上劲。。。
+
+期待后面的一点点解决吧。
