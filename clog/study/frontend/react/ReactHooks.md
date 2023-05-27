@@ -225,10 +225,184 @@ function C(){
 
 
 
-## 5.useCallback
+## 5.useMemo
+
+useMemo用于缓存重新渲染前的计算结果，当所依赖的项没有发生变化时不会再次计算。
+
+`calculateValue`：需要缓存的值，一般是一个具有返回值的函数
+
+`dependencies`:依赖项
+
+基本用法：
+
+```js
+const cachedValue = useMemo(calculateValue, dependencies)
+```
+
+`calculateValue`可以是任何数据类型，但是用于缓存一个函数时用`useCallback`更方便。
+
+看一个例子：
+
+```jsx
+import { useEffect, useState } from "react";
+
+function BasicPrimesCaculator() {
+	const [selectedNum, setSelectedNum] = useState(100);
+
+	const time = useTime();
+
+	console.log("BasicPrimesCaculator is re-render");
+  // 优化前
+	const allPrimes = [];
+	for (let counter = 2; counter < selectedNum; counter++) {
+		if (isPrime(counter)) {
+			allPrimes.push(counter);
+		}
+	}
+  // 优化后
+  const allPrimes = useMemo(()=>{
+    const res = []
+    for (let counter = 2; counter < selectedNum; counter++) {
+      if (isPrime(counter)) {
+        res.push(counter);
+      }
+    }
+    return res
+  },[selectedNum])
+
+	return (
+		<>
+			<p className="clock">{time.toString()}</p>
+			<form>
+				<label htmlFor="num">Your number:</label>
+				<input
+					type="number"
+					value={selectedNum}
+					onChange={event => {
+          	//100_000 === 100000 方便阅读
+						let num = Math.min(100_000, Number(event.target.value));
+						setSelectedNum(num);
+					}}
+				/>
+			</form>
+			<p>
+				There are {allPrimes.length} prime(s) between 1 and{" "}
+				{selectedNum}:{" "}
+				<span className="prime-list">{allPrimes.join(", ")}</span>
+			</p>
+		</>
+	);
+}
+
+function isPrime(n: number) {
+	const max = Math.ceil(Math.sqrt(n));
+
+	if (n === 2) {
+		return true;
+	}
+
+	for (let counter = 2; counter <= max; counter++) {
+		if (n % counter === 0) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+function useTime() {
+	const [time, setTime] = useState(new Date());
+
+	useEffect(() => {
+		const intervalId = window.setInterval(() => {
+			setTime(new Date());
+		}, 1000);
+
+		return () => {
+			window.clearInterval(intervalId);
+		};
+	}, []);
+
+	return time;
+}
+
+export default BasicPrimesCaculator;
+```
+
+上面的组件用于计算指定数字范围内的素数。每次重新输入一个数字时，通过`setSelectedNum`重新设置`selectedNum`的值并重新渲染组件，每次渲染的时候重新计算指定数字内的素数。此时，还有一个另外一个组件，在页面上实时展示时间，每隔一定的时候重新渲染一次页面，使得整个页面重新渲染一次。
+
+很容易发现一个问题，时间的变化会造成素数的重新计算，如果这里计算的不是素数，而是其他的复杂计算，那么这样做显然是有问题的。现在的需求也十分的明显，我指定的数字范围（`selectedNum`）没有变化的时候，我不希望它重新计算一遍，以达到优化的目的。
+
+这个时候就可以使用`useMemo`来缓存这个复杂的计算过程，并指定依赖的对象为`selectedNum`。这也就意味着selectedNum没有发生改变的时候，这个计算过程将不再进行。此时，页面上的时间在每次重新渲染的时候，不会影响到这个计算过程的重复。
 
 
 
+当然也有其他的方式来解决这个重新渲染的问题：
+
+### 1.拆分组件
+
+将两个功能拆分成两个组件，这样时间在重新渲染的时候也不会造成计算的重复进行。
+
+下面是大致的事例：
+
+```tsx
+function App(){
+  return (
+  	<>
+    	<TimeComponent/>
+    	<CalculateComponent/>
+    <>
+  )
+}
+```
 
 
-## 6.useMemo
+
+## 6.useCallback
+
+`useCallback`用于缓存一个函数
+
+`useMemo`用于缓存函数时的语法糖
+
+count 每次变化的时候会将 CallBackContainer重新渲染 handleMegaBoost函数也会重新创建一次 
+
+由于判断两个函数是否相同 比较的是两个函数之间的引用 所以每次重新渲染的时候都是一个新的函数 也会导致MegaBoost重新渲染
+
+使用useCallback 可以对函数进行缓存 也就是渲染前后两个函数是同一个引用 使得每次重新渲染后 handleMegaBoost函数不会重新创建
+
+```jsx
+import React, { useCallback } from 'react';
+
+import MegaBoost from './MegaBoost';
+
+function CallBackContainer() {
+  const [count, setCount] = React.useState(0);
+
+//   function handleMegaBoost() {
+//     setCount((currentValue) => currentValue + 1234);
+//   }
+
+  const handleMegaBoost = useCallback(() => {
+    setCount((currentValue) => currentValue + 1234);
+  },[])
+
+  return ( 
+    <>
+      Count: {count}
+      <button
+        onClick={() => {
+          setCount(count + 1)
+        }}
+      >
+        Click me!
+      </button>
+      <MegaBoost handleClick={handleMegaBoost} />
+    </>
+  );
+}
+
+export default CallBackContainer;
+```
+
+ 
+
