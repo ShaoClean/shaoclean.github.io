@@ -253,38 +253,108 @@ setTimeout(async () => {
 
 **5.27 更新**
 
-今天在纠结Promise的时候，突然对上面的例子有了新的理解，所以就来更新一下。
+今天在纠结 Promise 的时候，突然对上面的例子有了新的理解，所以就来更新一下。
 
-在看红宝书的时候看到一句关于对Promise的描述：`支持优雅的定义和组织异步逻辑`。
+在看红宝书的时候看到一句关于对 Promise 的描述：`支持优雅的定义和组织异步逻辑`。
 
-虽然还在纠结Promise这玩意的意义，但是突然就联想到了上面的事例，有了新的解决方式。用setTimeout解决实在不够优雅，而且还不能确定这个时间。
+虽然还在纠结 Promise 这玩意的意义，但是突然就联想到了上面的事例，有了新的解决方式。用 setTimeout 解决实在不够优雅，而且还不能确定这个时间。
 
-其实可以这样子来处理close事件：
+其实可以这样子来处理 close 事件：
 
 ```js
 function handleData() {
-  return new Promise((resolve,reject)=>{
-    const rl = readline.createInterface({
-      input: fs.createReadStream("file.txt"),
-    });
+	return new Promise((resolve, reject) => {
+		const rl = readline.createInterface({
+			input: fs.createReadStream("file.txt"),
+		});
 
-    const obj = {};
-    rl.on("line", line => {
-      obj[line] = line;
-    });
+		const obj = {};
+		rl.on("line", line => {
+			obj[line] = line;
+		});
 
-    rl.on("close", async () => {
-      await updateData(obj);
-      resolve(obj);
-    });
-  })
+		rl.on("close", async () => {
+			await updateData(obj);
+			resolve(obj);
+		});
+	});
 }
 ```
 
-用Promise包裹这一段处理逻辑，核心是用到了Promise的resolve思想，等待close时间梳理完毕的时候，再将这个处理逻辑的状态改为完成，这样子就可以在外部使用await来等待这个处理逻辑的完成。
+用 Promise 包裹这一段处理逻辑，核心是用到了 Promise 的 resolve 思想，等待 close 时间梳理完毕的时候，再将这个处理逻辑的状态改为完成，这样子就可以在外部使用 await 来等待这个处理逻辑的完成。
 
 优雅，属实优雅，真的太优雅了。
 
-但是关于Promise和异步编程，在我心里面还有有一小块疙瘩，总感觉使不上劲。。。
+但是关于 Promise 和异步编程，在我心里面还有有一小块疙瘩，总感觉使不上劲。。。
 
 期待后面的一点点解决吧。
+
+**5.30 更新**
+
+解决了，终于解决了。出错的原因在前端传参数的时候传了一个空的 model_config，后端在这个地方的时候报错了：
+
+```ts
+class xxx {
+	//验证中间模型
+	evalMiddleModel = async (option: CreatTrainQueue) => {
+		try {
+			this.funMap.set(this.EVAL_KEY, EvalStatus.PAD);
+			console.log("start eval middle model...");
+			const TrainData = await this.handleMiddleModelOrEvalDataset(option);
+
+			await this.goEval(TrainData as TrainData, option.model_path);
+
+			return { status: true };
+		} catch (e) {
+			return { status: false };
+		}
+	};
+
+	handleMiddleModelOrEvalDataset = (){
+		this.model_id = option.model_id;
+		this.model_type_id = option.model_type_id;
+		this.model_path = option.model_path;
+		const evalOption = {
+			evalType: option.model_config.eval_type,//model_config为null，报错了
+			divide: option.model_config.divide,
+			evalProject: option.model_config.eval_project,
+			evalClass: option.model_config.eval_classes,
+		}
+		const { model_type_id, model_path } = option;
+	}
+}
+```
+
+前端代码是这样的：
+
+```ts
+const model_config = typeof modelInfo.model_config === "string" ? JSON.parse(modelInfo.model_config) : modelInfo.model_config;
+// 查看测试结果
+const option: PostData["createTrainQueue"] = {
+	...modelInfo,
+	model_id: modelInfo.id,
+	sample_img_path: "",
+	task_type: "continue",
+	model_config: model_config,
+	sampleConfig: model_config,
+};
+
+const stopResult = await stopTrainQueue(); //停止
+eventBus.emit("getModelList");
+const needEval = await getMiddleModelNeedEval({ model_id: modelInfo.id });
+console.log("needEval", needEval);
+if (needEval.status) {
+	setEvalLoading(true);
+	await evalModel(option);
+	repeatGetEvalStatus();
+	return;
+}
+```
+
+今天把前面说的`appendFile`回调里面的`rl.on('close')`给删掉了，改成了同步的代码，就能够百分之百的复现了。
+
+也就是在第一次走验证的时候会触发。是因为执行`evalType: option.model_config.eval_type`这里代码的时候报错了，然后我的trycatch在报错的时候又没有打印日志，所以造成了我的误解，我还一直以为是因为任务队列中返回的消息给函数执行打断了。
+
+现在找到了为什么会报错，再来思考一下🤔为什么之前用异步的时候是偶然出现这个问题呢？
+
+暂时不是很确定，明天再好好思考确认一下
