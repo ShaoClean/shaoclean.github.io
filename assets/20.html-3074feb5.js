@@ -1,0 +1,1 @@
+import{_ as a,a0 as t,a1 as s,a2 as e,a3 as c}from"./framework-16947f8e.js";const o={},_=e("h1",{id:"新的开始了吗",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#新的开始了吗","aria-hidden":"true"},"#"),c(" 新的开始了吗")],-1),n=e("p",null,"马上就要转正了，我真的要迎来新的开始了吗？",-1),r=[_,n];function d(i,l){return t(),s("div",null,r)}const f=a(o,[["render",d],["__file","20.html.vue"]]);export{f as default};
