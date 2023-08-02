@@ -1,1 +1,0 @@
-import{_ as a,a0 as t,a1 as _,a2 as e,a3 as s}from"./framework-16947f8e.js";const c={},o=e("h2",{id:"_8-01",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_8-01","aria-hidden":"true"},"#"),s(" 8.01")],-1),n=e("p",null,"八月咯",-1),r=[o,n];function d(i,l){return t(),_("div",null,r)}const f=a(c,[["render",d],["__file","22.html.vue"]]);export{f as default};
