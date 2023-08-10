@@ -4,13 +4,14 @@ date: 2023-02-16
 category:
     - JS
 tag:
-    - for
+    - 迭代器
+	- 可迭代协议
     - 学习笔记
 ---
 
-# for 循环
+# 迭代器与可迭代协议
 
-主要记录一下`for in`循环和`for of`两个循环的区别
+主要记录一下`for in`循环和`for of`两个循环的区别，并由此深入了解一下迭代器、可迭代协议、生成器。
 
 ## for in
 
@@ -87,6 +88,8 @@ for (var key of Object.keys(myObject)) {
 
 #### 可迭代协议
 
+ES6 规定，如果一个对象具有知名符号属性`Symbol.iterator`，并且属性值是一个迭代器创建函数，则该对象是可迭代的。
+
 **可迭代协议**允许 JavaScript 对象定义或定制它们的迭代行为，实现可迭代协议(`Iterable`接口)要求同时具备两种能力：
 
 -   支持迭代的自我识别能力
@@ -103,6 +106,27 @@ for (var key of Object.keys(myObject)) {
 **如何理解上面两点？**
 
 当使用 for of 循环时，会调用`[Symbol.iterator]`属性（也就是上面说的`默认迭代器`)来获取`迭代器`(也就是上面所提到的新迭代器)；然后使用`迭代器`上的方法（通常是`next()`）来获取迭代的值。
+
+转换成代码就是：
+
+```js
+const obj = {
+	// 有一个知名符号属性Symbol.iterator
+	// 属性值是一个迭代器创建函数
+	[Symbol.iterator]() {
+		// 调用这个工厂函数必须返回一个新迭代器
+		return {
+			// 使用迭代器上的方法next()方法来获取迭代的值
+			next() {
+				return {
+					value: 1,
+					done: false,
+				};
+			},
+		};
+	},
+};
+```
 
 #### 迭代器协议
 
