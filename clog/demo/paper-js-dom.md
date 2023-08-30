@@ -127,3 +127,45 @@ rec3.strokeWidth = 5;
 paper.view.draw();
 fs.writeFileSync("c.png", canvas.toBuffer());
 ```
+
+## demo3
+
+```js
+import paper from "paper-jsdom-canvas";
+import fs from "fs";
+const canvas = paper.createCanvas(500, 500);
+
+paper.setup(canvas);
+
+// 正常超出范围的矩形point为undefined
+// const bgc = new paper.Path.Rectangle(0, 0, 500, 500);
+// bgc.fillColor = "white";
+
+// const mask = new paper.Path.Rectangle(-30, -30, 150, 150);
+// mask.fillColor = "red";
+
+// console.log(mask.point);
+
+const bgc = new paper.Path.Rectangle(0, 0, 500, 500);
+bgc.fillColor = "white";
+
+const mask = new paper.Path.Rectangle(-30, -30, 150, 150);
+mask.fillColor = "red";
+
+const intersectRes = bgc.intersect(mask);
+intersectRes.fillColor = "blue";
+
+for (let seg of intersectRes.segments) {
+	console.log({
+		x: seg.point.x,
+		y: seg.point.y,
+	});
+}
+// { x: 0, y: 0 }
+// { x: 120, y: -5.329070518200751e-15 } 这里有疑问 超出预期 正常来说y应该是0
+// { x: 120, y: 120 }
+// { x: 0, y: 120.00000000000006 }
+
+paper.view.draw();
+fs.writeFileSync("d.png", canvas.toBuffer());
+```
