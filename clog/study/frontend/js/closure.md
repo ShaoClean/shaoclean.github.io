@@ -3,11 +3,11 @@ icon: javascript
 date: 2022-09-09
 star: 20
 category:
-  - 前端
-  - JS
+    - 前端
+    - JS
 tag:
-  - 闭包
-  - 学习笔记
+    - 闭包
+    - 学习笔记
 ---
 
 # 闭包
@@ -18,10 +18,10 @@ tag:
 
 即：
 
-- 闭包是在`函数创建`时创建的，所以`函数创建就会生成闭包`；
-- 定义函数不会创建闭包，只有创建/执行函数同时才创建闭包；
-- 闭包和其函数在`同一上下文中`
-- 闭包包含该作用域下的所有变量/引用地址
+-   闭包是在`函数创建`时创建的，所以`函数创建就会生成闭包`；
+-   定义函数不会创建闭包，只有创建/执行函数同时才创建闭包；
+-   闭包和其函数在`同一上下文中`
+-   闭包包含该作用域下的所有变量/引用地址
 
 ## 为什么要使用闭包
 
@@ -41,11 +41,11 @@ tag:
 
 ```js
 function outer() {
-  let num = 10;
-  function inner() {
-    console.log(num);
-  }
-  inner();
+	let num = 10;
+	function inner() {
+		console.log(num);
+	}
+	inner();
 }
 outer();
 ```
@@ -72,22 +72,22 @@ outer();
 
 ## 2023.2.7 补充
 
-- 闭包不一定有 return
+-   闭包不一定有 return
 
 ```js
 function foo() {
-  const name = "clean";
-  function bar() {
-    console.log(b()); //clean
-  }
-  bar();
+	const name = "clean";
+	function bar() {
+		console.log(b()); //clean
+	}
+	bar();
 }
 foo();
 ```
 
-- 闭包不一定造成内存泄露
-setTimeOut并不是直接的把你的回掉函数放进上述的异步队列中去，而是在定时器的时间到了之后，把回掉函数放到执行异步队列中去。
-一般来说，在函数内创建的局部变量，在函数运行结束后，是会被自动销毁的. 例子中每运行一次 test 函数，就会创建一次 data 数据，如果 getData 没有引用上层作用域的 data 变量，data 在 test 函数运行结束后，便会被销毁。getData 在创建的时候，就会随之创建一个特殊的容器，用于保存上层作用域中变量的引用。可以这么说，getData 函数创建的闭包捕获了外部的 data 变量的引用。按理说，getData 这个变量在 test 函数运行结束后，也是会被销毁的。事实也的确如此，如果没有后面的 setTimeout 的话。正因为 setTimeout 一直拿着 getData 这个函数的引用，而 getData 形成的闭包又捕获了 data 变量的引用，因此 data 数据会一直存在，并不会在 test 函数结束之后立马销毁。setTimeout 在 10s 之后会运行 getData 指向的函数，然后会释放掉函数引用，也就是说 10s 后没有变量再引用 getData 指向的函数了，那么 getData 形成的闭包也可以得到销毁，捕获的上层变量也一并得到了释放。所以例子中，getData 形成的闭包是在 10s 后被销毁的。
+-   闭包不一定造成内存泄露
+    setTimeOut 并不是直接的把你的回掉函数放进上述的异步队列中去，而是在定时器的时间到了之后，把回掉函数放到执行异步队列中去。
+    一般来说，在函数内创建的局部变量，在函数运行结束后，是会被自动销毁的. 例子中每运行一次 test 函数，就会创建一次 data 数据，如果 getData 没有引用上层作用域的 data 变量，data 在 test 函数运行结束后，便会被销毁。getData 在创建的时候，就会随之创建一个特殊的容器，用于保存上层作用域中变量的引用。可以这么说，getData 函数创建的闭包捕获了外部的 data 变量的引用。按理说，getData 这个变量在 test 函数运行结束后，也是会被销毁的。事实也的确如此，如果没有后面的 setTimeout 的话。正因为 setTimeout 一直拿着 getData 这个函数的引用，而 getData 形成的闭包又捕获了 data 变量的引用，因此 data 数据会一直存在，并不会在 test 函数结束之后立马销毁。setTimeout 在 10s 之后会运行 getData 指向的函数，然后会释放掉函数引用，也就是说 10s 后没有变量再引用 getData 指向的函数了，那么 getData 形成的闭包也可以得到销毁，捕获的上层变量也一并得到了释放。所以例子中，getData 形成的闭包是在 10s 后被销毁的。
 
 那为什么会有内存泄漏呢？
 
@@ -97,10 +97,89 @@ setTimeOut并不是直接的把你的回掉函数放进上述的异步队列中�
 
 ```js
 function test() {
-  var data = new Array(100000);
-  var getData = function () {
-    return data;
-  };
-  setTimeout(getData, 10000);
+	var data = new Array(100000);
+	var getData = function () {
+		return data;
+	};
+	setTimeout(getData, 10000);
 }
+```
+
+## 2023.9.16 例子
+
+闭包代码的提取漏洞
+
+```js
+const o = (function () {
+	const obj = {
+		a: 1,
+		b: 2,
+	};
+	return {
+		get(k) {
+			return obj[k];
+		},
+	};
+})();
+// 不改变o中代码的前提下，修改obj对象中的属性
+```
+
+**思路解析：**
+
+1. 我们的目的是为了修改 obj 对象中的属性，如何修改 obj 对象中的属性呢？肯定先要拿到 obj 这个对象。
+
+2. 已知条件是，我们可以通过 o.get 方法可以读取 obj 对象中的一个属性。
+
+3. 思考：对象中有什么方法可以获取到对象本身吗？
+
+4. 可以调用对象的 valueOf 方法得到对象本身
+
+5. 所以可以 `o.get('valueOf')` 拿到 valueOf 方法，但是如果直接调用会报错，因为 this 的指向有误。可以分解为如下步骤更好理解：
+
+```js
+const v = o.get("valueOf");
+v();
+```
+
+可以知道此时的 this 其实并不是指向 obj 的（此时 this 指向不明确，因为此刻的 v 只是一个 valueOf 函数）
+
+6. 既然 this 的指向有问题，就要换另外一个思路。这时候可以想到用`Object.defineProperty`，它的 this 指向就是当前访问对象。比如：
+
+```js
+const obj = { b: 2 };
+Object.defineProperty(obj, "a", {
+	get() {
+		console.log(this);
+	},
+});
+obj.a; // { b: 2 }
+```
+
+7. 我们可以在`Object.prototype`上定义一个`obj`中不存在的属性`abc`，通过`o.get`方法读取`obj`中这个不存在的属性`abc`时，最终会通过原形链访问到定义在`Object.prototype`上的`abc`。并设置读取`abc`时的`getter`方法，返回我们需要的`this.valueOf()`
+
+```js
+const o = (function () {
+	const obj = {
+		a:1,
+		b:2
+	}
+	return {
+		get(k) {
+			return obj[k];
+		},
+	};
+})();
+
+//在Object的原型对象上定义一个abc属性
+Object.defineProperty(Object.prototype, 'abc', {
+	get(){
+    //实际上不一定适用valueOf，直接返回this也可以
+		return this.valueOf()
+	}
+})
+const a = o.get('abc')；
+console.log(a);// { a: 1, b: 2 }
+
+a.c = 123
+console.log(o.get('c')) // 123
 ```
