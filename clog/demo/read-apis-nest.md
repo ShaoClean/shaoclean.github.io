@@ -1,3 +1,12 @@
+---
+icon: eye
+date: 2023-02-20
+article: true
+category:
+    - demo
+---
+
+
 # 读取 nestjs 文件的接口地址
 
 之前有用过 nestjs 写接口，但是不太方便看完整的路径，所以有了这个 demo
