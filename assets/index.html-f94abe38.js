@@ -1,1 +1,0 @@
-import{_ as a,a0 as o,a1 as t,a3 as e,a4 as d}from"./framework-a6f32df7.js";const n={},s=e("h1",{id:"demo演示",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#demo演示","aria-hidden":"true"},"#"),d(" demo演示")],-1),c=e("p",null,"hello 这里是demo演示",-1),r=[s,c];function _(i,l){return o(),t("div",null,r)}const m=a(n,[["render",_],["__file","index.html.vue"]]);export{m as default};
