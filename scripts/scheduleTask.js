@@ -58,5 +58,24 @@ function sendEmail(receiverConfig) {
 		console.log("邮件已发送 sent: %s", info.messageId);
 	});
 }
+const { execSync } = require("child_process");
 
-sendEmail(receiverOption);
+try {
+	execSync("git add .");
+	execSync(`git commit -m "water: ${currentTime}"`);
+	execSync("git push");
+	sendEmail({
+		subject: "哈哈！",
+		text: "水成功～ ^_^",
+	});
+} catch (error) {
+	sendEmail({
+		subject: "糟糕！",
+		html: `
+        <h1>今日水文失败！！下面是出错信息</h1>
+        <div>
+            ${error}
+        </div>
+        `,
+	});
+}
