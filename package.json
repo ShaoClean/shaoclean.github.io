@@ -6,7 +6,8 @@
   "scripts": {
     "docs:build": "vuepress build clog",
     "docs:clean-dev": "vuepress dev clog --clean-cache",
-    "start": "vuepress dev clog"
+    "start": "vuepress dev clog",
+    "schedule": "node scripts/scheduleTask.js"
   },
   "devDependencies": {
     "@vuepress/client": "^2.0.0-beta.61",
@@ -16,6 +17,7 @@
     "vuepress-theme-hope": "^2.0.0-beta.189"
   },
   "dependencies": {
+    "nodemailer": "^6.9.16",
     "typescript": "^4.8.3",
     "vuepress-plugin-comment2": "^2.0.0-beta.108"
   }
