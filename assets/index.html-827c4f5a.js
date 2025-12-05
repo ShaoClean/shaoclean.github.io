@@ -1,0 +1,1 @@
+import{_ as a,a0 as o,a1 as t,a2 as e,a3 as n}from"./framework-786d5328.js";const d={},s=e("h1",{id:"node笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#node笔记","aria-hidden":"true"},"#"),n(" Node笔记")],-1),c=e("p",null,"hello 这里是Node的笔记",-1),r=[s,c];function _(i,l){return o(),t("div",null,r)}const f=a(d,[["render",_],["__file","index.html.vue"]]);export{f as default};
