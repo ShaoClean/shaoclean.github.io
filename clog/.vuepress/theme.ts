@@ -61,6 +61,7 @@ export default hopeTheme({
 			"/project/clean-vite-cli.html": ["sczscz"],
 			"/project/cyou-js.html": ["sczscz"],
 			"/project/CYOU.html": ["sczscz"],
+			"/demo/water.html": ["sczscz"],
 		},
 	},
 
