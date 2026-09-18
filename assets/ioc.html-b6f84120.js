@@ -3,13 +3,13 @@ import{_ as p,a0 as e,a1 as o,a2 as n,a3 as s,a6 as c,a4 as a,C as i}from"./fram
 <span class="token keyword">import</span> <span class="token punctuation">{</span> FileData <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../interface/FileData&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> InitClass <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../interface/InitClass&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> createRealPath <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../utils/realPath&quot;</span><span class="token punctuation">;</span>
-<span class="token doc-comment comment">/**
+<span class="token comment">/**
  * 读取文件和创建文件
- * <span class="token keyword">@example</span>
- * new File(<span class="token punctuation">{</span>
+ * @example
+ * new File({
  * 	[生成的文件名]：[文件路径]
  * 	business:&quot;../create-api/business-info.txt&quot;
- * <span class="token punctuation">}</span>)
+ * })
  * 可通过注入其它实现init方法的实例对象，完成数据的修改
  */</span>
 <span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">File</span> <span class="token keyword">implements</span> <span class="token class-name">InitClass</span> <span class="token punctuation">{</span>
@@ -124,18 +124,18 @@ import{_ as p,a0 as e,a1 as o,a2 as n,a3 as s,a6 as c,a4 as a,C as i}from"./fram
 			file<span class="token punctuation">.</span>fileData <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">serviceToFunc</span><span class="token punctuation">(</span>file<span class="token punctuation">.</span>fileData<span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token punctuation">}</span>
 	<span class="token punctuation">}</span>
-	<span class="token doc-comment comment">/**
+	<span class="token comment">/**
 	 * 将NestJS Controller层的路由转换成对应JS的请求方法
-	 * <span class="token keyword">@example</span>
+	 * @example
 	 * \`@Controller(&#39;business-info&#39;);
-	 *  export class BusinessInfoController <span class="token punctuation">{</span>
+	 *  export class BusinessInfoController {
 	 *     &quot;@Get(&#39;/createTemp&#39;)&quot;
-	 *      getCreateTemp()<span class="token punctuation">{</span><span class="token punctuation">}</span>
-	 * <span class="token punctuation">}</span>\`
+	 *      getCreateTemp(){}
+	 * }\`
 	 * ==&gt;
-	 *function createTemp(params)<span class="token punctuation">{</span>
+	 *function createTemp(params){
 	 *    return post(&#39;business-info/createTemp&#39;,params)
-	 *<span class="token punctuation">}</span>
+	 *}
 	 * */</span>
 	<span class="token function">serviceToFunc</span><span class="token punctuation">(</span>originData<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 		<span class="token keyword">let</span> fileData<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
@@ -158,21 +158,21 @@ import{_ as p,a0 as e,a1 as o,a2 as n,a3 as s,a6 as c,a4 as a,C as i}from"./fram
 <span class="token keyword">import</span> <span class="token punctuation">{</span> FileData <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../interface/FileData&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> createRealPath <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../utils/realPath&quot;</span><span class="token punctuation">;</span>
 
-<span class="token doc-comment comment">/**
+<span class="token comment">/**
  * 创建对象路径
- * <span class="token keyword">@example</span>
+ * @example
  * home: &quot;@/pages/home&quot; =&gt;
  * -home
  * --home.js
  *
  * 想要包含多个文件，则使用对象形式
- * <span class="token keyword">@example</span>
- * <span class="token punctuation">{</span>
- * 	bar: <span class="token punctuation">{</span>
+ * @example
+ * {
+ * 	bar: {
  *		bar1: &quot;@/pages/bar/bar1&quot;,
  *		bar2: &quot;@/pages/bar/bar2&quot;,
- *	<span class="token punctuation">}</span>
- *<span class="token punctuation">}</span>
+ *	}
+ *}
  * =&gt;
  * result
  * -bar
