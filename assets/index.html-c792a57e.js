@@ -1,1 +1,0 @@
-import{_ as a,a0 as s,a1 as t,a2 as e,a3 as c}from"./framework-16947f8e.js";const n={},o=e("h1",{id:"css笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#css笔记","aria-hidden":"true"},"#"),c(" CSS笔记")],-1),r=e("p",null,"hello 这里是CSS的笔记",-1),_=[o,r];function d(i,l){return s(),t("div",null,_)}const f=a(n,[["render",d],["__file","index.html.vue"]]);export{f as default};
